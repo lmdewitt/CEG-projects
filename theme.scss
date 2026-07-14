@@ -4,3 +4,44 @@
 
 $font-family: "Atkinson Hyperlegible", sans-serif;
 
+// Base document colors
+$body-bg: #fff;
+$body-color: #181818;
+$link-color: #75AADB;
+
+$light: #525252;
+
+// Navigation element colors
+$footer-bg: #efefef;
+$navbar-bg: #325d88;
+$sidebar-bg: #c0c0c0;
+$navbar-fg:#c7d3e0;
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+
+// Bootstrap popovers
+$popover-bg: #707070;
+
+// Bootstrap inputs
+$input-bg: #fff;
+
+.card-img-top img {
+  border-radius: 5%;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  margin: 1rem auto; /* Centers the image */
+}
+.quarto-grid-item div{
+  padding:5px;
+}
+.card-body h5{
+  font-weight: 600;
+}
+.card-body .card-text p{
+  text-align: center;
+}
+.quarto-grid-item.card-center .listing-description {
+  text-align: center;
+}

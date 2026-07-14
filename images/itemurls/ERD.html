@@ -1,0 +1,1684 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-request --><!-- Shady DOM styles for iron-ajax --><!-- Shady DOM styles for iron-location --><!-- Shady DOM styles for iron-query-params --><!-- Shady DOM styles for app-location --><!-- Shady DOM styles for app-route --><!-- Shady DOM styles for iron-media-query --><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for iron-meta-query --><!-- Shady DOM styles for iron-icon --><style scope="iron-icon-1">.iron-icon-1 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: currentcolor;
+        stroke: none;
+
+        width: 24px;
+        height: 24px;
+}</style><style scope="iron-icon-0">.iron-icon-0 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: currentcolor;
+        stroke: none;
+
+        width: 100%;
+        height: 100%;
+}</style><!-- Shady DOM styles for paper-ripple --><style scope="paper-ripple">paper-ripple {
+  display: block;
+        position: absolute;
+        border-radius: inherit;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        
+        pointer-events: none;
+}
+
+paper-ripple[animating] {
+  -webkit-transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+}
+
+#background.paper-ripple,#waves.paper-ripple,.wave-container.paper-ripple,.wave.paper-ripple {
+  pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+#background.paper-ripple,.wave.paper-ripple {
+  opacity: 0;
+}
+
+#waves.paper-ripple,.wave.paper-ripple {
+  overflow: hidden;
+}
+
+.wave-container.paper-ripple,.wave.paper-ripple {
+  border-radius: 50%;
+}
+
+paper-ripple.circle #background.paper-ripple,paper-ripple.circle #waves.paper-ripple {
+  border-radius: 50%;
+}
+
+paper-ripple.circle .wave-container.paper-ripple {
+  overflow: hidden;
+}</style><!-- Shady DOM styles for paper-icon-button --><style scope="paper-icon-button-1">.paper-icon-button-1 {
+  display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+        
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+        
+        box-sizing: border-box !important;;
+}
+
+.paper-icon-button-1 #ink.paper-icon-button {
+  color: #212121;
+        opacity: 0.6;
+}
+
+.paper-icon-button-1[disabled] {
+  color: #9b9b9b;
+        pointer-events: none;
+        cursor: auto;;
+}
+
+.paper-icon-button-1:hover {
+  ;
+}
+
+.paper-icon-button-1 iron-icon.paper-icon-button {
+  ;
+}</style><style scope="paper-icon-button-0">.paper-icon-button-0 {
+  display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+        
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+        
+        box-sizing: border-box !important;;
+}
+
+.paper-icon-button-0 #ink.paper-icon-button {
+  color: #31f0ef;
+        opacity: 0.6;
+}
+
+.paper-icon-button-0[disabled] {
+  color: #9b9b9b;
+        pointer-events: none;
+        cursor: auto;;
+}
+
+.paper-icon-button-0:hover {
+  ;
+}
+
+.paper-icon-button-0 iron-icon.paper-icon-button {
+  ;
+}</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for paper-tab --><style scope="paper-tab-0">.paper-tab-0 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+
+        position: relative;
+        padding: 0 12px;
+        overflow: hidden;
+        cursor: pointer;
+        vertical-align: middle;;;
+}
+
+.paper-tab-0:focus {
+  outline: none;
+}
+
+.paper-tab-0[link] {
+  padding: 0;
+}
+
+.paper-tab-0 .tab-content.paper-tab {
+  height: 100%;
+        transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+        transition: opacity 0.1s cubic-bezier(0.4, 0.0, 1, 1);display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;;
+}
+
+.paper-tab-0:not(.iron-selected) > .tab-content.paper-tab {
+  opacity: 0.8;;
+}
+
+.paper-tab-0:focus .tab-content.paper-tab {
+  opacity: 1;
+        font-weight: 700;
+}
+
+.paper-tab-0 paper-ripple.paper-tab {
+  color: #0098D7;
+}
+
+.paper-tab-0 .tab-content.paper-tab  > a {
+  -ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+
+        height: 100%;
+}</style><!-- Shady DOM styles for paper-tabs --><style scope="paper-tabs-0">.paper-tabs-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+        height: 48px;
+        font-size: 14px;
+        font-weight: 500;
+        overflow: hidden;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;;
+}
+
+[dir=rtl] .paper-tabs-0, .paper-tabs-0[dir=rtl] {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.paper-tabs-0 #tabsContainer.paper-tabs {
+  position: relative;
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs {
+  height: 100%;
+        -moz-flex-basis: auto;
+        -ms-flex-basis: auto;
+        flex-basis: auto;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.paper-tabs {
+  position: absolute;
+        white-space: nowrap;
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs:not(.scrollable),.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+  min-width: 100%;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs  > * {
+  -ms-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+}
+
+.paper-tabs-0 .hidden.paper-tabs {
+  display: none;
+}
+
+.paper-tabs-0 .not-visible.paper-tabs {
+  opacity: 0;
+        cursor: default;
+}
+
+.paper-tabs-0 paper-icon-button.paper-tabs {
+  width: 48px;
+        height: 48px;
+        padding: 12px;
+        margin: 0 4px;
+}
+
+.paper-tabs-0 #selectionBar.paper-tabs {
+  position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0098D7;
+          -webkit-transform: scale(0);
+        transform: scale(0);
+          -webkit-transform-origin: left center;
+        transform-origin: left center;
+          transition: -webkit-transform;
+        transition: transform;;
+}
+
+.paper-tabs-0 #selectionBar.align-bottom.paper-tabs {
+  top: 0;
+        bottom: auto;
+}
+
+.paper-tabs-0 #selectionBar.expand.paper-tabs {
+  transition-duration: 0.15s;
+        transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.paper-tabs-0 #selectionBar.contract.paper-tabs {
+  transition-duration: 0.18s;
+        transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs  > *:not(#selectionBar) {
+  height: 100%;
+}</style><!-- Shady DOM styles for iron-image --><style scope="iron-image-0">.iron-image-0 {
+  display: inline-block;
+        overflow: hidden;
+        position: relative;
+}
+
+.iron-image-0 #sizedImgDiv.iron-image {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+        display: none;
+}
+
+.iron-image-0 #img.iron-image {
+  display: block;
+        width: auto;
+        height: auto;
+}
+
+.iron-image-0[sizing] #sizedImgDiv.iron-image {
+  display: block;
+}
+
+.iron-image-0[sizing] #img.iron-image {
+  display: none;
+}
+
+.iron-image-0 #placeholder.iron-image {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+        background-color: inherit;
+        opacity: 1;;
+}
+
+.iron-image-0 #placeholder.faded-out.iron-image {
+  transition: opacity 0.5s linear;
+        opacity: 0;
+}</style><!-- Shady DOM styles for iron-pages --><style scope="iron-pages">iron-pages {
+  display: block;
+}
+
+iron-pages  > :not(.iron-selected) {
+  display: none !important;
+}</style><!-- Shady DOM styles for app-drawer --><style scope="app-drawer-0">.app-drawer-0 {
+  position: fixed;
+        top: -120px;
+        right: 0;
+        bottom: -120px;
+        left: 0;
+
+        visibility: hidden;
+
+        transition-property: visibility;
+}
+
+.app-drawer-0[opened] {
+  visibility: visible;
+}
+
+.app-drawer-0[persistent] {
+  width: 256px;
+}
+
+.app-drawer-0[persistent][position=left] {
+  right: auto;
+}
+
+.app-drawer-0[persistent][position=right] {
+  left: auto;
+}
+
+.app-drawer-0 #contentContainer.app-drawer {
+  position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 256px;
+        padding: 120px 0;
+
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+
+        background-color: #FFF;background-color: #f3f3f3;
+	text-decoration:none;
+}
+
+.app-drawer-0[persistent] > #contentContainer.app-drawer {
+  width: 100%;
+}
+
+.app-drawer-0[position=right] > #contentContainer.app-drawer {
+  right: 0;
+        left: auto;
+
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+}
+
+.app-drawer-0[swipe-open] > #contentContainer.app-drawer::after {
+  position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+
+        visibility: visible;
+
+        width: 20px;
+
+        content: '';
+}
+
+.app-drawer-0[swipe-open][position=right] > #contentContainer.app-drawer::after {
+  right: 100%;
+        left: auto;
+}
+
+.app-drawer-0[opened] > #contentContainer.app-drawer {
+  -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+
+.app-drawer-0 #scrim.app-drawer {
+  position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        transition-property: opacity;
+        -webkit-transform: translateZ(0);
+        transform:  translateZ(0);
+
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+}
+
+.app-drawer-0[opened] > #scrim.app-drawer {
+  opacity: 1;
+}
+
+.app-drawer-0[opened][persistent] > #scrim.app-drawer {
+  visibility: hidden;
+        
+
+        opacity: 0;
+}</style><!-- Shady DOM styles for app-drawer-layout --><style scope="app-drawer-layout-0">.app-drawer-layout-0 {
+  display: block;
+}
+
+.app-drawer-layout-0[fullbleed] {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+}
+
+.app-drawer-layout-0 #contentContainer.app-drawer-layout {
+  position: relative;
+
+        height: 100%;
+
+        transition: none;
+}
+
+.app-drawer-layout-0 #contentContainer.app-drawer-layout:not(.narrow)  [drawer-toggle] {
+  display: none;
+}</style><!-- Shady DOM styles for app-header --><style scope="app-header-0">.app-header-0 {
+  position: relative;
+        display: block;
+        transition-timing-function: linear;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+}
+
+.app-header-0::before {
+  position: absolute;
+        right: 0px;
+        bottom: -5px;
+        left: 0px;
+        width: 100%;
+        height: 5px;
+        content: "";
+        transition: opacity 0.4s;
+        pointer-events: none;
+        opacity: 0;
+        box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+        will-change: opacity;box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
+          height: 170px;
+          bottom: -10px;
+}
+
+.app-header-0[shadow]::before {
+  opacity: 1;
+}
+
+.app-header-0  [main-title],.app-header-0  [condensed-title] {
+  -webkit-transform-origin: left top;
+        transform-origin: left top;
+        white-space: nowrap;
+}
+
+.app-header-0  [condensed-title] {
+  opacity: 0;
+}
+
+.app-header-0 #background.app-header {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+        overflow: hidden;
+}
+
+.app-header-0 #backgroundFrontLayer.app-header,.app-header-0 #backgroundRearLayer.app-header {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+        height: 100%;
+        pointer-events: none;
+        background-size: cover;
+}
+
+.app-header-0 #backgroundFrontLayer.app-header {
+  ;
+}
+
+.app-header-0 #backgroundRearLayer.app-header {
+  opacity: 0;;
+}
+
+.app-header-0 #contentContainer.app-header {
+  position: relative;
+        width: 100%;
+        height: 100%;
+}
+
+.app-header-0[disabled],.app-header-0[disabled]::after,.app-header-0[disabled] #backgroundFrontLayer.app-header,.app-header-0[disabled] #backgroundRearLayer.app-header,.app-header-0[disabled]  > app-toolbar:first-of-type,.app-header-0[disabled]  > [sticky],.app-layout-silent-scroll .app-header-0, .app-header-0.app-layout-silent-scroll,.app-layout-silent-scroll .app-header-0::after, .app-header-0.app-layout-silent-scroll::after,.app-layout-silent-scroll .app-header-0 #backgroundFrontLayer.app-header, .app-header-0.app-layout-silent-scroll #backgroundFrontLayer.app-header,.app-layout-silent-scroll .app-header-0 #backgroundRearLayer.app-header, .app-header-0.app-layout-silent-scroll #backgroundRearLayer.app-header,.app-layout-silent-scroll .app-header-0  > app-toolbar:first-of-type, .app-header-0.app-layout-silent-scroll  > app-toolbar:first-of-type,.app-layout-silent-scroll .app-header-0  > [sticky], .app-header-0.app-layout-silent-scroll  > [sticky] {
+  transition: none !important;
+}</style><!-- Shady DOM styles for app-header-layout --><style scope="app-header-layout-0">.app-header-layout-0 {
+  display: block;
+        
+        position: relative;
+        z-index: 0;
+}
+
+.app-header-layout-0  > app-header {
+  position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+        z-index: 1;
+}
+
+.app-header-layout-0[has-scrolling-region] {
+  height: 100%;
+}
+
+.app-header-layout-0[has-scrolling-region]  > app-header {
+  position: absolute;
+}
+
+.app-header-layout-0[has-scrolling-region] > #contentContainer.app-header-layout {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+}
+
+.app-header-layout-0[fullbleed] {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+}
+
+.app-header-layout-0[fullbleed] > #contentContainer.app-header-layout {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;-ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+}
+
+.app-header-layout-0 #contentContainer.app-header-layout {
+  position: relative;
+        z-index: 0;
+}</style><!-- Shady DOM styles for app-scrollpos-control --><!-- Shady DOM styles for app-toolbar --><style scope="app-toolbar-0">.app-toolbar-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        position: relative;
+        height: 64px;
+        padding: 0 16px;
+        pointer-events: none;
+        font-size: 20px;
+}
+
+.app-toolbar-0  > * {
+  pointer-events: auto;
+}
+
+.app-toolbar-0  > paper-icon-button {
+  font-size: 0;
+}
+
+.app-toolbar-0  > [main-title],.app-toolbar-0  > [condensed-title] {
+  pointer-events: none;-ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+}
+
+.app-toolbar-0  > [bottom-item] {
+  position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+}
+
+.app-toolbar-0  > [top-item] {
+  position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+}
+
+.app-toolbar-0  > [spacer] {
+  margin-left: 64px;
+}</style><!-- Shady DOM styles for app-box --><!-- Shady DOM styles for erd-item --><style scope="erd-item-0">.erd-item-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+}
+
+.erd-item-0 .pic.erd-item {
+  width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: opacity 0.5s;
+}
+
+.erd-item-0 .link.erd-item {
+  transition: opacity 0.5s;
+    	font-family: 'Roboto', 'Noto', sans-serif;
+        font-size: 1.5em;
+        color: #0a3142;
+	margin-top:.3em;
+	margin-bottom:.5em;
+}
+
+.erd-item-0 .banner.erd-item {
+  width:100%;
+		padding-bottom:5px;
+}
+
+.erd-item-0 .price.erd-item {
+  font-size: 1em;
+        color: #111;
+}
+
+.erd-item-0 .author.erd-item {
+  position:absolute;
+	bottom:5px;
+	right:5px;
+        color: #0098d7;
+	text-decoration:none;
+}
+
+.erd-item-0 paper-fab.erd-item {
+  ;
+}
+
+.erd-item-0 .icons.erd-item {
+  position: absolute;
+        top: 12px;
+        left: 12px;
+        transition: opacity 0.5s;
+}
+
+.erd-item-0 .blue.erd-item {
+  color: #0098d7;
+}
+
+.erd-item-0 iron-icon.erd-item {
+  width: 20px;
+        height: 20px;
+        color: #666;
+        margin: 5px;
+}
+
+.erd-item-0::after {
+  content: "";
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+        pointer-events: none;
+        
+        transform: translateZ(0);
+}
+
+.erd-item-0:hover::after {
+  opacity: 1;
+}</style><!-- Shady DOM styles for erd-featured-item --><style scope="erd-featured-item">erd-featured-item {
+  display: block;
+        background-color: white;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+        visibility: hidden;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.price.erd-featured-item {
+  font-size: 20px;
+}
+
+.pic.erd-featured-item {
+  position: relative;
+        width: 40%;
+}
+
+.pic.erd-featured-item img.erd-featured-item {
+  width: 100%;
+}
+
+.detail.erd-featured-item {
+  -webkit-flex: 1 calc(100% - 10px);
+          flex: 1 calc(1000% - 10px);
+          max-width: calc(100% - 10px);
+          margin: 5px;
+          text-decoration: none;
+          background-color: white;
+}
+
+h1.erd-featured-item {
+  font-family: 'Abril Fatface', cursive;
+        font-size: 6em;
+        font-weight: 300;
+        color: #0a3142;
+        margin: 0;
+        line-height: 1em;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+}
+
+.desc.erd-featured-item {
+  position: relative;
+        max-width: 300px;
+        float: right;
+}
+
+.desc.erd-featured-item::before {
+  background-color: #31f0ef;
+        content: "";
+        height: 6px;
+        left: 0;
+        line-height: 21px;
+        position: absolute;
+        top: -6px;
+        width: 100px;
+}
+
+.desc.erd-featured-item p.erd-featured-item {
+  margin-bottom: 30px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 300;
+}
+
+.desc.erd-featured-item .author.erd-featured-item {
+  font-size: 11px;
+        line-height: 30px;
+        color: #000;
+}
+
+.desc.erd-featured-item .author.erd-featured-item img.erd-featured-item {
+  width: 30px;
+        height: 30px;
+        border-radius: 50% 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        border: 2px solid white;
+}
+
+@media (max-width: 1200px) {
+erd-featured-item {
+  height: 420px;
+}
+
+h1.erd-featured-item {
+  font-size: 4em;
+          margin-top: 60px;
+          margin-bottom: 60px;
+}
+
+}
+
+@media (max-width: 640px) {
+h1.erd-featured-item {
+  font-size: 3em;
+          margin-top: 60px;
+          margin-bottom: 60px;
+}
+
+}
+
+@media (max-width: 400px) {
+erd-featured-item {
+  height: 260px;
+}
+
+h1.erd-featured-item {
+  font-size: 2em;
+          margin-top: 40px;
+          margin-bottom: 40px;
+}
+
+.detail.erd-featured-item {
+  width: 60%;
+          right: 0;
+}
+
+.desc.erd-featured-item p.erd-featured-item {
+  font-size: 11px;
+}
+
+.price.erd-featured-item {
+  height: 30px;
+          line-height: 30px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 15px;
+}
+
+.desc.erd-featured-item::before {
+  height: 3px;
+          top: -3px;
+}
+
+}</style><!-- Shady DOM styles for erd-list --><style scope="erd-list-0">.erd-list-0 {
+  display: block;
+        background-color: #f3f3f3;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.erd-list-0 .grid.erd-list {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;-ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+        margin-top: 10px;
+}
+
+.erd-list-0 .blurb.erd-list {
+  max-width:100%;
+        	text-decoration: none;
+       		 background-color: white;
+		height:25px;
+		padding:10px;
+}
+
+.erd-list-0 .right.erd-list {
+  position:absolute;
+		right:10px;
+          	font-size: 11px;
+        	color: #333;
+		font-style: italic;
+		padding:5px;
+}
+
+.erd-list-0 .grid.erd-list > .item.erd-list {
+  -webkit-flex: 1 calc(33% - 20px);
+        flex: 1 calc(33% - 20px);
+        max-width: calc(33% - 20px);
+        height: 30vmax;
+        min-height: 250px;
+        margin: 10px;
+        text-decoration: none;
+        background-color: white;
+}
+
+@media (max-width: 1200px) {
+.erd-list-0 .grid.erd-list {
+  padding-left: 10px;
+          padding-right: 10px;
+          font-size: 0.7em;
+}
+
+.erd-list-0 .grid.erd-list > .item.erd-list {
+  -webkit-flex: 1 calc(33% - 20px);
+          flex: 1 calc(33% - 20px);
+          max-width: calc(33% - 20px);
+          margin: 10px;
+          text-decoration: none;
+          background-color: white;
+}
+
+}
+
+@media (max-width: 600px) {
+.erd-list-0 .grid.erd-list {
+  padding-left: 10px;
+          padding-right: 10px;
+}
+
+.erd-list-0 .grid.erd-list > .item.erd-list {
+  -webkit-flex: 1 calc(100% - 10px);
+          flex: 1 calc(1000% - 10px);
+          max-width: calc(100% - 10px);
+          margin: 5px;
+          text-decoration: none;
+          background-color: white;
+}
+
+.erd-list-0 .blurb.erd-list {
+  display:none;
+}
+
+}</style><!-- Shady DOM styles for paper-fab --><style scope="paper-fab-0">.paper-fab-0 {
+  display: block;
+        position: relative;
+}
+
+.paper-fab-0[elevation="1"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.paper-fab-0[elevation="2"] {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-fab-0[elevation="3"] {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-fab-0[elevation="4"] {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                  0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                  0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.paper-fab-0[elevation="5"] {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                  0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                  0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.paper-fab-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+
+        background: #ececec;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        height: 56px;
+        min-width: 0;
+        outline: none;
+        padding: 16px;
+        position: relative;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 56px;
+        z-index: 0;
+
+        
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;;
+}
+
+.paper-fab-0 [hidden].paper-fab {
+  display: none !important;
+}
+
+.paper-fab-0[mini] {
+  width: 40px;
+        height: 40px;
+        padding: 8px;;
+}
+
+.paper-fab-0[disabled] {
+  color: #9e9e9e;
+        background: #e0e0e0;;
+}
+
+.paper-fab-0 iron-icon.paper-fab {
+  ;
+}
+
+.paper-fab-0 span.paper-fab {
+  width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+}
+
+.paper-fab-0.keyboard-focus {
+  background: #0098d7;
+}</style><!-- Shady DOM styles for erd-simple-item --><!-- Shady DOM styles for erd-detail --><!-- Shady DOM styles for erd-app --><style scope="erd-app-0">.erd-app-0 {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.erd-app-0 app-header.erd-app {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.erd-app-0 app-header.erd-app:not([shadow]) {
+  border-bottom: 1px solid #ddd;
+}
+
+.erd-app-0 app-drawer.erd-app {
+  ;
+}
+
+.erd-app-0 #mainToolbar.erd-app {
+  height: 110px;
+}
+
+.erd-app-0 paper-icon-button.erd-app {
+  color: #000;
+}
+
+.erd-app-0 .navItem.erd-app {
+  -ms-align-self: flex-start;
+      -webkit-align-self: flex-start;
+      align-self: flex-start;
+        margin-top: 13px;
+        width: 88px;
+}
+
+.erd-app-0 .spacer.erd-app {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+}
+
+.erd-app-0 .logo.erd-app {
+  background-image: url('http://localhost/ERDtest/app/elements/images/noaa_ERD_all_left.png');
+        width: 425px;
+        height: 81px;
+}
+
+.erd-app-0 .doc.erd-app {
+  width: 50px;
+        height: 50px;
+}
+
+.erd-app-0 .leftItem.erd-app [icon].erd-app {
+  display: none;
+}
+
+.erd-app-0 erd-detail.erd-app {
+  height: calc(100vh - 101px);
+}
+
+.erd-app-0[page=detail] #mainToolbar.erd-app {
+  height: 100px;
+}
+
+.erd-app-0[page=detail] paper-tabs.erd-app {
+  display: none;
+}
+
+.erd-app-0[page=detail] .leftItem.erd-app [icon=arrow-back].erd-app {
+  display: block;
+}
+
+.erd-app-0[page=detail] .leftItem.erd-app [icon=menu].erd-app {
+  display: none;
+}
+
+.erd-app-0 .bottommenu.erd-app {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+}
+
+.erd-app-0 paper-tabs.erd-app {
+  ;-ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+        margin-left: -55px;
+        color: #0098D7;
+        font-size: 13px;
+}
+
+.erd-app-0 paper-tab.erd-app {
+  -ms-flex: none;
+      -webkit-flex: none;
+      flex: none;
+        padding: 0;
+}
+
+.erd-app-0 paper-tab.erd-app a.erd-app {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #7c7c7c;
+        font-weight: 500;
+        padding: 0 20px;
+        height: 100%;
+}
+
+.erd-app-0 .list.erd-app {
+  margin-left: 20px;
+        margin-right: 20px;
+}
+
+.erd-app-0 .list.erd-app a.erd-app {
+  display: block;
+        line-height: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #7c7c7c;
+}
+
+.erd-app-0 .list.erd-app a.active.erd-app {
+  color: black;
+        font-weight: bold;
+}
+
+.erd-app-0 .profileBar.erd-app {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+.erd-app-0 .logo.erd-app {
+  background-image: url('http://localhost/ERDtest/app/elements/images/noaa_ERD_all_left.png');
+          width: 648px;
+          height: 88px;
+}
+
+.erd-app-0 #mainToolbar.erd-app {
+  height: 105px;
+}
+
+.erd-app-0 erd-detail.erd-app {
+  height: auto;
+}
+
+}
+
+@media (min-width: 660px) and (max-width: 840px) and (orientation: landscape) {
+.erd-app-0 .logo.erd-app {
+  background-image: url('http://localhost/ERDtest/app/elements/images/noaa_ERD_short.png');
+          width: 637px;
+          height: 62px;
+}
+
+.erd-app-0 .leftItem.erd-app [icon=menu].erd-app {
+  display: block;
+}
+
+.erd-app-0 .bottommenu.erd-app {
+  display: none;
+}
+
+}
+
+@media (min-width: 430px) and (max-width: 659px) {
+.erd-app-0 .logo.erd-app {
+  background-image: url('http://localhost/ERDtest/app/elements/images/noaa_ERD_narrow.png');
+          width: 399px;
+          height: 87px;
+}
+
+.erd-app-0 .leftItem.erd-app [icon=menu].erd-app {
+  display: block;
+}
+
+.erd-app-0 .bottommenu.erd-app {
+  display: none;
+}
+
+}
+
+@media (max-width: 429px) {
+.erd-app-0 .logo.erd-app {
+  background-image: url('http://localhost/ERDtest/app/elements/images/noaa_ERD_tiny.png');
+          width: 152px;
+          height: 61px;
+}
+
+.erd-app-0 .leftItem.erd-app [icon=menu].erd-app {
+  display: block;
+}
+
+.erd-app-0 .bottommenu.erd-app {
+  display: none;
+}
+
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#fff">
+  
+  <title>ERD</title>
+
+  <script src="ERD_files/webcomponents-lite.js"></script>
+
+  <link rel="stylesheet" href="ERD_files/css.css" type="text/css">
+  <link rel="manifest" href="http://localhost/ERDtest/app/manifest.json">
+  <link rel="import" href="http://localhost/ERDtest/app/bower_components/iron-ajax/iron-ajax.html">
+  <style>
+  /* IE 10 support for HTML5 hidden attr */
+  [hidden] {
+    display: none !important;
+  }
+</style><style></style><style></style><style></style><style></style><link rel="import" href="http://localhost/ERDtest/app/elements/erd-app.html">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Noto', sans-serif;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  
+
+    <iron-ajax url="http://localhost/ERDtest/app/data/items.json" auto="" hidden=""></iron-ajax>
+    <iron-ajax url="http://localhost/ERDtest/app/data/featured.json" auto="" hidden=""></iron-ajax>
+    <erd-app page="list" class="x-scope erd-app-0">
+
+    
+
+    <app-location use-hash-as-path="" class="style-scope erd-app">
+    <iron-location class="style-scope app-location" hidden="">
+    </iron-location>
+    <iron-query-params class="style-scope app-location" hidden="">
+    </iron-query-params>
+  </app-location>
+    <app-route pattern=":section" class="style-scope erd-app"></app-route>
+    <app-route pattern="/:id" class="style-scope erd-app"></app-route>
+
+    <iron-media-query query="max-width: 659px" class="style-scope erd-app" style="display: none;"></iron-media-query>
+    <iron-media-query query="(max-width: 840px) and (orientation: landscape)" class="style-scope erd-app" style="display: none;"></iron-media-query>
+
+    <app-drawer-layout drawer-width="288px" force-narrow="" class="style-scope erd-app x-scope app-drawer-layout-0">
+    
+
+    <div id="contentContainer" class="style-scope app-drawer-layout narrow">
+      <app-header-layout class="style-scope erd-app x-scope app-header-layout-0">
+    
+
+    <app-header id="header" effects="waterfall" class="style-scope erd-app x-scope app-header-0" style="left: 0px; right: 0px; transform: translate3d(0px, 0px, 0px);">
+    
+    <div id="contentContainer" class="style-scope app-header">
+      
+          <app-toolbar id="mainToolbar" class="style-scope erd-app x-scope app-toolbar-0" style="transform: translate3d(0px, 0px, 0px);">
+    
+
+    
+            <div class="navItem leftItem style-scope erd-app">
+              <paper-icon-button icon="menu" drawer-toggle="" alt="Toogle navigation menu" class="style-scope erd-app x-scope paper-icon-button-0" role="button" tabindex="0" aria-disabled="false" aria-label="Toogle navigation menu"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0" alt="Toogle navigation menu"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon></paper-icon-button>
+              <a tabindex="-1" class="style-scope erd-app" href="#home"><paper-icon-button icon="arrow-back" alt="Back to the home" class="style-scope erd-app x-scope paper-icon-button-0" role="button" tabindex="0" aria-disabled="false" aria-label="Back to the home"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0" alt="Back to the home"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon></paper-icon-button></a>
+            </div>
+            <div class="spacer style-scope erd-app">
+              <div class="logo style-scope erd-app" alt="NOAA Logo"></div>
+            </div>
+          
+  </app-toolbar>
+          
+	<div class="bottommenu style-scope erd-app">
+<!--            <paper-tabs selected="[[selectedTab]]" scrollable sticky$="[[_shouldShowTabs(onDetailPage, smallScreen)]]">-->
+            <paper-tabs class="style-scope erd-app x-scope paper-tabs-0" role="tablist" tabindex="0">
+    
+
+    <paper-icon-button icon="paper-tabs:chevron-left" tabindex="-1" class="hidden style-scope paper-tabs x-scope paper-icon-button-1" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon></paper-icon-button>
+
+    <div id="tabsContainer" class="style-scope paper-tabs" style="touch-action: pan-y;">
+      <div id="tabsContent" class=" fit-container style-scope paper-tabs">
+        <div id="selectionBar" class="style-scope paper-tabs" style="transform: translateX(0%) scaleX(0.0567121);"></div>
+        <paper-tab class="style-scope erd-app iron-selected x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="0" aria-selected="true">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#home">home</a>
+                
+    </div>
+  </paper-tab><paper-tab class="style-scope erd-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#projects">projects</a>
+                
+    </div>
+  </paper-tab><paper-tab class="style-scope erd-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#services">services</a>
+                
+    </div>
+  </paper-tab><paper-tab class="style-scope erd-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#products">products</a>
+                
+    </div>
+  </paper-tab><paper-tab class="style-scope erd-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#data">data</a>
+                
+    </div>
+  </paper-tab><paper-tab class="style-scope erd-app x-scope paper-tab-0" role="tab" aria-disabled="false" tabindex="-1">
+    
+
+    <div class="tab-content style-scope paper-tab">
+      
+                  <a class="style-scope erd-app" href="#contact">contact</a>
+                
+    </div>
+  </paper-tab><template is="dom-repeat" as="section" class="style-scope erd-app"></template>
+      </div>
+    </div>
+
+    <paper-icon-button icon="paper-tabs:chevron-right" tabindex="-1" class="hidden style-scope paper-tabs x-scope paper-icon-button-1" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon></paper-icon-button>
+
+  </paper-tabs>
+            <div class="doc style-scope erd-app" alt="DOC Logo">
+		<a href="https://www.commerce.gov/" title="U.S. Department of Commerce" target="_blank" class="style-scope erd-app"><iron-image src="http://localhost/ERDtest/app/elements/images/logos/doc_logo_black.gif" style="width:48px;height:48px;padding-bottom:2px;padding-left:2px;" sizing="contain" class="style-scope erd-app x-scope iron-image-0">
+    
+
+    <div id="sizedImgDiv" role="img" class="style-scope iron-image" style="background-image: url(&quot;http://localhost/ERDtest/app/elements/images/logos/doc_logo_black.gif&quot;); background-size: contain; background-position: center center; background-repeat: no-repeat;" aria-label="doc_logo_black.gif"></div>
+    <img id="img" class="style-scope iron-image" src="ERD_files/doc_logo_black.gif" hidden="">
+    <div id="placeholder" class="style-scope iron-image" style="background-size: contain; background-position: center center; background-repeat: no-repeat;" hidden=""></div>
+  </iron-image></a>
+            </div>
+	</div>
+          <template is="dom-if" class="style-scope erd-app"></template>
+        
+    </div>
+  </app-header>
+
+    <div id="contentContainer" class="style-scope app-header-layout" style="padding-top: 156px;">
+      
+        <!-- main header -->
+        
+
+        <iron-pages attr-for-selected="name" class="style-scope erd-app">
+    
+
+    
+          <!-- detail of item -->
+          <template is="dom-if" class="style-scope erd-app"></template>
+          <!-- list of items -->
+          
+            <erd-list name="list" class="style-scope erd-app iron-selected x-scope erd-list-0">
+
+    
+
+<!--    <erd-featured-item item="[[featuredItem]]"></erd-featured-item>-->
+    <div class="blurb style-scope erd-list">
+	<span class="right style-scope erd-list">...providing data and research for understanding the effects of environmental variabliity on marine ecosystems</span>
+   </div>
+    <div class="grid style-scope erd-list">
+      
+        <a class="item style-scope erd-list" aria-label="More information about CoastWatch West Coast Regional Node" href="#home/1">
+          <erd-item class="style-scope erd-list x-scope erd-item-0">
+
+    
+	<div class="banner style-scope erd-item" style="background-color: #005ba6;">
+		<h2 class="link style-scope erd-item" style="color: #ffffff;">CoastWatch West Coast Regional Node</h2>
+    		<span class="price style-scope erd-item" style="color: #ffffff;">Providing near real-time satellite data for the coastal ocean</span>
+	</div>
+	<div class="pic style-scope erd-item" style="background-image: url(images/itemurls/coastwatch.png);"></div>
+
+	<div class="author style-scope erd-item">
+		<a target="_blank" class="style-scope erd-item" href="http://coastwatch.pfeg.noaa.gov/"><paper-fab class="blue style-scope erd-item x-scope paper-fab-0" mini="" icon="link" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Go to CoastWatch West Coast Regional Node at http://coastwatch.pfeg.noaa.gov"><iron-icon id="icon" class="style-scope paper-fab x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon><span class="style-scope paper-fab" hidden=""> </span></paper-fab></a>
+    </div>
+
+  </erd-item>
+        </a>
+      
+        <a class="item style-scope erd-list" aria-label="More information about WhaleWatch" href="#home/2">
+          <erd-item class="style-scope erd-list x-scope erd-item-0">
+
+    
+	<div class="banner style-scope erd-item" style="background-color: #fff2d4;">
+		<h2 class="link style-scope erd-item" style="color: #003c79;">WhaleWatch</h2>
+    		<span class="price style-scope erd-item" style="color: #003c79;">Providing near real-time satellite data for the coastal ocean</span>
+	</div>
+	<div class="pic style-scope erd-item" style="background-image: url(images/itemurls/whalewatch.png);"></div>
+
+	<div class="author style-scope erd-item">
+		<a target="_blank" class="style-scope erd-item" href="http://www.westcoast.fisheries.noaa.gov/whalewatch/"><paper-fab class="blue style-scope erd-item x-scope paper-fab-0" mini="" icon="link" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Go to WhaleWatch at http://www.westcoast.fisheries.noaa.gov/whalewatch/"><iron-icon id="icon" class="style-scope paper-fab x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon><span class="style-scope paper-fab" hidden=""> </span></paper-fab></a>
+    </div>
+
+  </erd-item>
+        </a>
+      
+        <a class="item style-scope erd-list" aria-label="More information about ERDDAP" href="#home/0">
+          <erd-item class="style-scope erd-list x-scope erd-item-0">
+
+    
+	<div class="banner style-scope erd-item" style="background-color: #128cb5;">
+		<h2 class="link style-scope erd-item" style="color: #ffffff;">ERDDAP</h2>
+    		<span class="price style-scope erd-item" style="color: #ffffff;">Easier access to scientific data</span>
+	</div>
+	<div class="pic style-scope erd-item" style="background-image: url(images/itemurls/erddap.png);"></div>
+
+	<div class="author style-scope erd-item">
+		<a target="_blank" class="style-scope erd-item" href="http://coastwatch.pfeg.noaa.gov/erddap"><paper-fab class="blue style-scope erd-item x-scope paper-fab-0" mini="" icon="link" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Go to ERDDAP at http://coastwatch.pfeg.noaa.gov/erddap"><iron-icon id="icon" class="style-scope paper-fab x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon><span class="style-scope paper-fab" hidden=""> </span></paper-fab></a>
+    </div>
+
+  </erd-item>
+        </a>
+      
+        <a class="item style-scope erd-list" aria-label="More information about California Current Integrated Ecosystem Assessment" href="#home/3">
+          <erd-item class="style-scope erd-list x-scope erd-item-0">
+
+    
+	<div class="banner style-scope erd-item" style="background-color: #276189;">
+		<h2 class="link style-scope erd-item" style="color: #80ceea;">California Current Integrated Ecosystem Assessment</h2>
+    		<span class="price style-scope erd-item" style="color: #80ceea;"></span>
+	</div>
+	<div class="pic style-scope erd-item" style="background-image: url(images/itemurls/cciea.png);"></div>
+
+	<div class="author style-scope erd-item">
+		<a target="_blank" class="style-scope erd-item" href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current-region/index.html"><paper-fab class="blue style-scope erd-item x-scope paper-fab-0" mini="" icon="link" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Go to California Current Integrated Ecosystem Assessment at https://www.integratedecosystemassessment.noaa.gov/regions/california-current-region/index.html"><iron-icon id="icon" class="style-scope paper-fab x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon><span class="style-scope paper-fab" hidden=""> </span></paper-fab></a>
+    </div>
+
+  </erd-item>
+        </a>
+      
+        <a class="item style-scope erd-list" aria-label="More information about California Cooperative Oceanic Fisheries Investigations" href="#home/4">
+          <erd-item class="style-scope erd-list x-scope erd-item-0">
+
+    
+	<div class="banner style-scope erd-item" style="background-color: #264263;">
+		<h2 class="link style-scope erd-item" style="color: #ffffff;">California Cooperative Oceanic Fisheries Investigations</h2>
+    		<span class="price style-scope erd-item" style="color: #ffffff;"></span>
+	</div>
+	<div class="pic style-scope erd-item" style="background-image: url(images/itemurls/calcofi.png);"></div>
+
+	<div class="author style-scope erd-item">
+		<a target="_blank" class="style-scope erd-item" href="http://calcofi.org/"><paper-fab class="blue style-scope erd-item x-scope paper-fab-0" mini="" icon="link" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" title="Go to California Cooperative Oceanic Fisheries Investigations at http://calcofi.org"><iron-icon id="icon" class="style-scope paper-fab x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;" class="style-scope iron-icon"><g class="style-scope iron-icon"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" class="style-scope iron-icon"></path></g></svg>
+    
+  </iron-icon><span class="style-scope paper-fab" hidden=""> </span></paper-fab></a>
+    </div>
+
+  </erd-item>
+        </a>
+      <template is="dom-repeat" sort="_sortItems" initial-count="1" class="style-scope erd-list"></template>
+    </div>
+
+  </erd-list>
+          <template is="dom-if" class="style-scope erd-app"></template>
+        
+  </iron-pages>
+
+      
+    </div>
+
+  </app-header-layout>
+    </div>
+
+    <app-drawer id="drawer" class="style-scope erd-app x-scope app-drawer-0" style="transition-duration: 200ms; touch-action: pan-y;" position="left">
+    
+
+    <div id="scrim" class="style-scope app-drawer" style="transition-duration: 200ms;"></div>
+
+    <div id="contentContainer" class="style-scope app-drawer" style="transition-duration: 200ms;">
+      
+        <template is="dom-if" class="style-scope erd-app"></template>
+      
+    </div>
+  </app-drawer>
+
+    <iron-media-query class="style-scope app-drawer-layout" style="display: none;"></iron-media-query>
+  </app-drawer-layout>
+
+  </erd-app>
+
+  <template is="dom-bind">
+
+    <iron-ajax url="http://localhost/ERDtest/app/data/items.json" auto=""></iron-ajax>
+    <iron-ajax url="http://localhost/ERDtest/app/data/featured.json" auto=""></iron-ajax>
+    <erd-app></erd-app>
+
+  </template>
+
+
+
+
+</body></html>

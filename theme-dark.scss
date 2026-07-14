@@ -24,3 +24,23 @@ $popover-bg: #242424;
 
 // Bootstrap inputs
 $input-bg: #242424;
+
+.card-img-top img {
+  border-radius: 5%;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  margin: 1rem auto; /* Centers the image */
+}
+.quarto-grid-item div{
+  padding:5px;
+}
+.card-body h5{
+  font-weight: 600;
+}
+.card-body .card-text p{
+  text-align: center;
+}
+.quarto-grid-item.card-center .listing-description {
+  text-align: center;
+}
