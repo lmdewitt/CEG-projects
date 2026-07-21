@@ -1,0 +1,10 @@
+---
+title: "References"
+subtitle: ""
+format: html
+---
+
+1. Hobday, A. J., Alexander, L. V., Perkins, S. E., Smale, D. A., Straub, S. C., Oliver, E. C., ... & Holbrook, N. J. (2016). A hierarchical approach to defining marine heatwaves. <em>Progress in Oceanography</em>, 141, 227-238.
+2. <b>Leising, A.</b> et al. (in review)
+3. <b>Jacox, M. G.</b>, <b>Hazen, E. L.</b>, Zaba, K. D., Rudnick, D. L., Edwards, C. A., Moore, A. M., & <b>Bograd, S. J.</b> (2016). Impacts of the 2015–2016 El Ni&#241;o on the California Current System: Early assessment and comparison to past events. <em>Geophysical Research Letters</em>, 43(13), 7072-7080.
+4. <b>Jacox, M. G.</b>, Alexander, M. A., Mantua, N. J., Scott, J. D., Hervieux, G., Webb, R. S., &amp; Werner, F. E. (2018). Forcing of multiyear extreme ocean temperatures that impacted California current living marine resources in 2016. <em>Bulletin of the American Meteorological Society</em>, 99(1), S27-S33.
