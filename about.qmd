@@ -1,5 +1,0 @@
----
-title: "About the Climate & Ecosystems Group"
-format: html
----
-

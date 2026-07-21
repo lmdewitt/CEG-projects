@@ -4,25 +4,11 @@ project:
 website: 
   page-navigation: true
   favicon: images/favicon.ico
-  back-to-top-navigation: true  
+  
   page-footer:
-    border: true
-    center:
-      - text: "Website Owner"
-        href: https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center
-      - text: "Contact"
-        href: https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center
-      - text: "NOAA"
-        href: https://www.noaa.gov/
-      - text: "Privacy Policy"
-        href: https://www.noaa.gov/privacy.html
-      - text: "Information Quality"
-        href: https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality
-      - text: "Disclaimer"
-        href: https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers
-    right:
-      - text: "<img src='/images/logos/doc_logo_black.gif' style='height: 50px; width: auto;'/>"
-        href: https://www.commerce.gov/
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-1.0"
+  
   navbar:
     title: "Climate & Ecosystems Group"
     background: $navbar-bg
@@ -36,30 +22,6 @@ website:
 
     style: "docked"
     search: true
-    left:
-      - text: "About"
-        href: about.qmd
-      - text: "People"
-        href: people.qmd
-  sidebar:
-    - style: "docked" 
-      contents:
-        - section: "Data"
-          contents:
-            - section: "Marine Heat Wave"
-              contents:
-                - text: "Latest Conditions"
-                  href: projects/mhw/latest.qmd
-                - text: "About"
-                  href:  projects/mhw/about.qmd
-                - text: "Previous Updates"
-                  href: projects/mhw/prev.qmd
-                - text: "Videos"
-                  href: projects/mhw/videos.qmd
-                - text: "Regional EEZ MHW"
-                  href: projects/mhw/regional_eez.qmd
-                - text: "References"
-                  href: projects/mhw/refs.qmd
 
 format:
   html:
@@ -71,12 +33,9 @@ format:
     link-external-newwindow: true
     toc: true
 
+
 filters:
   - include-files.lua
   - quarto
 
-language:
-  en:
-    listing-page-field-categories: "Collaborations" # Changes the sidebar & column header text
-    listing-page-category-all: "All Projects"  # Optional: Changes the "All" button text
   
