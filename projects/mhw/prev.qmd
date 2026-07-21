@@ -1,0 +1,63 @@
+---
+title: "Previous Updates"
+subtitle: ""
+format: html
+listing:
+  - id: "2025"
+    contents: "mhw_prev_2025.yml"
+    fields: [title,date,description]
+  - id: "2024"
+    contents: "mhw_prev_2024.yml"
+    fields: [title,date,description]
+  - id: "2023"
+    contents: "mhw_prev_2023.yml"
+    fields: [title,date,description]
+  - id: "2022"
+    contents: "mhw_prev_2022.yml"
+    fields: [title,date,description]
+  - id: "2021"
+    contents: "mhw_prev_2021.yml"
+    fields: [title,date,description]
+  - id: "2020"
+    contents: "mhw_prev_2020.yml"
+    fields: [title,date,description]
+  - id: "2019"
+    contents: "mhw_prev_2019.yml"
+    fields: [title,date,description]
+---
+
+## 2025
+
+:::{#2025}
+:::
+
+## 2024
+
+:::{#2024}
+:::
+
+## 2023
+
+:::{#2023}
+:::
+
+## 2022
+
+:::{#2022}
+:::
+
+## 2021
+
+:::{#2021}
+:::
+
+## 2020
+
+:::{#2020}
+:::
+
+## 2019
+
+:::{#2019}
+:::
+

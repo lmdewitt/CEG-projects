@@ -1,0 +1,41 @@
+---
+title: "Marine Heat Wave videos"
+subtitle: ""
+format: html
+listing:
+  id: videos_avi
+  contents: videos.yml
+  field-display-names:
+    title: "Year"
+    description: "Link"
+  type: table
+  sort-ui: false
+  filter-ui: false
+  page-size: 50
+---
+
+## 2024
+
+{{<video https://www.youtube.com/embed/U2nVnUmr5uw height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+## 2023
+{{<video https://www.youtube.com/embed/q2GADbAY-4c height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+## 2022
+{{<video https://www.youtube.com/embed/g8wZh2IbnCo height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+## 2021
+{{<video https://www.youtube.com/embed/plLRU41uEXA height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+## 2020
+{{<video https://www.youtube.com/embed/hreLz4eRBrY height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+## 2019
+{{<video https://www.youtube.com/embed/yqXIlFdjB0c height="320px" width="360px" rel="0" start="5" autoplay="0">}}
+
+# Downloads and Previous years
+
+::: {#videos_avi}
+:::
+
+
