@@ -2,42 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/index.html</loc>
-    <lastmod>2026-07-22T00:49:09.424Z</lastmod>
+    <lastmod>2026-07-24T00:28:42.669Z</lastmod>
   </url>
   <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/videos.html</loc>
-    <lastmod>2026-07-22T00:49:09.472Z</lastmod>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/GFNMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
   </url>
   <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/latest.html</loc>
-    <lastmod>2026-07-22T00:49:09.471Z</lastmod>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/DSNMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
   </url>
   <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/prev.html</loc>
-    <lastmod>2026-07-22T00:49:09.472Z</lastmod>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/OCNMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
   </url>
   <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/refs.html</loc>
-    <lastmod>2026-07-22T00:49:09.472Z</lastmod>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/overview.html</loc>
+    <lastmod>2026-07-24T00:28:43.523Z</lastmod>
   </url>
   <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/people.html</loc>
-    <lastmod>2026-07-22T00:49:09.424Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/regional_eez.html</loc>
-    <lastmod>2026-07-22T00:49:09.472Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/about.html</loc>
-    <lastmod>2026-07-22T00:49:09.425Z</lastmod>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/menu.ejs.html</loc>
+    <lastmod>2026-07-24T00:28:43.523Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/index.html</loc>
-    <lastmod>2026-07-22T00:49:09.471Z</lastmod>
+    <lastmod>2026-07-24T00:28:42.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/refs.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/regional_eez.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/about.html</loc>
-    <lastmod>2026-07-22T00:49:09.253Z</lastmod>
+    <lastmod>2026-07-24T00:28:42.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/about.html</loc>
+    <lastmod>2026-07-24T00:28:42.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/prev.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/videos.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/latest.html</loc>
+    <lastmod>2026-07-24T00:28:42.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/CBNMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/CINMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/calc.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/MBNMS.html</loc>
+    <lastmod>2026-07-24T00:28:42.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/people.html</loc>
+    <lastmod>2026-07-24T00:28:42.669Z</lastmod>
   </url>
 </urlset>
