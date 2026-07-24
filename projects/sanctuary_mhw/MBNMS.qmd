@@ -1,0 +1,22 @@
+---
+title: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
+format: html
+subtitle: "Monterey Bay National Marine Sanctuary - Mainland"
+page-layout: full
+listing:
+  - id: regions
+    contents: sanct_menu.yml
+    type: grid
+    categories: false
+    sort-ui: false
+    sort: false
+    filter-ui: false
+    image-height: 180px
+    grid-item-border: false
+    grid-item-align: center
+    grid-columns: 8
+    fields: [title,image]
+
+---
+
+

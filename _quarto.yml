@@ -60,12 +60,31 @@ website:
                   href: projects/mhw/regional_eez.qmd
                 - text: "References"
                   href: projects/mhw/refs.qmd
+            - section: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
+              contents:
+                - text: "Overview"
+                  href: projects/sanctuary_mhw/overview.qmd
+                - text: "Olympic Coast"
+                  href:  projects/sanctuary_mhw/OCNMS.qmd
+                - text: "Greater Farallones"
+                  href: projects/sanctuary_mhw/GFNMS.qmd
+                - text: "Cordell Bank"
+                  href: projects/sanctuary_mhw/CBNMS.qmd
+                - text: "Monterey Bay - Mainland"
+                  href: projects/sanctuary_mhw/MBNMS.qmd
+                - text: "Monterey Bay - Davidson Seamount"
+                  href: projects/sanctuary_mhw/DSNMS.qmd
+                - text: "Channel Islands"
+                  href: projects/sanctuary_mhw/CINMS.qmd
+                - text: "MHW Calculations"
+                  href: projects/sanctuary_mhw/calc.qmd
 
 format:
   html:
     theme:
       light: [cosmo, theme.scss] 
       dark: [cosmo, theme-dark.scss]
+    css: style.css
     code-copy: true
     code-overflow: wrap
     link-external-newwindow: true

@@ -1,0 +1,34 @@
+- title: Overview
+  name: ""
+  path: overview.qmd
+  image: images/Current_sanctuary_overivew_SSTa_MAP.png
+- title: Olympic Coast
+  name: OCNMS
+  path: OCNMS.qmd
+  image: images/OCNMS-Current_SSTa_MAP.png
+- title: Greater Farallones
+  name: GFNMS
+  path: GFNMS.qmd
+  image: images/GFNMS-Current_SSTa_MAP.png
+- title: Cordell Bank
+  name: CBNMS
+  path: CBNMS.qmd
+  image: images/CBNMS-Current_SSTa_MAP.png
+- title: Monterey Bay - Mainland
+  name: MBNMS
+  path: MBNMS.qmd
+  image: images/MBNMS-Current_SSTa_MAP.png
+- title: Monterey Bay - Davidson Seamount
+  name: DSNMS
+  path: DSNMS.qmd
+  image: images/DSNMS-Current_SSTa_MAP.png
+- title: Channel Islands
+  name: CINMS.qmd
+  path: CINMS
+  image: images/CINMS-Current_SSTa_MAP.png
+- title: MHW Calculations
+  name: ""
+  path: calc.qmd
+  image: images/how.png
+
+
