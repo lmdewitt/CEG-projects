@@ -1,22 +1,35 @@
 ---
 title: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
-format: html
+format:
+  html:
+    grid:
+      body-width: 1200px
 subtitle: "Monterey Bay National Marine Sanctuary - Davidson Seamount"
 page-layout: full
 listing:
   - id: regions
     contents: sanct_menu.yml
-    type: grid
-    categories: false
+    template: menu.ejs.md
     sort-ui: false
     sort: false
     filter-ui: false
-    image-height: 180px
-    grid-item-border: false
-    grid-item-align: center
-    grid-columns: 8
-    fields: [title,image]
+    page-size: 10
 
 ---
 
+```{=html}
+<style>
+.custom-card-container {
+  display: grid;
+  /* Automatically wraps cards when the center panel gets tighter */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .1rem;
+  width: 100%;
+}
+</style>
+```
 
+
+
+:::{#regions}
+:::

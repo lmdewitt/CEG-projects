@@ -5,7 +5,7 @@ main .level2 {
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
   transition: transform 0.2s ease;
 }
 
@@ -13,6 +13,13 @@ main .level2:hover {
   transform: translateY(-4px);
 }
 
+h2 {
+  border-bottom: 0;
+}
+a {
+  color: #0097d6;
+  text-decoration: none;
+}
 .icon {
   line-height: 1;
   margin-bottom: 0.6rem;
@@ -26,14 +33,27 @@ main .level2:hover {
 }
 .title {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.9;
   color: black;
 }
+.subtitle {
+  font-weight: 600;
+  text-align: center;  
+}
 .details {
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0.9;
-  line-height: 1.3;
+  line-height: 1.5;
   color: black;
 }
 
+.image {
+  line-height: 1;
+  margin-bottom: 0.6rem;
+  max-width: 50%;
+}
+.callout-title-container{
+  font-weight: 400;
+  font-style: italic;
+}

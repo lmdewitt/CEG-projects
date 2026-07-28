@@ -1,0 +1,9 @@
+- id: c1
+  title: Card 1
+  path: images/OCNMS_heatwave_days.png
+  categories: [OCNMS]
+- id: c2
+  title: Card 2
+  path: images/OCNMS-SSTa_vs_time_year.png
+  categories: [OCNMS]
+
