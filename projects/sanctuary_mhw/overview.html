@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -43,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-24be1a543c5bbece278a8a82b8c03b9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e667fe93d76204d12fe2a5d9c9d91b83.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-24be1a543c5bbece278a8a82b8c03b9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-a96726b77f8de87ae85b340ef4a239f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,9 +91,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-filters','listing-language','listing-engines','listing-title','listing-subtitle','listing-page-layout','listing-listing','listing-path','listing-outputHref','listing-author','listing-image','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-filters','listing-language','listing-engine','listing-engines','listing-title','listing-subtitle','listing-page-layout','listing-listing','listing-path','listing-outputHref','listing-author','listing-image','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-filters","listing-language","listing-engines","listing-title","listing-subtitle","listing-page-layout","listing-listing","listing-path","listing-outputHref","listing-author","listing-image","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-name"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-filters","listing-language","listing-engine","listing-engines","listing-title","listing-subtitle","listing-page-layout","listing-listing","listing-path","listing-outputHref","listing-author","listing-image","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-name"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -109,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -486,6 +489,7 @@ window.Quarto = {
   <ul>
   <li><a href="#what-is-a-marine-heatwave-mhw" id="toc-what-is-a-marine-heatwave-mhw" class="nav-link active" data-scroll-target="#what-is-a-marine-heatwave-mhw">What is a marine heatwave (MHW)?</a></li>
   <li><a href="#have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" id="toc-have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" class="nav-link" data-scroll-target="#have-west-coast-sanctuaries-experienced-marine-heatwaves-recently">Have West Coast Sanctuaries experienced marine heatwaves recently?</a></li>
+  <li><a href="#why-do-we-care-about-marine-heatwaves" id="toc-why-do-we-care-about-marine-heatwaves" class="nav-link" data-scroll-target="#why-do-we-care-about-marine-heatwaves">Why do we care about marine heatwaves?</a></li>
   </ul>
 </nav>
     </div>
@@ -525,60 +529,60 @@ window.Quarto = {
 <div id="listing-regions" class="quarto-listing quarto-listing-container-custom">
 <div class="custom-card-container list">
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0">
-    <a href="">
-      <img src="images/CINMS-Current_SSTa_MAP.png" alt="Channel Islands  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785258067607" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
+    <a href="../../projects/sanctuary_mhw/overview.html">
+      <img src="images/Current_sanctuary_overivew_SSTa_MAP.png" alt="Overview  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Channel Islands</h6>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Overview</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
-      <img src="images/CBNMS-Current_SSTa_MAP.png" alt="Cordell Bank  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
-    </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Cordell Bank</h6>
-  </div>
-
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
-      <img src="images/GFNMS-Current_SSTa_MAP.png" alt="Greater Farallones  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
-    </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Greater Farallones</h6>
-  </div>
-
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
-      <img src="images/how.png" alt="MHW Calculations  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
-    </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">MHW Calculations</h6>
-  </div>
-
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
-      <img src="images/DSNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Davidson Seamount  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
-    </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Davidson Seamount</h6>
-  </div>
-
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
-      <img src="images/MBNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Mainland  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
-    </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Mainland</h6>
-  </div>
-
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="6" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/OCNMS.html">
       <img src="images/OCNMS-Current_SSTa_MAP.png" alt="Olympic Coast  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Olympic Coast</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1784852923523" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
-    <a href="">
-      <img src="images/Current_sanctuary_overivew_SSTa_MAP.png" alt="Overview  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/GFNMS.html">
+      <img src="images/GFNMS-Current_SSTa_MAP.png" alt="Greater Farallones  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
-    <h6 class="card-title anchored" style="margin-top:.5rem;">Overview</h6>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Greater Farallones</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785258066951" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/CBNMS.html">
+      <img src="images/CBNMS-Current_SSTa_MAP.png" alt="Cordell Bank  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Cordell Bank</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/MBNMS.html">
+      <img src="images/MBNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Mainland  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Mainland</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/DSNMS.html">
+      <img src="images/DSNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Davidson Seamount  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Davidson Seamount</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="6">
+    <a href="CINMS">
+      <img src="images/CINMS-Current_SSTa_MAP.png" alt="Channel Islands  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Channel Islands</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/calc.html">
+      <img src="images/how.png" alt="MHW Calculations  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">MHW Calculations</h6>
   </div>
 
 </div>
@@ -587,30 +591,57 @@ window.Quarto = {
 </div>
 <section id="what-is-a-marine-heatwave-mhw" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-marine-heatwave-mhw">What is a marine heatwave (MHW)?</h2>
-<div class="details">
-<p>
 In the last decade, incidents of unusually high ocean temperatures have occurred off the west coast of the United States, commonly referred to as marine heatwaves, or MHWs. A marine heatwaves is specifically defined by how different the observed temperature is from what is typical for a certain location at a specific time of year. Although marine heatwaves can occur at any water depth, one of the most common ways that scientists measure the ocean’s temperature, and study marine heatwaves, is at the <a href="https://oceanservice.noaa.gov/facts/sea-surface-temperature.html" target="_blank" alt="definition of sea surface">sea surface</a>.
-</p>
+<p></p>
 <p>
 The maps above show whether the sea surface was recently observed to be warmer (red) or cooler (blue) than it typically is for that time of year in and around each of the west coast national marine sanctuaries (boundaries shown in dark blue). If an area is a warm color and surrounded by a solid black line, then that area was identified as a heatwave event. These maps are updated periodically, with the last update occurring on month/day/year.
 </p>
 <p>
-You can explore more information about the timing, size and intensity of recent marine heatwaves in each of the west coast sanctuaries, as well as compare recent patterns to those observed over the last four decades, by clicking on the sanctuary names and maps above. Learn how we identify marine heatwaves and make various calculations on the <a href="javascript:void(0)" onclick="javascript:window.location.assign(window.location.pathname.replace('overview','how'));" title="Jump to MHW Calculations section" alt="Jump to MHW Calculations section">MHW Calculations</a> page
-</p>
-</div>
+</p><p>You can explore more information about the timing, size and intensity of recent marine heatwaves in each of the west coast sanctuaries, as well as compare recent patterns to those observed over the last four decades, by clicking on the sanctuary names and maps above. Learn how we identify marine heatwaves and make various calculations on the <a href="javascript:void(0)" onclick="javascript:window.location.assign(window.location.pathname.replace('overview','how'));" title="Jump to MHW Calculations section" alt="Jump to MHW Calculations section">MHW Calculations</a> page</p>
 </section>
 <section id="have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" class="level2">
 <h2 class="anchored" data-anchor-id="have-west-coast-sanctuaries-experienced-marine-heatwaves-recently">Have West Coast Sanctuaries experienced marine heatwaves recently?</h2>
-<div class="icon">
-<p><img src="images/Sanctuary_regions_map.jpg" class="img-fluid" style="&quot;max-width:54vw"></p>
+<div class="quarto-layout-panel" data-layout="[[27,73],[100]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 27.0%;justify-content: center;">
+<p><img src="images/Sanctuary_regions_map.jpg" class="img-fluid" style="width:100%"></p>
 </div>
-<div class="icon">
-<div class="quarto-figure quarto-figure-center" style="&quot;width:1200px">
-<figure class="figure">
-<p><img src="images/All_regions_heatwave_days_22-23vert.png" class="img-fluid figure-img"></p>
-<figcaption>The timing and length of marine heatwave events in west coast sanctuaries is shown for the most recent 365 days. Each day that a portion of the sanctuary was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. How often and how long MHWs were present was quite variable over the last year. Each day that a sanctuary was classified as in ‘heatwave’ status over the past year is shown for each sanctuary with the total number of days noted on the far right column. Click here to see how this graph was calculated</figcaption>
-</figure>
+<div class="quarto-layout-cell" style="flex-basis: 73.0%;justify-content: center;">
+<p><img src="images/All_regions_heatwave_days_22-23vert.png" class="img-fluid" style="width:100%"></p>
 </div>
+</div>
+<div class="quarto-layout-row">
+<div class="details quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>The timing and length of marine heatwave events in west coast sanctuaries is shown for the current and previous year. Each day that any portion of the sanctuary was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black line shows the most recent day.</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Heatwave occurrence vs day of year</strong> = on each day of the year for a particular year, if one or more grid cells within a sanctuary area was in heatwave status, then a red square is added to the graph for that sanctuary area on that day. The total number of heatwave days (red squares) in that year is noted in the far right column. For the current year, this graph is updated weekly, the total days is cumulative up to the most recent day, and the most recent day is shown by a black dot. This indicator provides information on when a sanctuary area was influenced by heatwaves recently, and is a way to compare this across sanctuary areas.</p>
+<p>see the MHW Calculations page for more information</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="why-do-we-care-about-marine-heatwaves" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-care-about-marine-heatwaves">Why do we care about marine heatwaves?</h2>
+<div class="details">
+<p>Scientists are still assessing the influence of marine heatwaves on ocean ecosystems and coastal communities. During past marine heatwaves, some large fish, such as sharks and swordfish, have been observed traveling further north as their warm water habitat expands. The abundance of prey species, such as anchovy and sardine, can change dramatically and influence conditions for their predators, including sea lions, seabirds, whales, as well as fishing activities. Marine heatwaves have been linked to dramatic declines in large kelp and associated kelp forest species in areas along the California coast. Tracking the size, duration and intensity of marine heatwaves in sanctuaries can help us to better characterize these important events and to understand their impacts on sanctuary ecosystems and coastal communities.</p>
 </div>
 
 

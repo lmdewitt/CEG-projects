@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -43,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2d1a2ce8e355008d796319cb9f1e10e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-87e46e82728445defd8c36106061584f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-2d1a2ce8e355008d796319cb9f1e10e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-a96726b77f8de87ae85b340ef4a239f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,9 +91,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-filters','listing-language','listing-engine','listing-engines','listing-title','listing-subtitle','listing-page-layout','listing-listing','listing-path','listing-outputHref','listing-author','listing-image','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-filters","listing-language","listing-engine","listing-engines","listing-title","listing-subtitle","listing-page-layout","listing-listing","listing-path","listing-outputHref","listing-author","listing-image","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-name"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -106,10 +109,38 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-content .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-id','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-id","listing-title","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-content'] = new List('listing-content', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -506,119 +537,100 @@ window.Quarto = {
 </header>
 
 
+<style>
+.custom-card-container {
+  display: grid;
+  /* Automatically wraps cards when the center panel gets tighter */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .1rem;
+  width: 100%;
+}
+</style>
+<div id="listing-regions" class="quarto-listing quarto-listing-container-custom">
+<div class="custom-card-container list">
 
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785258067607" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
+    <a href="../../projects/sanctuary_mhw/overview.html">
+      <img src="images/Current_sanctuary_overivew_SSTa_MAP.png" alt="Overview  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Overview</h6>
+  </div>
 
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/OCNMS.html">
+      <img src="images/OCNMS-Current_SSTa_MAP.png" alt="Olympic Coast  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Olympic Coast</h6>
+  </div>
 
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/GFNMS.html">
+      <img src="images/GFNMS-Current_SSTa_MAP.png" alt="Greater Farallones  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Greater Farallones</h6>
+  </div>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-regions">
-<div class="list grid quarto-listing-cols-8">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1784852923523" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
-<a href="../../projects/sanctuary_mhw/overview.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/Current_sanctuary_overivew_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Overview
-</h5>
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785258066951" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/CBNMS.html">
+      <img src="images/CBNMS-Current_SSTa_MAP.png" alt="Cordell Bank  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Cordell Bank</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/MBNMS.html">
+      <img src="images/MBNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Mainland  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Mainland</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/DSNMS.html">
+      <img src="images/DSNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Davidson Seamount  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Davidson Seamount</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="6">
+    <a href="CINMS">
+      <img src="images/CINMS-Current_SSTa_MAP.png" alt="Channel Islands  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">Channel Islands</h6>
+  </div>
+
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+    <a href="../../projects/sanctuary_mhw/calc.html">
+      <img src="images/how.png" alt="MHW Calculations  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
+    </a>
+    <h6 class="card-title anchored" style="margin-top:.5rem;">MHW Calculations</h6>
+  </div>
+
 </div>
-</div></a>
+
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/OCNMS.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/OCNMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Olympic Coast
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/GFNMS.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/GFNMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Greater Farallones
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/CBNMS.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/CBNMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Cordell Bank
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/MBNMS.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/MBNMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Monterey Bay - Mainland
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/DSNMS.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/DSNMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Monterey Bay - Davidson Seamount
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6">
-<a href="CINMS" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/CINMS-Current_SSTa_MAP.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Channel Islands
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1784852922718" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../../projects/sanctuary_mhw/calc.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img loading="lazy" src="images/how.png" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MHW Calculations
-</h5>
-</div>
-</div></a>
-</div>
+<div id="listing-content" class="quarto-listing quarto-listing-container-custom">
+
+<section id="ocnms" class="level2">
+<h2 class="anchored" data-anchor-id="ocnms">OCNMS</h2>
+<div class="details">
+<ul>
+      <li>
+        Card 1
+      </li>
+      <li>
+        Card 2
+      </li>
+</ul>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</section>
+</div>
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
