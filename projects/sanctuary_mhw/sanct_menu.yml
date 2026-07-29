@@ -23,8 +23,8 @@
   path: DSNMS.qmd
   image: images/DSNMS-Current_SSTa_MAP.png
 - title: Channel Islands
-  name: CINMS.qmd
-  path: CINMS
+  name: CINMS
+  path: CINMS.qmd
   image: images/CINMS-Current_SSTa_MAP.png
 - title: MHW Calculations
   name: ""

@@ -4,7 +4,7 @@ project:
 website: 
   page-navigation: true
   favicon: images/favicon.ico
-  back-to-top-navigation: true  
+  back-to-top-navigation: true
   page-footer:
     border: true
     center:
@@ -37,6 +37,8 @@ website:
     style: "docked"
     search: true
     left:
+      - text: "Home"
+        href: index.qmd
       - text: "About"
         href: about.qmd
       - text: "People"
@@ -81,6 +83,7 @@ website:
 
 format:
   html:
+    backgroundcolor: "#fdfdfd"
     theme:
       light: [cosmo, theme.scss] 
       dark: [cosmo, theme-dark.scss]

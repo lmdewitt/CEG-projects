@@ -53,9 +53,8 @@ See the [MHW Calculations](calc.qmd) page for more information
 :::
 ::: {.callout-note title="How was this information calculated?" collapse="true"}
 **Movie of daily temperature anomaly** =  Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\
-See the [MHW Calculations](calc.qmd) page for more information
+See the [MHW Calculations](calc.qmd) page for more information.\
 :::
-
 
 :::
 
