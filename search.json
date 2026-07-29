@@ -11,7 +11,85 @@
     "href": "projects/sanctuary_mhw/GFNMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
     "section": "",
-    "text": "Overview\n  \n\n  \n    \n      \n    \n    Olympic Coast\n  \n\n  \n    \n      \n    \n    Greater Farallones\n  \n\n  \n    \n      \n    \n    Cordell Bank\n  \n\n  \n    \n      \n    \n    Monterey Bay - Mainland\n  \n\n  \n    \n      \n    \n    Monterey Bay - Davidson Seamount\n  \n\n  \n    \n      \n    \n    Channel Islands\n  \n\n  \n    \n      \n    \n    MHW Calculations\n  \n\n\n\nNo matching items\n\n\n\n\n\n Back to top",
+    "text": "No matching items",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/GFNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        GFNMS/SST-GFNMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        GFNMS/SST-GFNMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        GFNMS/SST-GFNMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        GFNMS/SST-GFNMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/GFNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/GFNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/GFNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/GFNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Greater Farallones"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/GFNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/GFNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",
@@ -24,7 +102,85 @@
     "href": "projects/sanctuary_mhw/DSNMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
     "section": "",
-    "text": "Overview\n  \n\n  \n    \n      \n    \n    Olympic Coast\n  \n\n  \n    \n      \n    \n    Greater Farallones\n  \n\n  \n    \n      \n    \n    Cordell Bank\n  \n\n  \n    \n      \n    \n    Monterey Bay - Mainland\n  \n\n  \n    \n      \n    \n    Monterey Bay - Davidson Seamount\n  \n\n  \n    \n      \n    \n    Channel Islands\n  \n\n  \n    \n      \n    \n    MHW Calculations\n  \n\n\n\nNo matching items\n\n\n\n\n\n Back to top",
+    "text": "No matching items",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/DSNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        DSNMS/SST-DSNMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        DSNMS/SST-DSNMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        DSNMS/SST-DSNMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        DSNMS/SST-DSNMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/DSNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/DSNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/DSNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/DSNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Davidson Seamount"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/DSNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/DSNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",
@@ -37,21 +193,134 @@
     "href": "projects/sanctuary_mhw/content.ejs.html",
     "title": "",
     "section": "",
-    "text": "&lt;%= newitems['c1'].title %&gt;\n      \n      \n        &lt;%= newitems['c2'].title %&gt;"
+    "text": "&lt;%= newitems[‘c0’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c1’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c2’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  &lt;% \n    for (let i = vidStart; i &lt; vidEnd +1; i++) { \n  %&gt;\n    \n      \n        &lt;%= region %&gt;/SST-&lt;%= region %&gt;-Sanctuary-&lt;%= i %&gt;.mp4\n      \n    \n  &lt;% } %&gt;\n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n\n\n&lt;%= newitems[‘c3’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c4’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c5’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n\n\n\n\n&lt;%= newitems[‘c6’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n\n\n\n\n&lt;%= newitems[‘c7’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n\n\n\n\n&lt;%= newitems[‘c8’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n\n\n&lt;%= newitems[‘c9’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information"
   },
   {
-    "objectID": "projects/sanctuary_mhw/content.ejs.html#targetcategory",
-    "href": "projects/sanctuary_mhw/content.ejs.html#targetcategory",
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc0.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc0.title",
     "title": "",
     "section": "",
-    "text": "&lt;%= newitems['c1'].title %&gt;\n      \n      \n        &lt;%= newitems['c2'].title %&gt;"
+    "text": "&lt;%= newitems[‘c0’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c1’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c2’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  &lt;% \n    for (let i = vidStart; i &lt; vidEnd +1; i++) { \n  %&gt;\n    \n      \n        &lt;%= region %&gt;/SST-&lt;%= region %&gt;-Sanctuary-&lt;%= i %&gt;.mp4\n      \n    \n  &lt;% } %&gt;\n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information"
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc3.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc3.title",
+    "title": "",
+    "section": "",
+    "text": "&lt;%= newitems[‘c3’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c4’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\n\n\n\n&lt;%= newitems[‘c5’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information"
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc6.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc6.title",
+    "title": "",
+    "section": "",
+    "text": "&lt;%= newitems[‘c6’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information"
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc7.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc7.title",
+    "title": "",
+    "section": "",
+    "text": "&lt;%= newitems[‘c7’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information"
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc8.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc8.title",
+    "title": "",
+    "section": "",
+    "text": "&lt;%= newitems[‘c8’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information"
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/content.ejs.html#newitemsc9.title",
+    "href": "projects/sanctuary_mhw/content.ejs.html#newitemsc9.title",
+    "title": "",
+    "section": "",
+    "text": "&lt;%= newitems[‘c9’].imgcap %&gt;\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information"
   },
   {
     "objectID": "projects/sanctuary_mhw/CINMS.html",
     "href": "projects/sanctuary_mhw/CINMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
     "section": "",
-    "text": "Overview\n  \n\n  \n    \n      \n    \n    Olympic Coast\n  \n\n  \n    \n      \n    \n    Greater Farallones\n  \n\n  \n    \n      \n    \n    Cordell Bank\n  \n\n  \n    \n      \n    \n    Monterey Bay - Mainland\n  \n\n  \n    \n      \n    \n    Monterey Bay - Davidson Seamount\n  \n\n  \n    \n      \n    \n    Channel Islands\n  \n\n  \n    \n      \n    \n    MHW Calculations\n  \n\n\n\nNo matching items\n\n\n\n\n\n Back to top",
+    "text": "No matching items",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/CINMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        CINMS/SST-CINMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        CINMS/SST-CINMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        CINMS/SST-CINMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        CINMS/SST-CINMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/CINMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/CINMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/CINMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/CINMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Channel Islands"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CINMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/CINMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",
@@ -64,7 +333,85 @@
     "href": "projects/sanctuary_mhw/CBNMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
     "section": "",
-    "text": "Overview\n  \n\n  \n    \n      \n    \n    Olympic Coast\n  \n\n  \n    \n      \n    \n    Greater Farallones\n  \n\n  \n    \n      \n    \n    Cordell Bank\n  \n\n  \n    \n      \n    \n    Monterey Bay - Mainland\n  \n\n  \n    \n      \n    \n    Monterey Bay - Davidson Seamount\n  \n\n  \n    \n      \n    \n    Channel Islands\n  \n\n  \n    \n      \n    \n    MHW Calculations\n  \n\n\n\nNo matching items\n\n\n\n\n\n Back to top",
+    "text": "No matching items",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/CBNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        CBNMS/SST-CBNMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        CBNMS/SST-CBNMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        CBNMS/SST-CBNMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        CBNMS/SST-CBNMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/CBNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/CBNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/CBNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/CBNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Cordell Bank"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/CBNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/CBNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",
@@ -536,11 +883,76 @@
     ]
   },
   {
-    "objectID": "projects/sanctuary_mhw/OCNMS.html#ocnms",
-    "href": "projects/sanctuary_mhw/OCNMS.html#ocnms",
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/OCNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
-    "section": "OCNMS",
-    "text": "OCNMS\n\n\n      \n        Card 1\n      \n      \n        Card 2\n      \n\n\nNo matching items",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        OCNMS/SST-OCNMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        OCNMS/SST-OCNMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        OCNMS/SST-OCNMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        OCNMS/SST-OCNMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Olympic Coast"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/OCNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Olympic Coast"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/OCNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Olympic Coast"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/OCNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Olympic Coast"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/OCNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Olympic Coast"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/OCNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/OCNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",
@@ -566,7 +978,85 @@
     "href": "projects/sanctuary_mhw/MBNMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
     "section": "",
-    "text": "Overview\n  \n\n  \n    \n      \n    \n    Olympic Coast\n  \n\n  \n    \n      \n    \n    Greater Farallones\n  \n\n  \n    \n      \n    \n    Cordell Bank\n  \n\n  \n    \n      \n    \n    Monterey Bay - Mainland\n  \n\n  \n    \n      \n    \n    Monterey Bay - Davidson Seamount\n  \n\n  \n    \n      \n    \n    Channel Islands\n  \n\n  \n    \n      \n    \n    MHW Calculations\n  \n\n\n\nNo matching items\n\n\n\n\n\n Back to top",
+    "text": "No matching items",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "href": "projects/sanctuary_mhw/MBNMS.html#have-marine-heatwaves-occurred-recently-in-the-sanctuary",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Have marine heatwaves occurred recently in the Sanctuary?",
+    "text": "Have marine heatwaves occurred recently in the Sanctuary?\n\n\n\nThis map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of daily temperature anomaly = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.\nSee the MHW Calculations page for more information\n\n\n\n\nWhere have heatwaves occurred most often so far this year?\n\n\n\n\nThis map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMap of days in heatwave status = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information\n\n\n\n\nWhen and where did we see heatwaves in the region last year?\n\n\n\nVideo\nPlay this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.\n\n\n\n\n\n\n\n\nNoteVideo files available for download\n\n\n\n\n\n\n  \n    \n      \n        MBNMS/SST-MBNMS-Sanctuary-2022.mp4\n      \n    \n  \n    \n      \n        MBNMS/SST-MBNMS-Sanctuary-2023.mp4\n      \n    \n  \n    \n      \n        MBNMS/SST-MBNMS-Sanctuary-2024.mp4\n      \n    \n  \n    \n      \n        MBNMS/SST-MBNMS-Sanctuary-2025.mp4\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nMovie of daily temperature anomaly = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "href": "projects/sanctuary_mhw/MBNMS.html#how-strong-were-heatwaves-in-the-sanctuary-region",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "How strong were heatwaves in the sanctuary region?",
+    "text": "How strong were heatwaves in the sanctuary region?\n\n\n\nA red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily Regional Difference from Average = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.\nSee the MHW Calculations page for more information\n\n\n\n\nHow large were heatwaves in the sanctuary region?\n\n\n\n\nA black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nDaily % Heatwave Cover = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.\nSee the MHW Calculations page for more information\n\n\n\n\nIs more heat accumulating in the sanctuary compared to a typical year?\n\n\n\n\nThe red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAnnual Cumulative Heat = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "href": "projects/sanctuary_mhw/MBNMS.html#where-did-heatwaves-occur-in-the-past-12-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Where did heatwaves occur in the past 12 years?",
+    "text": "Where did heatwaves occur in the past 12 years?\n\n\n\nThe location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nEach map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "href": "projects/sanctuary_mhw/MBNMS.html#when-and-how-often-did-heatwaves-occur-in-the-past-20-years",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "When and how often did heatwaves occur in the past 20 years?",
+    "text": "When and how often did heatwaves occur in the past 20 years?\n\n\n\nThe timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nHeatwave occurrence vs day of year = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/MBNMS.html#were-heatwaves-larger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves larger recently than in the past?",
+    "text": "Were heatwaves larger recently than in the past?\n\n\n\nThe black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage % heatwave cover by year = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
+    "crumbs": [
+      "About",
+      "Data",
+      "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+      "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/sanctuary_mhw/MBNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "href": "projects/sanctuary_mhw/MBNMS.html#were-heatwaves-stronger-recently-than-in-the-past",
+    "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
+    "section": "Were heatwaves stronger recently than in the past?",
+    "text": "Were heatwaves stronger recently than in the past?\n\n\n\nThe red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.\n\n\n\n\n\n\n\n\nNoteHow was this information calculated?\n\n\n\n\n\nAverage heatwave intensity by year = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.\nSee the MHW Calculations page for more information",
     "crumbs": [
       "About",
       "Data",

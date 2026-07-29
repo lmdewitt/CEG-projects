@@ -109,6 +109,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-content .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-id','listing-title','listing-img','listing-imgcap','listing-calc',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-id","listing-title","listing-img","listing-imgcap","listing-calc"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-content'] = new List('listing-content', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -516,47 +544,49 @@ window.Quarto = {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: .1rem;
   width: 100%;
+  font-style: italic;
+  font-weight: 600;
 }
 </style>
 <div id="listing-regions" class="quarto-listing quarto-listing-container-custom">
 <div class="custom-card-container list">
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785258067607" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785284878373" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
     <a href="../../projects/sanctuary_mhw/overview.html">
       <img src="images/Current_sanctuary_overivew_SSTa_MAP.png" alt="Overview  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Overview</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/OCNMS.html">
       <img src="images/OCNMS-Current_SSTa_MAP.png" alt="Olympic Coast  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Olympic Coast</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/GFNMS.html">
       <img src="images/GFNMS-Current_SSTa_MAP.png" alt="Greater Farallones  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Greater Farallones</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785258066951" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/CBNMS.html">
       <img src="images/CBNMS-Current_SSTa_MAP.png" alt="Cordell Bank  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Cordell Bank</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/MBNMS.html">
       <img src="images/MBNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Mainland  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Mainland</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/DSNMS.html">
       <img src="images/DSNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Davidson Seamount  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
@@ -570,7 +600,7 @@ window.Quarto = {
     <h6 class="card-title anchored" style="margin-top:.5rem;">Channel Islands</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785258066952" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
     <a href="../../projects/sanctuary_mhw/calc.html">
       <img src="images/how.png" alt="MHW Calculations  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
@@ -579,6 +609,322 @@ window.Quarto = {
 
 </div>
 
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div id="listing-content" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-layout-panel" data-layout="[[32,68],[100],[100],[50,50]]">
+<div class="quarto-layout-row">
+<section id="have-marine-heatwaves-occurred-recently-in-the-sanctuary" class="level2 quarto-layout-cell" data-layout-row="3" style="flex-basis: 32.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="have-marine-heatwaves-occurred-recently-in-the-sanctuary">Have marine heatwaves occurred recently in the Sanctuary?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS-Current_SSTa_MAP.png" class="img-fluid figure-img"></p>
+<figcaption>This map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Map of daily temperature anomaly</strong> = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+<h2 class="anchored">
+Where have heatwaves occurred most often so far this year?
+</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS_HW_days_current-2026.png" class="img-fluid figure-img"></p>
+<figcaption>This map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Map of days in heatwave status</strong> = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+<h2 class="anchored">
+When and where did we see heatwaves in the region last year?
+</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><video src="images/videos/MBNMS/SST-MBNMS-Sanctuary-2025.mp4" class="img-fluid" controls=""><a href="images/videos/MBNMS/SST-MBNMS-Sanctuary-2025.mp4">Video</a></video></p>
+<figcaption>Play this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Video files available for download">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Video files available for download
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+  
+    <li>
+      <a href="images/videos/MBNMS/SST-MBNMS-Sanctuary-2022.mp4" target="_blank">
+        MBNMS/SST-MBNMS-Sanctuary-2022.mp4
+      </a>
+    </li>
+  
+    <li>
+      <a href="images/videos/MBNMS/SST-MBNMS-Sanctuary-2023.mp4" target="_blank">
+        MBNMS/SST-MBNMS-Sanctuary-2023.mp4
+      </a>
+    </li>
+  
+    <li>
+      <a href="images/videos/MBNMS/SST-MBNMS-Sanctuary-2024.mp4" target="_blank">
+        MBNMS/SST-MBNMS-Sanctuary-2024.mp4
+      </a>
+    </li>
+  
+    <li>
+      <a href="images/videos/MBNMS/SST-MBNMS-Sanctuary-2025.mp4" target="_blank">
+        MBNMS/SST-MBNMS-Sanctuary-2025.mp4
+      </a>
+    </li>
+  
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Movie of daily temperature anomaly</strong> = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-strong-were-heatwaves-in-the-sanctuary-region" class="level2 quarto-layout-cell" data-layout-row="3" style="flex-basis: 68.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="how-strong-were-heatwaves-in-the-sanctuary-region">How strong were heatwaves in the sanctuary region?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS-SSTa_vs_time_10yr.png" class="img-fluid figure-img"></p>
+<figcaption>A red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Daily Regional Difference from Average</strong> = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+<h2 class="anchored">
+How large were heatwaves in the sanctuary region?
+</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS-HWcover_vs_time_10yr.png" class="img-fluid figure-img"></p>
+<figcaption>A black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Daily % Heatwave Cover</strong> = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+<h2 class="anchored">
+Is more heat accumulating in the sanctuary compared to a typical year?
+</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS-CumHeat_vs_time_10yr.png" class="img-fluid figure-img"></p>
+<figcaption>The red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st. This graph shows information for the past 10 years and is updated weekly.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Annual Cumulative Heat</strong> = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="quarto-layout-row">
+<section id="where-did-heatwaves-occur-in-the-past-12-years" class="level2 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="where-did-heatwaves-occur-in-the-past-12-years">Where did heatwaves occur in the past 12 years?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS_HW_days-2025.png" class="img-fluid figure-img"></p>
+<figcaption>The location and frequency of marine heatwaves are shown for each of the last 12 years. The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Each map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="quarto-layout-row">
+<section id="when-and-how-often-did-heatwaves-occur-in-the-past-20-years" class="level2 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="when-and-how-often-did-heatwaves-occur-in-the-past-20-years">When and how often did heatwaves occur in the past 20 years?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS_heatwave_days.png" class="img-fluid figure-img"></p>
+<figcaption>The timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Heatwave occurrence vs day of year</strong> = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="quarto-layout-row">
+<section id="were-heatwaves-larger-recently-than-in-the-past" class="level2 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="were-heatwaves-larger-recently-than-in-the-past">Were heatwaves larger recently than in the past?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS_ave_cover_by_year.png" class="img-fluid figure-img"></p>
+<figcaption>The black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Average % heatwave cover by year</strong> = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+<section id="were-heatwaves-stronger-recently-than-in-the-past" class="level2 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="were-heatwaves-stronger-recently-than-in-the-past">Were heatwaves stronger recently than in the past?</h2>
+<div class="quarto-figure quarto-figure-center" style="width:100%">
+<figure class="figure">
+<p><img src="images/MBNMS_ave_intensity_by_year.png" class="img-fluid figure-img"></p>
+<figcaption>The red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="How was this information calculated?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How was this information calculated?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Average heatwave intensity by year</strong> = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.<br>
+See the <a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a> page for more information</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
