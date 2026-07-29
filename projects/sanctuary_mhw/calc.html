@@ -50,9 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-a96726b77f8de87ae85b340ef4a239f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-cb3c04c72be1e057d3c675a77477715d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-56bab880c8ee09557fcb2f97a9ba54bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -327,6 +327,10 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -481,11 +485,32 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#calculating-heatwaves" id="toc-calculating-heatwaves" class="nav-link active" data-scroll-target="#calculating-heatwaves">Calculating heatwaves</a></li>
+  <li><a href="#tracking-heatwaves-in-west-coast-region-national-marine-sanctuaries" id="toc-tracking-heatwaves-in-west-coast-region-national-marine-sanctuaries" class="nav-link" data-scroll-target="#tracking-heatwaves-in-west-coast-region-national-marine-sanctuaries">Tracking heatwaves in West Coast Region National Marine Sanctuaries</a></li>
+  <li><a href="#how-was-each-figure-calculated" id="toc-how-was-each-figure-calculated" class="nav-link" data-scroll-target="#how-was-each-figure-calculated">How was each figure calculated?</a>
+  <ul class="collapse">
+  <li><a href="#have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" id="toc-have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" class="nav-link" data-scroll-target="#have-west-coast-sanctuaries-experienced-marine-heatwaves-recently">Have West Coast Sanctuaries experienced marine heatwaves recently?</a></li>
+  <li><a href="#where-have-heatwaves-occurred-most-often-so-far-this-year" id="toc-where-have-heatwaves-occurred-most-often-so-far-this-year" class="nav-link" data-scroll-target="#where-have-heatwaves-occurred-most-often-so-far-this-year">Where have heatwaves occurred most often so far this year</a></li>
+  <li><a href="#when-and-where-did-we-see-heatwaves-during-year" id="toc-when-and-where-did-we-see-heatwaves-during-year" class="nav-link" data-scroll-target="#when-and-where-did-we-see-heatwaves-during-year">When and where did we see heatwaves during year</a></li>
+  <li><a href="#how-strong-were-heatwaves-in-the-sanctuary-region" id="toc-how-strong-were-heatwaves-in-the-sanctuary-region" class="nav-link" data-scroll-target="#how-strong-were-heatwaves-in-the-sanctuary-region">How strong were heatwaves in the sanctuary region</a></li>
+  <li><a href="#how-large-were-heatwaves-in-the-sanctuary-region" id="toc-how-large-were-heatwaves-in-the-sanctuary-region" class="nav-link" data-scroll-target="#how-large-were-heatwaves-in-the-sanctuary-region">How large were heatwaves in the sanctuary region</a></li>
+  <li><a href="#is-more-heat-accumulating-in-the-sanctuary-compared-to-a-typical-year" id="toc-is-more-heat-accumulating-in-the-sanctuary-compared-to-a-typical-year" class="nav-link" data-scroll-target="#is-more-heat-accumulating-in-the-sanctuary-compared-to-a-typical-year">Is more heat accumulating in the sanctuary compared to a typical year</a></li>
+  <li><a href="#where-did-heatwaves-occur-in-the-last-12-years" id="toc-where-did-heatwaves-occur-in-the-last-12-years" class="nav-link" data-scroll-target="#where-did-heatwaves-occur-in-the-last-12-years">Where did heatwaves occur in the last 12 years</a></li>
+  <li><a href="#when-and-how-often-did-heatwaves-occur-in-the-past-20-years" id="toc-when-and-how-often-did-heatwaves-occur-in-the-past-20-years" class="nav-link" data-scroll-target="#when-and-how-often-did-heatwaves-occur-in-the-past-20-years">When and how often did heatwaves occur in the past 20 years</a></li>
+  <li><a href="#were-heatwaves-larger-recently-than-in-the-past" id="toc-were-heatwaves-larger-recently-than-in-the-past" class="nav-link" data-scroll-target="#were-heatwaves-larger-recently-than-in-the-past">Were heatwaves larger recently than in the past</a></li>
+  <li><a href="#were-heatwaves-stronger-recently-than-in-the-past" id="toc-were-heatwaves-stronger-recently-than-in-the-past" class="nav-link" data-scroll-target="#were-heatwaves-stronger-recently-than-in-the-past">Were heatwaves stronger recently than in the past</a></li>
+  <li><a href="#have-marine-heatwaves-occurred-recently-in-the-sanctuary" id="toc-have-marine-heatwaves-occurred-recently-in-the-sanctuary" class="nav-link" data-scroll-target="#have-marine-heatwaves-occurred-recently-in-the-sanctuary">Have marine heatwaves occurred recently in the Sanctuary</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data</li><li class="breadcrumb-item"><a href="../../projects/sanctuary_mhw/overview.html">West Coast National Marine Sanctuaries Marine Heatwave Tracker</a></li><li class="breadcrumb-item"><a href="../../projects/sanctuary_mhw/calc.html">MHW Calculations</a></li></ol></nav>
@@ -496,7 +521,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -520,56 +545,56 @@ window.Quarto = {
 <div id="listing-regions" class="quarto-listing quarto-listing-container-custom">
 <div class="custom-card-container list">
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785284878373" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="0" data-listing-file-modified-sort="1785349003499" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
     <a href="../../projects/sanctuary_mhw/overview.html">
       <img src="images/Current_sanctuary_overivew_SSTa_MAP.png" alt="Overview  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Overview</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="1" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/OCNMS.html">
       <img src="images/OCNMS-Current_SSTa_MAP.png" alt="Olympic Coast  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Olympic Coast</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="2" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/GFNMS.html">
       <img src="images/GFNMS-Current_SSTa_MAP.png" alt="Greater Farallones  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Greater Farallones</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="3" data-listing-file-modified-sort="1785349002638" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/CBNMS.html">
       <img src="images/CBNMS-Current_SSTa_MAP.png" alt="Cordell Bank  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Cordell Bank</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="4" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/MBNMS.html">
       <img src="images/MBNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Mainland  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Mainland</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="5" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
     <a href="../../projects/sanctuary_mhw/DSNMS.html">
       <img src="images/DSNMS-Current_SSTa_MAP.png" alt="Monterey Bay - Davidson Seamount  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Monterey Bay - Davidson Seamount</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="6">
-    <a href="CINMS">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="6" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+    <a href="../../projects/sanctuary_mhw/CINMS.html">
       <img src="images/CINMS-Current_SSTa_MAP.png" alt="Channel Islands  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
     <h6 class="card-title anchored" style="margin-top:.5rem;">Channel Islands</h6>
   </div>
 
-  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785284877646" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+  <div style="width=150px; class=" custom-card="" text-center="" border-0"="" data-index="7" data-listing-file-modified-sort="1785349002640" data-listing-reading-time-sort="9" data-listing-word-count-sort="1735">
     <a href="../../projects/sanctuary_mhw/calc.html">
       <img src="images/how.png" alt="MHW Calculations  style=" height="150px;" object-fit:="" cover;"="" class="card-img">
     </a>
@@ -580,9 +605,101 @@ window.Quarto = {
 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<section id="calculating-heatwaves" class="level2">
+<h2 class="anchored" data-anchor-id="calculating-heatwaves">Calculating heatwaves</h2>
+<p>Marine heatwaves, or MHWs, occur when ocean temperatures are much warmer than usual for an extended period of time; they are specifically defined by differences in expected temperatures for the location and time of year as described in <a href="https://doi.org/10.1016/j.pocean.2015.12.014">Hobday et al.&nbsp;2016</a>. Specifically Hobday et al.&nbsp;suggest that any particular location is experiencing a heatwave if its temperature exceeds 90% of all previously measured temperatures at that location for that day of the year, for at least 5 days in a row.</p>
+<p><a href="../../projects/mhw/latest.html">The California Current MHW Tracker</a>, developed by oceanographers from NOAA Fisheries’ Southwest Fisheries Science Center, modifies the Hobday et al.&nbsp;approach to analyze sea surface temperature (SST) data produced daily on a regular global grid at a resolution of ¼ degree. The data is from the <a href="https://www.ncdc.noaa.gov/oisst">NOAA OISST dataset</a>, which is mostly satellite data, with some assimilated data from buoys and ships. The Hobday et al.&nbsp;2016 approach was adapted as follows:</p>
+<ul>
+<li>First a climatology was produced for each location (i.e., each ¼ degree grid cell) by calculating the average temperature observed from 1982-2024 for each day of the year <span style="color:#0000ff">blue line</span></li>
+<li>The actual temperature observed (<span style="color:#000000">black line</span>) is compared to the climatology value for that day at that location</li>
+<li>The difference between the observed SST (<span style="color:#000000">black line</span>) and the climatology (<span style="color:#0000ff">blue line</span>) is the sea surface temperature anomaly (SSTa). Sometimes the observed SST is below the average (a cool anomaly) and sometimes it is above average (a warm anomaly)</li>
+<li>A heatwave (<span style="color:#ff0000">red line</span>) is identified when the SSTa is above the MHW threshold (<span style="color:#017901">green line</span>)</li>
+</ul>
+<p><img src="images/img0.png" class="img-fluid"></p>
+<p>The MHW threshold (<span style="color:#017901">green line</span>) is calculated by first standardizing the SSTa by the standard deviation of SSTa at that location for each day of the year, resulting in a new metric SSTa*. Any particular location is then considered in “heatwave status” if its value of SSTa* is &gt; 1.29 (this threshold “intensity” is the exact parametric equivalent to the 90% threshold suggested by Hobday et al.&nbsp;2016). Lastly, individual heatwave “events” are tracked over time by grouping together all contiguous locations exceeding the MHW threshold, noting the size of the area and the spatially-averaged intensity.</p>
+</section>
+<section id="tracking-heatwaves-in-west-coast-region-national-marine-sanctuaries" class="level2">
+<h2 class="anchored" data-anchor-id="tracking-heatwaves-in-west-coast-region-national-marine-sanctuaries">Tracking heatwaves in West Coast Region National Marine Sanctuaries</h2>
+<p>Staff from National Marine Sanctuaries in the West Coast Region partnered with the California Current MHW Tracker team to apply this approach for each of six west coast national marine sanctuary areas (see maps below and on the <a href="../../projects/sanctuary_mhw/overview.html">overview page</a>). For larger sanctuaries, we use the sanctuary boundary (blue dashed line) to determine which grid cells (marked with red X) to include in calculations. For smaller sanctuaries, a pink dashed line indicates grid cells from the surrounding areas added into the calculations.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Olympic coast newest map.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Greater farallones newest map.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Cordell Bank newest map.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Monterey Bay newest map.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Davidson newest map.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/map_cells/Channel Island newest map.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p>For each sanctuary area, the same set of calculations are run weekly and the resulting maps and graphs can be viewed on their respective MHW tracker web pages: <a href="../../projects/sanctuary_mhw/OCNMS.html" data-fig-align="Jump tp Olympic Coast page">Olympic Coast</a>, <a href="../../projects/sanctuary_mhw/GFNMS.html" data-fig-align="Jump to Greater Farallones page">Greater Farallones</a>, <a href="../../projects/sanctuary_mhw/CBNMS.html" data-fig-align="Jump tp Cordell Bank page">Cordell Bank</a>, <a href="../../projects/sanctuary_mhw/MBNMS.html" data-fig-align="Jump tp Monterey Bay - Mainland page">Monterey Bay - Mainland</a>, <a href="../../projects/sanctuary_mhw/DSNMS.html" data-fig-align="Jump tp Monterey Bay - Davidson Seamoun page">Monterey Bay - Davidson Seamoun</a>, and <a href="../../projects/sanctuary_mhw/CINMS.html" data-fig-align="Jump tp Channel Islands page">Channel Islands</a>. Below we describe how each type of map and graph on a sanctuary MHW tracker page is calculated. Requests for additional information should be directed to the West Coast Sanctuaries MHW Tracker project leads.</p>
+<p>Project leads:<br>West Coast Sanctuaries MHW Tracker: Jennifer.Brown@noaa.gov (NOAA-ONMS-MBNMS &amp; CINMS)<br>California Current MHW Tracker: Andrew Leising, Lynn deWitt (NOAA-NMFS-SWFSC); Greg Williams (NOAA-NMFS-NWFSC)</p>
+</section>
+<section id="how-was-each-figure-calculated" class="level2">
+<h2 class="anchored" data-anchor-id="how-was-each-figure-calculated">How was each figure calculated?</h2>
+<section id="have-west-coast-sanctuaries-experienced-marine-heatwaves-recently" class="level3">
+<h3 class="anchored" data-anchor-id="have-west-coast-sanctuaries-experienced-marine-heatwaves-recently">Have West Coast Sanctuaries experienced marine heatwaves recently?</h3>
+<p><strong>Map of daily temperature anomaly</strong> = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.</p>
+</section>
+<section id="where-have-heatwaves-occurred-most-often-so-far-this-year" class="level3">
+<h3 class="anchored" data-anchor-id="where-have-heatwaves-occurred-most-often-so-far-this-year">Where have heatwaves occurred most often so far this year</h3>
+<p><strong>Map of days in heatwave status</strong> = this map uses color to show the total number of days so far this year that each grid cell’s daily SSTa exceeded the MHW threshold. The date of the most recent calculation is shown at the top of the map. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.</p>
+</section>
+<section id="when-and-where-did-we-see-heatwaves-during-year" class="level3">
+<h3 class="anchored" data-anchor-id="when-and-where-did-we-see-heatwaves-during-year">When and where did we see heatwaves during year</h3>
+<p><strong>Movie of daily temperature anomaly</strong> = Play the movie to view the daily temperature anomaly maps for every day of the year. The movie can be paused at any time. Movies for past years are available for download in the video library.</p>
+</section>
+<section id="how-strong-were-heatwaves-in-the-sanctuary-region" class="level3">
+<h3 class="anchored" data-anchor-id="how-strong-were-heatwaves-in-the-sanctuary-region">How strong were heatwaves in the sanctuary region</h3>
+<p><strong>Daily Regional Difference from Average</strong> = On each day, the sea surface temperature anomaly (SSTa) is averaged spatially across all grid cells within the designated region (dashed lines on the maps) and shown as red bars when this spatial average is higher than zero, and blue bars when the average is lower than zero. Thus the “difference from average” is the difference on a particular day of this spatial average from the long-term spatial average for that day of the year, calculated from climatology. Similarly, the gray shaded area represents the ± 1 standard deviation of the climatological average for the designated region on each day of the year, and is thus the “expected” range of variation from average. The dashed black line denotes the marine heatwave threshold and red bars above the dashed black line are days when anomalous heat in the sanctuary region exceeded the region’s heatwave threshold.</p>
+</section>
+<section id="how-large-were-heatwaves-in-the-sanctuary-region" class="level3">
+<h3 class="anchored" data-anchor-id="how-large-were-heatwaves-in-the-sanctuary-region">How large were heatwaves in the sanctuary region</h3>
+<p><strong>Daily % Heatwave Cover</strong> = a black bar shows the percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status that day (based on the climatology for each grid cell). Thus this indicator tells you how much of the sanctuary region was considered to be in a heatwave each day of the year for the last 10 years.</p>
+</section>
+<section id="is-more-heat-accumulating-in-the-sanctuary-compared-to-a-typical-year" class="level3">
+<h3 class="anchored" data-anchor-id="is-more-heat-accumulating-in-the-sanctuary-compared-to-a-typical-year">Is more heat accumulating in the sanctuary compared to a typical year</h3>
+<p><strong>Annual Cumulative Heat</strong> = each day, for grid cells within the sanctuary region (dashed lines on the map) with a sea surface temperature anomaly (SSTa) greater than zero, the positive heat values are summed and then divided by the total number of grid cells in the region. This daily, spatially-averaged anomalous heat value is summed over time to calculate the observed cumulative heat (solid red line) which is compared to an average cumulative heat calclated using all years from 1982-2020 (climatology, dotted black line). The cumulative heat calculations reset to zero each year on January 1. This indicator tells you just how much “hotter” or “colder” than normal the temperatures were on average across the sanctuary region and how much total anomalous heat a sanctuay has been exposed to during the course of a year.</p>
+</section>
+<section id="where-did-heatwaves-occur-in-the-last-12-years" class="level3">
+<h3 class="anchored" data-anchor-id="where-did-heatwaves-occur-in-the-last-12-years">Where did heatwaves occur in the last 12 years</h3>
+<p>Each map, in this series of 12 maps, uses color to show the total number of days that year that a grid cell’s daily SSTa exceeded the MHW threshold. Cooler colors show grid cells with fewer days in heatwave status while warmer colors show cells with more days in heatwave status. The warmest red is used for cells that have experienced 180 or more days in heatwave status.</p>
+</section>
+<section id="when-and-how-often-did-heatwaves-occur-in-the-past-20-years" class="level3">
+<h3 class="anchored" data-anchor-id="when-and-how-often-did-heatwaves-occur-in-the-past-20-years">When and how often did heatwaves occur in the past 20 years</h3>
+<p><strong>Heatwave occurrence vs day of year</strong> = on each day of the year, if one or more grid cells within the sanctuary region (dashed lines on the map) was in heatwave status, then a red square is added to the graph on that day. The total number of heatwave days (red squares) in a year is noted in the far right column. For the current year, the total days are cumulative up to the most recent day, and the most recent day is shown by a black dot. This graph is updated weekly. This indicator provides information on what time of year a sanctuary region typically is influenced by heatwaves, and is a way to compare this across years.</p>
+</section>
+<section id="were-heatwaves-larger-recently-than-in-the-past" class="level3">
+<h3 class="anchored" data-anchor-id="were-heatwaves-larger-recently-than-in-the-past">Were heatwaves larger recently than in the past</h3>
+<p><strong>Average % heatwave cover by year</strong> = the daily percent of the grid cells within the sanctuary region (shown as dashed lines on the maps) that are in heatwave status are averaged for each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.</p>
+</section>
+<section id="were-heatwaves-stronger-recently-than-in-the-past" class="level3">
+<h3 class="anchored" data-anchor-id="were-heatwaves-stronger-recently-than-in-the-past">Were heatwaves stronger recently than in the past</h3>
+<p><strong>Average heatwave intensity by year</strong> = the daily heatwave intensity within the sanctuary region (heatwave intensity is the spatially-average normalized SSTa value for all grid cells with an anomaly greater than the heatwave threshold) is averaged over each calendar year starting in 1982. The vertical bars show the standard deviation, or variability, of the daily values in a given year.</p>
+</section>
+<section id="have-marine-heatwaves-occurred-recently-in-the-sanctuary" class="level3">
+<h3 class="anchored" data-anchor-id="have-marine-heatwaves-occurred-recently-in-the-sanctuary">Have marine heatwaves occurred recently in the Sanctuary</h3>
+<p><strong>Heatwave occurrence vs day of year</strong> = on each day of the year for a particular year, if one or more grid cells within a sanctuary area was in heatwave status, then a red square is added to the graph for that sanctuary area on that day. The total number of heatwave days (red squares) in that year is noted in the far right column. For the current year, this graph is updated weekly, the total days is cumulative up to the most recent day, and the most recent day is shown by a black dot. This indicator provides information on when a sanctuary area was influenced by heatwaves recently, and is a way to compare this across sanctuary areas.</p>
 
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1003,7 +1120,7 @@ window.Quarto = {
     }
   });
   </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="../../projects/sanctuary_mhw/CINMS.html" class="pagination-link" aria-label="Channel Islands">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Channel Islands</span>
