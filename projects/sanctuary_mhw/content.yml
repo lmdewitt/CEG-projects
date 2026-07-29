@@ -1,9 +1,43 @@
+- id: c0
+  title: Have marine heatwaves occurred recently in the Sanctuary?
+  img: -Current_SSTa_MAP.png
+  imgcap: This map shows the most recent (updated weekly) data of whether the sea surface that day was warmer (shades of red) or cooler (shades of blue) than has been typically observed on that day of the year. The brighter the color, the more intense the heat or cold compared to average past conditions. If an area is a warmer color and surrounded by a solid black line, then that area was in heatwave status that day. The sanctuary boundary is shown by blue dashed line (If present, a magenta dashed line indicates a slightly larger region used for analysis for smaller sized sanctuaries)
+  calc: <b>Map of daily temperature anomaly</b> = This map shows the Sea Surface Temperature anomaly (SSTa) for each grid cell on the most recent day that calculations were run (date provided above the map). SSTa, or the amount that day’s observed SST differed from average (based on the climatology for that grid cell), is shown using shades of red for warm anomalies and shades of blue for cool anomalies. The brighter the color, the greater the SSTa differed from the average. Bright red areas surrounded by a solid black line denote areas in which SSTa exceeded the MHW threshold that day. See the ‘Calculating Heatwaves’ section above for more details on how the climatology and SSTa were calculated.
 - id: c1
-  title: Card 1
-  path: images/OCNMS_heatwave_days.png
-  categories: [OCNMS]
+  title: Where have heatwaves occurred most often so far this year?
+  img: _HW_days_current-2026.png
+  imgcap: This map shows the number of days so far this year that the surface temperature in an area was in marine heatwave status, with warmer colors indicating more total heatwave days. The sanctuary boundary is the white dashed line and the dashed pink line is the larger sanctuary region. This map is updated weekly.
 - id: c2
-  title: Card 2
-  path: images/OCNMS-SSTa_vs_time_year.png
-  categories: [OCNMS]
+  title: When and where did we see heatwaves in the region last year?
+  img: -Sanctuary-2025.mp4
+  imgcap: Play this movie to see when and where the sea surface in and around the sanctuary was warmer (shades of red) and cooler (shades of blue) than normal during the last full calendar year. The sanctuary boundary is the blue dashed line and the larger sanctuary region is the pink dashed line. You can pause the video at any time. Movies for previous years are available for download by clicking the link below.
+- id: c3
+  title: How strong were heatwaves in the sanctuary region?
+  img: -SSTa_vs_time_10yr.png
+  imgcap: A red bar shows how much hotter than average the the sea surface was on that day in the sanctuary region (averaged across the entire sanctuary). A blue bar indicates cooler than average temperatures on that day. The longer the bar, the more intense the heat or cold (shown by brighter red or blue shades on the map). Bars extending beyond the gray shading show days when the sanctuary region was hotter or colder than the expected temperature range. Red bars above the dashed black line are days with heat that exceed the heatwave threshold. This graph shows information for the past 10 years and is updated weekly.
+- id: c4
+  title: How large were heatwaves in the sanctuary region?
+  img: -HWcover_vs_time_10yr.png
+  imgcap: A black bar shows the percent of the sanctuary region that was in a heatwave status each day. The taller the black bar, the more area of the sanctuary is covered by a heatwave. No bar means no portion of the sanctuary region was in heatwave status that day. This graph shows information for the past 10 years and is updated weekly.
+- id: c5
+  title: Is more heat accumulating in the sanctuary compared to a typical year?
+  img: -CumHeat_vs_time_10yr.png
+  imgcap: The red line shows how much heat has been accumulating in the sanctuary region compared to the climatology (black dashed line) representing a typical year (based on the past 40 years). Heat is accumulating more than a typical year when the red line is above the black dashed line and less than a typical year when the red line is below the black dashed line. The calculation of accumulation restarts on January 1st.  This graph shows information for the past 10 years and is updated weekly.
+- id: c6
+  title: Where did heatwaves occur in the past 12 years?
+  img: _HW_days-2025.png
+  imgcap: The location and frequency of marine heatwaves are shown for each of the last 12 years.  The total number of days in the year that each portion of the sanctuary region was in marine heatwave status is displayed with warmer colors indicating more total heatwave days. The sanctuary region is the white dashed line (where present, a pink dashed line indicates a larger region used for analysis for the smaller sanctuaries).
+- id: c7
+  title: When and how often did heatwaves occur in the past 20 years?
+  img: _heatwave_days.png
+  imgcap: The timing and length of marine heatwave events is shown for the last 20 years. Each day that any portion of the sanctuary region was experiencing a marine heatwave is shown as a red dot. The total number of heatwave days each year is noted in the far right column. For the current year, this information is updated weekly and the black dot shows the most recent day.
+- id: c8
+  title: Were heatwaves larger recently than in the past?
+  img: _ave_cover_by_year.png
+  imgcap: The black box shows the average size of marine heatwaves in the sanctuary region each year since 1982. The thin vertical  black lines show how much size varied during that year; years with taller lines had more variability in heatwave size while years with shorter lines had more consistency.
+- id: c9
+  title: Were heatwaves stronger recently than in the past?
+  img: _ave_intensity_by_year.png
+  imgcap: The red box shows the average amount of heat above normal, or intensity, of marine heatwaves in the sanctuary region each year since 1982. The then red vertical lines show how much heatwave intensity varied each year; years with taller lines had more variability in heatwave intensity while years with shorter lines had more consistency.
+  
 

@@ -18,7 +18,9 @@ listing:
     contents: content.yml
     template: content.ejs.md
     template-params:
-      selectedCategory: "OCNMS"   # Pass your target category here
+      region: "OCNMS"
+      vid_start: 2022
+      vid_end: 2025
     sort-ui: false
     sort: false
     filter-ui: false
@@ -34,10 +36,11 @@ listing:
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: .1rem;
   width: 100%;
+  font-style: italic;
+  font-weight: 600;
 }
 </style>
 ```
-
 
 
 :::{#regions}
