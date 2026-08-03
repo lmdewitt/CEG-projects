@@ -1,0 +1,391 @@
+---
+title: "Upwelling Indices"
+subtitle: "Bakun Index"
+bibliography: references.bib
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+## Bakun Upwelling Index Calculation
+
+The Bakun [-@bakun73; -@bakun75] upwelling indices are calculated based upon Ekman's theory of mass transport due to wind stress. Assuming homogeneity, uniform wind and steady state conditions, the mass transport of the surface water due to wind stress is 90° to the right of the wind direction in the Northern Hemisphere. Ekman mass transport is defined as the wind stress divided by the Coriolis parameter (a function of the earth's rotation and latitude). The depth to which an appreciable amount of this offshore transport occurs is termed the surface Ekman layer, and is generally 50 to 100 meters deep.
+
+Ekman transports are resolved into components parallel and normal to the local coastline orientation. The magnitude of the offshore component is considered to be an index of the amount of water upwelled from the base of the Ekman layer. Positive values are, in general, the result of equatorward wind stress. Negative values imply downwelling, the onshore advection of surface waters accompanied by a downward displacement of water.
+
+ERD upwelling index calculations [@schwing96]. are based on estimates of offshore Ekman transport driven by geostrophic wind stress. Geostrophic winds are derived from mean surface atmospheric pressure fields provided by the U.S. Navy Fleet Numerical Meteorological and Oceanographic Center (FNMOC), Monterey, CA.
+
+## Evolving model grids {#sec-model-grids}
+
+Historically, ERD monthly upwelling indices were computed at 15 North American locations from monthly mean pressure fields prepared by FNMOC on a polar stereographic 3&#176; mesh grid. Due to improvements in model development and increases in computational power and storage capacity, the FNMOC models [@clancy92; @rosmond92] and their pressure field output changed resolution over time (table below). From 1948 to 1967, data were provided on paper as monthly means.  Subsequently ERD has maintained a relationship with FNMOC and obtained daily downloads of 6-hourly model forecasts.
+
+```{=html}
+<table border=1 cellpadding=2><tr><td><b> Years </b></td><td><b>Projection</b></td><td><b>Coverage</b></td><td><b>Resolution</b></td></tr><tr><td>1967 - 1980</td><td> 63 x 63 polar stereographic</td><td>Northern Hemisphere</td><td> about 3&#176; latitude</td></tr><tr><td>1981 - 1996</td><td> 73 x 144 spherical </td><td>global</td><td>2.5&#176;</td></tr><tr><td>1996 - present</td><td>360x181 spherical</td><td>global</td><td>1&#176;</td></tr></table>
+```
+
+ERD seeks to maintian long consistent time series of air/ocean indices for use in climate studies despite the changes in model resolution. Upwelling Indices for the N. American west coast are currently produced on two different grids (details below):
+
+- Standard ("historical") 3&#176; product which provides consistency with early FNMOC model grids
+- 1&#176; product with updated coefficients and processing methods takes advantage of newer model resolutions.
+
+At the present time, upwelling indices are calculated from 1&#176; pressure fields produced by the Navy's FNMOC NAVGEM model.
+
+## Traditional ("Historical") 3-degree Upwelling Index Calculation
+
+Historically, PFEL provided upwelling products derived from a 3-degree interpolation of the FNMOC polar stereographic pressure field.  Mesh lengths less than 3-degrees were extrapolated to a 3-degree mesh length using Bessel's central difference formula.  From 1981 onward, 3&#176; pressure values were linearly interpolated from a 2.5&#176; grid.
+
+In addition, due to limited computational ability, the geostropic winds used to compute upwelling index were originally derived from monthly averaged pressure fields. For consistency, the 3&#176; monthly products provided at the 15 standard North American coastal locations are still computed in this manner. In addition, the parameterization of the drag coefficient</a> (CD) used in the wind stress calculation is taken as a constant value of 0.0013 to calculate indices from 6-hourly pressure fields and is increased to 0.0026 to calculate indices from a monthly pressure field as was done in the original Bakun computation.
+
+:::: {.callout-note icon=false collapse=true}
+
+## Graphs of Upwelling Indices over the last 18 months for 15 positions along the North American West Coast
+
+Solid lines denote the daily Upwelling Index. The daily indices have been smoothed using a 3-day, 3rd order, forward-reverse Butterworth filter.  The dashed curve is a biharmonic fit to the daily upwelling indices for the period 1967-1991. The shaded area around the biharmonic curve denotes one standard error, calculated for each Julian day. The yellow bars denote monthly mean of the Upwelling Indices based on the daily values.  The units are metric tons per second per 100 m of coastline (or equivalently cubic meters per second per 100 meters of coastline).  These units may be thought of as the average amount of water upwelled through the bottom of the Ekman layer each second along each 100 m of a straight line directed along the dominant trend of the coast on a scale of about 200 miles.
+
+::::: {layout-ncol=3}
+
+![60N 149W](images/daily/p01daily.png)
+
+![60N 146W](images/daily/p02daily.png)
+
+![57N 137W](images/daily/p03daily.png)
+
+![54N 134W](images/daily/p04daily.png)
+
+![51N 131W](images/daily/p05daily.png)
+
+![48N 125W](images/daily/p06daily.png)
+
+![45N 125W](images/daily/p07daily.png)
+
+![42N 125W](images/daily/p08daily.png)
+
+![39N 125W](images/daily/p09daily.png)
+
+![36N 122W](images/daily/p10daily.png)
+
+![33N 119W](images/daily/p11daily.png)
+
+![30N 119W](images/daily/p12daily.png)
+
+![27N 116W](images/daily/p13daily.png)
+
+![24N 113W](images/daily/p14daily.png)
+
+![21N 107W](images/daily/p15daily.png)
+
+:::::
+
+::::
+
+## 1-degree Upwelling Index Products
+
+When 1&#176; pressure fields became available from FNMOC in 1996, ERD scientists created a new product that takes advantage of the higher resolution model output and improves the parameterizations used in the Ekman transport calculation. These 1&#176; air/ocean and upwelling indices are calculated in a similar way to ERD's traditional 3&#176; [@bakun73] calculation with the following exceptions:
+
+- Global products (see list below) are derived and made available for download. Since 1996, these products are derived directly from 1&#176; pressure fields. Prior to 1966, the are calculated from pressure fields derived by simple linear interpolation from the native grids (see discussion on grids above).
+- Unlike the 3&#176; products, where Ekman transport is derived from monthly averages of geostrophic winds calculated from 6-hourly pressure values, the 1&#176; global products are computed from 6-hourly averages of geostropic winds, which are in turn calculated from the 1&#176; 6-hourly pressure fields.  Each of the 1&#176; air/ocean index products is thus an average of 6-hourly values, rather than being computed from a monthly mean pressure field.
+- The parameterization of the drag coefficient (CD) used in the wind stress calculation is taken as a function of wind speed (W) rather than a constant. A non-linear drag coefficient is used based on Large and Pond [-@large81] modified for low wind speeds as in @trenberth90:
+
+$$
+\begin{align}
+CD &= 0.00218   \qquad(W \le 1m/s) \\
+&= (0.62+1.56/W) \times .001 \quad(1m/s < W < 3m/s) \\
+&= 0.00114 \qquad(3m/s \le W < 10m/s) \\
+&= 
+(0.49 + 0.065W) \times .001 \quad(W \ge 10m/s)
+\end{align}
+$$
+
+![](images/drag.gif "Title:Non-linear Drag Coefficient"){width=450 fig-alt="Non-linear Drag Coefficient" fig-align="center"}
+
+- UTC time is used when calculating means rather than local time as was done in the historical products
+
+**Available Products**
+
+In addition to time series of Upwelling Index at the 15 standard Eastern North Pacific locations, Northern Hemisphere (1967 - 1980) and global (1981 - present) values of the following quantities have been calculated from the interpolated six-hourly 1-degree sea level pressure fields, and can be subsetted, visualized, and downloaded in a variety of formats.
+
+- Pressure, mean sea level
+- N-S and E-W components of geostropic wind
+- Geostropic wind vector and magnitude
+- N-S and E-W components of geostropic wind stress
+- Geostropic wind stress vector and curl
+- N-S and E-W components of Ekman transport
+
+## Should I use the historical or 1-degree index?
+
+The calculation methods described are compared in the following examples, which show the difference between the 1&#176; and the 3&#176; products for the years 1967 to 1991.  The magnitude of the difference depends on location, pressure gradient, wind speed, and other factors such as the original mesh size and possibly the proximity to the coast.
+
+:::: {.callout-note icon=false collapse=true}
+
+## 3&#176; / 1&#176; Comparisons
+
+The following graphs show comparisons at two locations. In the upper panel of these plots, the **black line** ("new" calculation) is the 1&#176; product, the [red line]{style="color:red;"} is the ERD "standard" or "historical" 3&#176; monthly product calculated from the monthly mean pressure field. For the upwelling index plot, the [green line]{style="color:green;"} is the monthly average of the PFEL historical 6-hourly upwelling index. The bottom panel in each plot is the difference between the 1&#176; and historical 3&#176; monthly calcuation (black and red lines).
+
+
+::::: {layout-ncol=2}
+
+::: {}
+
+**48N 125W**
+
+:::
+
+::: {}
+
+**36N 122W**
+
+:::
+
+:::::
+
+**Upwelling Index**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/indx48N.gif){fig-alt="upwelling index 48N"}
+:::
+
+::: {}
+
+![](images/indx36N.gif){fig-alt="upwelling index 36N"}
+
+:::
+
+:::::
+
+**Sea Level Pressure**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/pmsl48N.gif){fig-alt="p_msl 48N"}
+
+:::
+
+::: {}
+
+![](images/pmsl36N.gif){fig-alt="p_msl 36N"}
+
+:::
+
+:::::
+
+
+**E-W Geostropic Wind**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/u48N.gif){fig-alt="u 48N"}
+
+:::
+
+::: {}
+
+![](images/u36N.gif){fig-alt="u 36N"}
+
+:::
+
+:::::
+
+
+**N-S Geostropic Wind**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/v48N.gif){fig-alt="v 48N"}
+
+:::
+
+::: {}
+
+![](images/v36N.gif){fig-alt="v 36N"}
+ 
+:::
+
+:::::
+
+
+**E-W Ekman Transport**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/ekx48N.gif){fig-alt="ekx 48N"}
+
+:::
+
+::: {}
+
+![](images/ekx36N.gif){fig-alt="ekx 36N"}
+
+:::
+
+:::::
+
+
+**N-S Ekman Transport**
+
+::::: {layout-ncol=2}
+
+::: {}
+
+![](images/eky48N.gif){fig-alt="eky 48N"}
+
+:::
+
+::: {}
+
+![](images/eky36N.gif){fig-alt="eky 36N"}
+
+:::
+
+:::::
+
+::::
+
+In some rare cases, we have found significant local differences in the upwelling index values calculated from the two grid sizes. For example, the index at 57N 137W derived from the 3° grid is substantially larger than the index calculated from the 1° pressure grid. This appears to be related to weaker local pressure gradients in the finer resolved grid, which result in lower local geostrophic winds and upwelling values than given with the more smoothed 3° grid, which spreads a steeper gradient over the site of this particular index.
+
+## "Global" Upwelling Index
+
+ERD provides global Ekman transport on a 1-degree grid which allows users to calculate a time series of upwelling index (off-shore component of Ekman Transport) for any location in an Eastern Boundary Current, given a user-provided orientation of the coastline.
+
+Instructions follow for calculating Bakun upwelling index from Ekman transport, however before proceeding be aware of the following caveats:
+
+- Ekman transports are on a 1-degree grid so while you can technically compute upwelling index anywhere, finer scale calculations are interpolations that do not provide new information
+- The calculation for computing Ekman transport from FNMOC pressure uses a geostrophic approximation and thus is not valid within about 10-15 degrees of the equator.
+- Upwelling index should be calculated at locations at least 1-degree from the coast, particularly in areas with high coastal topography.
+- The Bakun upwelling index is meant to be an estimate of large-scale variations in upwelling index, not an absolute value of the quantity of upwelled water.
+
+Upwelling index is calculated by rotating Ekman transport to find the offshore component using the geometry of the coastline.  Calculations can be done easily in applications such as [R](#note-UI-r), [Python](#note-UI-python), [Matlab](#note-UI-matlab), or [Ferret](#note-UI-ferret).
+
+**Components of Ekman transport:**
+
+Ekman transport can be obtained from the ERD ERDDAP&#8482; data server:
+
+- Monthly: [https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html)
+- 6-hourly: [https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTran6.html](https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTran6.html)
+
+While these data can be separately downloaded from the ERDDAP&#8482; web pages, everything in ERDDAP&#8482; is a service, which means that the transports can be accessed or downloaded directly from within the environment used to calculate upwelling index.  Examples:
+
+- R: function 'download.file()'
+- Python: the package 'urllib2'
+- Matlab: 'websave()'
+
+For more information on using ERDDAP&#8482; see: [https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html](https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html)
+
+**Coastline Geometry:**
+
+The coastline orientation is entered as a **"coast angle"**, the angle the coast makes with north in the mathematical sense, and is defined as **the angle the landward side of the coastline makes with a vector pointing north** as illustrated in the following images, where the angle **&#945;** (alpha) is the "coast angle":
+
+::::: {layout-nrow=1}
+
+![land on NE](images/coast_ang1.gif){fig-align="left"}
+
+![land on NW](images/coast_ang2.gif){fig-align="left"}
+
+![land to east](images/coast_ang3.gif){fig-align="left"}
+
+:::
+
+<span class="sm">Please note that the "coast angle" required here should not be confused with the rotation angle (offshore vector direction) listed in the PFEL output for flow indices at the 15 standard locations.</span>
+
+**Code Samples:**
+
+In the following code samples, **ektrx** and **ektry** are the x- and y- components of Ekman Transport obtained from the ERDDAP&#8482; links above, and **coast_angle** is the angle **&#945;** described in the diagrams above.
+
+::: {#note-UI-r .callout-note icon=false collapse=true}
+
+## R
+
+```{.r}
+upwell <- function(ektrx, ektry, coast_angle) {
+pi <- 3.1415927
+degtorad <- pi/180.
+alpha <- (360 - coast_angle) * degtorad
+s1 <- cos(alpha)
+t1 <- sin(alpha)
+s2 <- -1 * t1
+t2 <- s1
+perp <- (s1 * ektrx) + (t1 * ektry)
+para <- (s2 * ektrx) + (t2 * ektry)
+return(perp/10)
+```
+
+:::
+
+::: {#note-UI-python .callout-note icon=false collapse=true}
+
+## Python
+
+```{.python}
+def upwell(ektrx, ektry, coast_angle):
+import numpy as np
+pi = 3.1415927
+degtorad = pi/180.
+alpha = (360 - coast_angle) * degtorad
+s1 = np.cos(alpha)
+t1 = np.sin(alpha)
+s2 = -1 * t1
+t2 = s1
+perp = (s1 * ektrx) + (t1 * ektry)
+para = (s2 * ektrx) + (t2 * ektry)
+return(perp/10)
+```
+
+:::
+
+::: {#note-UI-matlab .callout-note icon=false collapse=true}
+
+## Matlab
+
+```{.matlab}
+function upwell = upwelling(ektrx, ektry,  coast_angle )
+pi = 3.1415927;
+degtorad = pi/180.;
+alpha = (360 - coast_angle) * degtorad;
+s1 = cos(alpha);
+t1 = sin(alpha);
+s2 = -1 * t1;
+t2 = s1;
+perp = (s1 * ektrx) + (t1 * ektry);
+para = (s2 * ektrx) + (t2 * ektry);
+upwell = (perp/10)
+```
+
+:::
+
+::: {#note-UI-ferret .callout-note icon=false collapse=true}
+
+## Ferret
+
+```{.ferret}
+let pi = 3.1415927
+let degtorad=pi/180.
+let alpha=(360-coast_angle)*degtorad
+let s1=cos(alpha)
+let t1=sin(alpha)
+let s2=-1*t1
+let t2=s1
+let perp=s1*ektrx+t1*ektry
+let para=s2*ektrx+t2*ektry
+let upwelling_index=perp/10
+```
+
+:::
+
+## References
+
+::: {#refs}
+:::
+

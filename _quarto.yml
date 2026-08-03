@@ -80,6 +80,20 @@ website:
                   href: projects/sanctuary_mhw/CINMS.qmd
                 - text: "MHW Calculations"
                   href: projects/sanctuary_mhw/calc.qmd
+            - section: "Upwelling Index"
+              contents:
+                - text: "About"
+                  href: projects/upwelling/intro.qmd
+                - text: "Bakun Index"
+                  href:  projects/upwelling/bakun.qmd
+                - text: "CUTI and BEUTI"
+                  href: projects/upwelling/cutibeuti.qmd
+                - text: "Index Comparison"
+                  href: projects/upwelling/diff.qmd
+                - text: "Which index should I use?"
+                  href: projects/upwelling/which.qmd
+                - text: "Downloads"
+                  href: projects/upwelling/dnld.qmd
 
 format:
   html:
