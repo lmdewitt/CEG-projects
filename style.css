@@ -58,3 +58,42 @@ a {
   font-weight: 400;
   font-style: italic;
 }
+
+/* Custom Muted Primary Button */
+.btn-primary {
+  /* Matching Muted Slate-Blue Base */
+  background-color: #325D88 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff;
+  
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 5px;
+  
+  /* Muted Dark-Slate Shadow (not bright blue) */
+  box-shadow: 0 2px 4px rgba(25, 45, 68, 0.25), 
+              0 1px 2px rgba(0, 0, 0, 0.1);
+              
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Subtle Hover State */
+.btn-primary:hover {
+  /* Slightly darker/richer shade of the nav bar color */
+  background-color: #284a6e !important; 
+  
+  /* Gentle lift + understated shadow */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(25, 45, 68, 0.35), 
+              0 2px 4px rgba(0, 0, 0, 0.12);
+}
+.btn {
+  --label-width:80px;
+}
+
+/* Pressed State */
+.btn-primary:active {
+  background-color: #1e3853 !important;
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(25, 45, 68, 0.2);
+}

@@ -7,6 +7,240 @@
     "text": "California Central Valley Real-time Fish Tracking\n\n\n\nESD\n\nFED\n\n\n\n(CalFishTrack)\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia Current Integrated Ecosystem Assessment\n\n\n\nESD\n\nNWFSC\n\n\n\n(CCIEA)\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia Fish Market Catch Landings\n\n\n\nESD\n\n\n\n1928-2002\n\n\n\n\n\n\n\n\n\n\n\n\nCentral Valley Temperature Mapping and Prediction\n\n\n\nESD\n\nFED\n\n\n\n(CVTEMP)\n\n\n\n\n\n\n\n\n\n\n\n\nCoastWatch West Coast Regional Node\n\n\n\nESD\n\n\n\nProviding near real-time satellite data for the coastal ocean\n\n\n\n\n\n\n\n\n\n\n\n\nERDDAP™\n\n\n\nESD\n\n\n\nEasier access to scientific data\n\n\n\n\n\n\n\n\n\n\n\n\nEcoCast\n\n\n\nESD\n\n\n\nAssess trade-offs of bycatch and target catch in real-time\n\n\n\n\n\n\n\n\n\n\n\n\nFNMOC-Derived Products\n\n\n\nESD\n\nITDS\n\n\n\nFNMOC produces operational forecasts of the state of the atmosphere and the ocean several times daily from which ERD derives a number of environmental data products and…\n\n\n\n\n\n\n\n\n\n\n\n\nFrontal Edges\n\n\n\nESD\n\nITDS\n\n\n\nestimated from daily MUR SST\n\n\n\n\n\n\n\n\n\n\n\n\nIndicator Dashboard\n\n\n\nESD\n\n\n\nInteractive display of the current status of relevant West Coast indicators\n\n\n\n\n\n\n\n\n\n\n\n\nLoggerhead Turtle Conservation\n\n\n\nESD\n\n\n\nReduce loggerhead bycatch in Southern California\n\n\n\n\n\n\n\n\n\n\n\n\nMarine Heat Wave Tracker\n\n\n\nESD\n\n\n\nCalifornia Current Marine Heat Wave status\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarine Heatwave Tracker\n\n\n\nESD\n\n\n\nWest Coast National Marine Sanctuaries\n\n\n\n\n\n\n\n\n\n\n\n\nNOAA Satellite Course\n\n\n\nESD\n\n\n\nLearn how to use oceanographic satellite data in your work.\n\n\n\n\n\n\n\n\n\n\n\n\nNorth Pacific Chlorophyll Blooms\n\n\n\nESD\n\n\n\nChlorophyll blooms consistently develop in the oligotrophic North Pacific Subtropical Gyre (NPSG) in late summer. Both the timing and location of these blooms are enigmatic.\n\n\n\n\n\n\n\n\n\n\n\n\nNorthern Oscillation Index\n\n\n\nESD\n\n\n\nand related extratropical-based indices\n\n\n\n\n\n\n\n\n\n\n\n\nOcean Surface Current Simulator\n\n\n\nESD\n\n\n\n(OSCURS)\n\n\n\n\n\n\n\n\n\n\n\n\nSea Floor Gradient\n\n\n\nESD\n\nITDS\n\n\n\nEstimates of the seafloor gradient off the West Coast of the United States using ETOPO or SRTM30Plus.\n\n\n\n\n\n\n\n\n\n\n\n\nThiamine Deficiency in California Salmon\n\n\n\nESD\n\nFED\n\n\n\nResearche on what is causing thiamine deficiency in salmon, and what might help remedy or mitigate its effects.\n\n\n\n\n\n\n\n\n\n\n\n\nTop Predator Watch\n\n\n\nESD\n\n\n\nA dynamic ocean management tool that produces daily predictions of the distributions of 14 top predator species.\n\n\n\n\n\n\n\n\n\n\n\n\nUpwelling Index\n\n\n\nESD\n\nITDS\n\n\n\nInformation and Downloads (CUTI, BEUTI, Bakun)\n\n\n\n\n\n\n\n\n\n\n\n\nWhaleWatch\n\n\n\nESD\n\n\n\nHelp reduce human impacts on whales\n\n\n\n\n\n\n\n\n\n\n\n\nXtractomatic Tools\n\n\n\nESD\n\n\n\nR and Matlab data extraction using ERDDAP™\n\n\n\n\n\n\n\n\n\n\n\n\nplotdap R Package\n\n\n\nESD\n\nITDS\n\n\n\nVisualize ERDDAP™ data\n\n\n\n\n\nNo matching items\n\n  \n\n Back to top"
   },
   {
+    "objectID": "projects/upwelling/bakun.html",
+    "href": "projects/upwelling/bakun.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The Bakun (1973, 1975) upwelling indices are calculated based upon Ekman’s theory of mass transport due to wind stress. Assuming homogeneity, uniform wind and steady state conditions, the mass transport of the surface water due to wind stress is 90° to the right of the wind direction in the Northern Hemisphere. Ekman mass transport is defined as the wind stress divided by the Coriolis parameter (a function of the earth’s rotation and latitude). The depth to which an appreciable amount of this offshore transport occurs is termed the surface Ekman layer, and is generally 50 to 100 meters deep.\nEkman transports are resolved into components parallel and normal to the local coastline orientation. The magnitude of the offshore component is considered to be an index of the amount of water upwelled from the base of the Ekman layer. Positive values are, in general, the result of equatorward wind stress. Negative values imply downwelling, the onshore advection of surface waters accompanied by a downward displacement of water.\nERD upwelling index calculations (Schwing et al. 1996). are based on estimates of offshore Ekman transport driven by geostrophic wind stress. Geostrophic winds are derived from mean surface atmospheric pressure fields provided by the U.S. Navy Fleet Numerical Meteorological and Oceanographic Center (FNMOC), Monterey, CA.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#bakun-upwelling-index-calculation",
+    "href": "projects/upwelling/bakun.html#bakun-upwelling-index-calculation",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The Bakun (1973, 1975) upwelling indices are calculated based upon Ekman’s theory of mass transport due to wind stress. Assuming homogeneity, uniform wind and steady state conditions, the mass transport of the surface water due to wind stress is 90° to the right of the wind direction in the Northern Hemisphere. Ekman mass transport is defined as the wind stress divided by the Coriolis parameter (a function of the earth’s rotation and latitude). The depth to which an appreciable amount of this offshore transport occurs is termed the surface Ekman layer, and is generally 50 to 100 meters deep.\nEkman transports are resolved into components parallel and normal to the local coastline orientation. The magnitude of the offshore component is considered to be an index of the amount of water upwelled from the base of the Ekman layer. Positive values are, in general, the result of equatorward wind stress. Negative values imply downwelling, the onshore advection of surface waters accompanied by a downward displacement of water.\nERD upwelling index calculations (Schwing et al. 1996). are based on estimates of offshore Ekman transport driven by geostrophic wind stress. Geostrophic winds are derived from mean surface atmospheric pressure fields provided by the U.S. Navy Fleet Numerical Meteorological and Oceanographic Center (FNMOC), Monterey, CA.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#sec-model-grids",
+    "href": "projects/upwelling/bakun.html#sec-model-grids",
+    "title": "Upwelling Indices",
+    "section": "Evolving model grids",
+    "text": "Evolving model grids\nHistorically, ERD monthly upwelling indices were computed at 15 North American locations from monthly mean pressure fields prepared by FNMOC on a polar stereographic 3° mesh grid. Due to improvements in model development and increases in computational power and storage capacity, the FNMOC models (Clancy 1992; Rosmond 1992) and their pressure field output changed resolution over time (table below). From 1948 to 1967, data were provided on paper as monthly means. Subsequently ERD has maintained a relationship with FNMOC and obtained daily downloads of 6-hourly model forecasts.\n\n\n\nYears\nProjection\nCoverage\nResolution\n\n\n1967 - 1980\n63 x 63 polar stereographic\nNorthern Hemisphere\nabout 3° latitude\n\n\n1981 - 1996\n73 x 144 spherical\nglobal\n2.5°\n\n\n1996 - present\n360x181 spherical\nglobal\n1°\n\n\n\nERD seeks to maintian long consistent time series of air/ocean indices for use in climate studies despite the changes in model resolution. Upwelling Indices for the N. American west coast are currently produced on two different grids (details below):\n\nStandard (“historical”) 3° product which provides consistency with early FNMOC model grids\n1° product with updated coefficients and processing methods takes advantage of newer model resolutions.\n\nAt the present time, upwelling indices are calculated from 1° pressure fields produced by the Navy’s FNMOC NAVGEM model.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#traditional-historical-3-degree-upwelling-index-calculation",
+    "href": "projects/upwelling/bakun.html#traditional-historical-3-degree-upwelling-index-calculation",
+    "title": "Upwelling Indices",
+    "section": "Traditional (“Historical”) 3-degree Upwelling Index Calculation",
+    "text": "Traditional (“Historical”) 3-degree Upwelling Index Calculation\nHistorically, PFEL provided upwelling products derived from a 3-degree interpolation of the FNMOC polar stereographic pressure field. Mesh lengths less than 3-degrees were extrapolated to a 3-degree mesh length using Bessel’s central difference formula. From 1981 onward, 3° pressure values were linearly interpolated from a 2.5° grid.\nIn addition, due to limited computational ability, the geostropic winds used to compute upwelling index were originally derived from monthly averaged pressure fields. For consistency, the 3° monthly products provided at the 15 standard North American coastal locations are still computed in this manner. In addition, the parameterization of the drag coefficient (CD) used in the wind stress calculation is taken as a constant value of 0.0013 to calculate indices from 6-hourly pressure fields and is increased to 0.0026 to calculate indices from a monthly pressure field as was done in the original Bakun computation.\n\n\n\n\n\n\nNoteGraphs of Upwelling Indices over the last 18 months for 15 positions along the North American West Coast\n\n\n\n\n\nSolid lines denote the daily Upwelling Index. The daily indices have been smoothed using a 3-day, 3rd order, forward-reverse Butterworth filter. The dashed curve is a biharmonic fit to the daily upwelling indices for the period 1967-1991. The shaded area around the biharmonic curve denotes one standard error, calculated for each Julian day. The yellow bars denote monthly mean of the Upwelling Indices based on the daily values. The units are metric tons per second per 100 m of coastline (or equivalently cubic meters per second per 100 meters of coastline). These units may be thought of as the average amount of water upwelled through the bottom of the Ekman layer each second along each 100 m of a straight line directed along the dominant trend of the coast on a scale of about 200 miles.\n\n\n\n\n\n\n60N 149W\n\n\n\n\n\n\n\n60N 146W\n\n\n\n\n\n\n\n57N 137W\n\n\n\n\n\n\n\n\n\n54N 134W\n\n\n\n\n\n\n\n51N 131W\n\n\n\n\n\n\n\n48N 125W\n\n\n\n\n\n\n\n\n\n45N 125W\n\n\n\n\n\n\n\n42N 125W\n\n\n\n\n\n\n\n39N 125W\n\n\n\n\n\n\n\n\n\n36N 122W\n\n\n\n\n\n\n\n33N 119W\n\n\n\n\n\n\n\n30N 119W\n\n\n\n\n\n\n\n\n\n27N 116W\n\n\n\n\n\n\n\n24N 113W\n\n\n\n\n\n\n\n21N 107W",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#degree-upwelling-index-products",
+    "href": "projects/upwelling/bakun.html#degree-upwelling-index-products",
+    "title": "Upwelling Indices",
+    "section": "1-degree Upwelling Index Products",
+    "text": "1-degree Upwelling Index Products\nWhen 1° pressure fields became available from FNMOC in 1996, ERD scientists created a new product that takes advantage of the higher resolution model output and improves the parameterizations used in the Ekman transport calculation. These 1° air/ocean and upwelling indices are calculated in a similar way to ERD’s traditional 3° (Bakun 1973) calculation with the following exceptions:\n\nGlobal products (see list below) are derived and made available for download. Since 1996, these products are derived directly from 1° pressure fields. Prior to 1966, the are calculated from pressure fields derived by simple linear interpolation from the native grids (see discussion on grids above).\nUnlike the 3° products, where Ekman transport is derived from monthly averages of geostrophic winds calculated from 6-hourly pressure values, the 1° global products are computed from 6-hourly averages of geostropic winds, which are in turn calculated from the 1° 6-hourly pressure fields. Each of the 1° air/ocean index products is thus an average of 6-hourly values, rather than being computed from a monthly mean pressure field.\nThe parameterization of the drag coefficient (CD) used in the wind stress calculation is taken as a function of wind speed (W) rather than a constant. A non-linear drag coefficient is used based on Large and Pond (1981) modified for low wind speeds as in Trenberth et al. (1990):\n\n\\[\n\\begin{align}\nCD &= 0.00218   \\qquad(W \\le 1m/s) \\\\\n&= (0.62+1.56/W) \\times .001 \\quad(1m/s &lt; W &lt; 3m/s) \\\\\n&= 0.00114 \\qquad(3m/s \\le W &lt; 10m/s) \\\\\n&=\n(0.49 + 0.065W) \\times .001 \\quad(W \\ge 10m/s)\n\\end{align}\n\\]\n\n\n\n\n\n\nUTC time is used when calculating means rather than local time as was done in the historical products\n\nAvailable Products\nIn addition to time series of Upwelling Index at the 15 standard Eastern North Pacific locations, Northern Hemisphere (1967 - 1980) and global (1981 - present) values of the following quantities have been calculated from the interpolated six-hourly 1-degree sea level pressure fields, and can be subsetted, visualized, and downloaded in a variety of formats.\n\nPressure, mean sea level\nN-S and E-W components of geostropic wind\nGeostropic wind vector and magnitude\nN-S and E-W components of geostropic wind stress\nGeostropic wind stress vector and curl\nN-S and E-W components of Ekman transport",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#should-i-use-the-historical-or-1-degree-index",
+    "href": "projects/upwelling/bakun.html#should-i-use-the-historical-or-1-degree-index",
+    "title": "Upwelling Indices",
+    "section": "Should I use the historical or 1-degree index?",
+    "text": "Should I use the historical or 1-degree index?\nThe calculation methods described are compared in the following examples, which show the difference between the 1° and the 3° products for the years 1967 to 1991. The magnitude of the difference depends on location, pressure gradient, wind speed, and other factors such as the original mesh size and possibly the proximity to the coast.\n\n\n\n\n\n\nNote3° / 1° Comparisons\n\n\n\n\n\nThe following graphs show comparisons at two locations. In the upper panel of these plots, the black line (“new” calculation) is the 1° product, the red line is the ERD “standard” or “historical” 3° monthly product calculated from the monthly mean pressure field. For the upwelling index plot, the green line is the monthly average of the PFEL historical 6-hourly upwelling index. The bottom panel in each plot is the difference between the 1° and historical 3° monthly calcuation (black and red lines).\n\n\n\n48N 125W\n\n\n36N 122W\n\n\n\nUpwelling Index\n\n\n\n\n\n\n\n\n\n\nSea Level Pressure\n\n\n\n\n\n\n\n\n\n\nE-W Geostropic Wind\n\n\n\n\n\n\n\n\n\n\nN-S Geostropic Wind\n\n\n\n\n\n\n\n\n\n\nE-W Ekman Transport\n\n\n\n\n\n\n\n\n\n\nN-S Ekman Transport\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn some rare cases, we have found significant local differences in the upwelling index values calculated from the two grid sizes. For example, the index at 57N 137W derived from the 3° grid is substantially larger than the index calculated from the 1° pressure grid. This appears to be related to weaker local pressure gradients in the finer resolved grid, which result in lower local geostrophic winds and upwelling values than given with the more smoothed 3° grid, which spreads a steeper gradient over the site of this particular index.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#global-upwelling-index",
+    "href": "projects/upwelling/bakun.html#global-upwelling-index",
+    "title": "Upwelling Indices",
+    "section": "“Global” Upwelling Index",
+    "text": "“Global” Upwelling Index\nERD provides global Ekman transport on a 1-degree grid which allows users to calculate a time series of upwelling index (off-shore component of Ekman Transport) for any location in an Eastern Boundary Current, given a user-provided orientation of the coastline.\nInstructions follow for calculating Bakun upwelling index from Ekman transport, however before proceeding be aware of the following caveats:\n\nEkman transports are on a 1-degree grid so while you can technically compute upwelling index anywhere, finer scale calculations are interpolations that do not provide new information\nThe calculation for computing Ekman transport from FNMOC pressure uses a geostrophic approximation and thus is not valid within about 10-15 degrees of the equator.\nUpwelling index should be calculated at locations at least 1-degree from the coast, particularly in areas with high coastal topography.\nThe Bakun upwelling index is meant to be an estimate of large-scale variations in upwelling index, not an absolute value of the quantity of upwelled water.\n\nUpwelling index is calculated by rotating Ekman transport to find the offshore component using the geometry of the coastline. Calculations can be done easily in applications such as R, Python, Matlab, or Ferret.\nComponents of Ekman transport:\nEkman transport can be obtained from the ERD ERDDAP™ data server:\n\nMonthly: https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html\n6-hourly: https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTran6.html\n\nWhile these data can be separately downloaded from the ERDDAP™ web pages, everything in ERDDAP™ is a service, which means that the transports can be accessed or downloaded directly from within the environment used to calculate upwelling index. Examples:\n\nR: function ‘download.file()’\nPython: the package ‘urllib2’\nMatlab: ‘websave()’\n\nFor more information on using ERDDAP™ see: https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html\nCoastline Geometry:\nThe coastline orientation is entered as a “coast angle”, the angle the coast makes with north in the mathematical sense, and is defined as the angle the landward side of the coastline makes with a vector pointing north as illustrated in the following images, where the angle α (alpha) is the “coast angle”:\n\n\n\n\n\n\nland on NE\n\n\n\n\n\n\n\nland on NW\n\n\n\n\n\n\n\nland to east\n\n\n\n\n\nPlease note that the “coast angle” required here should not be confused with the rotation angle (offshore vector direction) listed in the PFEL output for flow indices at the 15 standard locations.\nCode Samples:\nIn the following code samples, ektrx and ektry are the x- and y- components of Ekman Transport obtained from the ERDDAP™ links above, and coast_angle is the angle α described in the diagrams above.\n\n\n\n\n\n\nNoteR\n\n\n\n\n\nupwell &lt;- function(ektrx, ektry, coast_angle) {\npi &lt;- 3.1415927\ndegtorad &lt;- pi/180.\nalpha &lt;- (360 - coast_angle) * degtorad\ns1 &lt;- cos(alpha)\nt1 &lt;- sin(alpha)\ns2 &lt;- -1 * t1\nt2 &lt;- s1\nperp &lt;- (s1 * ektrx) + (t1 * ektry)\npara &lt;- (s2 * ektrx) + (t2 * ektry)\nreturn(perp/10)\n\n\n\n\n\n\n\n\n\nNotePython\n\n\n\n\n\ndef upwell(ektrx, ektry, coast_angle):\nimport numpy as np\npi = 3.1415927\ndegtorad = pi/180.\nalpha = (360 - coast_angle) * degtorad\ns1 = np.cos(alpha)\nt1 = np.sin(alpha)\ns2 = -1 * t1\nt2 = s1\nperp = (s1 * ektrx) + (t1 * ektry)\npara = (s2 * ektrx) + (t2 * ektry)\nreturn(perp/10)\n\n\n\n\n\n\n\n\n\nNoteMatlab\n\n\n\n\n\nfunction upwell = upwelling(ektrx, ektry,  coast_angle )\npi = 3.1415927;\ndegtorad = pi/180.;\nalpha = (360 - coast_angle) * degtorad;\ns1 = cos(alpha);\nt1 = sin(alpha);\ns2 = -1 * t1;\nt2 = s1;\nperp = (s1 * ektrx) + (t1 * ektry);\npara = (s2 * ektrx) + (t2 * ektry);\nupwell = (perp/10)\n\n\n\n\n\n\n\n\n\nNoteFerret\n\n\n\n\n\nlet pi = 3.1415927\nlet degtorad=pi/180.\nlet alpha=(360-coast_angle)*degtorad\nlet s1=cos(alpha)\nlet t1=sin(alpha)\nlet s2=-1*t1\nlet t2=s1\nlet perp=s1*ektrx+t1*ektry\nlet para=s2*ektrx+t2*ektry\nlet upwelling_index=perp/10",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/bakun.html#references",
+    "href": "projects/upwelling/bakun.html#references",
+    "title": "Upwelling Indices",
+    "section": "References",
+    "text": "References\n\n\nBakun, A. 1973. Coastal Upwelling Indices, West Coast of North America, 1946-71. US Department of Commerce. NOAA Technical Report, NMFS SSRF-671. https://repository.library.noaa.gov/view/noaa/9041.\n\n\nBakun, A. 1975. Daily and Weekly Upwelling Indices, West Coast of North America, 1967-73. US Department of Commerce. NOAA Technical Report, NMFS SSRF-693. https://repository.library.noaa.gov/view/noaa/15387.\n\n\nClancy, R. M. 1992. “Operational Modeling: Ocean Modeling at the Fleet Numberical Oceanography Center.” Oceanography 5 (1): 31–35. https://tos.org/oceanography/assets/docs/5-1_clancy.pdf.\n\n\nLarge, W., and S. Pond. 1981. “Open Ocean Momentum Flux Measurements in Moderate to Strong Winds.” J. Phys. Oceanogr 11: 324–36. https://www.scirp.org/reference/referencespapers?referenceid=2978124.\n\n\nRosmond, T. E. 1992. “A Prototype Fully Coupled Ocean-Atmosphere Prediction System.” Oceanography 5 (1): 25–30. https://scispace.com/papers/a-prototype-fully-coupled-ocean-atmosphere-prediction-system-2sr9p610hh.\n\n\nSchwing, F. B., M. O’Farrell, J. Steger, and K. Baltz. 1996. Coastal Upwelling Indices, West Coast of North America, 1946-1995, NOAA Technical Memorandum NMFS-SWFSC-231. https://repository.library.noaa.gov/view/noaa/3002.\n\n\nTrenberth, K. E., W. G. Large, and J. G. Olson. 1990. “The Mean Annual Cycle in Global Ocean Wind Stress.” J. Phys. Oceanogr. 20 (1): 1742–60. https://journals.ametsoc.org/view/journals/phoc/20/11/1520-0485_1990_020_1742_tmacig_2_0_co_2.pdf.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Bakun Index"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/diff.html",
+    "href": "projects/upwelling/diff.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Details of the CUTI and BEUTI calculations and a thorough comparison with the Bakun Index are in Jacox et al. (2018). Here we briefly review key differences between indices.\n\nThe Bakun Index uses sea level pressure fields from an atmospheric reanalysis to derive estimated near-surface winds, while CUTI and BEUTI use winds directly from atmospheric reanalyses that assimilate satellite and in situ wind measurements.\nCUTI and BEUTI fully account for upwelling driven by wind stress curl, while the Bakun Index does not. Specifically, it omits upwelling associated with alongshore changes in the wind.\nCUTI and BEUTI account for cross-shore geostrophic transport, which can suppress or enhance upwelling relative to the wind-driven Ekman transport, while the Bakun Index does not.\nBEUTI estimates not just the volume transport of upwelling/downwelling, but also the amount of nitrate being upwelled/downwelled. Neither CUTI nor the Bakun Index consider the properties of upwelled water.\n\n\n\n\nDifferences between CUTI and the Bakun Index are clearly visible in their long-term means and seasonal cycles at latitudes spanning the U.S. west coast (see figure at right). Note that several versions of the Bakun Index have been created throughout the years, as there have been periodic changes to the sea level pressure fields used to generate them. They are referred to here as 3° monthly, 3° 6-hourly, and 1° 6-hourly, after the spatial and temporal resolutions of the sea level pressure fields used to derive them.\n\n\n\n\n\n\nDifferences in mean transport estimates are especially pronounced off southern and central California, where Bakun (1973) pointed out that limitations of using relatively coarse-resolution sea level pressure fields to estimates near-surface winds. In the seasonal cycle, the Bakun Index tends to give much higher estimates of transport magnitude, particularly for winter downwelling in the north and summer upwelling in the south. This is in part because it does not account for cross-shore geostrophic transport, which tends to oppose Ekman transport and reduce the upwelling/downwelling magnitude.\nNote that while points (1)-(4) above relate to simplifications in the Bakun Index that have been addressed by CUTI and/or BEUTI, the advantage to those simplifications is that they allow relatively straightforward calculation of the Bakun Index extending further back in time and over a broader spatial domain. The next section on this page provides suggestions for which index to use depending on the constraints of the problem being addressed.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Index Comparison"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/diff.html#how-are-cuti-and-beuti-different-from-the-bakun-index",
+    "href": "projects/upwelling/diff.html#how-are-cuti-and-beuti-different-from-the-bakun-index",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Details of the CUTI and BEUTI calculations and a thorough comparison with the Bakun Index are in Jacox et al. (2018). Here we briefly review key differences between indices.\n\nThe Bakun Index uses sea level pressure fields from an atmospheric reanalysis to derive estimated near-surface winds, while CUTI and BEUTI use winds directly from atmospheric reanalyses that assimilate satellite and in situ wind measurements.\nCUTI and BEUTI fully account for upwelling driven by wind stress curl, while the Bakun Index does not. Specifically, it omits upwelling associated with alongshore changes in the wind.\nCUTI and BEUTI account for cross-shore geostrophic transport, which can suppress or enhance upwelling relative to the wind-driven Ekman transport, while the Bakun Index does not.\nBEUTI estimates not just the volume transport of upwelling/downwelling, but also the amount of nitrate being upwelled/downwelled. Neither CUTI nor the Bakun Index consider the properties of upwelled water.\n\n\n\n\nDifferences between CUTI and the Bakun Index are clearly visible in their long-term means and seasonal cycles at latitudes spanning the U.S. west coast (see figure at right). Note that several versions of the Bakun Index have been created throughout the years, as there have been periodic changes to the sea level pressure fields used to generate them. They are referred to here as 3° monthly, 3° 6-hourly, and 1° 6-hourly, after the spatial and temporal resolutions of the sea level pressure fields used to derive them.\n\n\n\n\n\n\nDifferences in mean transport estimates are especially pronounced off southern and central California, where Bakun (1973) pointed out that limitations of using relatively coarse-resolution sea level pressure fields to estimates near-surface winds. In the seasonal cycle, the Bakun Index tends to give much higher estimates of transport magnitude, particularly for winter downwelling in the north and summer upwelling in the south. This is in part because it does not account for cross-shore geostrophic transport, which tends to oppose Ekman transport and reduce the upwelling/downwelling magnitude.\nNote that while points (1)-(4) above relate to simplifications in the Bakun Index that have been addressed by CUTI and/or BEUTI, the advantage to those simplifications is that they allow relatively straightforward calculation of the Bakun Index extending further back in time and over a broader spatial domain. The next section on this page provides suggestions for which index to use depending on the constraints of the problem being addressed.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Index Comparison"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/diff.html#references",
+    "href": "projects/upwelling/diff.html#references",
+    "title": "Upwelling Indices",
+    "section": "References",
+    "text": "References\n\n\nBakun, A. 1973. Coastal Upwelling Indices, West Coast of North America, 1946-71. US Department of Commerce. NOAA Technical Report, NMFS SSRF-671. https://repository.library.noaa.gov/view/noaa/9041.\n\n\nJacox, M. G., C. A. Edwards, E. L. Hazen, and S. J. Bograd. 2018. “(2018) Coastal Upwelling Revisited: Ekman, Bakun, and Improved Upwelling Indices for the u.s. West Coast.” Journal of Geophysical Research, ahead of print. https://doi.org/10.1029/2018JC014187.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Index Comparison"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html",
+    "href": "projects/upwelling/dnld.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Header Information Readme file\nuilocations=[{lat:60,lon:149},{lat:60,lon:146},{lat:57,lon:137},{lat:54,lon:134},{lat:51,lon:131},{lat:48,lon:125},{lat:45,lon:125},{lat:42,lon:125},{lat:39,lon:125},{lat:36,lon:122},{lat:33,lon:119},{lat:30,lon:119},{lat:27,lon:116},{lat:24,lon:113},{lat:21,lon:107}]\nproducts=[{name:\"upwell_\",title:\"Upwelling Index\"},{name:\"wind_\",title:\"Geostrophic Wind\"},{name:\"stress_\",title:\"Wind Stress\"},{name:\"slp_\",title:\"Sea Level Pressure\"}]\n\ndropdownMap = new Map(uilocations.map(loc =&gt; {\n  const label = `${loc.lat}N ${loc.lon}W`;\n  const fileName = `upwell${loc.lat}N${loc.lon}W`;\n  return [label, fileName];\n}))\n\n// Render the dropdown menu\nviewof selectedFile = Inputs.select(dropdownMap, { label: \"Location:\" , width:140 })\nbaseUrl = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/6_hourly/\"\ndownloadUrl = baseUrl + selectedFile\n\ncurrentLabel = [...dropdownMap.entries()].find(([label, file]) =&gt; file === selectedFile)[0]\n// 5. Render the HTML download link\nhtml`&lt;a href=\"${downloadUrl}\" class=\"btn btn-primary\"  target=\"_blank\"&gt;\n  Download\n&lt;/a&gt;&lt;br&gt;6-hourly upwelling index at ${currentLabel}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof selectedIndex = Inputs.select(\n  uilocations.map((loc, idx) =&gt; idx), \n  {\n    label: \"Location:\",\n    width:140,\n    format: idx =&gt; `${uilocations[idx].lat}N ${uilocations[idx].lon}W`\n  }\n)\nchosenLoc = uilocations[selectedIndex] || uilocations[0];\ncurrentLabel2 = `${chosenLoc.lat}N ${chosenLoc.lon}W`;\n\n// 4. File and URL layout\nindx = Number(`${selectedIndex ?? 0}`)+1;\nindx00 = String(indx).padStart(2, '0'); \nfileName2 = \"p\" + indx00 + \"dayac.all\"\nbaseUrl2 = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/daily/\"\ndownloadUrl2 = baseUrl2 + fileName2\nhtml`&lt;a href=\"${downloadUrl2}\" target=\"_blank\" class=\"btn btn-primary\"&gt;\n  Download&lt;/a&gt;&lt;br&gt;Selected: Daily Upwelling index at ${currentLabel2}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUpwelling Index For All 15 Positions\nAnomalies For All 15 Positions\n\nfunction getfiledate(d) {\n    var y = String(d.getFullYear()).padStart(4, '0');\n    var m = String(d.getMonth() + 1).padStart(2, '0'); \n    return y.substr(2) + m;\n}\n\n// Correct OJS block statement syntax\nlinks = {\n    let d = new Date();\n    d.setDate(1); \n    d.setDate(0); \n    const thisyrmon = getfiledate(d);\n    const thisyrmondate = (d.getMonth() + 1) + \"/\" + d.getFullYear();\n\n    let d1 = new Date();\n    d1.setDate(1); \n    d1.setMonth(d1.getMonth() - 1); \n    d1.setDate(0); \n    const lastyrmon = getfiledate(d1);\n    const lastyrmondate = (d1.getMonth() + 1) + \"/\" + d1.getFullYear();\n\n    return { thisyrmon, thisyrmondate, lastyrmon, lastyrmondate };\n}\n\nhtml`\n&lt;a href=\"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.${links.thisyrmon}\" target=\"_blank\"&gt;Most recent month (${links.thisyrmondate})&lt;/a&gt;&lt;br&gt;\n&lt;a href=\"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.${links.lastyrmon}\" target=\"_blank\"&gt;Previous recent month (${links.lastyrmondate})&lt;/a&gt;`",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america",
+    "href": "projects/upwelling/dnld.html#traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Header Information Readme file\nuilocations=[{lat:60,lon:149},{lat:60,lon:146},{lat:57,lon:137},{lat:54,lon:134},{lat:51,lon:131},{lat:48,lon:125},{lat:45,lon:125},{lat:42,lon:125},{lat:39,lon:125},{lat:36,lon:122},{lat:33,lon:119},{lat:30,lon:119},{lat:27,lon:116},{lat:24,lon:113},{lat:21,lon:107}]\nproducts=[{name:\"upwell_\",title:\"Upwelling Index\"},{name:\"wind_\",title:\"Geostrophic Wind\"},{name:\"stress_\",title:\"Wind Stress\"},{name:\"slp_\",title:\"Sea Level Pressure\"}]\n\ndropdownMap = new Map(uilocations.map(loc =&gt; {\n  const label = `${loc.lat}N ${loc.lon}W`;\n  const fileName = `upwell${loc.lat}N${loc.lon}W`;\n  return [label, fileName];\n}))\n\n// Render the dropdown menu\nviewof selectedFile = Inputs.select(dropdownMap, { label: \"Location:\" , width:140 })\nbaseUrl = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/6_hourly/\"\ndownloadUrl = baseUrl + selectedFile\n\ncurrentLabel = [...dropdownMap.entries()].find(([label, file]) =&gt; file === selectedFile)[0]\n// 5. Render the HTML download link\nhtml`&lt;a href=\"${downloadUrl}\" class=\"btn btn-primary\"  target=\"_blank\"&gt;\n  Download\n&lt;/a&gt;&lt;br&gt;6-hourly upwelling index at ${currentLabel}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof selectedIndex = Inputs.select(\n  uilocations.map((loc, idx) =&gt; idx), \n  {\n    label: \"Location:\",\n    width:140,\n    format: idx =&gt; `${uilocations[idx].lat}N ${uilocations[idx].lon}W`\n  }\n)\nchosenLoc = uilocations[selectedIndex] || uilocations[0];\ncurrentLabel2 = `${chosenLoc.lat}N ${chosenLoc.lon}W`;\n\n// 4. File and URL layout\nindx = Number(`${selectedIndex ?? 0}`)+1;\nindx00 = String(indx).padStart(2, '0'); \nfileName2 = \"p\" + indx00 + \"dayac.all\"\nbaseUrl2 = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/daily/\"\ndownloadUrl2 = baseUrl2 + fileName2\nhtml`&lt;a href=\"${downloadUrl2}\" target=\"_blank\" class=\"btn btn-primary\"&gt;\n  Download&lt;/a&gt;&lt;br&gt;Selected: Daily Upwelling index at ${currentLabel2}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUpwelling Index For All 15 Positions\nAnomalies For All 15 Positions\n\nfunction getfiledate(d) {\n    var y = String(d.getFullYear()).padStart(4, '0');\n    var m = String(d.getMonth() + 1).padStart(2, '0'); \n    return y.substr(2) + m;\n}\n\n// Correct OJS block statement syntax\nlinks = {\n    let d = new Date();\n    d.setDate(1); \n    d.setDate(0); \n    const thisyrmon = getfiledate(d);\n    const thisyrmondate = (d.getMonth() + 1) + \"/\" + d.getFullYear();\n\n    let d1 = new Date();\n    d1.setDate(1); \n    d1.setMonth(d1.getMonth() - 1); \n    d1.setDate(0); \n    const lastyrmon = getfiledate(d1);\n    const lastyrmondate = (d1.getMonth() + 1) + \"/\" + d1.getFullYear();\n\n    return { thisyrmon, thisyrmondate, lastyrmon, lastyrmondate };\n}\n\nhtml`\n&lt;a href=\"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.${links.thisyrmon}\" target=\"_blank\"&gt;Most recent month (${links.thisyrmondate})&lt;/a&gt;&lt;br&gt;\n&lt;a href=\"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.${links.lastyrmon}\" target=\"_blank\"&gt;Previous recent month (${links.lastyrmondate})&lt;/a&gt;`",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#derived-winds-and-ocean-transports",
+    "href": "projects/upwelling/dnld.html#derived-winds-and-ocean-transports",
+    "title": "Upwelling Indices",
+    "section": "Derived Winds and Ocean Transports",
+    "text": "Derived Winds and Ocean Transports\nThe files available in the menus below each contain:\n\nsurface atmospheric pressure-\nnorthward component of surface wind-\neastward component of surface wind-\nnorthward wind stress-\neastward wind stress-\nwind stress curl-\ncube of wind speed-\nnorthward component of Ekman transport-\neastward component of Ekman transport-\noffshore component of Ekman transport-\ndirection of offshore component of Ekman transport-\nvertical velocity into the Ekman layer\nSverdrup transport\n\n\n\nSix-Hourly Derived Winds and Ocean Transports (1967-1999)\ndropdownMap3 = new Map(uilocations.map(loc =&gt; {\n  const label = `${loc.lat}N ${loc.lon}W`;\n  const fileName = `${loc.lat}n${loc.lon}w_67to99.amk`;\n  return [label, fileName];\n}))\n\n// Render the dropdown menu\nviewof selectedFile3 = Inputs.select(dropdownMap3, { label: \"Location:\" , width:140 })\nbaseUrl3 = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/\"\ndownloadUrl3 = baseUrl3 + selectedFile3\n\ncurrentLabel3 = [...dropdownMap3.entries()].find(([label, file]) =&gt; file === selectedFile3)[0]\n// 5. Render the HTML download link\nhtml`&lt;a href=\"${downloadUrl3}\" class=\"btn btn-primary\" target=\"_blank\"&gt;\n  Download\n&lt;/a&gt;&lt;br&gt;6-hourly derived winds and ocean transports at ${currentLabel3}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSix-Hourly Derived Winds and Ocean Transports (January 2000-present)\ndropdownMap4 = new Map(uilocations.map(loc =&gt; {\n  const label = `${loc.lat}N ${loc.lon}W`;\n  const fileName = `${loc.lat}_${loc.lon}_6hr.2000`;\n  return [label, fileName];\n}))\n\n// Render the dropdown menu\nviewof selectedFile4 = Inputs.select(dropdownMap4, { label: \"Location:\" , width:140 })\nbaseUrl4 = \"https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/\"\ndownloadUrl4 = baseUrl4 + selectedFile4\n\ncurrentLabel4 = [...dropdownMap4.entries()].find(([label, file]) =&gt; file === selectedFile4)[0]\n// 5. Render the HTML download link\nhtml`&lt;a href=\"${downloadUrl4}\" class=\"btn btn-primary\" target=\"_blank\"&gt;\n  Download\n&lt;/a&gt;&lt;br&gt;6-hourly derived winds and ocean transports at ${currentLabel4}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonthly Mean Derived Winds and Ocean Transports at all 15 locations\n1946-1999 January 2000 - present",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america",
+    "href": "projects/upwelling/dnld.html#degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america",
+    "title": "Upwelling Indices",
+    "section": "1-degree Bakun Calculation at 15 positions along the west coast of North America",
+    "text": "1-degree Bakun Calculation at 15 positions along the west coast of North America\n\nNear Real Time (6-hrly, 1st day of the current month to 0600 Pacific Time of the current day, updated daily)\ndropdownMap5 = new Map(uilocations.map(loc =&gt; {\n  const label = `${loc.lat}N ${loc.lon}W`;\n  const fileName = `${loc.lon}W_${loc.lat}N`;\n  return [label, fileName];\n}))\n\ndropdownMap6 = new Map(products.map(prod =&gt; {\n  const label = `${prod.title}`;\n  const fileName = `${prod.name}`;\n  return [label, fileName];\n}))\n\n// Render the dropdown menu\nviewof selectedFile5 = Inputs.select(dropdownMap5, { width:100 })\nhtml`&lt;br&gt;`\nviewof selectedFile6 = Inputs.select(dropdownMap6, { width:100})\nbaseUrl5 = \"https://oceanwatch.pfeg.noaa.gov/products/current_gifs/\"\ndownloadUrl5 = baseUrl5 + selectedFile6 + selectedFile5\n\ncurrentLabel5 = [...dropdownMap5.entries()].find(([label, file]) =&gt; file === selectedFile5)[0]\ncurrentLabel6 = [...dropdownMap6.entries()].find(([label, file]) =&gt; file === selectedFile6)[0]\n// Render the HTML download links\nhtml`&lt;span style=\"margin-right:10px;\"&gt;&lt;a href=\"${downloadUrl5}.gif\" class=\"btn btn-primary\" target=\"_blank\"&gt;\n  View Plot\n&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href=\"${downloadUrl5}.txt\" class=\"btn btn-primary\" target=\"_blank\"&gt;\n  Text Download\n&lt;/a&gt;&lt;span&gt;&lt;br&gt;${currentLabel6} at ${currentLabel5}`\n\n\n\nChoose a location and product:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGet a plot or text download:\n\n\n\n\n\n\n\n\n\n\n\n\n6-hourly 1-deg global data\n\nSea Level Pressure\nEkman Transport and Wind Stress Curl\n\n\n\nMonthly 1-deg global data\nMonthly 1-degree data\nIncluding the following\n\nSea Level Pressure\nGeostrophic Winds\nWind Stress calculated from Geostrophic Wind\nWind Stress Curl calculated from Geostrophic Wind\nEkman Transport",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#bakun-calculation-at-other-eastern-boundary-current-locations",
+    "href": "projects/upwelling/dnld.html#bakun-calculation-at-other-eastern-boundary-current-locations",
+    "title": "Upwelling Indices",
+    "section": "Bakun Calculation at other Eastern Boundary Current Locations",
+    "text": "Bakun Calculation at other Eastern Boundary Current Locations\nSee the “Global Upwelling Index” section under “Bakun Index” to calculate Upwelling Index at other locations from Elkman Transport (Northern Hemisphere: 1967 - present, Southern Hemisphere: 1981 - present)",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#cuti-and-beuti",
+    "href": "projects/upwelling/dnld.html#cuti-and-beuti",
+    "title": "Upwelling Indices",
+    "section": "CUTI and BEUTI",
+    "text": "CUTI and BEUTI\nCUTI and BEUTI are currently being updated approximately monthly. In the near future they will be automatically updated daily. For questions about CUTI/BEUTI contact Michael.Jacox@noaa.gov\nWhen using CUTI or BEUTI, please cite Jacox et al. (2018)\nCUTI\nDaily indices [csv] [NetCDF]\nMonthly means of daily indices [csv] [NetCDF]\nBEUTI\nDaily indices [csv] [NetCDF]\nMonthly means of daily indices [csv] [NetCDF]",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/dnld.html#references",
+    "href": "projects/upwelling/dnld.html#references",
+    "title": "Upwelling Indices",
+    "section": "References",
+    "text": "References\n\n\nJacox, M. G., C. A. Edwards, E. L. Hazen, and S. J. Bograd. 2018. “(2018) Coastal Upwelling Revisited: Ekman, Bakun, and Improved Upwelling Indices for the u.s. West Coast.” Journal of Geophysical Research, ahead of print. https://doi.org/10.1029/2018JC014187.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Downloads"
+    ]
+  },
+  {
     "objectID": "projects/sanctuary_mhw/GFNMS.html",
     "href": "projects/sanctuary_mhw/GFNMS.html",
     "title": "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
@@ -658,7 +892,7 @@
     "href": "projects/mhw/about.html#regional-metric-calculations",
     "title": "About Marine Heatwaves",
     "section": "Regional Metric Calculations",
-    "text": "Regional Metric Calculations\n\n\n\n\n1,2) % Heatwave coverage outlined in black (about 15% in this example\n\n\n\n\n\n\n\n3) Distance index exanple\n\n\n\n\n\n\n\n4) Red dashed line is climatology\n\n\n\n\n\n\n\n5) 14 day reset window, red dashed line is climatology.\n\n\n\n\n\n1) % Heatwave Coverage = % of ocean area within the “black boundary” that is in “heatwave status” Thus this indicator tells you how much of your region is currently considered in a heatwave.\n\n\n2) Spatial Ave intensity = average SSTa* of all pixels in blue box that are also &gt; HW threshold (i.e. the spots within the black outline). Thus this indicator tells you just how much “hotter” than normal the heatwave is, for comparison with other heatwaves over time.\n\n\n3) Distance index This index is calculated as the distance between the center of the chosen region, and the edge of the nearest “major” large marine heatwave. A heatwave is considered to be “major” if its area &gt; 400,000 km2. This threshold represents the top 15% of all marine heatwaves on record, and is the same threshold used for tracking and monitoring of large marine heatwaves most likely to impact the US west coast (see: CCIEA Blobtracker website for more details).\n\n\nWhen the value of this index is small, it means that the heat within the chosen region is driven by a nearby large marine heatwave. When the value of this index is large, but there is coverage within the region, this means that the heating is local. When there is no value of this index, it means that there is no currently tracked major heatwave across the entire NEP.\n\n\nThus, this index is an attempt to show whether anomalous heat within the chosen region is locally generated, or is part of a much large, possibly basin-wide feature.\n\n\n4) Annual Cumulative Intensity Index This is similar to “heating degree days”. This is calculated by summing daily over time, at each pixel, the value of SSTa* whenever it is &gt; 0, and then averaging these values spatially within the chosen region, only for those locations that have a positive anomaly. Important to note, does not depend on the semi-arbitrary “heatwave status” threshold. Thus, this index is an indicator of how much accumulated “heat” a region has “felt” over a given period of time, compared to the climatological average.\n\n\n5) Biweekly cumulative intensity index Same as above, however, the cumulative value is reset to zero for any particular pixel whenever there is a stretch of time &gt; 14 days with no positive anomalies in SST. Thus, this index may be more appropriate in terms of the scales over which organisms might experience the cumulative “heat load” of warm-water events.",
+    "text": "Regional Metric Calculations\n\n\n\n\n\n\n1,2) % Heatwave coverage outlined in black (about 15% in this example\n\n\n\n\n\n\n\n3) Distance index exanple\n\n\n\n\n\n\n\n\n\n4) Red dashed line is climatology\n\n\n\n\n\n\n\n5) 14 day reset window, red dashed line is climatology.\n\n\n\n\n\n\n\n1) % Heatwave Coverage = % of ocean area within the “black boundary” that is in “heatwave status” Thus this indicator tells you how much of your region is currently considered in a heatwave.\n\n\n2) Spatial Ave intensity = average SSTa* of all pixels in blue box that are also &gt; HW threshold (i.e. the spots within the black outline). Thus this indicator tells you just how much “hotter” than normal the heatwave is, for comparison with other heatwaves over time.\n\n\n3) Distance index This index is calculated as the distance between the center of the chosen region, and the edge of the nearest “major” large marine heatwave. A heatwave is considered to be “major” if its area &gt; 400,000 km2. This threshold represents the top 15% of all marine heatwaves on record, and is the same threshold used for tracking and monitoring of large marine heatwaves most likely to impact the US west coast (see: CCIEA Blobtracker website for more details).\n\n\nWhen the value of this index is small, it means that the heat within the chosen region is driven by a nearby large marine heatwave. When the value of this index is large, but there is coverage within the region, this means that the heating is local. When there is no value of this index, it means that there is no currently tracked major heatwave across the entire NEP.\n\n\nThus, this index is an attempt to show whether anomalous heat within the chosen region is locally generated, or is part of a much large, possibly basin-wide feature.\n\n\n4) Annual Cumulative Intensity Index This is similar to “heating degree days”. This is calculated by summing daily over time, at each pixel, the value of SSTa* whenever it is &gt; 0, and then averaging these values spatially within the chosen region, only for those locations that have a positive anomaly. Important to note, does not depend on the semi-arbitrary “heatwave status” threshold. Thus, this index is an indicator of how much accumulated “heat” a region has “felt” over a given period of time, compared to the climatological average.\n\n\n5) Biweekly cumulative intensity index Same as above, however, the cumulative value is reset to zero for any particular pixel whenever there is a stretch of time &gt; 14 days with no positive anomalies in SST. Thus, this index may be more appropriate in terms of the scales over which organisms might experience the cumulative “heat load” of warm-water events.",
     "crumbs": [
       "Home",
       "Data",
@@ -1101,6 +1335,149 @@
       "Data",
       "West Coast National Marine Sanctuaries Marine Heatwave Tracker",
       "Monterey Bay - Mainland"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/cutibeuti.html",
+    "href": "projects/upwelling/cutibeuti.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The Coastal Upwelling Transport Index (CUTI, pronounced “cutie”) and the Biologically Effective Upwelling Transport Index (BEUTI; pronounced “beauty”) are two new upwelling indices that leverage state-of-the-art ocean models as well as satellite and in situ data to improve upon historically available upwelling indices for the U.S. west coast (Jacox et al. (2018)).\nCUTI provides estimates of vertical transport near the coast (i.e., upwelling/downwelling). It was developed as a more accurate alternative to the previously available ‘Bakun Index’ (Bakun (1973), Bakun (1975), Schwing et al. (1996)).\nExplore CUTI↗\nBEUTI provides estimates of vertical nitrate flux near the coast (i.e., the amount of nitrate upwelled/downwelled), which may be more relevant than upwelling strength when considering some biological responses.\nExplore BEUTI↗\n\n\n\n\n\n\nCUTI and BEUTI were developed in the Environmental Research Division of NOAA’s Southwest Fisheries Science Center, in collaboration with the UC Santa Cruz Ocean Modeling Group.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "CUTI and BEUTI"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/cutibeuti.html#new-west-coast-indices",
+    "href": "projects/upwelling/cutibeuti.html#new-west-coast-indices",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The Coastal Upwelling Transport Index (CUTI, pronounced “cutie”) and the Biologically Effective Upwelling Transport Index (BEUTI; pronounced “beauty”) are two new upwelling indices that leverage state-of-the-art ocean models as well as satellite and in situ data to improve upon historically available upwelling indices for the U.S. west coast (Jacox et al. (2018)).\nCUTI provides estimates of vertical transport near the coast (i.e., upwelling/downwelling). It was developed as a more accurate alternative to the previously available ‘Bakun Index’ (Bakun (1973), Bakun (1975), Schwing et al. (1996)).\nExplore CUTI↗\nBEUTI provides estimates of vertical nitrate flux near the coast (i.e., the amount of nitrate upwelled/downwelled), which may be more relevant than upwelling strength when considering some biological responses.\nExplore BEUTI↗\n\n\n\n\n\n\nCUTI and BEUTI were developed in the Environmental Research Division of NOAA’s Southwest Fisheries Science Center, in collaboration with the UC Santa Cruz Ocean Modeling Group.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "CUTI and BEUTI"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/cutibeuti.html#how-is-cuti-calculated",
+    "href": "projects/upwelling/cutibeuti.html#how-is-cuti-calculated",
+    "title": "Upwelling Indices",
+    "section": "How is CUTI calculated?",
+    "text": "How is CUTI calculated?\n\n\n\nCUTI is an estimate of vertical transport into (or out of) the surface mixed layer. It is calculated from surface wind stress, sea surface height, and mixed layer depth, each derived from a regional ocean reanalysis (i.e., an ocean model that assimilates available data from satellites and in situ platforms).\nCUTI estimates total vertical transport through the base of the mixed layer (W) as the sum of two components:\n\nVertical transport due to divergence or convergence in near-surface Ekman transport (UEk), which is driven by alongshore winds as well as wind stress curl.\nVertical transport associated with cross-shore geostrophic transport (UGeo), associated with an alongshore pressure gradient.\n\n\n\n\n\n\n\nBriefly, UEk is estimated by calculating Ekman transport as a function of wind stress and integrating it along the northern, western, and southern boundaries of each 1° latitude bin. Cross-shore geostrophic velocity is calculated from the mean alongshore sea surface height gradient in each 1° latitude bin, and that velocity is integrated over the mixed layer depth to estimate UGeo.Then, CUTI = UEk + UGeo",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "CUTI and BEUTI"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/cutibeuti.html#how-is-beuti-calculated",
+    "href": "projects/upwelling/cutibeuti.html#how-is-beuti-calculated",
+    "title": "Upwelling Indices",
+    "section": "How is BEUTI calculated?",
+    "text": "How is BEUTI calculated?\n\n\n\nBEUTI is an estimate of nitrate flux into (or out of) the surface mixed layer. It is obtained by multiplying vertical transport at the base of the mixed layer by nitrate concentration at the base of the mixed layer: BEUTI = CUTI * [NO3–]MLD.\nCUTI is calculated as described above, and nitrate concentration at the base of the mixed layer is estimated from the ocean reanalysis by using temperature at the base of the mixed layer and latitude as input to a temperature-latitude-nitrate relationship (left panel). This relationship was developed based on over 43,000 nitrate measurements from multiple observational programs along the U.S. west coast, and it is very effective for estimating nitrate (below).",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "CUTI and BEUTI"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/cutibeuti.html#references",
+    "href": "projects/upwelling/cutibeuti.html#references",
+    "title": "Upwelling Indices",
+    "section": "References",
+    "text": "References\n\n\nBakun, A. 1973. Coastal Upwelling Indices, West Coast of North America, 1946-71. US Department of Commerce. NOAA Technical Report, NMFS SSRF-671. https://repository.library.noaa.gov/view/noaa/9041.\n\n\nBakun, A. 1975. Daily and Weekly Upwelling Indices, West Coast of North America, 1967-73. US Department of Commerce. NOAA Technical Report, NMFS SSRF-693. https://repository.library.noaa.gov/view/noaa/15387.\n\n\nJacox, M. G., C. A. Edwards, E. L. Hazen, and S. J. Bograd. 2018. “(2018) Coastal Upwelling Revisited: Ekman, Bakun, and Improved Upwelling Indices for the u.s. West Coast.” Journal of Geophysical Research, ahead of print. https://doi.org/10.1029/2018JC014187.\n\n\nSchwing, F. B., M. O’Farrell, J. Steger, and K. Baltz. 1996. Coastal Upwelling Indices, West Coast of North America, 1946-1995, NOAA Technical Memorandum NMFS-SWFSC-231. https://repository.library.noaa.gov/view/noaa/3002.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "CUTI and BEUTI"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/intro.html",
+    "href": "projects/upwelling/intro.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The coastal upwelling index is an index of the strength of the wind forcing on the ocean which has been used in many studies of the effects of ocean variability on the reproductive and recruitment success of many fish and invertebrate species.\nSeveral upwelling indices and their differences are described in the tabs on this page, along with suggestions about the appropriateness of using each index:\n\nThe Bakun upwelling index was developed as a simple time series to represent variations in upwelling along the coast. This index estimates surface transport from pressure fields using the geostrophic wind approximation. More than 7 decades of Bakun upwelling index are available.\nNewer upwelling indices CUTI and BEUTI are calculated directly from ocean reanalyses that assimilate satellite and in situ ocean measurements. Relative to the historical Bakun Index, these newer indices are limited in temporal and spatial extent but better represent the dynamics of the boundary current system.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/intro.html#what-is-a-coastal-upwelling-index",
+    "href": "projects/upwelling/intro.html#what-is-a-coastal-upwelling-index",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "The coastal upwelling index is an index of the strength of the wind forcing on the ocean which has been used in many studies of the effects of ocean variability on the reproductive and recruitment success of many fish and invertebrate species.\nSeveral upwelling indices and their differences are described in the tabs on this page, along with suggestions about the appropriateness of using each index:\n\nThe Bakun upwelling index was developed as a simple time series to represent variations in upwelling along the coast. This index estimates surface transport from pressure fields using the geostrophic wind approximation. More than 7 decades of Bakun upwelling index are available.\nNewer upwelling indices CUTI and BEUTI are calculated directly from ocean reanalyses that assimilate satellite and in situ ocean measurements. Relative to the historical Bakun Index, these newer indices are limited in temporal and spatial extent but better represent the dynamics of the boundary current system.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/intro.html#erd-upwelling-indices",
+    "href": "projects/upwelling/intro.html#erd-upwelling-indices",
+    "title": "Upwelling Indices",
+    "section": "ERD Upwelling Indices",
+    "text": "ERD Upwelling Indices\nThe Environmental Research Division (ERD) has long been a leader in development and calculation of upwelling and other environmental indices. ERD was originally established as the Pacific Environmental Group at the U.S. Navy Fleet Numerical Meteorology and Oceanography Center (FNMOC) in Monterey, California, to take advantage of the Navy’s global oceanographic and meteorological models. FNMOC produces operational forecasts of the state of the atmosphere and the ocean several times daily. Before the advent of satellite oceanography, these forecasts provided global snapshots of ocean conditions for Navy operations, but were also invaluable for studies of fisheries climatology since they provided long time series of environmental conditions at a much higher resolution than was possible from direct measurement. The FNMOC sea-level pressure became the basis of the Bakun upwelling index calculation, and provides estimates of upwelling for the Northern Hemisphere starting in 1948 and globally since 1981. Long time series of upwelling index products have been established at 15 North American locations\nAs computational power and model resolution have improved over the years, ERD has endeavored to improve the upwelling index calculation. Older indices are maintained to provide continuity for studies that rely on these long time series.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/intro.html#upwelling-and-eastern-boundary-currents",
+    "href": "projects/upwelling/intro.html#upwelling-and-eastern-boundary-currents",
+    "title": "Upwelling Indices",
+    "section": "Upwelling and Eastern Boundary Currents",
+    "text": "Upwelling and Eastern Boundary Currents\nUpwelling is a dominant driver of ecosystem productivity and variability in eastern boundary currents, including the California Current System which runs along the U.S. west coast. Marine ecosystems in the ocean’s eastern boundary currents are highly productive, and capable of maintaining large standing crops of plankton, massive fish stocks such as sardines and anchovies, and major populations of marine mammals and sea birds. Variations in upwelling over seasonal to interannual periods, due to large-scale shifts in wind patterns and atmospheric systems, are linked to variability in fish populations and other biological components in coastal ocean ecosystems.\nWhat causes eastern boundary currents to be so productive? The frictional stress of equatorward wind on the ocean’s surface, in concert with the effect of the earth’s rotation, causes water in the surface layer to move away from the western coast of continental land masses. This offshore moving water is replaced by water which upwells, or flows toward the surface from depths of 50 to 100 meters and more. Upwelled water is cooler and saltier than the original surface water, and typically has much greater concentrations of nutrients such as nitrates, phosphates and silicates that are key to sustaining biological production.\nThe major eastern boundary currents include the Canary off the Iberian peninsula and northwestern Africa, the Benguela off southwestern Africa, the Peru off western South America, and the California Current System off western North America. Long-term time series of these ocean surface currents are not available, so estimates of upwelling strength (upwelling indices) are often used to help understand fluctuations in ecosystem properties ranging from temperature and density to distributions and abundances of top predators.",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/which.html",
+    "href": "projects/upwelling/which.html",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Use the chart below to find the appropriate index based on spatiotemporal coverage and attributes of the time series. In general, CUTI and/or BEUTI should be used if they cover the spatial domain and time period of interest. Otherwise, various versions of the Bakun Index can be used. Note that the different Bakun Indices are quite similar north of 39°N, but farther south the different indices diverge and the choice of which to use becomes more important (see comparison under “Differences Between Indices”)",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Which index should I use?"
+    ]
+  },
+  {
+    "objectID": "projects/upwelling/which.html#section",
+    "href": "projects/upwelling/which.html#section",
+    "title": "Upwelling Indices",
+    "section": "",
+    "text": "Use the chart below to find the appropriate index based on spatiotemporal coverage and attributes of the time series. In general, CUTI and/or BEUTI should be used if they cover the spatial domain and time period of interest. Otherwise, various versions of the Bakun Index can be used. Note that the different Bakun Indices are quite similar north of 39°N, but farther south the different indices diverge and the choice of which to use becomes more important (see comparison under “Differences Between Indices”)",
+    "crumbs": [
+      "Home",
+      "Data",
+      "Upwelling Index",
+      "Which index should I use?"
     ]
   },
   {

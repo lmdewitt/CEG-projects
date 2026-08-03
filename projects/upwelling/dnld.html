@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Upwelling Indices</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../projects/upwelling/which.html" rel="prev">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-56bab880c8ee09557fcb2f97a9ba54bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/noaa_logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/noaa_logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Climate &amp; Ecosystems Group</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/lmdewitt" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data</li><li class="breadcrumb-item"><a href="../../projects/upwelling/intro.html">Upwelling Index</a></li><li class="breadcrumb-item"><a href="../../projects/upwelling/dnld.html">Downloads</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Marine Heat Wave</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/latest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Latest Conditions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/prev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Previous Updates</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/videos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Videos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/regional_eez.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regional EEZ MHW</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/refs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">West Coast National Marine Sanctuaries Marine Heatwave Tracker</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/OCNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Olympic Coast</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/GFNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Greater Farallones</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/CBNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cordell Bank</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/MBNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monterey Bay - Mainland</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/DSNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monterey Bay - Davidson Seamount</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/CINMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Channel Islands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/calc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MHW Calculations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Upwelling Index</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/bakun.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bakun Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/cutibeuti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CUTI and BEUTI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/diff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/which.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which index should I use?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/dnld.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Downloads</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" id="toc-traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" class="nav-link active" data-scroll-target="#traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america">Traditional Bakun calculation at 15 positions along the west coast of North America</a>
+  <ul>
+  <li><a href="#upwelling-indices" id="toc-upwelling-indices" class="nav-link" data-scroll-target="#upwelling-indices">Upwelling Indices</a>
+  <ul>
+  <li><a href="#six-hourly-upwelling-indices-1967-present" id="toc-six-hourly-upwelling-indices-1967-present" class="nav-link" data-scroll-target="#six-hourly-upwelling-indices-1967-present">Six-Hourly Upwelling Indices (1967-present)</a></li>
+  <li><a href="#daily-upwelling-indices-1967-present" id="toc-daily-upwelling-indices-1967-present" class="nav-link" data-scroll-target="#daily-upwelling-indices-1967-present">Daily Upwelling Indices (1967-present)</a></li>
+  <li><a href="#monthly-upwelling-indices-and-anomalies-1946-present" id="toc-monthly-upwelling-indices-and-anomalies-1946-present" class="nav-link" data-scroll-target="#monthly-upwelling-indices-and-anomalies-1946-present">Monthly Upwelling Indices and Anomalies (1946-present)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#derived-winds-and-ocean-transports" id="toc-derived-winds-and-ocean-transports" class="nav-link" data-scroll-target="#derived-winds-and-ocean-transports">Derived Winds and Ocean Transports</a>
+  <ul>
+  <li><a href="#six-hourly-derived-winds-and-ocean-transports-1967-1999" id="toc-six-hourly-derived-winds-and-ocean-transports-1967-1999" class="nav-link" data-scroll-target="#six-hourly-derived-winds-and-ocean-transports-1967-1999">Six-Hourly Derived Winds and Ocean Transports (1967-1999)</a></li>
+  <li><a href="#six-hourly-derived-winds-and-ocean-transports-january-2000-present" id="toc-six-hourly-derived-winds-and-ocean-transports-january-2000-present" class="nav-link" data-scroll-target="#six-hourly-derived-winds-and-ocean-transports-january-2000-present">Six-Hourly Derived Winds and Ocean Transports (January 2000-present)</a></li>
+  <li><a href="#monthly-mean-derived-winds-and-ocean-transports-at-all-15-locations" id="toc-monthly-mean-derived-winds-and-ocean-transports-at-all-15-locations" class="nav-link" data-scroll-target="#monthly-mean-derived-winds-and-ocean-transports-at-all-15-locations">Monthly Mean Derived Winds and Ocean Transports at all 15 locations</a></li>
+  </ul></li>
+  <li><a href="#degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" id="toc-degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" class="nav-link" data-scroll-target="#degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america">1-degree Bakun Calculation at 15 positions along the west coast of North America</a>
+  <ul>
+  <li><a href="#near-real-time-6-hrly-1st-day-of-the-current-month-to-0600-pacific-time-of-the-current-day-updated-daily" id="toc-near-real-time-6-hrly-1st-day-of-the-current-month-to-0600-pacific-time-of-the-current-day-updated-daily" class="nav-link" data-scroll-target="#near-real-time-6-hrly-1st-day-of-the-current-month-to-0600-pacific-time-of-the-current-day-updated-daily">Near Real Time (6-hrly, 1st day of the current month to 0600 Pacific Time of the current day, updated daily)</a></li>
+  <li><a href="#hourly-1-deg-global-data" id="toc-hourly-1-deg-global-data" class="nav-link" data-scroll-target="#hourly-1-deg-global-data">6-hourly 1-deg global data</a></li>
+  <li><a href="#monthly-1-deg-global-data" id="toc-monthly-1-deg-global-data" class="nav-link" data-scroll-target="#monthly-1-deg-global-data">Monthly 1-deg global data</a></li>
+  </ul></li>
+  <li><a href="#bakun-calculation-at-other-eastern-boundary-current-locations" id="toc-bakun-calculation-at-other-eastern-boundary-current-locations" class="nav-link" data-scroll-target="#bakun-calculation-at-other-eastern-boundary-current-locations">Bakun Calculation at other Eastern Boundary Current Locations</a></li>
+  <li><a href="#cuti-and-beuti" id="toc-cuti-and-beuti" class="nav-link" data-scroll-target="#cuti-and-beuti">CUTI and BEUTI</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data</li><li class="breadcrumb-item"><a href="../../projects/upwelling/intro.html">Upwelling Index</a></li><li class="breadcrumb-item"><a href="../../projects/upwelling/dnld.html">Downloads</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Upwelling Indices</h1>
+<p class="subtitle lead">Downloads</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" class="level2">
+<h2 class="anchored" data-anchor-id="traditional-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america">Traditional Bakun calculation at 15 positions along the west coast of North America</h2>
+<section id="upwelling-indices" class="level3">
+<h3 class="anchored" data-anchor-id="upwelling-indices">Upwelling Indices</h3>
+<section id="six-hourly-upwelling-indices-1967-present" class="level4">
+<h4 class="anchored" data-anchor-id="six-hourly-upwelling-indices-1967-present">Six-Hourly Upwelling Indices (1967-present)</h4>
+<p><a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/6_hourly/readme.upwell_6hr">Header Information Readme file</a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="28" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>uilocations<span class="op">=</span>[{<span class="dt">lat</span><span class="op">:</span><span class="dv">60</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">149</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">60</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">146</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">57</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">137</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">54</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">134</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">51</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">131</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">48</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">125</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">45</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">125</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">42</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">125</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">39</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">125</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">36</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">122</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">33</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">119</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">30</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">119</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">27</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">116</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">24</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">113</span>}<span class="op">,</span>{<span class="dt">lat</span><span class="op">:</span><span class="dv">21</span><span class="op">,</span><span class="dt">lon</span><span class="op">:</span><span class="dv">107</span>}]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>products<span class="op">=</span>[{<span class="dt">name</span><span class="op">:</span><span class="st">"upwell_"</span><span class="op">,</span><span class="dt">title</span><span class="op">:</span><span class="st">"Upwelling Index"</span>}<span class="op">,</span>{<span class="dt">name</span><span class="op">:</span><span class="st">"wind_"</span><span class="op">,</span><span class="dt">title</span><span class="op">:</span><span class="st">"Geostrophic Wind"</span>}<span class="op">,</span>{<span class="dt">name</span><span class="op">:</span><span class="st">"stress_"</span><span class="op">,</span><span class="dt">title</span><span class="op">:</span><span class="st">"Wind Stress"</span>}<span class="op">,</span>{<span class="dt">name</span><span class="op">:</span><span class="st">"slp_"</span><span class="op">,</span><span class="dt">title</span><span class="op">:</span><span class="st">"Sea Level Pressure"</span>}]</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>dropdownMap <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(uilocations<span class="op">.</span><span class="fu">map</span>(loc <span class="kw">=&gt;</span> {</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> label <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> fileName <span class="op">=</span> <span class="vs">`upwell</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [label<span class="op">,</span> fileName]<span class="op">;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the dropdown menu</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>viewof selectedFile <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(dropdownMap<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Location:"</span> <span class="op">,</span> <span class="dt">width</span><span class="op">:</span><span class="dv">140</span> })</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>baseUrl <span class="op">=</span> <span class="st">"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/6_hourly/"</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>downloadUrl <span class="op">=</span> baseUrl <span class="op">+</span> selectedFile</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>currentLabel <span class="op">=</span> [<span class="op">...</span>dropdownMap<span class="op">.</span><span class="fu">entries</span>()]<span class="op">.</span><span class="fu">find</span>(([label<span class="op">,</span> file]) <span class="kw">=&gt;</span> file <span class="op">===</span> selectedFile)[<span class="dv">0</span>]</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">// 5. Render the HTML download link</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;a href="</span><span class="sc">${</span>downloadUrl<span class="sc">}</span><span class="vs">" class="btn btn-primary"  target="_blank"&gt;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="vs">  Download</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;&lt;br&gt;6-hourly upwelling index at </span><span class="sc">${</span>currentLabel<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="daily-upwelling-indices-1967-present" class="level4">
+<h4 class="anchored" data-anchor-id="daily-upwelling-indices-1967-present">Daily Upwelling Indices (1967-present)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="74" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>viewof selectedIndex <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>  uilocations<span class="op">.</span><span class="fu">map</span>((loc<span class="op">,</span> idx) <span class="kw">=&gt;</span> idx)<span class="op">,</span> </span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Location:"</span><span class="op">,</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span><span class="dv">140</span><span class="op">,</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    <span class="dt">format</span><span class="op">:</span> idx <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>uilocations[idx]<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>uilocations[idx]<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>chosenLoc <span class="op">=</span> uilocations[selectedIndex] <span class="op">||</span> uilocations[<span class="dv">0</span>]<span class="op">;</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>currentLabel2 <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>chosenLoc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>chosenLoc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co">// 4. File and URL layout</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>indx <span class="op">=</span> <span class="bu">Number</span>(<span class="vs">`</span><span class="sc">${</span>selectedIndex <span class="op">??</span> <span class="dv">0</span><span class="sc">}</span><span class="vs">`</span>)<span class="op">+</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>indx00 <span class="op">=</span> <span class="bu">String</span>(indx)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">'0'</span>)<span class="op">;</span> </span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>fileName2 <span class="op">=</span> <span class="st">"p"</span> <span class="op">+</span> indx00 <span class="op">+</span> <span class="st">"dayac.all"</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>baseUrl2 <span class="op">=</span> <span class="st">"https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/daily/"</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>downloadUrl2 <span class="op">=</span> baseUrl2 <span class="op">+</span> fileName2</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;a href="</span><span class="sc">${</span>downloadUrl2<span class="sc">}</span><span class="vs">" target="_blank" class="btn btn-primary"&gt;</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="vs">  Download&lt;/a&gt;&lt;br&gt;Selected: Daily Upwelling index at </span><span class="sc">${</span>currentLabel2<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="monthly-upwelling-indices-and-anomalies-1946-present" class="level4">
+<h4 class="anchored" data-anchor-id="monthly-upwelling-indices-and-anomalies-1946-present">Monthly Upwelling Indices and Anomalies (1946-present)</h4>
+<p><a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/upindex.mon">Upwelling Index For All 15 Positions</a><br>
+<a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/upanoms.mon">Anomalies For All 15 Positions</a></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="122" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 121;"><span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">getfiledate</span>(d) {</span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> y <span class="op">=</span> <span class="bu">String</span>(d<span class="op">.</span><span class="fu">getFullYear</span>())<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">4</span><span class="op">,</span> <span class="st">'0'</span>)<span class="op">;</span></span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> m <span class="op">=</span> <span class="bu">String</span>(d<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">+</span> <span class="dv">1</span>)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">'0'</span>)<span class="op">;</span> </span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y<span class="op">.</span><span class="fu">substr</span>(<span class="dv">2</span>) <span class="op">+</span> m<span class="op">;</span></span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a><span class="co">// Correct OJS block statement syntax</span></span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a>links <span class="op">=</span> {</span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> d <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a>    d<span class="op">.</span><span class="fu">setDate</span>(<span class="dv">1</span>)<span class="op">;</span> </span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a>    d<span class="op">.</span><span class="fu">setDate</span>(<span class="dv">0</span>)<span class="op">;</span> </span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> thisyrmon <span class="op">=</span> <span class="fu">getfiledate</span>(d)<span class="op">;</span></span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> thisyrmondate <span class="op">=</span> (d<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">+</span> <span class="dv">1</span>) <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> d<span class="op">.</span><span class="fu">getFullYear</span>()<span class="op">;</span></span>
+<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> d1 <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb3-137"><a href="#cb3-137" aria-hidden="true" tabindex="-1"></a>    d1<span class="op">.</span><span class="fu">setDate</span>(<span class="dv">1</span>)<span class="op">;</span> </span>
+<span id="cb3-138"><a href="#cb3-138" aria-hidden="true" tabindex="-1"></a>    d1<span class="op">.</span><span class="fu">setMonth</span>(d1<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">-</span> <span class="dv">1</span>)<span class="op">;</span> </span>
+<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a>    d1<span class="op">.</span><span class="fu">setDate</span>(<span class="dv">0</span>)<span class="op">;</span> </span>
+<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> lastyrmon <span class="op">=</span> <span class="fu">getfiledate</span>(d1)<span class="op">;</span></span>
+<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> lastyrmondate <span class="op">=</span> (d1<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">+</span> <span class="dv">1</span>) <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> d1<span class="op">.</span><span class="fu">getFullYear</span>()<span class="op">;</span></span>
+<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> { thisyrmon<span class="op">,</span> thisyrmondate<span class="op">,</span> lastyrmon<span class="op">,</span> lastyrmondate }<span class="op">;</span></span>
+<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.</span><span class="sc">${</span>links<span class="op">.</span><span class="at">thisyrmon</span><span class="sc">}</span><span class="vs">" target="_blank"&gt;Most recent month (</span><span class="sc">${</span>links<span class="op">.</span><span class="at">thisyrmondate</span><span class="sc">}</span><span class="vs">)&lt;/a&gt;&lt;br&gt;</span></span>
+<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/upwell/monthly/table.</span><span class="sc">${</span>links<span class="op">.</span><span class="at">lastyrmon</span><span class="sc">}</span><span class="vs">" target="_blank"&gt;Previous recent month (</span><span class="sc">${</span>links<span class="op">.</span><span class="at">lastyrmondate</span><span class="sc">}</span><span class="vs">)&lt;/a&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="derived-winds-and-ocean-transports" class="level2">
+<h2 class="anchored" data-anchor-id="derived-winds-and-ocean-transports">Derived Winds and Ocean Transports</h2>
+<p>The files available in the menus below each contain:</p>
+<ul>
+<li>surface atmospheric pressure-</li>
+<li>northward component of surface wind-</li>
+<li>eastward component of surface wind-</li>
+<li>northward wind stress-</li>
+<li>eastward wind stress-</li>
+<li>wind stress curl-</li>
+<li>cube of wind speed-</li>
+<li>northward component of Ekman transport-</li>
+<li>eastward component of Ekman transport-</li>
+<li>offshore component of Ekman transport-</li>
+<li>direction of offshore component of Ekman transport-</li>
+<li>vertical velocity into the Ekman layer</li>
+<li>Sverdrup transport</li>
+</ul>
+<p><img src="images/wind_curl.gif" class="img-fluid"></p>
+<section id="six-hourly-derived-winds-and-ocean-transports-1967-1999" class="level4">
+<h4 class="anchored" data-anchor-id="six-hourly-derived-winds-and-ocean-transports-1967-1999">Six-Hourly Derived Winds and Ocean Transports (1967-1999)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="184" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 183;"><span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a>dropdownMap3 <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(uilocations<span class="op">.</span><span class="fu">map</span>(loc <span class="kw">=&gt;</span> {</span>
+<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> label <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> fileName <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">n</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">w_67to99.amk`</span><span class="op">;</span></span>
+<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [label<span class="op">,</span> fileName]<span class="op">;</span></span>
+<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the dropdown menu</span></span>
+<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a>viewof selectedFile3 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(dropdownMap3<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Location:"</span> <span class="op">,</span> <span class="dt">width</span><span class="op">:</span><span class="dv">140</span> })</span>
+<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>baseUrl3 <span class="op">=</span> <span class="st">"https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/"</span></span>
+<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a>downloadUrl3 <span class="op">=</span> baseUrl3 <span class="op">+</span> selectedFile3</span>
+<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>currentLabel3 <span class="op">=</span> [<span class="op">...</span>dropdownMap3<span class="op">.</span><span class="fu">entries</span>()]<span class="op">.</span><span class="fu">find</span>(([label<span class="op">,</span> file]) <span class="kw">=&gt;</span> file <span class="op">===</span> selectedFile3)[<span class="dv">0</span>]</span>
+<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a><span class="co">// 5. Render the HTML download link</span></span>
+<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;a href="</span><span class="sc">${</span>downloadUrl3<span class="sc">}</span><span class="vs">" class="btn btn-primary" target="_blank"&gt;</span></span>
+<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a><span class="vs">  Download</span></span>
+<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;&lt;br&gt;6-hourly derived winds and ocean transports at </span><span class="sc">${</span>currentLabel3<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-10" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="six-hourly-derived-winds-and-ocean-transports-january-2000-present" class="level4">
+<h4 class="anchored" data-anchor-id="six-hourly-derived-winds-and-ocean-transports-january-2000-present">Six-Hourly Derived Winds and Ocean Transports (January 2000-present)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="229" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 228;"><span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a>dropdownMap4 <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(uilocations<span class="op">.</span><span class="fu">map</span>(loc <span class="kw">=&gt;</span> {</span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> label <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> fileName <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">_</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">_6hr.2000`</span><span class="op">;</span></span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [label<span class="op">,</span> fileName]<span class="op">;</span></span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the dropdown menu</span></span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a>viewof selectedFile4 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(dropdownMap4<span class="op">,</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Location:"</span> <span class="op">,</span> <span class="dt">width</span><span class="op">:</span><span class="dv">140</span> })</span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a>baseUrl4 <span class="op">=</span> <span class="st">"https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/"</span></span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a>downloadUrl4 <span class="op">=</span> baseUrl4 <span class="op">+</span> selectedFile4</span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a>currentLabel4 <span class="op">=</span> [<span class="op">...</span>dropdownMap4<span class="op">.</span><span class="fu">entries</span>()]<span class="op">.</span><span class="fu">find</span>(([label<span class="op">,</span> file]) <span class="kw">=&gt;</span> file <span class="op">===</span> selectedFile4)[<span class="dv">0</span>]</span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a><span class="co">// 5. Render the HTML download link</span></span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;a href="</span><span class="sc">${</span>downloadUrl4<span class="sc">}</span><span class="vs">" class="btn btn-primary" target="_blank"&gt;</span></span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a><span class="vs">  Download</span></span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;&lt;br&gt;6-hourly derived winds and ocean transports at </span><span class="sc">${</span>currentLabel4<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-11-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-11-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-12-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-12-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-12-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-13" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="monthly-mean-derived-winds-and-ocean-transports-at-all-15-locations" class="level4">
+<h4 class="anchored" data-anchor-id="monthly-mean-derived-winds-and-ocean-transports-at-all-15-locations">Monthly Mean Derived Winds and Ocean Transports at all 15 locations</h4>
+<p><a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/amk_46_99.mon">1946-1999</a> <a href="https://oceanwatch.pfeg.noaa.gov/products/PFELData/arrowmark_indices/monthly.2000">January 2000 - present</a></p>
+</section>
+</section>
+<section id="degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america" class="level2">
+<h2 class="anchored" data-anchor-id="degree-bakun-calculation-at-15-positions-along-the-west-coast-of-north-america">1-degree Bakun Calculation at 15 positions along the west coast of North America</h2>
+<section id="near-real-time-6-hrly-1st-day-of-the-current-month-to-0600-pacific-time-of-the-current-day-updated-daily" class="level4">
+<h4 class="anchored" data-anchor-id="near-real-time-6-hrly-1st-day-of-the-current-month-to-0600-pacific-time-of-the-current-day-updated-daily">Near Real Time (6-hrly, 1st day of the current month to 0600 Pacific Time of the current day, updated daily)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="283" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 282;"><span id="cb6-283"><a href="#cb6-283" aria-hidden="true" tabindex="-1"></a>dropdownMap5 <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(uilocations<span class="op">.</span><span class="fu">map</span>(loc <span class="kw">=&gt;</span> {</span>
+<span id="cb6-284"><a href="#cb6-284" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> label <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N </span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W`</span><span class="op">;</span></span>
+<span id="cb6-285"><a href="#cb6-285" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> fileName <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lon</span><span class="sc">}</span><span class="vs">W_</span><span class="sc">${</span>loc<span class="op">.</span><span class="at">lat</span><span class="sc">}</span><span class="vs">N`</span><span class="op">;</span></span>
+<span id="cb6-286"><a href="#cb6-286" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [label<span class="op">,</span> fileName]<span class="op">;</span></span>
+<span id="cb6-287"><a href="#cb6-287" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb6-288"><a href="#cb6-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-289"><a href="#cb6-289" aria-hidden="true" tabindex="-1"></a>dropdownMap6 <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(products<span class="op">.</span><span class="fu">map</span>(prod <span class="kw">=&gt;</span> {</span>
+<span id="cb6-290"><a href="#cb6-290" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> label <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>prod<span class="op">.</span><span class="at">title</span><span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb6-291"><a href="#cb6-291" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> fileName <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>prod<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">`</span><span class="op">;</span></span>
+<span id="cb6-292"><a href="#cb6-292" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [label<span class="op">,</span> fileName]<span class="op">;</span></span>
+<span id="cb6-293"><a href="#cb6-293" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb6-294"><a href="#cb6-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-295"><a href="#cb6-295" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the dropdown menu</span></span>
+<span id="cb6-296"><a href="#cb6-296" aria-hidden="true" tabindex="-1"></a>viewof selectedFile5 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(dropdownMap5<span class="op">,</span> { <span class="dt">width</span><span class="op">:</span><span class="dv">100</span> })</span>
+<span id="cb6-297"><a href="#cb6-297" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;br&gt;`</span></span>
+<span id="cb6-298"><a href="#cb6-298" aria-hidden="true" tabindex="-1"></a>viewof selectedFile6 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(dropdownMap6<span class="op">,</span> { <span class="dt">width</span><span class="op">:</span><span class="dv">100</span>})</span>
+<span id="cb6-299"><a href="#cb6-299" aria-hidden="true" tabindex="-1"></a>baseUrl5 <span class="op">=</span> <span class="st">"https://oceanwatch.pfeg.noaa.gov/products/current_gifs/"</span></span>
+<span id="cb6-300"><a href="#cb6-300" aria-hidden="true" tabindex="-1"></a>downloadUrl5 <span class="op">=</span> baseUrl5 <span class="op">+</span> selectedFile6 <span class="op">+</span> selectedFile5</span>
+<span id="cb6-301"><a href="#cb6-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-302"><a href="#cb6-302" aria-hidden="true" tabindex="-1"></a>currentLabel5 <span class="op">=</span> [<span class="op">...</span>dropdownMap5<span class="op">.</span><span class="fu">entries</span>()]<span class="op">.</span><span class="fu">find</span>(([label<span class="op">,</span> file]) <span class="kw">=&gt;</span> file <span class="op">===</span> selectedFile5)[<span class="dv">0</span>]</span>
+<span id="cb6-303"><a href="#cb6-303" aria-hidden="true" tabindex="-1"></a>currentLabel6 <span class="op">=</span> [<span class="op">...</span>dropdownMap6<span class="op">.</span><span class="fu">entries</span>()]<span class="op">.</span><span class="fu">find</span>(([label<span class="op">,</span> file]) <span class="kw">=&gt;</span> file <span class="op">===</span> selectedFile6)[<span class="dv">0</span>]</span>
+<span id="cb6-304"><a href="#cb6-304" aria-hidden="true" tabindex="-1"></a><span class="co">// Render the HTML download links</span></span>
+<span id="cb6-305"><a href="#cb6-305" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;span style="margin-right:10px;"&gt;&lt;a href="</span><span class="sc">${</span>downloadUrl5<span class="sc">}</span><span class="vs">.gif" class="btn btn-primary" target="_blank"&gt;</span></span>
+<span id="cb6-306"><a href="#cb6-306" aria-hidden="true" tabindex="-1"></a><span class="vs">  View Plot</span></span>
+<span id="cb6-307"><a href="#cb6-307" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;&lt;/span&gt;&lt;span&gt;&lt;a href="</span><span class="sc">${</span>downloadUrl5<span class="sc">}</span><span class="vs">.txt" class="btn btn-primary" target="_blank"&gt;</span></span>
+<span id="cb6-308"><a href="#cb6-308" aria-hidden="true" tabindex="-1"></a><span class="vs">  Text Download</span></span>
+<span id="cb6-309"><a href="#cb6-309" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;&lt;span&gt;&lt;br&gt;</span><span class="sc">${</span>currentLabel6<span class="sc">}</span><span class="vs"> at </span><span class="sc">${</span>currentLabel5<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span><strong><em>Choose a location and product:</em></strong></span></p>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-14-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-14-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-14-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-14-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-14-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-15-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-15-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-15-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-15-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><span><strong><em>Get a plot or text download:</em></strong></span></p>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-16" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="hourly-1-deg-global-data" class="level4">
+<h4 class="anchored" data-anchor-id="hourly-1-deg-global-data">6-hourly 1-deg global data</h4>
+<ul>
+<li><a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?searchFor=erdlasFnPres6">Sea Level Pressure</a></li>
+<li><a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?searchFor=erdlasFnTran6">Ekman Transport and Wind Stress Curl</a></li>
+</ul>
+</section>
+<section id="monthly-1-deg-global-data" class="level4">
+<h4 class="anchored" data-anchor-id="monthly-1-deg-global-data">Monthly 1-deg global data</h4>
+<p><a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?searchFor=erdlasFnWPr">Monthly 1-degree data</a></p>
+<p>Including the following</p>
+<ul>
+<li>Sea Level Pressure</li>
+<li>Geostrophic Winds</li>
+<li>Wind Stress calculated from Geostrophic Wind</li>
+<li>Wind Stress Curl calculated from Geostrophic Wind</li>
+<li>Ekman Transport</li>
+</ul>
+</section>
+</section>
+<section id="bakun-calculation-at-other-eastern-boundary-current-locations" class="level2">
+<h2 class="anchored" data-anchor-id="bakun-calculation-at-other-eastern-boundary-current-locations">Bakun Calculation at other Eastern Boundary Current Locations</h2>
+<p>See the “Global Upwelling Index” section under “Bakun Index” to calculate Upwelling Index at other locations from Elkman Transport (Northern Hemisphere: 1967 - present, Southern Hemisphere: 1981 - present)</p>
+</section>
+<section id="cuti-and-beuti" class="level2">
+<h2 class="anchored" data-anchor-id="cuti-and-beuti">CUTI and BEUTI</h2>
+<p>CUTI and BEUTI are currently being updated approximately monthly. In the near future they will be automatically updated daily. For questions about CUTI/BEUTI contact Michael.Jacox@noaa.gov</p>
+<p>When using CUTI or BEUTI, please cite <span class="citation" data-cites="jacox18">Jacox et al. (<a href="#ref-jacox18" role="doc-biblioref">2018</a>)</span></p>
+<p><u>CUTI</u><br>
+Daily indices <a href="https://oceanview.pfeg.noaa.gov/data/ui/CUTI_daily.csv">[csv]</a> <a href="https://oceanview.pfeg.noaa.gov/data/ui/CUTI_daily.nc">[NetCDF]</a><br>
+Monthly means of daily indices <a href="https://oceanview.pfeg.noaa.gov/data/ui/CUTI_monthly.csv">[csv]</a>&nbsp;<a href="https://oceanview.pfeg.noaa.gov/data/ui/CUTI_monthly.nc">[NetCDF]</a></p>
+<p><u>BEUTI</u><br>
+Daily indices <a href="https://oceanview.pfeg.noaa.gov/data/ui/BEUTI_daily.csv">[csv]</a> <a href="https://oceanview.pfeg.noaa.gov/data/ui/BEUTI_daily.nc">[NetCDF]</a><br>
+Monthly means of daily indices <a href="https://oceanview.pfeg.noaa.gov/data/ui/BEUTI_monthly.csv">[csv]</a>&nbsp;<a href="https://oceanview.pfeg.noaa.gov/data/ui/BEUTI_monthly.nc">[NetCDF]</a></p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-jacox18" class="csl-entry" role="listitem">
+Jacox, M. G., C. A. Edwards, E. L. Hazen, and S. J. Bograd. 2018. <span>“(2018) Coastal Upwelling Revisited: Ekman, Bakun, and Improved Upwelling Indices for the u.s. West Coast.”</span> <em>Journal of Geophysical Research</em>, ahead of print. <a href="https://doi.org/10.1029/2018JC014187">https://doi.org/10.1029/2018JC014187</a>.
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxudWlsb2NhdGlvbnM9W3tsYXQ6NjAsbG9uOjE0OX0se2xhdDo2MCxsb246MTQ2fSx7bGF0OjU3LGxvbjoxMzd9LHtsYXQ6NTQsbG9uOjEzNH0se2xhdDo1MSxsb246MTMxfSx7bGF0OjQ4LGxvbjoxMjV9LHtsYXQ6NDUsbG9uOjEyNX0se2xhdDo0Mixsb246MTI1fSx7bGF0OjM5LGxvbjoxMjV9LHtsYXQ6MzYsbG9uOjEyMn0se2xhdDozMyxsb246MTE5fSx7bGF0OjMwLGxvbjoxMTl9LHtsYXQ6MjcsbG9uOjExNn0se2xhdDoyNCxsb246MTEzfSx7bGF0OjIxLGxvbjoxMDd9XVxucHJvZHVjdHM9W3tuYW1lOlwidXB3ZWxsX1wiLHRpdGxlOlwiVXB3ZWxsaW5nIEluZGV4XCJ9LHtuYW1lOlwid2luZF9cIix0aXRsZTpcIkdlb3N0cm9waGljIFdpbmRcIn0se25hbWU6XCJzdHJlc3NfXCIsdGl0bGU6XCJXaW5kIFN0cmVzc1wifSx7bmFtZTpcInNscF9cIix0aXRsZTpcIlNlYSBMZXZlbCBQcmVzc3VyZVwifV1cblxuZHJvcGRvd25NYXAgPSBuZXcgTWFwKHVpbG9jYXRpb25zLm1hcChsb2MgPT4ge1xuICBjb25zdCBsYWJlbCA9IGAke2xvYy5sYXR9TiAke2xvYy5sb259V2A7XG4gIGNvbnN0IGZpbGVOYW1lID0gYHVwd2VsbCR7bG9jLmxhdH1OJHtsb2MubG9ufVdgO1xuICByZXR1cm4gW2xhYmVsLCBmaWxlTmFtZV07XG59KSlcblxuLy8gUmVuZGVyIHRoZSBkcm9wZG93biBtZW51XG52aWV3b2Ygc2VsZWN0ZWRGaWxlID0gSW5wdXRzLnNlbGVjdChkcm9wZG93bk1hcCwgeyBsYWJlbDogXCJMb2NhdGlvbjpcIiAsIHdpZHRoOjE0MCB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gNC4gQ29uc3RydWN0IHRoZSBmaW5hbCBkb3dubG9hZCBVUkxcbmJhc2VVcmwgPSBcImh0dHBzOi8vb2NlYW53YXRjaC5wZmVnLm5vYWEuZ292L3Byb2R1Y3RzL1BGRUxEYXRhL3Vwd2VsbC82X2hvdXJseS9cIlxuZG93bmxvYWRVcmwgPSBiYXNlVXJsICsgc2VsZWN0ZWRGaWxlXG5cbmN1cnJlbnRMYWJlbCA9IFsuLi5kcm9wZG93bk1hcC5lbnRyaWVzKCldLmZpbmQoKFtsYWJlbCwgZmlsZV0pID0+IGZpbGUgPT09IHNlbGVjdGVkRmlsZSlbMF1cblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gNS4gUmVuZGVyIHRoZSBIVE1MIGRvd25sb2FkIGxpbmtcbmh0bWxgPGEgaHJlZj1cIiR7ZG93bmxvYWRVcmx9XCIgY2xhc3M9XCJidG4gYnRuLXByaW1hcnlcIiAgdGFyZ2V0PVwiX2JsYW5rXCI+XG4gIERvd25sb2FkXG48L2E+PGJyPjYtaG91cmx5IHVwd2VsbGluZyBpbmRleCBhdCAke2N1cnJlbnRMYWJlbH1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbnZpZXdvZiBzZWxlY3RlZEluZGV4ID0gSW5wdXRzLnNlbGVjdChcbiAgdWlsb2NhdGlvbnMubWFwKChsb2MsIGlkeCkgPT4gaWR4KSwgXG4gIHtcbiAgICBsYWJlbDogXCJMb2NhdGlvbjpcIixcbiAgICB3aWR0aDoxNDAsXG4gICAgZm9ybWF0OiBpZHggPT4gYCR7dWlsb2NhdGlvbnNbaWR4XS5sYXR9TiAke3VpbG9jYXRpb25zW2lkeF0ubG9ufVdgXG4gIH1cbilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gMy4gVWx0cmEtc2FmZSBsb29rdXAgbG9naWMgKGd1YXJkcyBhZ2FpbnN0IGluaXRpYWxpemF0aW9uIGNyYXNoZXMpXG5jaG9zZW5Mb2MgPSB1aWxvY2F0aW9uc1tzZWxlY3RlZEluZGV4XSB8fCB1aWxvY2F0aW9uc1swXTtcbmN1cnJlbnRMYWJlbDIgPSBgJHtjaG9zZW5Mb2MubGF0fU4gJHtjaG9zZW5Mb2MubG9ufVdgO1xuXG4vLyA0LiBGaWxlIGFuZCBVUkwgbGF5b3V0XG5pbmR4ID0gTnVtYmVyKGAke3NlbGVjdGVkSW5kZXggPz8gMH1gKSsxO1xuaW5keDAwID0gU3RyaW5nKGluZHgpLnBhZFN0YXJ0KDIsICcwJyk7IFxuZmlsZU5hbWUyID0gXCJwXCIgKyBpbmR4MDAgKyBcImRheWFjLmFsbFwiXG5iYXNlVXJsMiA9IFwiaHR0cHM6Ly9vY2VhbndhdGNoLnBmZWcubm9hYS5nb3YvcHJvZHVjdHMvUEZFTERhdGEvdXB3ZWxsL2RhaWx5L1wiXG5kb3dubG9hZFVybDIgPSBiYXNlVXJsMiArIGZpbGVOYW1lMlxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5odG1sYDxhIGhyZWY9XCIke2Rvd25sb2FkVXJsMn1cIiB0YXJnZXQ9XCJfYmxhbmtcIiBjbGFzcz1cImJ0biBidG4tcHJpbWFyeVwiPlxuICBEb3dubG9hZDwvYT48YnI+U2VsZWN0ZWQ6IERhaWx5IFVwd2VsbGluZyBpbmRleCBhdCAke2N1cnJlbnRMYWJlbDJ9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZnVuY3Rpb24gZ2V0ZmlsZWRhdGUoZCkge1xuICAgIHZhciB5ID0gU3RyaW5nKGQuZ2V0RnVsbFllYXIoKSkucGFkU3RhcnQoNCwgJzAnKTtcbiAgICB2YXIgbSA9IFN0cmluZyhkLmdldE1vbnRoKCkgKyAxKS5wYWRTdGFydCgyLCAnMCcpOyBcbiAgICByZXR1cm4geS5zdWJzdHIoMikgKyBtO1xufVxuXG4vLyBDb3JyZWN0IE9KUyBibG9jayBzdGF0ZW1lbnQgc3ludGF4XG5saW5rcyA9IHtcbiAgICBsZXQgZCA9IG5ldyBEYXRlKCk7XG4gICAgZC5zZXREYXRlKDEpOyBcbiAgICBkLnNldERhdGUoMCk7IFxuICAgIGNvbnN0IHRoaXN5cm1vbiA9IGdldGZpbGVkYXRlKGQpO1xuICAgIGNvbnN0IHRoaXN5cm1vbmRhdGUgPSAoZC5nZXRNb250aCgpICsgMSkgKyBcIi9cIiArIGQuZ2V0RnVsbFllYXIoKTtcblxuICAgIGxldCBkMSA9IG5ldyBEYXRlKCk7XG4gICAgZDEuc2V0RGF0ZSgxKTsgXG4gICAgZDEuc2V0TW9udGgoZDEuZ2V0TW9udGgoKSAtIDEpOyBcbiAgICBkMS5zZXREYXRlKDApOyBcbiAgICBjb25zdCBsYXN0eXJtb24gPSBnZXRmaWxlZGF0ZShkMSk7XG4gICAgY29uc3QgbGFzdHlybW9uZGF0ZSA9IChkMS5nZXRNb250aCgpICsgMSkgKyBcIi9cIiArIGQxLmdldEZ1bGxZZWFyKCk7XG5cbiAgICByZXR1cm4geyB0aGlzeXJtb24sIHRoaXN5cm1vbmRhdGUsIGxhc3R5cm1vbiwgbGFzdHlybW9uZGF0ZSB9O1xufVxuXG5odG1sYFxuPGEgaHJlZj1cImh0dHBzOi8vb2NlYW53YXRjaC5wZmVnLm5vYWEuZ292L3Byb2R1Y3RzL1BGRUxEYXRhL3Vwd2VsbC9tb250aGx5L3RhYmxlLiR7bGlua3MudGhpc3lybW9ufVwiIHRhcmdldD1cIl9ibGFua1wiPk1vc3QgcmVjZW50IG1vbnRoICgke2xpbmtzLnRoaXN5cm1vbmRhdGV9KTwvYT48YnI+XG48YSBocmVmPVwiaHR0cHM6Ly9vY2VhbndhdGNoLnBmZWcubm9hYS5nb3YvcHJvZHVjdHMvUEZFTERhdGEvdXB3ZWxsL21vbnRobHkvdGFibGUuJHtsaW5rcy5sYXN0eXJtb259XCIgdGFyZ2V0PVwiX2JsYW5rXCI+UHJldmlvdXMgcmVjZW50IG1vbnRoICgke2xpbmtzLmxhc3R5cm1vbmRhdGV9KTwvYT5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTgiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbmRyb3Bkb3duTWFwMyA9IG5ldyBNYXAodWlsb2NhdGlvbnMubWFwKGxvYyA9PiB7XG4gIGNvbnN0IGxhYmVsID0gYCR7bG9jLmxhdH1OICR7bG9jLmxvbn1XYDtcbiAgY29uc3QgZmlsZU5hbWUgPSBgJHtsb2MubGF0fW4ke2xvYy5sb259d182N3RvOTkuYW1rYDtcbiAgcmV0dXJuIFtsYWJlbCwgZmlsZU5hbWVdO1xufSkpXG5cbi8vIFJlbmRlciB0aGUgZHJvcGRvd24gbWVudVxudmlld29mIHNlbGVjdGVkRmlsZTMgPSBJbnB1dHMuc2VsZWN0KGRyb3Bkb3duTWFwMywgeyBsYWJlbDogXCJMb2NhdGlvbjpcIiAsIHdpZHRoOjE0MCB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC05IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gNC4gQ29uc3RydWN0IHRoZSBmaW5hbCBkb3dubG9hZCBVUkxcbmJhc2VVcmwzID0gXCJodHRwczovL29jZWFud2F0Y2gucGZlZy5ub2FhLmdvdi9wcm9kdWN0cy9QRkVMRGF0YS9hcnJvd21hcmtfaW5kaWNlcy9cIlxuZG93bmxvYWRVcmwzID0gYmFzZVVybDMgKyBzZWxlY3RlZEZpbGUzXG5cbmN1cnJlbnRMYWJlbDMgPSBbLi4uZHJvcGRvd25NYXAzLmVudHJpZXMoKV0uZmluZCgoW2xhYmVsLCBmaWxlXSkgPT4gZmlsZSA9PT0gc2VsZWN0ZWRGaWxlMylbMF1cblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIDUuIFJlbmRlciB0aGUgSFRNTCBkb3dubG9hZCBsaW5rXG5odG1sYDxhIGhyZWY9XCIke2Rvd25sb2FkVXJsM31cIiBjbGFzcz1cImJ0biBidG4tcHJpbWFyeVwiIHRhcmdldD1cIl9ibGFua1wiPlxuICBEb3dubG9hZFxuPC9hPjxicj42LWhvdXJseSBkZXJpdmVkIHdpbmRzIGFuZCBvY2VhbiB0cmFuc3BvcnRzIGF0ICR7Y3VycmVudExhYmVsM31gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTExIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5kcm9wZG93bk1hcDQgPSBuZXcgTWFwKHVpbG9jYXRpb25zLm1hcChsb2MgPT4ge1xuICBjb25zdCBsYWJlbCA9IGAke2xvYy5sYXR9TiAke2xvYy5sb259V2A7XG4gIGNvbnN0IGZpbGVOYW1lID0gYCR7bG9jLmxhdH1fJHtsb2MubG9ufV82aHIuMjAwMGA7XG4gIHJldHVybiBbbGFiZWwsIGZpbGVOYW1lXTtcbn0pKVxuXG4vLyBSZW5kZXIgdGhlIGRyb3Bkb3duIG1lbnVcbnZpZXdvZiBzZWxlY3RlZEZpbGU0ID0gSW5wdXRzLnNlbGVjdChkcm9wZG93bk1hcDQsIHsgbGFiZWw6IFwiTG9jYXRpb246XCIgLCB3aWR0aDoxNDAgfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiIvLyA0LiBDb25zdHJ1Y3QgdGhlIGZpbmFsIGRvd25sb2FkIFVSTFxuYmFzZVVybDQgPSBcImh0dHBzOi8vb2NlYW53YXRjaC5wZmVnLm5vYWEuZ292L3Byb2R1Y3RzL1BGRUxEYXRhL2Fycm93bWFya19pbmRpY2VzL1wiXG5kb3dubG9hZFVybDQgPSBiYXNlVXJsNCArIHNlbGVjdGVkRmlsZTRcblxuY3VycmVudExhYmVsNCA9IFsuLi5kcm9wZG93bk1hcDQuZW50cmllcygpXS5maW5kKChbbGFiZWwsIGZpbGVdKSA9PiBmaWxlID09PSBzZWxlY3RlZEZpbGU0KVswXVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEzIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gNS4gUmVuZGVyIHRoZSBIVE1MIGRvd25sb2FkIGxpbmtcbmh0bWxgPGEgaHJlZj1cIiR7ZG93bmxvYWRVcmw0fVwiIGNsYXNzPVwiYnRuIGJ0bi1wcmltYXJ5XCIgdGFyZ2V0PVwiX2JsYW5rXCI+XG4gIERvd25sb2FkXG48L2E+PGJyPjYtaG91cmx5IGRlcml2ZWQgd2luZHMgYW5kIG9jZWFuIHRyYW5zcG9ydHMgYXQgJHtjdXJyZW50TGFiZWw0fWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbmRyb3Bkb3duTWFwNSA9IG5ldyBNYXAodWlsb2NhdGlvbnMubWFwKGxvYyA9PiB7XG4gIGNvbnN0IGxhYmVsID0gYCR7bG9jLmxhdH1OICR7bG9jLmxvbn1XYDtcbiAgY29uc3QgZmlsZU5hbWUgPSBgJHtsb2MubG9ufVdfJHtsb2MubGF0fU5gO1xuICByZXR1cm4gW2xhYmVsLCBmaWxlTmFtZV07XG59KSlcblxuZHJvcGRvd25NYXA2ID0gbmV3IE1hcChwcm9kdWN0cy5tYXAocHJvZCA9PiB7XG4gIGNvbnN0IGxhYmVsID0gYCR7cHJvZC50aXRsZX1gO1xuICBjb25zdCBmaWxlTmFtZSA9IGAke3Byb2QubmFtZX1gO1xuICByZXR1cm4gW2xhYmVsLCBmaWxlTmFtZV07XG59KSlcblxuLy8gUmVuZGVyIHRoZSBkcm9wZG93biBtZW51XG52aWV3b2Ygc2VsZWN0ZWRGaWxlNSA9IElucHV0cy5zZWxlY3QoZHJvcGRvd25NYXA1LCB7IHdpZHRoOjEwMCB9KVxuaHRtbGA8YnI+YFxudmlld29mIHNlbGVjdGVkRmlsZTYgPSBJbnB1dHMuc2VsZWN0KGRyb3Bkb3duTWFwNiwgeyB3aWR0aDoxMDB9KVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTE1IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gQ29uc3RydWN0IHRoZSBmaW5hbCBkb3dubG9hZCBVUkxzXG5iYXNlVXJsNSA9IFwiaHR0cHM6Ly9vY2VhbndhdGNoLnBmZWcubm9hYS5nb3YvcHJvZHVjdHMvY3VycmVudF9naWZzL1wiXG5kb3dubG9hZFVybDUgPSBiYXNlVXJsNSArIHNlbGVjdGVkRmlsZTYgKyBzZWxlY3RlZEZpbGU1XG5cbmN1cnJlbnRMYWJlbDUgPSBbLi4uZHJvcGRvd25NYXA1LmVudHJpZXMoKV0uZmluZCgoW2xhYmVsLCBmaWxlXSkgPT4gZmlsZSA9PT0gc2VsZWN0ZWRGaWxlNSlbMF1cbmN1cnJlbnRMYWJlbDYgPSBbLi4uZHJvcGRvd25NYXA2LmVudHJpZXMoKV0uZmluZCgoW2xhYmVsLCBmaWxlXSkgPT4gZmlsZSA9PT0gc2VsZWN0ZWRGaWxlNilbMF1cblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIFJlbmRlciB0aGUgSFRNTCBkb3dubG9hZCBsaW5rc1xuaHRtbGA8c3BhbiBzdHlsZT1cIm1hcmdpbi1yaWdodDoxMHB4O1wiPjxhIGhyZWY9XCIke2Rvd25sb2FkVXJsNX0uZ2lmXCIgY2xhc3M9XCJidG4gYnRuLXByaW1hcnlcIiB0YXJnZXQ9XCJfYmxhbmtcIj5cbiAgVmlldyBQbG90XG48L2E+PC9zcGFuPjxzcGFuPjxhIGhyZWY9XCIke2Rvd25sb2FkVXJsNX0udHh0XCIgY2xhc3M9XCJidG4gYnRuLXByaW1hcnlcIiB0YXJnZXQ9XCJfYmxhbmtcIj5cbiAgVGV4dCBEb3dubG9hZFxuPC9hPjxzcGFuPjxicj4ke2N1cnJlbnRMYWJlbDZ9IGF0ICR7Y3VycmVudExhYmVsNX1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkRmlsZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZEluZGV4JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkRmlsZTMnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRGaWxlNCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZEZpbGU1JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkRmlsZTYnKSJ9XX0=
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../projects/upwelling";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/CEG-projects\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../projects/upwelling/which.html" class="pagination-link" aria-label="Which index should I use?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Which index should I use?</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center">
+<p>Website Owner</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/">
+<p>NOAA</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality">
+<p>Information Quality</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers">
+<p>Disclaimer</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.commerce.gov/">
+<p><img src="../../images/logos/doc_logo_black.gif" style="height: 50px; width: auto;"></p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Upwelling Indices</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../projects/upwelling/cutibeuti.html" rel="next">
+<link href="../../projects/upwelling/intro.html" rel="prev">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-56bab880c8ee09557fcb2f97a9ba54bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/noaa_logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/noaa_logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Climate &amp; Ecosystems Group</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/lmdewitt" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data</li><li class="breadcrumb-item"><a href="../../projects/upwelling/intro.html">Upwelling Index</a></li><li class="breadcrumb-item"><a href="../../projects/upwelling/bakun.html">Bakun Index</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Marine Heat Wave</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/latest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Latest Conditions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/prev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Previous Updates</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/videos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Videos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/regional_eez.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Regional EEZ MHW</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/mhw/refs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">West Coast National Marine Sanctuaries Marine Heatwave Tracker</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/OCNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Olympic Coast</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/GFNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Greater Farallones</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/CBNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cordell Bank</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/MBNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monterey Bay - Mainland</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/DSNMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monterey Bay - Davidson Seamount</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/CINMS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Channel Islands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/sanctuary_mhw/calc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MHW Calculations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Upwelling Index</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/bakun.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Bakun Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/cutibeuti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CUTI and BEUTI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/diff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Index Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/which.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which index should I use?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/upwelling/dnld.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Downloads</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bakun-upwelling-index-calculation" id="toc-bakun-upwelling-index-calculation" class="nav-link active" data-scroll-target="#bakun-upwelling-index-calculation">Bakun Upwelling Index Calculation</a></li>
+  <li><a href="#sec-model-grids" id="toc-sec-model-grids" class="nav-link" data-scroll-target="#sec-model-grids">Evolving model grids</a></li>
+  <li><a href="#traditional-historical-3-degree-upwelling-index-calculation" id="toc-traditional-historical-3-degree-upwelling-index-calculation" class="nav-link" data-scroll-target="#traditional-historical-3-degree-upwelling-index-calculation">Traditional (“Historical”) 3-degree Upwelling Index Calculation</a></li>
+  <li><a href="#degree-upwelling-index-products" id="toc-degree-upwelling-index-products" class="nav-link" data-scroll-target="#degree-upwelling-index-products">1-degree Upwelling Index Products</a></li>
+  <li><a href="#should-i-use-the-historical-or-1-degree-index" id="toc-should-i-use-the-historical-or-1-degree-index" class="nav-link" data-scroll-target="#should-i-use-the-historical-or-1-degree-index">Should I use the historical or 1-degree index?</a></li>
+  <li><a href="#global-upwelling-index" id="toc-global-upwelling-index" class="nav-link" data-scroll-target="#global-upwelling-index">“Global” Upwelling Index</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data</li><li class="breadcrumb-item"><a href="../../projects/upwelling/intro.html">Upwelling Index</a></li><li class="breadcrumb-item"><a href="../../projects/upwelling/bakun.html">Bakun Index</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Upwelling Indices</h1>
+<p class="subtitle lead">Bakun Index</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="bakun-upwelling-index-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="bakun-upwelling-index-calculation">Bakun Upwelling Index Calculation</h2>
+<p>The Bakun <span class="citation" data-cites="bakun73 bakun75">(<a href="#ref-bakun73" role="doc-biblioref">1973</a>, <a href="#ref-bakun75" role="doc-biblioref">1975</a>)</span> upwelling indices are calculated based upon Ekman’s theory of mass transport due to wind stress. Assuming homogeneity, uniform wind and steady state conditions, the mass transport of the surface water due to wind stress is 90° to the right of the wind direction in the Northern Hemisphere. Ekman mass transport is defined as the wind stress divided by the Coriolis parameter (a function of the earth’s rotation and latitude). The depth to which an appreciable amount of this offshore transport occurs is termed the surface Ekman layer, and is generally 50 to 100 meters deep.</p>
+<p>Ekman transports are resolved into components parallel and normal to the local coastline orientation. The magnitude of the offshore component is considered to be an index of the amount of water upwelled from the base of the Ekman layer. Positive values are, in general, the result of equatorward wind stress. Negative values imply downwelling, the onshore advection of surface waters accompanied by a downward displacement of water.</p>
+<p>ERD upwelling index calculations <span class="citation" data-cites="schwing96">(<a href="#ref-schwing96" role="doc-biblioref">Schwing et al. 1996</a>)</span>. are based on estimates of offshore Ekman transport driven by geostrophic wind stress. Geostrophic winds are derived from mean surface atmospheric pressure fields provided by the U.S. Navy Fleet Numerical Meteorological and Oceanographic Center (FNMOC), Monterey, CA.</p>
+</section>
+<section id="sec-model-grids" class="level2">
+<h2 class="anchored" data-anchor-id="sec-model-grids">Evolving model grids</h2>
+<p>Historically, ERD monthly upwelling indices were computed at 15 North American locations from monthly mean pressure fields prepared by FNMOC on a polar stereographic 3° mesh grid. Due to improvements in model development and increases in computational power and storage capacity, the FNMOC models <span class="citation" data-cites="clancy92 rosmond92">(<a href="#ref-clancy92" role="doc-biblioref">Clancy 1992</a>; <a href="#ref-rosmond92" role="doc-biblioref">Rosmond 1992</a>)</span> and their pressure field output changed resolution over time (table below). From 1948 to 1967, data were provided on paper as monthly means. Subsequently ERD has maintained a relationship with FNMOC and obtained daily downloads of 6-hourly model forecasts.</p>
+<table class="caption-top table" data-border="1" data-cellpadding="2">
+<tbody>
+<tr class="odd">
+<td><strong>Years</strong></td>
+<td><strong>Projection</strong></td>
+<td><strong>Coverage</strong></td>
+<td><strong>Resolution</strong></td>
+</tr>
+<tr class="even">
+<td>1967 - 1980</td>
+<td>63 x 63 polar stereographic</td>
+<td>Northern Hemisphere</td>
+<td>about 3° latitude</td>
+</tr>
+<tr class="odd">
+<td>1981 - 1996</td>
+<td>73 x 144 spherical</td>
+<td>global</td>
+<td>2.5°</td>
+</tr>
+<tr class="even">
+<td>1996 - present</td>
+<td>360x181 spherical</td>
+<td>global</td>
+<td>1°</td>
+</tr>
+</tbody>
+</table>
+<p>ERD seeks to maintian long consistent time series of air/ocean indices for use in climate studies despite the changes in model resolution. Upwelling Indices for the N. American west coast are currently produced on two different grids (details below):</p>
+<ul>
+<li>Standard (“historical”) 3° product which provides consistency with early FNMOC model grids</li>
+<li>1° product with updated coefficients and processing methods takes advantage of newer model resolutions.</li>
+</ul>
+<p>At the present time, upwelling indices are calculated from 1° pressure fields produced by the Navy’s FNMOC NAVGEM model.</p>
+</section>
+<section id="traditional-historical-3-degree-upwelling-index-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="traditional-historical-3-degree-upwelling-index-calculation">Traditional (“Historical”) 3-degree Upwelling Index Calculation</h2>
+<p>Historically, PFEL provided upwelling products derived from a 3-degree interpolation of the FNMOC polar stereographic pressure field. Mesh lengths less than 3-degrees were extrapolated to a 3-degree mesh length using Bessel’s central difference formula. From 1981 onward, 3° pressure values were linearly interpolated from a 2.5° grid.</p>
+<p>In addition, due to limited computational ability, the geostropic winds used to compute upwelling index were originally derived from monthly averaged pressure fields. For consistency, the 3° monthly products provided at the 15 standard North American coastal locations are still computed in this manner. In addition, the parameterization of the drag coefficient (CD) used in the wind stress calculation is taken as a constant value of 0.0013 to calculate indices from 6-hourly pressure fields and is increased to 0.0026 to calculate indices from a monthly pressure field as was done in the original Bakun computation.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Graphs of Upwelling Indices over the last 18 months for 15 positions along the North American West Coast
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Solid lines denote the daily Upwelling Index. The daily indices have been smoothed using a 3-day, 3rd order, forward-reverse Butterworth filter. The dashed curve is a biharmonic fit to the daily upwelling indices for the period 1967-1991. The shaded area around the biharmonic curve denotes one standard error, calculated for each Julian day. The yellow bars denote monthly mean of the Upwelling Indices based on the daily values. The units are metric tons per second per 100 m of coastline (or equivalently cubic meters per second per 100 meters of coastline). These units may be thought of as the average amount of water upwelled through the bottom of the Ekman layer each second along each 100 m of a straight line directed along the dominant trend of the coast on a scale of about 200 miles.</p>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p01daily.png" class="img-fluid figure-img"></p>
+<figcaption>60N 149W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p02daily.png" class="img-fluid figure-img"></p>
+<figcaption>60N 146W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p03daily.png" class="img-fluid figure-img"></p>
+<figcaption>57N 137W</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p04daily.png" class="img-fluid figure-img"></p>
+<figcaption>54N 134W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p05daily.png" class="img-fluid figure-img"></p>
+<figcaption>51N 131W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p06daily.png" class="img-fluid figure-img"></p>
+<figcaption>48N 125W</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p07daily.png" class="img-fluid figure-img"></p>
+<figcaption>45N 125W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p08daily.png" class="img-fluid figure-img"></p>
+<figcaption>42N 125W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p09daily.png" class="img-fluid figure-img"></p>
+<figcaption>39N 125W</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p10daily.png" class="img-fluid figure-img"></p>
+<figcaption>36N 122W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p11daily.png" class="img-fluid figure-img"></p>
+<figcaption>33N 119W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p12daily.png" class="img-fluid figure-img"></p>
+<figcaption>30N 119W</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p13daily.png" class="img-fluid figure-img"></p>
+<figcaption>27N 116W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p14daily.png" class="img-fluid figure-img"></p>
+<figcaption>24N 113W</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/daily/p15daily.png" class="img-fluid figure-img"></p>
+<figcaption>21N 107W</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="degree-upwelling-index-products" class="level2">
+<h2 class="anchored" data-anchor-id="degree-upwelling-index-products">1-degree Upwelling Index Products</h2>
+<p>When 1° pressure fields became available from FNMOC in 1996, ERD scientists created a new product that takes advantage of the higher resolution model output and improves the parameterizations used in the Ekman transport calculation. These 1° air/ocean and upwelling indices are calculated in a similar way to ERD’s traditional 3° <span class="citation" data-cites="bakun73">(<a href="#ref-bakun73" role="doc-biblioref">Bakun 1973</a>)</span> calculation with the following exceptions:</p>
+<ul>
+<li>Global products (see list below) are derived and made available for download. Since 1996, these products are derived directly from 1° pressure fields. Prior to 1966, the are calculated from pressure fields derived by simple linear interpolation from the native grids (see discussion on grids above).</li>
+<li>Unlike the 3° products, where Ekman transport is derived from monthly averages of geostrophic winds calculated from 6-hourly pressure values, the 1° global products are computed from 6-hourly averages of geostropic winds, which are in turn calculated from the 1° 6-hourly pressure fields. Each of the 1° air/ocean index products is thus an average of 6-hourly values, rather than being computed from a monthly mean pressure field.</li>
+<li>The parameterization of the drag coefficient (CD) used in the wind stress calculation is taken as a function of wind speed (W) rather than a constant. A non-linear drag coefficient is used based on Large and Pond <span class="citation" data-cites="large81">(<a href="#ref-large81" role="doc-biblioref">1981</a>)</span> modified for low wind speeds as in <span class="citation" data-cites="trenberth90">Trenberth et al. (<a href="#ref-trenberth90" role="doc-biblioref">1990</a>)</span>:</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+CD &amp;= 0.00218   \qquad(W \le 1m/s) \\
+&amp;= (0.62+1.56/W) \times .001 \quad(1m/s &lt; W &lt; 3m/s) \\
+&amp;= 0.00114 \qquad(3m/s \le W &lt; 10m/s) \\
+&amp;=
+(0.49 + 0.065W) \times .001 \quad(W \ge 10m/s)
+\end{align}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/drag.gif" title="Title:Non-linear Drag Coefficient" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Non-linear Drag Coefficient" width="450"></p>
+</figure>
+</div>
+<ul>
+<li>UTC time is used when calculating means rather than local time as was done in the historical products</li>
+</ul>
+<p><strong>Available Products</strong></p>
+<p>In addition to time series of Upwelling Index at the 15 standard Eastern North Pacific locations, Northern Hemisphere (1967 - 1980) and global (1981 - present) values of the following quantities have been calculated from the interpolated six-hourly 1-degree sea level pressure fields, and can be subsetted, visualized, and downloaded in a variety of formats.</p>
+<ul>
+<li>Pressure, mean sea level</li>
+<li>N-S and E-W components of geostropic wind</li>
+<li>Geostropic wind vector and magnitude</li>
+<li>N-S and E-W components of geostropic wind stress</li>
+<li>Geostropic wind stress vector and curl</li>
+<li>N-S and E-W components of Ekman transport</li>
+</ul>
+</section>
+<section id="should-i-use-the-historical-or-1-degree-index" class="level2">
+<h2 class="anchored" data-anchor-id="should-i-use-the-historical-or-1-degree-index">Should I use the historical or 1-degree index?</h2>
+<p>The calculation methods described are compared in the following examples, which show the difference between the 1° and the 3° products for the years 1967 to 1991. The magnitude of the difference depends on location, pressure gradient, wind speed, and other factors such as the original mesh size and possibly the proximity to the coast.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>3° / 1° Comparisons
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The following graphs show comparisons at two locations. In the upper panel of these plots, the <strong>black line</strong> (“new” calculation) is the 1° product, the <span style="color:red;">red line</span> is the ERD “standard” or “historical” 3° monthly product calculated from the monthly mean pressure field. For the upwelling index plot, the <span style="color:green;">green line</span> is the monthly average of the PFEL historical 6-hourly upwelling index. The bottom panel in each plot is the difference between the 1° and historical 3° monthly calcuation (black and red lines).</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong>48N 125W</strong></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong>36N 122W</strong></p>
+</div>
+</div>
+</div>
+<p><strong>Upwelling Index</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/indx48N.gif" class="img-fluid" alt="upwelling index 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/indx36N.gif" class="img-fluid" alt="upwelling index 36N"></p>
+</div>
+</div>
+</div>
+<p><strong>Sea Level Pressure</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/pmsl48N.gif" class="img-fluid" alt="p_msl 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/pmsl36N.gif" class="img-fluid" alt="p_msl 36N"></p>
+</div>
+</div>
+</div>
+<p><strong>E-W Geostropic Wind</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/u48N.gif" class="img-fluid" alt="u 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/u36N.gif" class="img-fluid" alt="u 36N"></p>
+</div>
+</div>
+</div>
+<p><strong>N-S Geostropic Wind</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/v48N.gif" class="img-fluid" alt="v 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/v36N.gif" class="img-fluid" alt="v 36N"></p>
+</div>
+</div>
+</div>
+<p><strong>E-W Ekman Transport</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/ekx48N.gif" class="img-fluid" alt="ekx 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/ekx36N.gif" class="img-fluid" alt="ekx 36N"></p>
+</div>
+</div>
+</div>
+<p><strong>N-S Ekman Transport</strong></p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/eky48N.gif" class="img-fluid" alt="eky 48N"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/eky36N.gif" class="img-fluid" alt="eky 36N"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>In some rare cases, we have found significant local differences in the upwelling index values calculated from the two grid sizes. For example, the index at 57N 137W derived from the 3° grid is substantially larger than the index calculated from the 1° pressure grid. This appears to be related to weaker local pressure gradients in the finer resolved grid, which result in lower local geostrophic winds and upwelling values than given with the more smoothed 3° grid, which spreads a steeper gradient over the site of this particular index.</p>
+</section>
+<section id="global-upwelling-index" class="level2">
+<h2 class="anchored" data-anchor-id="global-upwelling-index">“Global” Upwelling Index</h2>
+<p>ERD provides global Ekman transport on a 1-degree grid which allows users to calculate a time series of upwelling index (off-shore component of Ekman Transport) for any location in an Eastern Boundary Current, given a user-provided orientation of the coastline.</p>
+<p>Instructions follow for calculating Bakun upwelling index from Ekman transport, however before proceeding be aware of the following caveats:</p>
+<ul>
+<li>Ekman transports are on a 1-degree grid so while you can technically compute upwelling index anywhere, finer scale calculations are interpolations that do not provide new information</li>
+<li>The calculation for computing Ekman transport from FNMOC pressure uses a geostrophic approximation and thus is not valid within about 10-15 degrees of the equator.</li>
+<li>Upwelling index should be calculated at locations at least 1-degree from the coast, particularly in areas with high coastal topography.</li>
+<li>The Bakun upwelling index is meant to be an estimate of large-scale variations in upwelling index, not an absolute value of the quantity of upwelled water.</li>
+</ul>
+<p>Upwelling index is calculated by rotating Ekman transport to find the offshore component using the geometry of the coastline. Calculations can be done easily in applications such as <a href="#note-UI-r">R</a>, <a href="#note-UI-python">Python</a>, <a href="#note-UI-matlab">Matlab</a>, or <a href="#note-UI-ferret">Ferret</a>.</p>
+<p><strong>Components of Ekman transport:</strong></p>
+<p>Ekman transport can be obtained from the ERD ERDDAP™ data server:</p>
+<ul>
+<li>Monthly: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html">https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html</a></li>
+<li>6-hourly: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTran6.html">https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTran6.html</a></li>
+</ul>
+<p>While these data can be separately downloaded from the ERDDAP™ web pages, everything in ERDDAP™ is a service, which means that the transports can be accessed or downloaded directly from within the environment used to calculate upwelling index. Examples:</p>
+<ul>
+<li>R: function ‘download.file()’</li>
+<li>Python: the package ‘urllib2’</li>
+<li>Matlab: ‘websave()’</li>
+</ul>
+<p>For more information on using ERDDAP™ see: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html">https://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html</a></p>
+<p><strong>Coastline Geometry:</strong></p>
+<p>The coastline orientation is entered as a <strong>“coast angle”</strong>, the angle the coast makes with north in the mathematical sense, and is defined as <strong>the angle the landward side of the coastline makes with a vector pointing north</strong> as illustrated in the following images, where the angle <strong>α</strong> (alpha) is the “coast angle”:</p>
+<div class="quarto-layout-panel" data-layout-nrow="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/coast_ang1.gif" class="img-fluid figure-img"></p>
+<figcaption>land on NE</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/coast_ang2.gif" class="img-fluid figure-img"></p>
+<figcaption>land on NW</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/coast_ang3.gif" class="img-fluid figure-img"></p>
+<figcaption>land to east</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><span class="sm">Please note that the “coast angle” required here should not be confused with the rotation angle (offshore vector direction) listed in the PFEL output for flow indices at the 15 standard locations.</span></p>
+<p><strong>Code Samples:</strong></p>
+<p>In the following code samples, <strong>ektrx</strong> and <strong>ektry</strong> are the x- and y- components of Ekman Transport obtained from the ERDDAP™ links above, and <strong>coast_angle</strong> is the angle <strong>α</strong> described in the diagrams above.</p>
+<div id="note-UI-r" class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>R
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>upwell <span class="ot">&lt;-</span> <span class="cf">function</span>(ektrx, ektry, coast_angle) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pi <span class="ot">&lt;-</span> <span class="fl">3.1415927</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>degtorad <span class="ot">&lt;-</span> pi<span class="sc">/</span><span class="fl">180.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> (<span class="dv">360</span> <span class="sc">-</span> coast_angle) <span class="sc">*</span> degtorad</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>s1 <span class="ot">&lt;-</span> <span class="fu">cos</span>(alpha)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">sin</span>(alpha)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>s2 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">1</span> <span class="sc">*</span> t1</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> s1</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>perp <span class="ot">&lt;-</span> (s1 <span class="sc">*</span> ektrx) <span class="sc">+</span> (t1 <span class="sc">*</span> ektry)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>para <span class="ot">&lt;-</span> (s2 <span class="sc">*</span> ektrx) <span class="sc">+</span> (t2 <span class="sc">*</span> ektry)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(perp<span class="sc">/</span><span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div id="note-UI-python" class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Python
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> upwell(ektrx, ektry, coast_angle):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>pi <span class="op">=</span> <span class="fl">3.1415927</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>degtorad <span class="op">=</span> pi<span class="op">/</span><span class="fl">180.</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> (<span class="dv">360</span> <span class="op">-</span> coast_angle) <span class="op">*</span> degtorad</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>s1 <span class="op">=</span> np.cos(alpha)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> np.sin(alpha)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> <span class="op">-</span><span class="dv">1</span> <span class="op">*</span> t1</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> s1</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>perp <span class="op">=</span> (s1 <span class="op">*</span> ektrx) <span class="op">+</span> (t1 <span class="op">*</span> ektry)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>para <span class="op">=</span> (s2 <span class="op">*</span> ektrx) <span class="op">+</span> (t2 <span class="op">*</span> ektry)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span>(perp<span class="op">/</span><span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div id="note-UI-matlab" class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Matlab
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode matlab code-with-copy"><code class="sourceCode matlab"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="va">upwell</span> <span class="op">=</span> <span class="va">upwelling</span>(<span class="va">ektrx</span><span class="op">,</span> <span class="va">ektry</span><span class="op">,</span>  <span class="va">coast_angle</span> )</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="va">pi</span> <span class="op">=</span> <span class="fl">3.1415927</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="va">degtorad</span> <span class="op">=</span> <span class="va">pi</span><span class="op">/</span><span class="fl">180</span>.<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="va">alpha</span> <span class="op">=</span> (<span class="fl">360</span> <span class="op">-</span> <span class="va">coast_angle</span>) <span class="op">*</span> <span class="va">degtorad</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="va">s1</span> <span class="op">=</span> <span class="va">cos</span>(<span class="va">alpha</span>)<span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="va">t1</span> <span class="op">=</span> <span class="va">sin</span>(<span class="va">alpha</span>)<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="va">s2</span> <span class="op">=</span> <span class="op">-</span><span class="fl">1</span> <span class="op">*</span> <span class="va">t1</span><span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="va">t2</span> <span class="op">=</span> <span class="va">s1</span><span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="va">perp</span> <span class="op">=</span> (<span class="va">s1</span> <span class="op">*</span> <span class="va">ektrx</span>) <span class="op">+</span> (<span class="va">t1</span> <span class="op">*</span> <span class="va">ektry</span>)<span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="va">para</span> <span class="op">=</span> (<span class="va">s2</span> <span class="op">*</span> <span class="va">ektrx</span>) <span class="op">+</span> (<span class="va">t2</span> <span class="op">*</span> <span class="va">ektry</span>)<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="va">upwell</span> <span class="op">=</span> (<span class="va">perp</span><span class="op">/</span><span class="fl">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div id="note-UI-ferret" class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ferret
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<pre class="ferret"><code>let pi = 3.1415927
+let degtorad=pi/180.
+let alpha=(360-coast_angle)*degtorad
+let s1=cos(alpha)
+let t1=sin(alpha)
+let s2=-1*t1
+let t2=s1
+let perp=s1*ektrx+t1*ektry
+let para=s2*ektrx+t2*ektry
+let upwelling_index=perp/10</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bakun73" class="csl-entry" role="listitem">
+Bakun, A. 1973. <em>Coastal Upwelling Indices, West Coast of North America, 1946-71. US Department of Commerce. NOAA Technical Report, NMFS SSRF-671</em>. <a href="https://repository.library.noaa.gov/view/noaa/9041">https://repository.library.noaa.gov/view/noaa/9041</a>.
+</div>
+<div id="ref-bakun75" class="csl-entry" role="listitem">
+Bakun, A. 1975. <em>Daily and Weekly Upwelling Indices, West Coast of North America, 1967-73. US Department of Commerce. NOAA Technical Report, NMFS SSRF-693</em>. <a href="https://repository.library.noaa.gov/view/noaa/15387">https://repository.library.noaa.gov/view/noaa/15387</a>.
+</div>
+<div id="ref-clancy92" class="csl-entry" role="listitem">
+Clancy, R. M. 1992. <span>“Operational Modeling: Ocean Modeling at the Fleet Numberical Oceanography Center.”</span> <em>Oceanography</em> 5 (1): 31–35. <a href="https://tos.org/oceanography/assets/docs/5-1_clancy.pdf">https://tos.org/oceanography/assets/docs/5-1_clancy.pdf</a>.
+</div>
+<div id="ref-large81" class="csl-entry" role="listitem">
+Large, W., and S. Pond. 1981. <span>“Open Ocean Momentum Flux Measurements in Moderate to Strong Winds.”</span> <em>J. Phys. Oceanogr</em> 11: 324–36. <a href="https://www.scirp.org/reference/referencespapers?referenceid=2978124">https://www.scirp.org/reference/referencespapers?referenceid=2978124</a>.
+</div>
+<div id="ref-rosmond92" class="csl-entry" role="listitem">
+Rosmond, T. E. 1992. <span>“A Prototype Fully Coupled Ocean-Atmosphere Prediction System.”</span> <em>Oceanography</em> 5 (1): 25–30. <a href="https://scispace.com/papers/a-prototype-fully-coupled-ocean-atmosphere-prediction-system-2sr9p610hh">https://scispace.com/papers/a-prototype-fully-coupled-ocean-atmosphere-prediction-system-2sr9p610hh</a>.
+</div>
+<div id="ref-schwing96" class="csl-entry" role="listitem">
+Schwing, F. B., M. O’Farrell, J. Steger, and K. Baltz. 1996. <em>Coastal Upwelling Indices, West Coast of North America, 1946-1995, NOAA Technical Memorandum NMFS-SWFSC-231</em>. <a href="https://repository.library.noaa.gov/view/noaa/3002">https://repository.library.noaa.gov/view/noaa/3002</a>.
+</div>
+<div id="ref-trenberth90" class="csl-entry" role="listitem">
+Trenberth, K. E., W. G. Large, and J. G. Olson. 1990. <span>“The Mean Annual Cycle in Global Ocean Wind Stress.”</span> <em>J. Phys. Oceanogr.</em> 20 (1): 1742–60. <a href="https://journals.ametsoc.org/view/journals/phoc/20/11/1520-0485_1990_020_1742_tmacig_2_0_co_2.pdf">https://journals.ametsoc.org/view/journals/phoc/20/11/1520-0485_1990_020_1742_tmacig_2_0_co_2.pdf</a>.
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lmdewitt\.github\.io\/CEG-projects\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../projects/upwelling/intro.html" class="pagination-link" aria-label="About">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../projects/upwelling/cutibeuti.html" class="pagination-link" aria-label="CUTI and BEUTI">
+        <span class="nav-page-text">CUTI and BEUTI</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center">
+<p>Website Owner</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/">
+<p>NOAA</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality">
+<p>Information Quality</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers">
+<p>Disclaimer</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.commerce.gov/">
+<p><img src="../../images/logos/doc_logo_black.gif" style="height: 50px; width: auto;"></p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
