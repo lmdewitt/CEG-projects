@@ -10,7 +10,7 @@
   categories: [ESD]
 - title: Upwelling Index 
   description: Information and Downloads (CUTI, BEUTI, Bakun)
-  path: https://oceanview.pfeg.noaa.gov/products/upwelling/intro
+  path: projects/upwelling/intro.html
   image: images/itemurls/upwell.png
   categories: [ESD, ITDS]
 - title: CoastWatch West Coast Regional Node
@@ -85,7 +85,7 @@
   categories: [ESD, FED]
 - title: Marine Heat Wave Tracker
   description: California Current Marine Heat Wave status
-  path: projects/mhw/index.qmd
+  path: projects/mhw/latest.html
   image: images/itemurls/blobtracker-fig1_0.png
   categories: [ESD]
 - title: Indicator Dashboard
@@ -115,7 +115,7 @@
   categories: [ESD]
 - title: Marine Heatwave Tracker
   description: West Coast National Marine Sanctuaries
-  path: https://oceanview.pfeg.noaa.gov/products/sanctuary_mhw
+  path: projects/sanctuary_mhw/overview.html
   image: images/itemurls/Current_sanctuary_overivew_SSTa_MAP.png
   categories: [ESD]
 
