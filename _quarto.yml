@@ -44,64 +44,66 @@ website:
       - text: "People"
         href: people.qmd
   sidebar:
-    - style: "docked" 
-      contents:
-        - section: "Data"
-          contents:
-            - section: "Marine Heat Wave"
-              contents:
-                - text: "Latest Conditions"
-                  href: projects/mhw/latest.qmd
-                - text: "About"
-                  href:  projects/mhw/about.qmd
-                - text: "Previous Updates"
-                  href: projects/mhw/prev.qmd
-                - text: "Videos"
-                  href: projects/mhw/videos.qmd
-                - text: "Regional EEZ MHW"
-                  href: projects/mhw/regional_eez.qmd
-                - text: "References"
-                  href: projects/mhw/refs.qmd
-            - section: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
-              contents:
-                - text: "Overview"
-                  href: projects/sanctuary_mhw/overview.qmd
-                - text: "Olympic Coast"
-                  href:  projects/sanctuary_mhw/OCNMS.qmd
-                - text: "Greater Farallones"
-                  href: projects/sanctuary_mhw/GFNMS.qmd
-                - text: "Cordell Bank"
-                  href: projects/sanctuary_mhw/CBNMS.qmd
-                - text: "Monterey Bay - Mainland"
-                  href: projects/sanctuary_mhw/MBNMS.qmd
-                - text: "Monterey Bay - Davidson Seamount"
-                  href: projects/sanctuary_mhw/DSNMS.qmd
-                - text: "Channel Islands"
-                  href: projects/sanctuary_mhw/CINMS.qmd
-                - text: "MHW Calculations"
-                  href: projects/sanctuary_mhw/calc.qmd
-            - section: "Upwelling Index"
-              contents:
-                - text: "About"
-                  href: projects/upwelling/intro.qmd
-                - text: "Bakun Index"
-                  href:  projects/upwelling/bakun.qmd
-                - text: "CUTI and BEUTI"
-                  href: projects/upwelling/cutibeuti.qmd
-                - text: "Index Comparison"
-                  href: projects/upwelling/diff.qmd
-                - text: "Which index should I use?"
-                  href: projects/upwelling/which.qmd
-                - text: "Downloads"
-                  href: projects/upwelling/dnld.qmd
-            - section: "FNMOC Products"
-              contents:
-                - text: "About"
-                  href: products/fnmoc/intro.qmd
-                - text: "Model Data"
-                  href: products/fnmoc/model.qmd
-                - text: "Model-Derived Products"
-                  href: products/fnmoc/prods.qmd
+    title: "Projects and Products"
+    style: "docked"
+    collapse-level: 1
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - section: "Marine Heat Wave"
+        contents:
+          - text: "Latest Conditions"
+            href: projects/mhw/latest.qmd
+          - text: "About"
+            href:  projects/mhw/about.qmd
+          - text: "Previous Updates"
+            href: projects/mhw/prev.qmd
+          - text: "Videos"
+            href: projects/mhw/videos.qmd
+          - text: "Regional EEZ MHW"
+            href: projects/mhw/regional_eez.qmd
+          - text: "References"
+            href: projects/mhw/refs.qmd
+      - section: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
+        contents:
+          - text: "Overview"
+            href: projects/sanctuary_mhw/overview.qmd
+          - text: "Olympic Coast"
+            href:  projects/sanctuary_mhw/OCNMS.qmd
+          - text: "Greater Farallones"
+            href: projects/sanctuary_mhw/GFNMS.qmd
+          - text: "Cordell Bank"
+            href: projects/sanctuary_mhw/CBNMS.qmd
+          - text: "Monterey Bay - Mainland"
+            href: projects/sanctuary_mhw/MBNMS.qmd
+          - text: "Monterey Bay - Davidson Seamount"
+            href: projects/sanctuary_mhw/DSNMS.qmd
+          - text: "Channel Islands"
+            href: projects/sanctuary_mhw/CINMS.qmd
+          - text: "MHW Calculations"
+            href: projects/sanctuary_mhw/calc.qmd
+      - section: "Upwelling Index"
+        contents:
+          - text: "About"
+            href: projects/upwelling/intro.qmd
+          - text: "Bakun Index"
+            href:  projects/upwelling/bakun.qmd
+          - text: "CUTI and BEUTI"
+            href: projects/upwelling/cutibeuti.qmd
+          - text: "Index Comparison"
+            href: projects/upwelling/diff.qmd
+          - text: "Which index should I use?"
+            href: projects/upwelling/which.qmd
+          - text: "Downloads"
+            href: projects/upwelling/dnld.qmd
+      - section: "FNMOC Products"
+        contents:
+          - text: "About"
+            href: products/fnmoc/intro.qmd
+          - text: "Model Data"
+            href: products/fnmoc/model.qmd
+          - text: "Model-Derived Products"
+            href: products/fnmoc/prods.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
