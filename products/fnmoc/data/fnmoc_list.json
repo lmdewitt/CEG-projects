@@ -1,0 +1,178 @@
+[{"title":"Derived Products","descr":"","items":[
+	{"title":"Ekman Transport","items":[
+		{"title":"","items":[
+			{"tres":"Monthly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWPr","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWPr_LonPM180","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]}
+				]},
+			{"tres":"6-hourly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTran6","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTran6_LonPM180","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]}
+				]},
+			{"tres":"6-hourly","tspan":"this month","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTransMon","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTransMon_LonPM180","alt":0,"vars":[{"title":"East-West Component of Ekman Transport","units":"kg m-1 s-1","name":"ektrx"},{"title":"North-South Component of Ekman Transport","units":"kg m-1 s-1","name":"ektry"}]}
+				]}
+			]}
+		]},
+	{"title":"Geostrophic Surface Wind","items":[
+		{"title":"","items":[
+			{"tres":"Monthly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWPr","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Geostrophic Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Geostrophic Wind","units":"m s-1","name":"uv_mag_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWPr_LonPM180","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Geostrophic Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Geostrophic Wind","units":"m s-1","name":"uv_mag_mean"}]}
+				]},
+			{"tres":"6-hourly","tspan":"this month","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTransMon","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Geostrophic Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Geostrophic Wind","units":"m s-1","name":"uv_mag_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTransMon_LonPM180","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Geostrophic Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Geostrophic Wind","units":"m s-1","name":"uv_mag_mean"}]}
+				]}
+			]}
+		]},
+	{"title":"Geostrophic Surface Wind Stress","items":[
+		{"title":"","items":[
+			{"tres":"Monthly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWPr","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind Stress","units":"m s-1","name":"taux_mean"},{"title":"North-South Component of Geostrophic Wind Stress","units":"m s-1","name":"tauy_mean"}]},
+				{"gres":"1-degree","gtype":" -180 to 180","erddset":"erdlasFnWPr_LonPM180","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind Stress","units":"m s-1","name":"taux_mean"},{"title":"North-South Component of Geostrophic Wind Stress","units":"m s-1","name":"tauy_mean"}]}
+				]},
+			{"tres":"6-hourly","tspan":"this month","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTransMon","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind Stress","units":"m s-1","name":"taux_mean"},{"title":"North-South Component of Geostrophic Wind Stress","units":"m s-1","name":"tauy_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTransMon_LonPM180","alt":0,"vars":[{"title":"East-West Component of Geostrophic Wind Stress","units":"m s-1","name":"taux_mean"},{"title":"North-South Component of Geostrophic Wind Stress","units":"m s-1","name":"tauy_mean"}]}
+				]}
+			]}
+		]},
+	{"title":"Curl of Geostrophic Surface Wind Stress","items":[
+		{"title":"","items":[
+			{"tres":"Monthly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWPr","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWPr_LonPM180","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]}
+				]},
+			{"tres":"6-hourly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTran6","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTran6_LonPM180","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]}
+				]},
+			{"tres":"6-hourly","tspan":"this month","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTransMon","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTransMon_LonPM180","alt":0,"vars":[{"title":"Curl of Geostrophic Wind Stress","units":"MPa m-1","name":"curl"}]}
+				]}
+			]}
+		]},
+	{"title":"Monthly Sea Level Pressure Maps","items":[
+		]}	
+	]},
+{"title":"FNMOC Model Data","items":[
+	{"title":"FNMOC Cross-Model Long Time Series","descr":"Longest possbile time series generated by interpolating to a 1-degree grid across various models and model resolutions described above.","items":[
+		{"title":"Sea Level Pressure","items":[
+			{"tres":"6-hourly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnPres6","alt":0,"vars":[{"title":"Pressure Reduced To Mean Sea Level","units":"hPa","name":"p_msl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnPres6_LonPM180","alt":0,"vars":[{"title":"Pressure Reduced To Mean Sea Level","units":"hPa","name":"p_msl"}]}]},
+			{"tres":"Monthly","tspan":"1967-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWPr","alt":0,"vars":[{"title":"Pressure Reduced To MSL","units":"Mb","name":"pmsl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWPr_LonPM180","alt":0,"vars":[{"title":"Pressure Reduced To MSL","units":"Mb","name":"pmsl"}]}
+				]},
+			{"tres":"6-hourly","tspan":"this month","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnTransMon","alt":0,"vars":[{"title":"Pressure Reduced To Mean Sea Level","units":"hPa","name":"P_msl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnTransMon_LonPM180","alt":0,"vars":[{"title":"Pressure Reduced To Mean Sea Level","units":"hPa","name":"P_msl"}]}]}
+			]},
+		{"title":"Geopotential Height 500mb","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFn500mb","alt":0,"vars":[{"title":"Geopotential height at 500mb","units":"gp","name":"z_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFn500mb_LonPM180","alt":0,"vars":[{"title":"Geopotential height at 500mb","units":"gp","name":"z_mean"}]}
+				]}
+			]},
+		{"title":"Surface Wind 20m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind20","alt":0,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Surface Wind","units":"m s-1","name":"uv_mag_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind20_LonPM180","alt":0,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Surface Wind","units":"m s-1","name":"uv_mag_mean"}]}
+				]}
+			]},
+		{"title":"Surface Wind 10m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind10","alt":0,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Surface Wind","units":"m s-1","name":"uv_mag_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind10_LonPM180","alt":0,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"u_mean"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"v_mean"},{"title":"Magnitude of Surface Wind","units":"m s-1","name":"uv_mag_mean"}]}
+				]}
+			]},
+		{"title":"Surface Wind Stress 20m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind20","alt":0,"vars":[{"title":"East-West Component of Surface Wind Stress","units":"N m-2","name":"taux_mean"},{"title":"North-South Component of Surface Wind Stress","units":"N m-2","name":"tauy_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind20_LonPM180","alt":0,"vars":[{"title":"East-West Component of Surface Wind Stress","units":"N m-2","name":"taux_mean"},{"title":"North-South Component of Surface Wind Stress","units":"N m-2","name":"tauy_mean"}]}
+				]}
+			]},
+		{"title":"Surface Wind Stress 10m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind10","alt":0,"vars":[{"title":"East-West Component of Surface Wind Stress","units":"N m-2","name":"taux_mean"},{"title":"North-South Component of Surface Wind Stress","units":"N m-2","name":"tauy_mean"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind10_LonPM180","alt":0,"vars":[{"title":"East-West Component of Surface Wind Stress","units":"N m-2","name":"taux_mean"},{"title":"North-South Component of Surface Wind Stress","units":"N m-2","name":"tauy_mean"}]}
+				]}
+			]},
+		{"title":"Curl of Surface Wind Stress 20m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind20","alt":0,"vars":[{"title":"Curl of Surface Wind Stress","units":"MPa m-1","name":"curl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind20_LonPM180","alt":0,"vars":[{"title":"Curl of Surface Wind Stress","units":"MPa m-1","name":"curl"}]}
+				]}
+			]},
+		{"title":"Curl of Surface Wind Stress 10m","items":[
+			{"tres":"Monthly","tspan":"1997-present","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdlasFnWind10","alt":0,"vars":[{"title":"Curl of Surface Wind Stress","units":"MPa m-1","name":"curl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdlasFnWind10_LonPM180","alt":0,"vars":[{"title":"Curl of Surface Wind Stress","units":"MPa m-1","name":"curl"}]}
+				]}
+			]}
+		]},
+	{"title":"Navy Operational Global Atmospheric Prediction System (NOGAPS)","descr":"2013 only","items":[
+		{"title":"Geopotential Height 500 hPa","items":[
+			{"tres":"~2 days","tspan":"2013","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNogaps1D500mb","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNogaps1D500mb_LonPM180","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]}
+				]}
+			]},
+		{"title":"Surface Wind 20m","items":[
+			{"tres":"~2 days","tspan":"2013","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNogaps1D20mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":" -180 to 180","erddset":"erdNogaps1D20mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]}
+				]}
+			]},
+		{"title":"Surface Wind 10m","items":[
+			{"tres":"~2 days","tspan":"2013","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNogaps1D10mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNogaps1D10mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]}
+				]}
+			]},
+		{"title":"Sea Level Pressure","items":[
+			{"tres":"~2 days","tspan":"2013","items":[
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNogaps1DPres","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNogaps1DPres_LonPM180","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]}
+				]}
+			]}
+		]},
+	{"title":"Navy Global Environmental Model (NAVGEM)","descr":"2013 - present","items":[
+		{"title":"Geopotential Height 500 hPa","items":[
+			{"tres":"~6-hourly","tspan":"2013-present","items":[
+				{"gres":"0.5-degree","gtype":"0 to 360","erddset":"erdNavgem05D500mb","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]},
+				{"gres":"0.5-degree","gtype":"-180 to 180","erddset":"erdNavgem05DPres_LonPM180","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]},
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNavgem1D500mb","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNavgem1D500mb_LonPM180","alt":1,"vars":[{"title":"Geopotential Height (500 hPa)","units":"gpm","name":"geop_ht_isobaric"}]}]}
+			]},
+		{"title":"Surface Wind 20m","items":[
+			{"tres":"~6-hourly","tspan":"2013-present","items":[
+				{"gres":"0.5-degree","gtype":"0 to 360","erddset":"erdNavgem05D20mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"0.5-degree","gtype":"-180 to 180","erddset":"erdNavgem05D20mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNavgem1D20mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNavgem1D20mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]}
+				]}
+			]},
+		{"title":"Surface Wind 10m","items":[
+			{"tres":"~6-hourly","tspan":"2013-present","items":[
+				{"gres":"0.5-degree","gtype":"0 to 360","erddset":"erdNavgem05D10mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"0.5-degree","gtype":"-180 to 180","erddset":"erdNavgem05D10mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNavgem1D10mWind","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNavgem1D10mWind_LonPM180","alt":1,"vars":[{"title":"East-West Component of Surface Wind","units":"m s-1","name":"wnd_ucmp_height_above_ground"},{"title":"North-South Component of Surface Wind","units":"m s-1","name":"wnd_vcmp_height_above_ground"}]}
+				]}
+			]},
+		{"title":"Sea Level Pressure","items":[
+			{"tres":"~6-hourly","tspan":"2013-present","items":[
+				{"gres":"0.5-degree","gtype":"0 to 360","erddset":"erdNavgem05DPres","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]},
+				{"gres":"0.5-degree","gtype":"-180 to 180","erddset":"erdNavgem05DPres_LonPM180","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]},
+				{"gres":"1-degree","gtype":"0 to 360","erddset":"erdNavgem1DPres","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]},
+				{"gres":"1-degree","gtype":"-180 to 180","erddset":"erdNavgem1DPres_LonPM180","alt":0,"vars":[{"title":"Pressure (adjusted to Mean Sea Level)","units":"hPa","name":"pres_reduced_msl"}]}]}
+			]}
+		]}
+	]}
+ ]
+

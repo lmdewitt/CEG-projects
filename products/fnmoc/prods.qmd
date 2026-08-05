@@ -1,0 +1,97 @@
+---
+title: "FNMOC Products"
+subtitle: "Model-Derived Products"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(jsonlite)
+
+data <- fromJSON("data/fnmoc_list.json", simplifyDataFrame = TRUE)
+
+model_data_prod <- data %>% filter(title =="Derived Products") %>% unnest(items, names_sep = "_")
+
+```
+
+## FNMOC Model-Derived Products
+
+The products below are derived from the time series of FNMOC Cross-Model mean sea level pressure described under [FNMOC models](/products/fnmoc/model.html) and are calculated as described in the [Bakun Upwelling Index](/projects/upwelling/bakun.html) section
+
+```{r, results = 'asis'}
+#| echo: false
+#| message: false
+#| eval: true
+section_data_prod <- function(model_data){
+var_dsets <- model_data$items_title
+for (v in 1:(length(var_dsets)-1)){
+var1 <- var_dsets[v]
+vars1 <- model_data %>% filter(items_title == var1) %>%
+  unnest(items_items, names_sep = "_")
+dsets <- vars1 %>% unnest(items_items_items, names_sep = "_")
+erdsets <- dsets %>% unnest(items_items_items_items, names_sep = "_")
+
+cat("\n\n### ",var1, "\n\n",sep="")
+ for (i in 1:nrow(dsets)){
+  cat("* **",dsets$items_items_items_tres[i],",    ",dsets$items_items_items_tspan[i], "**\n\n",sep="")
+   cat("   + 1-degree,  0 to 360  <a href='https://coastwatch.pfeg.noaa.gov/erddap/griddap/",erdsets$items_items_items_items_erddset[i*2-1],".html' target='_blank'>ERDDAP download</a>\n\n",sep="")
+   cat("   + 1-degree,  -180 to 180  <a href='https://coastwatch.pfeg.noaa.gov/erddap/griddap/",erdsets$items_items_items_items_erddset[i*2],".html' target='_blank'>ERDDAP download</a>\n\n",sep="")
+}
+}
+}
+
+section_data_prod(model_data_prod)
+```
+
+## Monthly Sea Level Pressure Maps
+
+Monthly mean pressure maps based on the FNMOC 360x181 (1-degree) analyzed fields.
+
+```{ojs}
+//| echo: false
+d = new Date();
+startYear = 1997;
+currentYear = d.getMonth() === 0 ? d.getFullYear() - 1 : d.getFullYear()
+thismon = d.getMonth() // 1-based index matching your months array
+
+// Create arrays
+years = Array.from({ length: currentYear - startYear + 1 }, (_, index) => startYear + index)
+months = Array.from({ length: 12 }, (_, index) => 0 + index)
+```
+
+
+```{ojs}
+//| echo: false
+// Render the dropdown menu
+viewof selectedFile5 = Inputs.select(years, {value: currentYear,label: "Choose Year",
+  format: x => x.toString(), width:100 })
+html`<br>`
+viewof selectedFile6 = Inputs.select(months, {value: thismon, label: "Choose Month",format: m => new Date(2000, m - 1, 1).toLocaleString("en-US", { month: "short" }), width:100})
+
+```
+
+```{ojs}
+//| echo: false
+// Construct the final download URLs
+baseUrl5 = "https://oceanwatch.pfeg.noaa.gov/products/PFEL/modeled/pressure_maps/"
+selectedMonthName = new Date(2000, selectedFile6 - 1, 1).toLocaleString("en-US", { month: "short" }).toLowerCase()
+filename = selectedMonthName+selectedFile5.toString().substr(2)+"_Pmsl.gif";
+downloadUrl5 = baseUrl5 + filename 
+
+```
+
+
+```{ojs}
+//| echo: false
+// Render the HTML download links
+html`<img src="${downloadUrl5}" /><br><a href="${downloadUrl5}" target="_blank">download image</a>`
+```
+

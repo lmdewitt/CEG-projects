@@ -1,7 +1,6 @@
 ---
 title: "Upwelling Indices"
 subtitle: "Index Comparison"
-bibliography: references.bib
 format:
   html:
     toc: true

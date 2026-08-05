@@ -1,7 +1,6 @@
 ---
 title: "Upwelling Indices"
 subtitle: "Bakun Index"
-bibliography: references.bib
 format:
   html:
     toc: true

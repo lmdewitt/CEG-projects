@@ -1,7 +1,6 @@
 ---
 title: "Upwelling Indices"
 subtitle: "Downloads"
-bibliography: references.bib
 format:
   html:
     toc: true

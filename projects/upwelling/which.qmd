@@ -1,7 +1,6 @@
 ---
 title: "Upwelling Indices"
 subtitle: "Which index should I use?"
-bibliography: references.bib
 format:
   html:
     toc: true

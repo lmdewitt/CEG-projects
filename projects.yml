@@ -50,7 +50,7 @@
   categories: [ESD]
 - title: FNMOC-Derived Products
   description: FNMOC produces operational forecasts of the state of the atmosphere and the ocean several times daily from which ERD derives a number of environmental data products and indices
-  path: https://oceanview.pfeg.noaa.gov/products/fnmoc
+  path: products/fnmoc/intro.html
   image: images/itemurls/Pmsl.png
   categories: [ESD, ITDS]
 - title: Frontal Edges

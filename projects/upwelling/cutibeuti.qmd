@@ -1,7 +1,6 @@
 ---
 title: "Upwelling Indices"
 subtitle: "CUTI and BEUTI"
-bibliography: references.bib
 format:
   html:
     toc: true

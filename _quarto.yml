@@ -1,6 +1,6 @@
 project: 
   type: website
-
+bibliography: references.bib
 website: 
   page-navigation: true
   favicon: images/favicon.ico
@@ -94,7 +94,14 @@ website:
                   href: projects/upwelling/which.qmd
                 - text: "Downloads"
                   href: projects/upwelling/dnld.qmd
-
+            - section: "FNMOC Products"
+              contents:
+                - text: "About"
+                  href: products/fnmoc/intro.qmd
+                - text: "Model Data"
+                  href: products/fnmoc/model.qmd
+                - text: "Model-Derived Products"
+                  href: products/fnmoc/prods.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
