@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./projects/mhw/latest.html" rel="next">
 <link href="./images/favicon.ico" rel="icon">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
@@ -89,10 +90,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 18,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-description","listing-image","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -351,7 +352,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Climate &amp; Ecosystems Group Projects and Products</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -363,24 +364,21 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Data</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Marine Heat Wave</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projects/mhw/latest.html" class="sidebar-item-text sidebar-link">
@@ -419,15 +417,15 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">West Coast National Marine Sanctuaries Marine Heatwave Tracker</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projects/sanctuary_mhw/overview.html" class="sidebar-item-text sidebar-link">
@@ -478,15 +476,15 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Upwelling Index</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projects/upwelling/intro.html" class="sidebar-item-text sidebar-link">
@@ -525,15 +523,15 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">FNMOC Products</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./products/fnmoc/intro.html" class="sidebar-item-text sidebar-link">
@@ -554,8 +552,12 @@ window.Quarto = {
 </li>
       </ul>
   </li>
-      </ul>
-  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./products/hci/hci.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Habitat Compression Index</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -563,7 +565,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Collaborations</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All Projects <span class="quarto-category-count">(24)</span></div><div class="category" data-category="RVNE">ESD <span class="quarto-category-count">(24)</span></div><div class="category" data-category="RkVE">FED <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SVREUw==">ITDS <span class="quarto-category-count">(5)</span></div><div class="category" data-category="TldGU0M=">NWFSC <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Collaborations</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All Projects <span class="quarto-category-count">(25)</span></div><div class="category" data-category="RVNE">ESD <span class="quarto-category-count">(25)</span></div><div class="category" data-category="RkVE">FED <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SVREUw==">ITDS <span class="quarto-category-count">(5)</span></div><div class="category" data-category="TldGU0M=">NWFSC <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
@@ -799,7 +801,33 @@ Frontal Edges
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="RVNE">
+<div class="g-col-1" data-index="9" data-categories="RVNE" data-listing-file-modified-sort="1785977033885" data-listing-reading-time-sort="4" data-listing-word-count-sort="712">
+<a href="./products/hci/hci.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="images/itemurls/hci.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Habitat Compression Index
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RVNE'); return false;">ESD</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Index of upwelling habitat</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="RVNE">
 <a href="https://oceanview.pfeg.noaa.gov/dashboard" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -820,7 +848,7 @@ Indicator Dashboard
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="RVNE">
+<div class="g-col-1" data-index="11" data-categories="RVNE">
 <a href="http://coastwatch.pfeg.noaa.gov/elnino/turtle_tool_3panel.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -841,7 +869,7 @@ Loggerhead Turtle Conservation
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="RVNE">
+<div class="g-col-1" data-index="12" data-categories="RVNE">
 <a href="projects/mhw/latest.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -862,7 +890,7 @@ Marine Heat Wave Tracker
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="RVNE">
+<div class="g-col-1" data-index="13" data-categories="RVNE">
 <a href="projects/sanctuary_mhw/overview.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -883,7 +911,7 @@ Marine Heatwave Tracker
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="RVNE">
+<div class="g-col-1" data-index="14" data-categories="RVNE">
 <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -904,7 +932,7 @@ NOAA Satellite Course
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="RVNE">
+<div class="g-col-1" data-index="15" data-categories="RVNE">
 <a href="https://oceanview.pfeg.noaa.gov/projects/NorthPacificChlBlooms/about" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -925,7 +953,7 @@ North Pacific Chlorophyll Blooms
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="RVNE">
+<div class="g-col-1" data-index="16" data-categories="RVNE">
 <a href="https://oceanview.pfeg.noaa.gov/products/noix" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -946,7 +974,7 @@ Northern Oscillation Index
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="16" data-categories="RVNE">
+<div class="g-col-1" data-index="17" data-categories="RVNE">
 <a href="https://oceanview.pfeg.noaa.gov/oscurs" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -967,11 +995,11 @@ Ocean Surface Current Simulator
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="17" data-categories="RVNEJTJDSVREUw==">
+<div class="g-col-1" data-index="18" data-categories="RVNEJTJDSVREUw==">
 <a href="https://oceanview.pfeg.noaa.gov/products/seafloor_gradient" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="images/itemurls/seafloor_gradient.png" class="thumbnail-image card-img" style="height: 250px;">
+<img loading="lazy" data-src="images/itemurls/seafloor_gradient.png" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -990,7 +1018,7 @@ Sea Floor Gradient
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="18" data-categories="RVNEJTJDRkVE">
+<div class="g-col-1" data-index="19" data-categories="RVNEJTJDRkVE">
 <a href="https://oceanview.pfeg.noaa.gov/products/salmon_thiamine" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1013,7 +1041,7 @@ Thiamine Deficiency in California Salmon
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="19" data-categories="RVNE">
+<div class="g-col-1" data-index="20" data-categories="RVNE">
 <a href="https://oceanview.pfeg.noaa.gov/top-predator-watch" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1034,7 +1062,7 @@ Top Predator Watch
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="20" data-categories="RVNEJTJDSVREUw==">
+<div class="g-col-1" data-index="21" data-categories="RVNEJTJDSVREUw==">
 <a href="projects/upwelling/intro.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1057,7 +1085,7 @@ Upwelling Index
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="RVNE">
+<div class="g-col-1" data-index="22" data-categories="RVNE">
 <a href="http://www.westcoast.fisheries.noaa.gov/whalewatch/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1078,7 +1106,7 @@ WhaleWatch
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="22" data-categories="RVNE">
+<div class="g-col-1" data-index="23" data-categories="RVNE">
 <a href="http://coastwatch.pfeg.noaa.gov/xtracto/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1099,7 +1127,7 @@ Xtractomatic Tools
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="23" data-categories="RVNEJTJDSVREUw==">
+<div class="g-col-1" data-index="24" data-categories="RVNEJTJDSVREUw==">
 <a href="https://cran.r-project.org/web/packages/plotdap/vignettes/using_plotdap.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
@@ -1546,6 +1574,15 @@ plotdap R Package
     }
   });
   </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./projects/mhw/latest.html" class="pagination-link" aria-label="Latest Conditions">
+        <span class="nav-page-text">Latest Conditions</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

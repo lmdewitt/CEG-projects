@@ -1,83 +1,12 @@
 [
   {
     "listing": "/index.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/sanctuary_mhw/MBNMS.html",
     "items": [
-      "/projects/sanctuary_mhw/overview.html",
-      "/projects/sanctuary_mhw/OCNMS.html",
-      "/projects/sanctuary_mhw/GFNMS.html",
-      "/projects/sanctuary_mhw/CBNMS.html",
-      "/projects/sanctuary_mhw/MBNMS.html",
-      "/projects/sanctuary_mhw/DSNMS.html",
-      "/projects/sanctuary_mhw/CINMS.html",
-      "/projects/sanctuary_mhw/calc.html"
+      "/products/hci/hci.html"
     ]
   },
   {
-    "listing": "/projects/sanctuary_mhw/calc.html",
-    "items": [
-      "/projects/sanctuary_mhw/overview.html",
-      "/projects/sanctuary_mhw/OCNMS.html",
-      "/projects/sanctuary_mhw/GFNMS.html",
-      "/projects/sanctuary_mhw/CBNMS.html",
-      "/projects/sanctuary_mhw/MBNMS.html",
-      "/projects/sanctuary_mhw/DSNMS.html",
-      "/projects/sanctuary_mhw/CINMS.html",
-      "/projects/sanctuary_mhw/calc.html"
-    ]
-  },
-  {
-    "listing": "/projects/sanctuary_mhw/OCNMS.html",
-    "items": [
-      "/projects/sanctuary_mhw/overview.html",
-      "/projects/sanctuary_mhw/OCNMS.html",
-      "/projects/sanctuary_mhw/GFNMS.html",
-      "/projects/sanctuary_mhw/CBNMS.html",
-      "/projects/sanctuary_mhw/MBNMS.html",
-      "/projects/sanctuary_mhw/DSNMS.html",
-      "/projects/sanctuary_mhw/CINMS.html",
-      "/projects/sanctuary_mhw/calc.html"
-    ]
-  },
-  {
-    "listing": "/projects/sanctuary_mhw/overview.html",
-    "items": [
-      "/projects/sanctuary_mhw/overview.html",
-      "/projects/sanctuary_mhw/OCNMS.html",
-      "/projects/sanctuary_mhw/GFNMS.html",
-      "/projects/sanctuary_mhw/CBNMS.html",
-      "/projects/sanctuary_mhw/MBNMS.html",
-      "/projects/sanctuary_mhw/DSNMS.html",
-      "/projects/sanctuary_mhw/CINMS.html",
-      "/projects/sanctuary_mhw/calc.html"
-    ]
-  },
-  {
-    "listing": "/projects/mhw/prev.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/mhw/videos.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/sanctuary_mhw/CBNMS.html",
-    "items": [
-      "/projects/sanctuary_mhw/overview.html",
-      "/projects/sanctuary_mhw/OCNMS.html",
-      "/projects/sanctuary_mhw/GFNMS.html",
-      "/projects/sanctuary_mhw/CBNMS.html",
-      "/projects/sanctuary_mhw/MBNMS.html",
-      "/projects/sanctuary_mhw/DSNMS.html",
-      "/projects/sanctuary_mhw/CINMS.html",
-      "/projects/sanctuary_mhw/calc.html"
-    ]
-  },
-  {
-    "listing": "/projects/sanctuary_mhw/CINMS.html",
+    "listing": "/projects/sanctuary_mhw/GFNMS.html",
     "items": [
       "/projects/sanctuary_mhw/overview.html",
       "/projects/sanctuary_mhw/OCNMS.html",
@@ -103,7 +32,80 @@
     ]
   },
   {
-    "listing": "/projects/sanctuary_mhw/GFNMS.html",
+    "listing": "/projects/sanctuary_mhw/CINMS.html",
+    "items": [
+      "/projects/sanctuary_mhw/overview.html",
+      "/projects/sanctuary_mhw/OCNMS.html",
+      "/projects/sanctuary_mhw/GFNMS.html",
+      "/projects/sanctuary_mhw/CBNMS.html",
+      "/projects/sanctuary_mhw/MBNMS.html",
+      "/projects/sanctuary_mhw/DSNMS.html",
+      "/projects/sanctuary_mhw/CINMS.html",
+      "/projects/sanctuary_mhw/calc.html"
+    ]
+  },
+  {
+    "listing": "/projects/sanctuary_mhw/CBNMS.html",
+    "items": [
+      "/projects/sanctuary_mhw/overview.html",
+      "/projects/sanctuary_mhw/OCNMS.html",
+      "/projects/sanctuary_mhw/GFNMS.html",
+      "/projects/sanctuary_mhw/CBNMS.html",
+      "/projects/sanctuary_mhw/MBNMS.html",
+      "/projects/sanctuary_mhw/DSNMS.html",
+      "/projects/sanctuary_mhw/CINMS.html",
+      "/projects/sanctuary_mhw/calc.html"
+    ]
+  },
+  {
+    "listing": "/projects/mhw/videos.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/mhw/prev.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/sanctuary_mhw/overview.html",
+    "items": [
+      "/projects/sanctuary_mhw/overview.html",
+      "/projects/sanctuary_mhw/OCNMS.html",
+      "/projects/sanctuary_mhw/GFNMS.html",
+      "/projects/sanctuary_mhw/CBNMS.html",
+      "/projects/sanctuary_mhw/MBNMS.html",
+      "/projects/sanctuary_mhw/DSNMS.html",
+      "/projects/sanctuary_mhw/CINMS.html",
+      "/projects/sanctuary_mhw/calc.html"
+    ]
+  },
+  {
+    "listing": "/projects/sanctuary_mhw/OCNMS.html",
+    "items": [
+      "/projects/sanctuary_mhw/overview.html",
+      "/projects/sanctuary_mhw/OCNMS.html",
+      "/projects/sanctuary_mhw/GFNMS.html",
+      "/projects/sanctuary_mhw/CBNMS.html",
+      "/projects/sanctuary_mhw/MBNMS.html",
+      "/projects/sanctuary_mhw/DSNMS.html",
+      "/projects/sanctuary_mhw/CINMS.html",
+      "/projects/sanctuary_mhw/calc.html"
+    ]
+  },
+  {
+    "listing": "/projects/sanctuary_mhw/calc.html",
+    "items": [
+      "/projects/sanctuary_mhw/overview.html",
+      "/projects/sanctuary_mhw/OCNMS.html",
+      "/projects/sanctuary_mhw/GFNMS.html",
+      "/projects/sanctuary_mhw/CBNMS.html",
+      "/projects/sanctuary_mhw/MBNMS.html",
+      "/projects/sanctuary_mhw/DSNMS.html",
+      "/projects/sanctuary_mhw/CINMS.html",
+      "/projects/sanctuary_mhw/calc.html"
+    ]
+  },
+  {
+    "listing": "/projects/sanctuary_mhw/MBNMS.html",
     "items": [
       "/projects/sanctuary_mhw/overview.html",
       "/projects/sanctuary_mhw/OCNMS.html",

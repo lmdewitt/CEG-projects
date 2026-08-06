@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Marine Heat Wave videos</title>
+<title>Habitat Compression Index (HCI)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -35,11 +70,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../projects/mhw/regional_eez.html" rel="next">
-<link href="../../projects/mhw/prev.html" rel="prev">
+<link href="../../products/fnmoc/prods.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -51,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0101ac008845ff09a840ed547f50d9a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-5e8d72605e85573ed92c7ac51daf52e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-0101ac008845ff09a840ed547f50d9a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-56bab880c8ee09557fcb2f97a9ba54bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32275415d2e7b3ed14fb9fb6686ad795.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,65 +113,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-videos_avi .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-videos_avi'] = new List('listing-videos_avi', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../style.css">
 </head>
@@ -352,7 +328,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/mhw/latest.html">Marine Heat Wave</a></li><li class="breadcrumb-item"><a href="../../projects/mhw/videos.html">Videos</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../products/hci/hci.html">Habitat Compression Index</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -372,13 +348,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Marine Heat Wave</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../projects/mhw/latest.html" class="sidebar-item-text sidebar-link">
@@ -399,7 +375,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects/mhw/videos.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../projects/mhw/videos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Videos</span></a>
   </div>
 </li>
@@ -554,7 +530,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../products/hci/hci.html" class="sidebar-item-text sidebar-link">
+  <a href="../../products/hci/hci.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Habitat Compression Index</span></a>
   </div>
 </li>
@@ -568,13 +544,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2020</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2019</a></li>
-  <li><a href="#downloads-and-previous-years" id="toc-downloads-and-previous-years" class="nav-link" data-scroll-target="#downloads-and-previous-years">Downloads and Previous years</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -582,9 +552,9 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/mhw/latest.html">Marine Heat Wave</a></li><li class="breadcrumb-item"><a href="../../projects/mhw/videos.html">Videos</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Marine Heat Wave videos</h1>
+<h1 class="title">Habitat Compression Index (HCI)</h1>
 </div>
 
 
@@ -602,498 +572,206 @@ window.Quarto = {
 
 
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2024</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/U2nVnUmr5uw?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>In eastern boundary upwelling ecosystems the spatial footprint of cool upwelled water is regularly demarcated by the differential boundary of warmer oceanic water offshore from cooler coastal water, with upwelling conditions varying with latitude. Therefore, the goal of the habitat compression index (HCI) is to track the area of cool surface waters as an index of potential ‘upwelling habitat’ for assessing the spatio-temporal aspects of upwelling. Upwelling patterns of cold nutrient-rich water are clearly assessed by models and satellite observations and classified spatially by monitoring SST values less than and equal to a monthly resolved temperature threshold. The HCI tracks the amount of area, determined by the number of grid cells in the model with 2 m surface temperature values less than the monthly temperature threshold, therefore the time series reflects the area of cool water adjacent to the coastline and provides a measure for how compressed cool surface temperatures may be in a particular month. In this study, we extracted modeled 2 m temperature fields over the domain of 35.5-40 degree N for each month and tracked the amount of area with temperature values less than and equal to a monthly temperature threshold, resulting in monthly time series starting January 1980. Monthly temperature thresholds for a given month is the spatial average of 2 m temperature grid cells between 35.5-40N from shore out to 75 km for the time period 1980-2010. Cool expansion periods (<span style="background-color:#03fe7c">low compression</span>) are defined as months with HCI values exceeding + 1 standard deviation (SD) of the full time series, limited cool habitat (<span style="background-color:#ff6258">high compression</span>) where area of cool water is less than the mean (MN) of the full time series, and periods of <span style="background-color:yellow">medium compression</span> when the area of cool water falls between the +1 SD and the MN.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="17" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 16;"><span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>startYear <span class="op">=</span> <span class="dv">1980</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>currentYear <span class="op">=</span> d<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">===</span> <span class="dv">0</span> <span class="op">?</span> d<span class="op">.</span><span class="fu">getFullYear</span>() <span class="op">-</span> <span class="dv">1</span> <span class="op">:</span> d<span class="op">.</span><span class="fu">getFullYear</span>()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>thismon <span class="op">=</span> d<span class="op">.</span><span class="fu">getMonth</span>() <span class="co">// 1-based index matching your months array</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">// Create arrays</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>years <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({ <span class="dt">length</span><span class="op">:</span> currentYear <span class="op">-</span> startYear <span class="op">+</span> <span class="dv">1</span> }<span class="op">,</span> (_<span class="op">,</span> index) <span class="kw">=&gt;</span> startYear <span class="op">+</span> index)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>months <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({ <span class="dt">length</span><span class="op">:</span> <span class="dv">12</span> }<span class="op">,</span> (_<span class="op">,</span> index) <span class="kw">=&gt;</span> <span class="dv">0</span> <span class="op">+</span> index)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>baseUrl1 <span class="op">=</span> <span class="st">"https://oceanview.pfeg.noaa.gov/hci/images/hci_plots/all_years/"</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>baseUrl2 <span class="op">=</span> <span class="st">"https://oceanview.pfeg.noaa.gov/hci/images/hci_plots/all_months/"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="39" data-source-offset="-44"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>viewof selectedFile <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(months<span class="op">,</span> {</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> thismon<span class="op">,</span> </span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Month:"</span><span class="op">,</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> m <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(<span class="dv">2000</span><span class="op">,</span> m <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">.</span><span class="fu">toLocaleString</span>(<span class="st">"en-US"</span><span class="op">,</span> { <span class="dt">month</span><span class="op">:</span> <span class="st">"short"</span> })<span class="op">,</span> </span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">100</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="co">// 2. Define the regions you want to loop over</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>regionData <span class="op">=</span> [</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">id</span><span class="op">:</span> <span class="st">"rgn1"</span><span class="op">,</span> <span class="dt">loc</span><span class="op">:</span> <span class="st">"43.5-48 N"</span> }<span class="op">,</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">id</span><span class="op">:</span> <span class="st">"rgn2"</span><span class="op">,</span> <span class="dt">loc</span><span class="op">:</span> <span class="st">"40-43.5 N"</span> }<span class="op">,</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">id</span><span class="op">:</span> <span class="st">"rgn3"</span><span class="op">,</span> <span class="dt">loc</span><span class="op">:</span> <span class="st">"35.5-40 N"</span> }<span class="op">,</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">id</span><span class="op">:</span> <span class="st">"rgn4"</span><span class="op">,</span> <span class="dt">loc</span><span class="op">:</span> <span class="st">"30-35.5 N"</span> }</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. Loop through the combined array</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"&gt;</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>regionData<span class="op">.</span><span class="fu">map</span>(item <span class="kw">=&gt;</span> {</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Generate the URL using the item's id property</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> downloadUrl <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>baseUrl1<span class="sc">}${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">/roms_temp2m_</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">_</span><span class="sc">${</span><span class="bu">String</span>(selectedFile)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">'0'</span>)<span class="sc">}</span><span class="vs">.png`</span><span class="op">;</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Render the HTML using both item.id and item.loc</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;"&gt;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;h4&gt;Region</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="op">.</span><span class="fu">substring</span>(<span class="dv">3</span>)<span class="sc">}</span><span class="vs">: </span><span class="sc">${</span>item<span class="op">.</span><span class="at">loc</span><span class="sc">}</span><span class="vs">&lt;/h4&gt;</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;img src="</span><span class="sc">${</span>downloadUrl<span class="sc">}</span><span class="vs">" style="max-width: 100%; height: auto;" /&gt;&lt;br&gt;</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;a href="</span><span class="sc">${</span>downloadUrl<span class="sc">}</span><span class="vs">" target="_blank"&gt;Download Image&lt;/a&gt;</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  })<span class="sc">}</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>viewof selectedYr <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(years<span class="op">,</span> {</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> currentYear<span class="op">,</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Year:"</span><span class="op">,</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> x<span class="op">.</span><span class="fu">toString</span>()<span class="op">,</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span><span class="dv">100</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>viewof selectedMon <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(months<span class="op">,</span> {</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> thismon<span class="op">,</span> </span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Month:"</span><span class="op">,</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> m <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(<span class="dv">2000</span><span class="op">,</span> m <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">.</span><span class="fu">toLocaleString</span>(<span class="st">"en-US"</span><span class="op">,</span> { <span class="dt">month</span><span class="op">:</span> <span class="st">"short"</span> })<span class="op">,</span> </span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">100</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. Loop through regions using .map() to dynamically output the layout</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"&gt;</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>regionData<span class="op">.</span><span class="fu">map</span>(item <span class="kw">=&gt;</span> {</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Calculate the unique URL for this specific region loop iteration</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> downloadUrl2 <span class="op">=</span> <span class="vs">`</span><span class="sc">${</span>baseUrl2<span class="sc">}${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">/</span><span class="sc">${</span><span class="bu">String</span>(selectedMon)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">'0'</span>)<span class="sc">}</span><span class="vs">/roms_temp2m_</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">_</span><span class="sc">${</span>selectedYr<span class="sc">}</span><span class="vs">_</span><span class="sc">${</span><span class="bu">String</span>(selectedMon)<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">'0'</span>)<span class="sc">}</span><span class="vs">.png`</span><span class="op">;</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Return the HTML container for this region</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;"&gt;</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;h4&gt;Region</span><span class="sc">${</span>item<span class="op">.</span><span class="at">id</span><span class="op">.</span><span class="fu">substring</span>(<span class="dv">3</span>)<span class="sc">}</span><span class="vs">: </span><span class="sc">${</span>item<span class="op">.</span><span class="at">loc</span><span class="sc">}</span><span class="vs">&lt;/h4&gt;</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;img src="</span><span class="sc">${</span>downloadUrl2<span class="sc">}</span><span class="vs">" style="max-width: 100%; height: auto;" /&gt;&lt;br&gt;</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;a href="</span><span class="sc">${</span>downloadUrl2<span class="sc">}</span><span class="vs">" target="_blank"&gt;Download Image&lt;/a&gt;</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>  })<span class="sc">}</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2023</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/q2GADbAY-4c?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<section id="all-years-for-a-given-month" class="level2 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="all-years-for-a-given-month">All Years for a given month</h2>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2022</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/g8wZh2IbnCo?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div>
+<div class="quarto-layout-row">
+<section id="by-year-and-month" class="level2 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h2 class="anchored" data-anchor-id="by-year-and-month">By year and month</h2>
+<div class="cell">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2021</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/plLRU41uEXA?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2020</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/hreLz4eRBrY?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2019</h2>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/yqXIlFdjB0c?start=5" width="360px" height="320px" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="downloads-and-previous-years" class="level1">
-<h1>Downloads and Previous years</h1>
-<div id="listing-videos_avi" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Year
-</th>
-
-<th>
-Link
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-title-sort="2025">
-<td>
-<span class="listing-title">2025</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2025.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2025.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-title-sort="2024">
-<td>
-<span class="listing-title">2024</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2024.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2024.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-title-sort="2023">
-<td>
-<span class="listing-title">2023</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2023.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2023.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-title-sort="2022">
-<td>
-<span class="listing-title">2022</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2022.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2022.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-title-sort="2021">
-<td>
-<span class="listing-title">2021</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2021.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2021.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-title-sort="2020">
-<td>
-<span class="listing-title">2020</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2020.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2020.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-title-sort="2019">
-<td>
-<span class="listing-title">2019</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2019.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2019.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-title-sort="2018">
-<td>
-<span class="listing-title">2018</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2018.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2018.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-title-sort="2017">
-<td>
-<span class="listing-title">2017</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2017.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2017.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-title-sort="2016">
-<td>
-<span class="listing-title">2016</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2016.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2016.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-title-sort="2015">
-<td>
-<span class="listing-title">2015</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2015.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2015.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-title-sort="2014">
-<td>
-<span class="listing-title">2014</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2014.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2014.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-title-sort="2013">
-<td>
-<span class="listing-title">2013</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2013.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2013.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-title-sort="2012">
-<td>
-<span class="listing-title">2012</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2012.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2012.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="14" data-listing-title-sort="2011">
-<td>
-<span class="listing-title">2011</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2011.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2011.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="15" data-listing-title-sort="2010">
-<td>
-<span class="listing-title">2010</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2010.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2010.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="16" data-listing-title-sort="2009">
-<td>
-<span class="listing-title">2009</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2009.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2009.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="17" data-listing-title-sort="2008">
-<td>
-<span class="listing-title">2008</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2008.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2008.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="18" data-listing-title-sort="2007">
-<td>
-<span class="listing-title">2007</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2007.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2007.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="19" data-listing-title-sort="2006">
-<td>
-<span class="listing-title">2006</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2006.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2006.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="20" data-listing-title-sort="2005">
-<td>
-<span class="listing-title">2005</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2005.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2005.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="21" data-listing-title-sort="2004">
-<td>
-<span class="listing-title">2004</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2004.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2004.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="22" data-listing-title-sort="2003">
-<td>
-<span class="listing-title">2003</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2003.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2003.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="23" data-listing-title-sort="2002">
-<td>
-<span class="listing-title">2002</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2002.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2002.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="24" data-listing-title-sort="2001">
-<td>
-<span class="listing-title">2001</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2001.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2001.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="25" data-listing-title-sort="2000">
-<td>
-<span class="listing-title">2000</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2000.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-2000.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="26" data-listing-title-sort="1999">
-<td>
-<span class="listing-title">1999</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1999.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1999.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="27" data-listing-title-sort="1998">
-<td>
-<span class="listing-title">1998</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1998.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1998.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="28" data-listing-title-sort="1997">
-<td>
-<span class="listing-title">1997</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1997.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1997.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="29" data-listing-title-sort="1996">
-<td>
-<span class="listing-title">1996</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1996.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1996.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="30" data-listing-title-sort="1995">
-<td>
-<span class="listing-title">1995</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1995.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1995.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="31" data-listing-title-sort="1994">
-<td>
-<span class="listing-title">1994</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1994.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1994.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="32" data-listing-title-sort="1993">
-<td>
-<span class="listing-title">1993</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1993.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1993.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="33" data-listing-title-sort="1992">
-<td>
-<span class="listing-title">1992</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1992.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1992.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="34" data-listing-title-sort="1991">
-<td>
-<span class="listing-title">1991</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1991.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1991.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="35" data-listing-title-sort="1990">
-<td>
-<span class="listing-title">1990</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1990.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1990.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="36" data-listing-title-sort="1989">
-<td>
-<span class="listing-title">1989</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1989.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1989.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="37" data-listing-title-sort="1988">
-<td>
-<span class="listing-title">1988</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1988.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1988.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="38" data-listing-title-sort="1987">
-<td>
-<span class="listing-title">1987</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1987.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1987.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="39" data-listing-title-sort="1986">
-<td>
-<span class="listing-title">1986</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1986.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1986.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="40" data-listing-title-sort="1985">
-<td>
-<span class="listing-title">1985</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1985.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1985.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="41" data-listing-title-sort="1984">
-<td>
-<span class="listing-title">1984</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1984.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1984.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="42" data-listing-title-sort="1983">
-<td>
-<span class="listing-title">1983</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1983.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1983.avi</a></span>
-</td>
-
-</tr>
-
-<tr data-index="43" data-listing-title-sort="1982">
-<td>
-<span class="listing-title">1982</span>
-</td>
-<td>
-<span class="listing-description"><a href="https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1982.avi" class="uri">https://oceanview.pfeg.noaa.gov/images/mhw/videos/SST-NEP-1982.avi</a></span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </div>
 
 
 
-</section>
-
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImQgPSBuZXcgRGF0ZSgpO1xuc3RhcnRZZWFyID0gMTk4MDtcbmN1cnJlbnRZZWFyID0gZC5nZXRNb250aCgpID09PSAwID8gZC5nZXRGdWxsWWVhcigpIC0gMSA6IGQuZ2V0RnVsbFllYXIoKVxudGhpc21vbiA9IGQuZ2V0TW9udGgoKSAvLyAxLWJhc2VkIGluZGV4IG1hdGNoaW5nIHlvdXIgbW9udGhzIGFycmF5XG5cbi8vIENyZWF0ZSBhcnJheXNcbnllYXJzID0gQXJyYXkuZnJvbSh7IGxlbmd0aDogY3VycmVudFllYXIgLSBzdGFydFllYXIgKyAxIH0sIChfLCBpbmRleCkgPT4gc3RhcnRZZWFyICsgaW5kZXgpXG5tb250aHMgPSBBcnJheS5mcm9tKHsgbGVuZ3RoOiAxMiB9LCAoXywgaW5kZXgpID0+IDAgKyBpbmRleClcbmJhc2VVcmwxID0gXCJodHRwczovL29jZWFudmlldy5wZmVnLm5vYWEuZ292L2hjaS9pbWFnZXMvaGNpX3Bsb3RzL2FsbF95ZWFycy9cIlxuYmFzZVVybDIgPSBcImh0dHBzOi8vb2NlYW52aWV3LnBmZWcubm9hYS5nb3YvaGNpL2ltYWdlcy9oY2lfcGxvdHMvYWxsX21vbnRocy9cIlxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG4vLyAxLiBTaW5nbGUgZ2xvYmFsIG1vbnRoIHNlbGVjdG9yIGNvbnRyb2xcbnZpZXdvZiBzZWxlY3RlZEZpbGUgPSBJbnB1dHMuc2VsZWN0KG1vbnRocywge1xuICB2YWx1ZTogdGhpc21vbiwgXG4gIGxhYmVsOiBcIk1vbnRoOlwiLFxuICBmb3JtYXQ6IG0gPT4gbmV3IERhdGUoMjAwMCwgbSAtIDEsIDEpLnRvTG9jYWxlU3RyaW5nKFwiZW4tVVNcIiwgeyBtb250aDogXCJzaG9ydFwiIH0pLCBcbiAgd2lkdGg6IDEwMFxufSlcblxuLy8gMi4gRGVmaW5lIHRoZSByZWdpb25zIHlvdSB3YW50IHRvIGxvb3Agb3ZlclxucmVnaW9uRGF0YSA9IFtcbiAgeyBpZDogXCJyZ24xXCIsIGxvYzogXCI0My41LTQ4IE5cIiB9LFxuICB7IGlkOiBcInJnbjJcIiwgbG9jOiBcIjQwLTQzLjUgTlwiIH0sXG4gIHsgaWQ6IFwicmduM1wiLCBsb2M6IFwiMzUuNS00MCBOXCIgfSxcbiAgeyBpZDogXCJyZ240XCIsIGxvYzogXCIzMC0zNS41IE5cIiB9XG5dXG5cbi8vIDMuIExvb3AgdGhyb3VnaCB0aGUgY29tYmluZWQgYXJyYXlcbmh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGdyaWQ7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KGF1dG8tZml0LCBtaW5tYXgoMjUwcHgsIDFmcikpOyBnYXA6IDIwcHg7XCI+XG4gICR7cmVnaW9uRGF0YS5tYXAoaXRlbSA9PiB7XG4gICAgLy8gR2VuZXJhdGUgdGhlIFVSTCB1c2luZyB0aGUgaXRlbSdzIGlkIHByb3BlcnR5XG4gICAgY29uc3QgZG93bmxvYWRVcmwgPSBgJHtiYXNlVXJsMX0ke2l0ZW0uaWR9L3JvbXNfdGVtcDJtXyR7aXRlbS5pZH1fJHtTdHJpbmcoc2VsZWN0ZWRGaWxlKS5wYWRTdGFydCgyLCAnMCcpfS5wbmdgO1xuICAgIFxuICAgIC8vIFJlbmRlciB0aGUgSFRNTCB1c2luZyBib3RoIGl0ZW0uaWQgYW5kIGl0ZW0ubG9jXG4gICAgcmV0dXJuIGh0bWxgPGRpdiBzdHlsZT1cImJvcmRlcjogMXB4IHNvbGlkICNjY2M7IHBhZGRpbmc6IDEwcHg7IGJvcmRlci1yYWRpdXM6IDRweDtcIj5cbiAgICAgIDxoND5SZWdpb24ke2l0ZW0uaWQuc3Vic3RyaW5nKDMpfTogJHtpdGVtLmxvY308L2g0PlxuICAgICAgPGltZyBzcmM9XCIke2Rvd25sb2FkVXJsfVwiIHN0eWxlPVwibWF4LXdpZHRoOiAxMDAlOyBoZWlnaHQ6IGF1dG87XCIgLz48YnI+XG4gICAgICA8YSBocmVmPVwiJHtkb3dubG9hZFVybH1cIiB0YXJnZXQ9XCJfYmxhbmtcIj5Eb3dubG9hZCBJbWFnZTwvYT5cbiAgICA8L2Rpdj5gO1xuICB9KX1cbjwvZGl2PmBcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG4vLyAxLiBTaW5nbGUgZ2xvYmFsIG1vbnRoIHNlbGVjdG9yIGNvbnRyb2xcbnZpZXdvZiBzZWxlY3RlZFlyID0gSW5wdXRzLnNlbGVjdCh5ZWFycywge1xuICB2YWx1ZTogY3VycmVudFllYXIsXG4gIGxhYmVsOiBcIlllYXI6XCIsXG4gIGZvcm1hdDogeCA9PiB4LnRvU3RyaW5nKCksXG4gIHdpZHRoOjEwMFxufSlcbnZpZXdvZiBzZWxlY3RlZE1vbiA9IElucHV0cy5zZWxlY3QobW9udGhzLCB7XG4gIHZhbHVlOiB0aGlzbW9uLCBcbiAgbGFiZWw6IFwiTW9udGg6XCIsXG4gIGZvcm1hdDogbSA9PiBuZXcgRGF0ZSgyMDAwLCBtIC0gMSwgMSkudG9Mb2NhbGVTdHJpbmcoXCJlbi1VU1wiLCB7IG1vbnRoOiBcInNob3J0XCIgfSksIFxuICB3aWR0aDogMTAwXG59KVxuXG4vLyAzLiBMb29wIHRocm91Z2ggcmVnaW9ucyB1c2luZyAubWFwKCkgdG8gZHluYW1pY2FsbHkgb3V0cHV0IHRoZSBsYXlvdXRcbmh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGdyaWQ7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KGF1dG8tZml0LCBtaW5tYXgoMjUwcHgsIDFmcikpOyBnYXA6IDIwcHg7XCI+XG4gICR7cmVnaW9uRGF0YS5tYXAoaXRlbSA9PiB7XG4gICAgLy8gQ2FsY3VsYXRlIHRoZSB1bmlxdWUgVVJMIGZvciB0aGlzIHNwZWNpZmljIHJlZ2lvbiBsb29wIGl0ZXJhdGlvblxuICAgIGNvbnN0IGRvd25sb2FkVXJsMiA9IGAke2Jhc2VVcmwyfSR7aXRlbS5pZH0vJHtTdHJpbmcoc2VsZWN0ZWRNb24pLnBhZFN0YXJ0KDIsICcwJyl9L3JvbXNfdGVtcDJtXyR7aXRlbS5pZH1fJHtzZWxlY3RlZFlyfV8ke1N0cmluZyhzZWxlY3RlZE1vbikucGFkU3RhcnQoMiwgJzAnKX0ucG5nYDtcbiAgICBcbiAgICAvLyBSZXR1cm4gdGhlIEhUTUwgY29udGFpbmVyIGZvciB0aGlzIHJlZ2lvblxuICAgIHJldHVybiBodG1sYDxkaXYgc3R5bGU9XCJib3JkZXI6IDFweCBzb2xpZCAjY2NjOyBwYWRkaW5nOiAxMHB4OyBib3JkZXItcmFkaXVzOiA0cHg7XCI+XG4gICAgICA8aDQ+UmVnaW9uJHtpdGVtLmlkLnN1YnN0cmluZygzKX06ICR7aXRlbS5sb2N9PC9oND5cbiAgICAgIDxpbWcgc3JjPVwiJHtkb3dubG9hZFVybDJ9XCIgc3R5bGU9XCJtYXgtd2lkdGg6IDEwMCU7IGhlaWdodDogYXV0bztcIiAvPjxicj5cbiAgICAgIDxhIGhyZWY9XCIke2Rvd25sb2FkVXJsMn1cIiB0YXJnZXQ9XCJfYmxhbmtcIj5Eb3dubG9hZCBJbWFnZTwvYT5cbiAgICA8L2Rpdj5gO1xuICB9KX1cbjwvZGl2PmBcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZEZpbGUnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRZcicpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZE1vbicpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../products/hci";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1514,14 +1192,11 @@ Link
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../projects/mhw/prev.html" class="pagination-link" aria-label="Previous Updates">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Previous Updates</span>
+      <a href="../../products/fnmoc/prods.html" class="pagination-link" aria-label="Model-Derived Products">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Model-Derived Products</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../projects/mhw/regional_eez.html" class="pagination-link" aria-label="Regional EEZ MHW">
-        <span class="nav-page-text">Regional EEZ MHW</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
