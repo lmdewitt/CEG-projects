@@ -118,4 +118,9 @@
   path: projects/sanctuary_mhw/overview.html
   image: images/itemurls/Current_sanctuary_overivew_SSTa_MAP.png
   categories: [ESD]
+- title: Habitat Compression Index
+  description: Index of upwelling habitat
+  path: products/hci/hci.qmd
+  image: images/itemurls/hci.png
+  categories: [ESD]
 

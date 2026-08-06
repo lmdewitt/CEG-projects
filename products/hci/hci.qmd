@@ -1,0 +1,115 @@
+---
+title: "Habitat Compression Index (HCI)"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+## 
+
+In eastern boundary upwelling ecosystems the spatial footprint of cool upwelled water is regularly demarcated by the differential boundary of warmer oceanic water offshore from cooler coastal water, with upwelling conditions varying with latitude.   Therefore, the goal of the habitat compression index (HCI) is to track the area of cool surface waters as an index of potential ‘upwelling habitat’ for assessing the spatio-temporal aspects of upwelling.  Upwelling patterns of cold nutrient-rich water are clearly assessed by models and satellite observations and classified spatially by monitoring SST values less than and equal to a monthly resolved temperature threshold.  The HCI tracks the amount of area, determined by the number of grid cells in the model with 2 m surface temperature values less than the monthly temperature threshold, therefore the time series reflects the area of cool water adjacent to the coastline and provides a measure for how compressed cool surface temperatures may be in a particular month.  In this study, we extracted modeled 2 m temperature fields over the domain of 35.5-40 degree N for each month and tracked the amount of area with temperature values less than and equal to a monthly temperature threshold, resulting in monthly time series starting January 1980.  Monthly temperature thresholds for a given month is the spatial average of 2 m temperature grid cells between 35.5-40N from shore out to 75 km for the time period 1980-2010. Cool expansion periods (<span style="background-color:#03fe7c">low compression</span>) are defined as months with HCI values exceeding + 1 standard deviation (SD) of the full time series, limited cool habitat (<span style="background-color:#ff6258">high compression</span>) where area of cool water is less than the mean (MN) of the full time series, and periods of <span style="background-color:yellow">medium compression</span> when the area of cool water falls between the +1 SD and the MN.
+
+```{ojs}
+//| echo: false
+d = new Date();
+startYear = 1980;
+currentYear = d.getMonth() === 0 ? d.getFullYear() - 1 : d.getFullYear()
+thismon = d.getMonth() // 1-based index matching your months array
+
+// Create arrays
+years = Array.from({ length: currentYear - startYear + 1 }, (_, index) => startYear + index)
+months = Array.from({ length: 12 }, (_, index) => 0 + index)
+baseUrl1 = "https://oceanview.pfeg.noaa.gov/hci/images/hci_plots/all_years/"
+baseUrl2 = "https://oceanview.pfeg.noaa.gov/hci/images/hci_plots/all_months/"
+```
+
+::::: {layout-nrow=2}
+
+::: {}
+
+## All Years for a given month
+
+```{ojs}
+//| echo: false
+
+// 1. Single global month selector control
+viewof selectedFile = Inputs.select(months, {
+  value: thismon, 
+  label: "Month:",
+  format: m => new Date(2000, m - 1, 1).toLocaleString("en-US", { month: "short" }), 
+  width: 100
+})
+
+// 2. Define the regions you want to loop over
+regionData = [
+  { id: "rgn1", loc: "43.5-48 N" },
+  { id: "rgn2", loc: "40-43.5 N" },
+  { id: "rgn3", loc: "35.5-40 N" },
+  { id: "rgn4", loc: "30-35.5 N" }
+]
+
+// 3. Loop through the combined array
+html`<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+  ${regionData.map(item => {
+    // Generate the URL using the item's id property
+    const downloadUrl = `${baseUrl1}${item.id}/roms_temp2m_${item.id}_${String(selectedFile).padStart(2, '0')}.png`;
+    
+    // Render the HTML using both item.id and item.loc
+    return html`<div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+      <h4>Region${item.id.substring(3)}: ${item.loc}</h4>
+      <img src="${downloadUrl}" style="max-width: 100%; height: auto;" /><br>
+      <a href="${downloadUrl}" target="_blank">Download Image</a>
+    </div>`;
+  })}
+</div>`
+
+```
+
+:::
+
+::: {}
+
+## By year and month
+
+```{ojs}
+//| echo: false
+
+// 1. Single global month selector control
+viewof selectedYr = Inputs.select(years, {
+  value: currentYear,
+  label: "Year:",
+  format: x => x.toString(),
+  width:100
+})
+viewof selectedMon = Inputs.select(months, {
+  value: thismon, 
+  label: "Month:",
+  format: m => new Date(2000, m - 1, 1).toLocaleString("en-US", { month: "short" }), 
+  width: 100
+})
+
+// 3. Loop through regions using .map() to dynamically output the layout
+html`<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+  ${regionData.map(item => {
+    // Calculate the unique URL for this specific region loop iteration
+    const downloadUrl2 = `${baseUrl2}${item.id}/${String(selectedMon).padStart(2, '0')}/roms_temp2m_${item.id}_${selectedYr}_${String(selectedMon).padStart(2, '0')}.png`;
+    
+    // Return the HTML container for this region
+    return html`<div style="border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+      <h4>Region${item.id.substring(3)}: ${item.loc}</h4>
+      <img src="${downloadUrl2}" style="max-width: 100%; height: auto;" /><br>
+      <a href="${downloadUrl2}" target="_blank">Download Image</a>
+    </div>`;
+  })}
+</div>`
+
+```
+
+
+:::
+
+::::
+

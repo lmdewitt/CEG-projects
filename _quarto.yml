@@ -104,6 +104,8 @@ website:
             href: products/fnmoc/model.qmd
           - text: "Model-Derived Products"
             href: products/fnmoc/prods.qmd
+      - text: "Habitat Compression Index"
+        href: products/hci/hci.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
