@@ -55,7 +55,7 @@
   categories: [ESD, ITDS]
 - title: Frontal Edges
   description: estimated from daily MUR SST
-  path: https://oceanview.pfeg.noaa.gov/products/front_edges
+  path: products/front_edges/intro.html
   image: images/itemurls/Front.png
   categories: [ESD, ITDS]
 - title: Northern Oscillation Index

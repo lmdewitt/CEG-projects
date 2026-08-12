@@ -124,6 +124,10 @@ website:
             href: products/seafloor_gradient/intro.qmd
           - text: "Dowload"
             href: products/seafloor_gradient/download.qmd
+      - section: "Frontal Edges"
+        contents:
+          - text: "About"
+            href: products/front_edges/intro.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
