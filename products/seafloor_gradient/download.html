@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>FNMOC Products</title>
+<title>Seafloor Gradients</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -35,8 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../products/fnmoc/prods.html" rel="next">
-<link href="../../products/fnmoc/intro.html" rel="prev">
+<link href="../../products/seafloor_gradient/intro.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -79,6 +113,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../style.css">
@@ -292,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../products/fnmoc/intro.html">FNMOC Products</a></li><li class="breadcrumb-item"><a href="../../products/fnmoc/model.html">Model Data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../products/seafloor_gradient/intro.html">Sea Floor Gradient</a></li><li class="breadcrumb-item"><a href="../../products/seafloor_gradient/download.html">Dowload</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -465,13 +501,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">FNMOC Products</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../products/fnmoc/intro.html" class="sidebar-item-text sidebar-link">
@@ -480,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../products/fnmoc/model.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../products/fnmoc/model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model Data</span></a>
   </div>
 </li>
@@ -546,13 +582,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
  <span class="menu-text">Sea Floor Gradient</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../products/seafloor_gradient/intro.html" class="sidebar-item-text sidebar-link">
@@ -561,7 +597,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../products/seafloor_gradient/download.html" class="sidebar-item-text sidebar-link">
+  <a href="../../products/seafloor_gradient/download.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Dowload</span></a>
   </div>
 </li>
@@ -577,26 +613,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fnmoc-model-data" id="toc-fnmoc-model-data" class="nav-link active" data-scroll-target="#fnmoc-model-data">FNMOC Model Data</a></li>
-  <li><a href="#fnmoc-cross-model-long-time-series" id="toc-fnmoc-cross-model-long-time-series" class="nav-link" data-scroll-target="#fnmoc-cross-model-long-time-series">FNMOC Cross-Model Long Time Series</a>
-  <ul>
-  <li><a href="#sea-level-pressure" id="toc-sea-level-pressure" class="nav-link" data-scroll-target="#sea-level-pressure">Sea Level Pressure</a></li>
-  <li><a href="#geopotential-height-500mb" id="toc-geopotential-height-500mb" class="nav-link" data-scroll-target="#geopotential-height-500mb">Geopotential Height 500mb</a></li>
-  <li><a href="#surface-wind-20m" id="toc-surface-wind-20m" class="nav-link" data-scroll-target="#surface-wind-20m">Surface Wind 20m</a></li>
-  <li><a href="#surface-wind-10m" id="toc-surface-wind-10m" class="nav-link" data-scroll-target="#surface-wind-10m">Surface Wind 10m</a></li>
-  <li><a href="#surface-wind-stress-20m" id="toc-surface-wind-stress-20m" class="nav-link" data-scroll-target="#surface-wind-stress-20m">Surface Wind Stress 20m</a></li>
-  <li><a href="#surface-wind-stress-10m" id="toc-surface-wind-stress-10m" class="nav-link" data-scroll-target="#surface-wind-stress-10m">Surface Wind Stress 10m</a></li>
-  <li><a href="#curl-of-surface-wind-stress-20m" id="toc-curl-of-surface-wind-stress-20m" class="nav-link" data-scroll-target="#curl-of-surface-wind-stress-20m">Curl of Surface Wind Stress 20m</a></li>
-  <li><a href="#curl-of-surface-wind-stress-10m" id="toc-curl-of-surface-wind-stress-10m" class="nav-link" data-scroll-target="#curl-of-surface-wind-stress-10m">Curl of Surface Wind Stress 10m</a></li>
-  </ul></li>
-  <li><a href="#navy-operational-global-atmospheric-prediction-system-nogaps" id="toc-navy-operational-global-atmospheric-prediction-system-nogaps" class="nav-link" data-scroll-target="#navy-operational-global-atmospheric-prediction-system-nogaps">Navy Operational Global Atmospheric Prediction System (NOGAPS)</a></li>
-  <li><a href="#navy-global-environmental-model-navgem" id="toc-navy-global-environmental-model-navgem" class="nav-link" data-scroll-target="#navy-global-environmental-model-navgem">Navy Global Environmental Model (NAVGEM)</a>
-  <ul>
-  <li><a href="#geopotential-height-500-hpa" id="toc-geopotential-height-500-hpa" class="nav-link" data-scroll-target="#geopotential-height-500-hpa">Geopotential Height 500 hPa</a></li>
-  <li><a href="#surface-wind-20m-1" id="toc-surface-wind-20m-1" class="nav-link" data-scroll-target="#surface-wind-20m-1">Surface Wind 20m</a></li>
-  <li><a href="#surface-wind-10m-1" id="toc-surface-wind-10m-1" class="nav-link" data-scroll-target="#surface-wind-10m-1">Surface Wind 10m</a></li>
-  <li><a href="#sea-level-pressure-1" id="toc-sea-level-pressure-1" class="nav-link" data-scroll-target="#sea-level-pressure-1">Sea Level Pressure</a></li>
-  </ul></li>
+  <li><a href="#download-etopo-seafloor-gradients" id="toc-download-etopo-seafloor-gradients" class="nav-link active" data-scroll-target="#download-etopo-seafloor-gradients">Download ETOPO Seafloor Gradients</a></li>
+  <li><a href="#download-srtm30plus-seafloor-gradients" id="toc-download-srtm30plus-seafloor-gradients" class="nav-link" data-scroll-target="#download-srtm30plus-seafloor-gradients">Download SRTM30Plus Seafloor Gradients</a></li>
   </ul>
 </nav>
     </div>
@@ -604,10 +622,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../products/fnmoc/intro.html">FNMOC Products</a></li><li class="breadcrumb-item"><a href="../../products/fnmoc/model.html">Model Data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../products/seafloor_gradient/intro.html">Sea Floor Gradient</a></li><li class="breadcrumb-item"><a href="../../products/seafloor_gradient/download.html">Dowload</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">FNMOC Products</h1>
-<p class="subtitle lead">Model Data</p>
+<h1 class="title">Seafloor Gradients</h1>
 </div>
 
 
@@ -624,190 +641,108 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="fnmoc-model-data" class="level2">
-<h2 class="anchored" data-anchor-id="fnmoc-model-data">FNMOC Model Data</h2>
-<p><strong>Mean Sea Level Pressure</strong></p>
-<p>ERD has been acquiring FNMOC operational gridded model output since 1948. Due to improvements in model development and increases in computational power and storage capacity, the FNMOC models and their pressure field output changed resolution over time (table below). From 1948 to 1967, data were provided on paper as monthly means. Subsequently ERD has maintained a relationship with FNMOC and obtained daily downloads of 6-hourly model forecasts.</p>
-<table class="caption-top table" data-border="1" data-cellpadding="2">
-<tbody>
-<tr class="odd">
-<td><strong>Years</strong></td>
-<td><strong>Projection</strong></td>
-<td><strong>Coverage</strong></td>
-<td><strong>Resolution</strong></td>
-</tr>
-<tr class="even">
-<td>1967 - 1980</td>
-<td>63 x 63 polar stereographic</td>
-<td>Northern Hemisphere</td>
-<td>about 3° latitude</td>
-</tr>
-<tr class="odd">
-<td>1981 - 1996</td>
-<td>73 x 144 spherical</td>
-<td>global</td>
-<td>2.5°</td>
-</tr>
-<tr class="even">
-<td>1996 - present</td>
-<td>360x181 spherical</td>
-<td>global</td>
-<td>1°</td>
-</tr>
-</tbody>
-</table>
-<p>ERD seeks to maintian long consistent time series of air/ocean indices for use in climate studies despite change in models and model resolution. The cross-model time series represents the longest possible 6-hourly series of FNMOC Mean Sea Level pressure. It has been interpolated across models to a consistent 1-degree grid for use in calculating environmental indices.</p>
-<p><strong>Surface Wind and Geopotential Height</strong></p>
-<p>Cross-Model output of surface wind and geopotential height since 1997 are also provided below. At the time of development, the surface wind model output was not deemed as reliable for computation of upwelling index as the geostropic winds calculated from sea level pressre. For this reason, and in order to provide consistency in the calculation, Bakun upwelling index calculated by ERD always uses sea level pressure.</p>
-<p><strong>Recent Model Data</strong></p>
-<p>Links to recent FNMOC NAVGEM and NOGAPS model output are also provided below.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="14" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>dset0<span class="op">=</span><span class="st">"erdEtopoSeafloorGradient"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>dset1<span class="op">=</span><span class="st">"erdSrtm30plusSeafloorGradient"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>vars<span class="op">=</span> [{<span class="st">"id"</span><span class="op">:</span><span class="st">"0"</span><span class="op">,</span><span class="st">"name"</span><span class="op">:</span><span class="st">"magnitude_gradient"</span><span class="op">,</span><span class="st">"title"</span><span class="op">:</span><span class="st">"Magnitude of Sea Floor Depth Gradient"</span><span class="op">,</span><span class="st">"type"</span><span class="op">:</span><span class="st">"1"</span><span class="op">,</span><span class="st">"nlev"</span><span class="op">:</span><span class="st">"100"</span><span class="op">,</span><span class="st">"levmin"</span><span class="op">:</span><span class="st">"0"</span><span class="op">,</span><span class="st">"levmax"</span><span class="op">:</span><span class="st">"1"</span>}<span class="op">,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                {<span class="st">"id"</span><span class="op">:</span><span class="st">"1"</span><span class="op">,</span><span class="st">"name"</span><span class="op">:</span><span class="st">"x_gradient"</span><span class="op">,</span><span class="st">"title"</span><span class="op">:</span><span class="st">"East-West Gradient of Sea Floor Depth"</span><span class="op">,</span><span class="st">"type"</span><span class="op">:</span><span class="st">"1"</span><span class="op">,</span><span class="st">"nlev"</span><span class="op">:</span><span class="st">"100"</span><span class="op">,</span><span class="st">"levmin"</span><span class="op">:</span><span class="st">"-1"</span><span class="op">,</span><span class="st">"levmax"</span><span class="op">:</span><span class="st">"1"</span>}<span class="op">,</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                {<span class="st">"id"</span><span class="op">:</span><span class="st">"2"</span><span class="op">,</span><span class="st">"name"</span><span class="op">:</span><span class="st">"y_gradient"</span><span class="op">,</span><span class="st">"title"</span><span class="op">:</span><span class="st">"North-South Gradient of Sea Floor Depth"</span><span class="op">,</span><span class="st">"type"</span><span class="op">:</span><span class="st">"1"</span><span class="op">,</span><span class="st">"nlev"</span><span class="op">:</span><span class="st">"100"</span><span class="op">,</span><span class="st">"levmin"</span><span class="op">:</span><span class="st">"-1"</span><span class="op">,</span><span class="st">"levmax"</span><span class="op">:</span><span class="st">"1"</span>}<span class="op">,</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                {<span class="st">"id"</span><span class="op">:</span><span class="st">"3"</span><span class="op">,</span><span class="st">"name"</span><span class="op">:</span><span class="st">"sea_floor_depth"</span><span class="op">,</span><span class="st">"title"</span><span class="op">:</span><span class="st">"Sea Floor Depth"</span><span class="op">,</span><span class="st">"type"</span><span class="op">:</span><span class="st">"2"</span><span class="op">,</span><span class="st">"nlev"</span><span class="op">:</span><span class="st">"100"</span><span class="op">,</span><span class="st">"levmin"</span><span class="op">:</span><span class="st">"0"</span><span class="op">,</span><span class="st">"levmax"</span><span class="op">:</span><span class="st">"1"</span>}]</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">geturl</span>(dset<span class="op">,</span>thisvar<span class="op">,</span>fmt){</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> varname <span class="op">=</span> thisvar<span class="op">.</span><span class="at">name</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="kw">var</span> start<span class="op">=</span><span class="st">"https://coastwatch.pfeg.noaa.gov/erddap/griddap/"</span><span class="op">+</span>dset<span class="op">+</span><span class="st">"."</span><span class="op">+</span>fmt<span class="op">+</span><span class="st">"?"</span><span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        <span class="kw">var</span> scnd<span class="op">=</span><span class="st">"[(20.0):(50.0)][(230.0):(255.0)]&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7C"</span><span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        <span class="kw">var</span> last<span class="op">=</span><span class="st">"&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff"</span><span class="op">;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="kw">var</span> url<span class="op">=</span>start<span class="op">+</span>varname<span class="op">+</span>scnd<span class="op">+</span>varname<span class="op">+</span>last<span class="op">;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> url<span class="op">;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<section id="download-etopo-seafloor-gradients" class="level2">
+<h2 class="anchored" data-anchor-id="download-etopo-seafloor-gradients">Download ETOPO Seafloor Gradients</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="36" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 35;"><span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; flex-wrap: wrap; gap: 20px;"&gt;</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>vars<span class="op">.</span><span class="fu">map</span>(thisvar <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="flex: 1 1 30%; min-width: 200px;"&gt;</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;h4&gt;</span><span class="sc">${</span>thisvar<span class="op">.</span><span class="at">title</span><span class="sc">}</span><span class="vs">&lt;/h4&gt;</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;img src="</span><span class="sc">${</span><span class="fu">geturl</span>(dset0<span class="op">,</span> thisvar<span class="op">,</span> <span class="st">'png'</span>)<span class="sc">}</span><span class="vs">" style="max-width: 100%;" /&gt;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;br&gt;&lt;br&gt;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;a href="</span><span class="sc">${</span><span class="fu">geturl</span>(dset0<span class="op">,</span> thisvar<span class="op">,</span> <span class="st">'html'</span>)<span class="sc">}</span><span class="vs">" target="_blank"&gt;Download and subset on ERDDAP&amp;#8482;&lt;/a&gt;</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="sc">}</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
 </section>
-<section id="fnmoc-cross-model-long-time-series" class="level2">
-<h2 class="anchored" data-anchor-id="fnmoc-cross-model-long-time-series">FNMOC Cross-Model Long Time Series</h2>
-<p>Longest possbile time series generated by interpolating to a 1-degree grid across various models and model resolutions described above.</p>
-<section id="sea-level-pressure" class="level3">
-<h3 class="anchored" data-anchor-id="sea-level-pressure">Sea Level Pressure</h3>
-<ul>
-<li><p><strong>6-hourly, 1967-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnPres6.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnPres6_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-<li><p><strong>Monthly, 1967-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWPr_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-<li><p><strong>6-hourly, this month</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTransMon.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnTransMon_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="geopotential-height-500mb" class="level3">
-<h3 class="anchored" data-anchor-id="geopotential-height-500mb">Geopotential Height 500mb</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFn500mb.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFn500mb_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-20m" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-20m">Surface Wind 20m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-10m" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-10m">Surface Wind 10m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-stress-20m" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-stress-20m">Surface Wind Stress 20m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-stress-10m" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-stress-10m">Surface Wind Stress 10m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="curl-of-surface-wind-stress-20m" class="level3">
-<h3 class="anchored" data-anchor-id="curl-of-surface-wind-stress-20m">Curl of Surface Wind Stress 20m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind20_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="curl-of-surface-wind-stress-10m" class="level3">
-<h3 class="anchored" data-anchor-id="curl-of-surface-wind-stress-10m">Curl of Surface Wind Stress 10m</h3>
-<ul>
-<li><p><strong>Monthly, 1997-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdlasFnWind10_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="navy-operational-global-atmospheric-prediction-system-nogaps" class="level2">
-<h2 class="anchored" data-anchor-id="navy-operational-global-atmospheric-prediction-system-nogaps">Navy Operational Global Atmospheric Prediction System (NOGAPS)</h2>
-<p>NAVGEM (see below) replaced NOGAPS in <a href="https://en.wikipedia.org/wiki/Navy_Operational_Global_Atmospheric_Prediction_System">2013</a>.</p>
-</section>
-<section id="navy-global-environmental-model-navgem" class="level2">
-<h2 class="anchored" data-anchor-id="navy-global-environmental-model-navgem">Navy Global Environmental Model (NAVGEM)</h2>
-<p>2013 - present</p>
-<section id="geopotential-height-500-hpa" class="level3">
-<h3 class="anchored" data-anchor-id="geopotential-height-500-hpa">Geopotential Height 500 hPa</h3>
-<ul>
-<li><p><strong>~6-hourly, 2013-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D500mb.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05DPres_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-20m-1" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-20m-1">Surface Wind 20m</h3>
-<ul>
-<li><p><strong>~6-hourly, 2013-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D20mWind.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D20mWind_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="surface-wind-10m-1" class="level3">
-<h3 class="anchored" data-anchor-id="surface-wind-10m-1">Surface Wind 10m</h3>
-<ul>
-<li><p><strong>~6-hourly, 2013-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D10mWind.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05D10mWind_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
-</section>
-<section id="sea-level-pressure-1" class="level3">
-<h3 class="anchored" data-anchor-id="sea-level-pressure-1">Sea Level Pressure</h3>
-<ul>
-<li><p><strong>~6-hourly, 2013-present</strong></p>
-<ul>
-<li><p>1-degree, 0 to 360 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05DPres.html" target="_blank">ERDDAP download</a></p></li>
-<li><p>1-degree, -180 to 180 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdNavgem05DPres_LonPM180.html" target="_blank">ERDDAP download</a></p></li>
-</ul></li>
-</ul>
+<section id="download-srtm30plus-seafloor-gradients" class="level2">
+<h2 class="anchored" data-anchor-id="download-srtm30plus-seafloor-gradients">Download SRTM30Plus Seafloor Gradients</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="52" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 51;"><span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="co">// Map each item to its HTML block and display them</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div style="display: flex; flex-wrap: wrap; gap: 20px;"&gt;</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="vs">  </span><span class="sc">${</span>vars<span class="op">.</span><span class="fu">map</span>(thisvar <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="flex: 1 1 30%; min-width: 200px;"&gt;</span></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;h4&gt;</span><span class="sc">${</span>thisvar<span class="op">.</span><span class="at">title</span><span class="sc">}</span><span class="vs">&lt;/h4&gt;</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;img src="</span><span class="sc">${</span><span class="fu">geturl</span>(dset1<span class="op">,</span> thisvar<span class="op">,</span> <span class="st">'png'</span>)<span class="sc">}</span><span class="vs">" style="max-width: 100%;" /&gt;</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;br&gt;&lt;br&gt;</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;a href="</span><span class="sc">${</span><span class="fu">geturl</span>(dset1<span class="op">,</span> thisvar<span class="op">,</span> <span class="st">'html'</span>)<span class="sc">}</span><span class="vs">" target="_blank"&gt;Download and subset on ERDDAP&amp;#8482;&lt;/a&gt;</span></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="sc">}</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuZHNldDA9XCJlcmRFdG9wb1NlYWZsb29yR3JhZGllbnRcIlxuZHNldDE9XCJlcmRTcnRtMzBwbHVzU2VhZmxvb3JHcmFkaWVudFwiXG5cbnZhcnM9IFt7XCJpZFwiOlwiMFwiLFwibmFtZVwiOlwibWFnbml0dWRlX2dyYWRpZW50XCIsXCJ0aXRsZVwiOlwiTWFnbml0dWRlIG9mIFNlYSBGbG9vciBEZXB0aCBHcmFkaWVudFwiLFwidHlwZVwiOlwiMVwiLFwibmxldlwiOlwiMTAwXCIsXCJsZXZtaW5cIjpcIjBcIixcImxldm1heFwiOlwiMVwifSxcblx0XHRcdFx0e1wiaWRcIjpcIjFcIixcIm5hbWVcIjpcInhfZ3JhZGllbnRcIixcInRpdGxlXCI6XCJFYXN0LVdlc3QgR3JhZGllbnQgb2YgU2VhIEZsb29yIERlcHRoXCIsXCJ0eXBlXCI6XCIxXCIsXCJubGV2XCI6XCIxMDBcIixcImxldm1pblwiOlwiLTFcIixcImxldm1heFwiOlwiMVwifSxcblx0XHRcdFx0e1wiaWRcIjpcIjJcIixcIm5hbWVcIjpcInlfZ3JhZGllbnRcIixcInRpdGxlXCI6XCJOb3J0aC1Tb3V0aCBHcmFkaWVudCBvZiBTZWEgRmxvb3IgRGVwdGhcIixcInR5cGVcIjpcIjFcIixcIm5sZXZcIjpcIjEwMFwiLFwibGV2bWluXCI6XCItMVwiLFwibGV2bWF4XCI6XCIxXCJ9LFxuXHRcdFx0XHR7XCJpZFwiOlwiM1wiLFwibmFtZVwiOlwic2VhX2Zsb29yX2RlcHRoXCIsXCJ0aXRsZVwiOlwiU2VhIEZsb29yIERlcHRoXCIsXCJ0eXBlXCI6XCIyXCIsXCJubGV2XCI6XCIxMDBcIixcImxldm1pblwiOlwiMFwiLFwibGV2bWF4XCI6XCIxXCJ9XVxuXG5mdW5jdGlvbiBnZXR1cmwoZHNldCx0aGlzdmFyLGZtdCl7XG4gICAgdmFyIHZhcm5hbWUgPSB0aGlzdmFyLm5hbWVcblx0XHR2YXIgc3RhcnQ9XCJodHRwczovL2NvYXN0d2F0Y2gucGZlZy5ub2FhLmdvdi9lcmRkYXAvZ3JpZGRhcC9cIitkc2V0K1wiLlwiK2ZtdCtcIj9cIjtcblx0XHR2YXIgc2NuZD1cIlsoMjAuMCk6KDUwLjApXVsoMjMwLjApOigyNTUuMCldJi5kcmF3PXN1cmZhY2UmLnZhcnM9bG9uZ2l0dWRlJTdDbGF0aXR1ZGUlN0NcIjtcblx0XHR2YXIgbGFzdD1cIiYuY29sb3JCYXI9JTdDJTdDJTdDJTdDJTdDJi5iZ0NvbG9yPTB4ZmZjY2NjZmZcIjtcblx0XHR2YXIgdXJsPXN0YXJ0K3Zhcm5hbWUrc2NuZCt2YXJuYW1lK2xhc3Q7XG5cdFx0cmV0dXJuIHVybDtcblx0XHR9XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYDxkaXYgc3R5bGU9XCJkaXNwbGF5OiBmbGV4OyBmbGV4LXdyYXA6IHdyYXA7IGdhcDogMjBweDtcIj5cbiAgJHt2YXJzLm1hcCh0aGlzdmFyID0+IGh0bWxgXG4gICAgPGRpdiBzdHlsZT1cImZsZXg6IDEgMSAzMCU7IG1pbi13aWR0aDogMjAwcHg7XCI+XG4gICAgICA8aDQ+JHt0aGlzdmFyLnRpdGxlfTwvaDQ+XG4gICAgICAgIDxpbWcgc3JjPVwiJHtnZXR1cmwoZHNldDAsIHRoaXN2YXIsICdwbmcnKX1cIiBzdHlsZT1cIm1heC13aWR0aDogMTAwJTtcIiAvPlxuICAgICAgPGJyPjxicj5cbiAgICAgIDxhIGhyZWY9XCIke2dldHVybChkc2V0MCwgdGhpc3ZhciwgJ2h0bWwnKX1cIiB0YXJnZXQ9XCJfYmxhbmtcIj5Eb3dubG9hZCBhbmQgc3Vic2V0IG9uIEVSRERBUCYjODQ4Mjs8L2E+XG4gICAgPC9kaXY+XG4gIGApfVxuPC9kaXY+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG4vLyBNYXAgZWFjaCBpdGVtIHRvIGl0cyBIVE1MIGJsb2NrIGFuZCBkaXNwbGF5IHRoZW1cbmh0bWxgPGRpdiBzdHlsZT1cImRpc3BsYXk6IGZsZXg7IGZsZXgtd3JhcDogd3JhcDsgZ2FwOiAyMHB4O1wiPlxuICAke3ZhcnMubWFwKHRoaXN2YXIgPT4gaHRtbGBcbiAgICA8ZGl2IHN0eWxlPVwiZmxleDogMSAxIDMwJTsgbWluLXdpZHRoOiAyMDBweDtcIj5cbiAgICAgIDxoND4ke3RoaXN2YXIudGl0bGV9PC9oND5cbiAgICAgICAgPGltZyBzcmM9XCIke2dldHVybChkc2V0MSwgdGhpc3ZhciwgJ3BuZycpfVwiIHN0eWxlPVwibWF4LXdpZHRoOiAxMDAlO1wiIC8+XG4gICAgICA8YnI+PGJyPlxuICAgICAgPGEgaHJlZj1cIiR7Z2V0dXJsKGRzZXQxLCB0aGlzdmFyLCAnaHRtbCcpfVwiIHRhcmdldD1cIl9ibGFua1wiPkRvd25sb2FkIGFuZCBzdWJzZXQgb24gRVJEREFQJiM4NDgyOzwvYT5cbiAgICA8L2Rpdj5cbiAgYCl9XG48L2Rpdj5gXG4ifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../products/seafloor_gradient";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1228,14 +1163,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../products/fnmoc/intro.html" class="pagination-link" aria-label="About">
+      <a href="../../products/seafloor_gradient/intro.html" class="pagination-link" aria-label="About">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../products/fnmoc/prods.html" class="pagination-link" aria-label="Model-Derived Products">
-        <span class="nav-page-text">Model-Derived Products</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
