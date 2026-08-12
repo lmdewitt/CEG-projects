@@ -106,6 +106,24 @@ website:
             href: products/fnmoc/prods.qmd
       - text: "Habitat Compression Index"
         href: products/hci/hci.qmd
+      - section: "California Commercial Landings"
+        contents:
+          - text: "About"
+            href: products/mktcatch/intro.qmd
+          - text: "Dowload"
+            href: products/mktcatch/download.qmd
+      - section: "Extratropical-based Northern Oscillation Index"
+        contents:
+          - text: "About"
+            href: products/noix/intro.qmd
+          - text: "Dowload"
+            href: products/noix/download.qmd
+      - section: "Sea Floor Gradient"
+        contents:
+          - text: "About"
+            href: products/seafloor_gradient/intro.qmd
+          - text: "Dowload"
+            href: products/seafloor_gradient/download.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
@@ -121,10 +139,5 @@ format:
 filters:
   - include-files.lua
   - quarto
-
-language:
-  en:
-    listing-page-field-categories: "Collaborations" # Changes the sidebar & column header text
-    listing-page-category-all: "All Projects"  # Optional: Changes the "All" button text
 
 engine: knitr  

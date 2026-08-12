@@ -1,0 +1,16 @@
+---
+title: "Extratropical-based Northern Oscillation Index"
+subtitle: "Download NOI"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+## Download on ERDDAP&#8482;
+
+[![](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_NOI.png?time%2CNOI&time%3E=now-5years&.draw=linesAndMarkers)](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_NOI.graph?time%2CNOI&time%3E=now-5years&.draw=linesAndMarkers)
+
+[Download and subset on ERDDAP&#8482;](https://oceanview.pfeg.noaa.gov/erddap/tabledap/cciea_OC_NOI.html)

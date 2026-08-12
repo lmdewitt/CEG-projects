@@ -14,4 +14,9 @@ listing:
     grid-item-border: true
     grid-item-align: center
     grid-columns: 3
+language:
+  en:
+    listing-page-field-categories: "Collaborations" # Changes the sidebar & column header text
+    listing-page-category-all: "All Projects"  # Optional: Changes the "All" button text
+
 ---

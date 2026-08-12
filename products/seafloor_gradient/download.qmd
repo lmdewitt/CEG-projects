@@ -1,0 +1,66 @@
+---
+title: "Seafloor Gradients"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+```{ojs}
+//| echo: false
+
+dset0="erdEtopoSeafloorGradient"
+dset1="erdSrtm30plusSeafloorGradient"
+
+vars= [{"id":"0","name":"magnitude_gradient","title":"Magnitude of Sea Floor Depth Gradient","type":"1","nlev":"100","levmin":"0","levmax":"1"},
+				{"id":"1","name":"x_gradient","title":"East-West Gradient of Sea Floor Depth","type":"1","nlev":"100","levmin":"-1","levmax":"1"},
+				{"id":"2","name":"y_gradient","title":"North-South Gradient of Sea Floor Depth","type":"1","nlev":"100","levmin":"-1","levmax":"1"},
+				{"id":"3","name":"sea_floor_depth","title":"Sea Floor Depth","type":"2","nlev":"100","levmin":"0","levmax":"1"}]
+
+function geturl(dset,thisvar,fmt){
+    var varname = thisvar.name
+		var start="https://coastwatch.pfeg.noaa.gov/erddap/griddap/"+dset+"."+fmt+"?";
+		var scnd="[(20.0):(50.0)][(230.0):(255.0)]&.draw=surface&.vars=longitude%7Clatitude%7C";
+		var last="&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff";
+		var url=start+varname+scnd+varname+last;
+		return url;
+		}
+```
+
+
+## Download ETOPO Seafloor Gradients
+
+```{ojs}
+//| echo: false
+html`<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  ${vars.map(thisvar => html`
+    <div style="flex: 1 1 30%; min-width: 200px;">
+      <h4>${thisvar.title}</h4>
+        <img src="${geturl(dset0, thisvar, 'png')}" style="max-width: 100%;" />
+      <br><br>
+      <a href="${geturl(dset0, thisvar, 'html')}" target="_blank">Download and subset on ERDDAP&#8482;</a>
+    </div>
+  `)}
+</div>`
+```
+
+## Download SRTM30Plus Seafloor Gradients
+
+```{ojs}
+//| echo: false
+
+// Map each item to its HTML block and display them
+html`<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  ${vars.map(thisvar => html`
+    <div style="flex: 1 1 30%; min-width: 200px;">
+      <h4>${thisvar.title}</h4>
+        <img src="${geturl(dset1, thisvar, 'png')}" style="max-width: 100%;" />
+      <br><br>
+      <a href="${geturl(dset1, thisvar, 'html')}" target="_blank">Download and subset on ERDDAP&#8482;</a>
+    </div>
+  `)}
+</div>`
+```
+

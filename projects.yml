@@ -60,7 +60,7 @@
   categories: [ESD, ITDS]
 - title: Northern Oscillation Index
   description: and related extratropical-based indices
-  path: https://oceanview.pfeg.noaa.gov/products/noix
+  path: products/noix/intro.html
   image: images/itemurls/mapNOIx_physics.png
   categories: [ESD]
 - title: Ocean Surface Current Simulator
@@ -70,7 +70,7 @@
   categories: [ESD]
 - title: California Fish Market Catch Landings
   description: 1928-2002
-  path: https://oceanview.pfeg.noaa.gov/products/mktcatch
+  path: products/mktcatch/intro.html
   image: images/itemurls/mktcatch.png
   categories: [ESD]
 - title: plotdap R Package
@@ -95,7 +95,7 @@
   categories: [ESD]
 - title: Sea Floor Gradient
   description: Estimates of the seafloor gradient off the West Coast of the United States using ETOPO or SRTM30Plus.
-  path: https://oceanview.pfeg.noaa.gov/products/seafloor_gradient
+  path: products/seafloor_gradient/intro.html
   image: images/itemurls/seafloor_gradient.png
   categories: [ESD, ITDS]
 - title: California Central Valley Real-time Fish Tracking

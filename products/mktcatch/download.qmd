@@ -1,0 +1,42 @@
+---
+title: ""
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+## Download California Fish Market Catch Landings on ERDDAP&#8482;
+
+*Clicking on each image will download the image, clicking on the download link will take to to the ERDDAP dataset to customize your download*
+
+```{ojs}
+//| echo: false
+
+		dsets= [{"id":"0","name":"shortmo","erddset":"erdCAMarCatSM","title":"Short List, 1928-2002, Monthly","server":"coastwatch","varname":"fish"},
+				{"id":"1","name":"shortyr","erddset":"erdCAMarCatSY","title":"Short List, 1928-2002, Yearly","server":"coastwatch","varname":"fish"},
+				{"id":"2","name":"longmo","erddset":"erdCAMarCatLM","title":"Long List, 1928-2002, Monthly","server":"coastwatch","varname":"fish"},
+				{"id":"3","name":"longyr","erddset":"erdCAMarCatLY","title":"Long List, 1928-2002, Yearly","server":"coastwatch","varname":"fish"},
+				{"id":"4","name":"update","erddset":"CA_mkt_catch_update","title":"2003-2014, Yearly, under development","server":"oceanview","varname":"species"}
+				]
+
+function geturl(dset, fmt) {
+  return `https://${dset.server}.pfeg.noaa.gov/erddap/tabledap/${dset.erddset}.${fmt}?time%2Clandings&${dset.varname}=%22Anchovy%2C%20Northern%22&port=%22Monterey%22&.draw=lines`;
+}
+// Map each item to its HTML block and display them
+html`<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  ${dsets.map(dset => html`
+    <div style="flex: 1 1 30%; min-width: 200px;">
+      <h3>${dset.title}</h3>
+        <img src="${geturl(dset, 'png')}" style="max-width: 100%;" />
+      <br>
+      <a href="${geturl(dset, 'html')}" target="_blank">Download Data on ERDDAP&#8482;</a>
+    </div>
+  `)}
+</div>`
+```
+
+
+

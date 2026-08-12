@@ -1,0 +1,259 @@
+- title: ANCHOVY, NORTHERN
+  description: All fish landed as anchovy EXCEPT deepbody anchovy and slough anchovy
+  categories:
+  - Fish, Marine and Anadromous
+- title: BARRACUDA, CALIFORNIA
+  description: All fish landed as barracuda
+  categories:
+  - Fish, Marine and Anadromous
+- title: BASS, GIANT SEA
+  description: All fish landed as black seabass (1928-1960) or giant seabass (1961)
+  categories:
+  - Fish, Marine and Anadromous
+- title: BASS, ROCK
+  description: Group name includes kelp bass, barred sand bass, and spotted sand bass
+  categories:
+  - Fish, Marine and Anadromous
+- title: BONITO, PACIFIC
+  description: All fish landed as bonito or bonito tuna
+  categories:
+  - Fish, Marine and Anadromous
+- title: CABEZON
+  description: All fish landed as cabezon
+  categories:
+  - Fish, Marine and Anadromous
+- title: CROAKER, WHITE
+  description: All fish landed as king fish or croaker or as queenfish, which was
+    included with white croaker through 1971
+  categories:
+  - Fish, Marine and Anadromous
+- title: FLOUNDER
+  description: All fish landed as flounder or as starry flounder, but NOT arrowtooth
+    flounder which was included with sole before 1951
+  categories:
+  - Fish, Marine and Anadromous
+- title: FLYINGFISH
+  description: All fish landed as flyingfish
+  categories:
+  - Fish, Marine and Anadromous
+- title: GREENLING, KELP
+  description: All fish landed as kelp greenling or as greenling
+  categories:
+  - Fish, Marine and Anadromous
+- title: GRENADIERS
+  description: All fish landed as grenadiers after 1971, they were part of the miscellaneous
+    trawl category through 1971
+  categories:
+  - Fish, Marine and Anadromous
+- title: HALIBUT, CALIFORNIA
+  description: Fish landed as California halibut, possible mixing of Pacific with
+    California halibut, see Fish Bulletin 74, p75. 1947
+  categories:
+  - Fish, Marine and Anadromous
+- title: HERRING, PACIFIC
+  description: All fish landed as Pacific herring or as herring roe (meaning herring
+    containing roe), not round herring
+  categories:
+  - Fish, Marine and Anadromous
+- title: LINGCOD
+  description: All fish landed as lingcod, called Pacific cultus before 1947.
+  categories:
+  - Fish, Marine and Anadromous
+- title: MACKEREL, JACK
+  description: All fish landed as jack mackerel, plus proportion based on sampling
+    of unspecified mackerel 1977-85.
+  categories:
+  - Fish, Marine and Anadromous
+- title: MACKEREL, PACIFIC (CHUB)
+  description: All fish landed as Pacific mackerel, plus proportion based on sampling
+    of unspecified mackerel 1977-85
+  categories:
+  - Fish, Marine and Anadromous
+- title: MACKEREL, UNSPECIFIED
+  description: All fish landed as mackerel from 1978-80, plus later mackerel landings
+    if not identified by species on fish receipt or by sampling
+  categories:
+  - Fish, Marine and Anadromous
+- title: PERCH
+  description: Mixed species group containing just surfperches in northern Calif,
+    but in southern Calif. also including blacksmith, halfmoon, opaleye and zebraperch
+    - separable after 1976
+  categories:
+  - Fish, Marine and Anadromous
+- title: ROCKFISH
+  description: Mixed species group containing all species of rockfish (plus thornyheads
+    until 1977)
+  categories:
+  - Fish, Marine and Anadromous
+- title: SABLEFISH
+  description: All fish landed as sablefish or blackcod
+  categories:
+  - Fish, Marine and Anadromous
+- title: SALMON
+  description: All fish landed as salmon including, king or chinook, silver or coho,
+    pink, and chum - separable after 1976
+  categories:
+  - Fish, Marine and Anadromous
+- title: SANDDAB
+  description: All fish landed as sanddabs, including Pacific, longfin and speckeled
+  categories:
+  - Fish, Marine and Anadromous
+- title: SARDINE, PACIFIC
+  description: All fish landed in California as sardine, some were mixed with mackerel
+    schools and calculated from sampling 1981
+  categories:
+  - Fish, Marine and Anadromous
+- title: SCORPIONFISH, CALIFORNIA
+  description: All fish landed as scorpionfish or as sculpin used as common name for
+    scorpionfish until 1978
+  categories:
+  - Fish, Marine and Anadromous
+- title: SHARK
+  description: All fish landed under various shark names separable from 1977 on
+  categories:
+  - Fish, Marine and Anadromous
+- title: SHEEPHEAD, CALIFORNIA
+  description: All fish landed as California sheephead
+  categories:
+  - Fish, Marine and Anadromous
+- title: SKATE
+  description: All fish landed as skate, California skate, big skate
+  categories:
+  - Fish, Marine and Anadromous
+- title: SMELT
+  description: All fish landed as smelt, whitebait, or silversides, including topsmelt
+    and jacksmelt.
+  categories:
+  - Fish, Marine and Anadromous
+- title: SOLE
+  description: All landed as combined sole until 1954, primarily English, petrale,
+    and rex before 1948, then Dover as well. Includes other soles and some turbot
+    and small Calif.halibut as well.
+  categories:
+  - Fish, Marine and Anadromous
+- title: SWORDFISH
+  description: All fish landed as swordfish or broadbill swordfish
+  categories:
+  - Fish, Marine and Anadromous
+- title: THORNYHEAD
+  description: Included as part of the rockfish catch until 1978, all fish landed
+    as longspine, shortspine or combined thornyhead.
+  categories:
+  - Fish, Marine and Anadromous
+- title: TUNA, ALBACORE
+  description: All albacore from California waters
+  categories:
+  - Fish, Marine and Anadromous
+- title: TUNA, BLUEFIN
+  description: All bluefin tuna from California waters
+  categories:
+  - Fish, Marine and Anadromous
+- title: TUNA, SKIPJACK
+  description: All skipjack and black skipjack tuna from California waters.
+  categories:
+  - Fish, Marine and Anadromous
+- title: TUNA, YELLOWFIN
+  description: All yellowfin tuna from California waters
+  categories:
+  - Fish, Marine and Anadromous
+- title: TURBOT
+  description: All fish landed as turbot, curlfin, diamond, C-O, and sharpridge or
+    hornyhead.  Some included in soles before 1931.
+  categories:
+  - Fish, Marine and Anadromous
+- title: WHITEFISH, OCEAN
+  description: All fish landed as ocean whitefish, or whitefish.
+  categories:
+  - Fish, Marine and Anadromous
+- title: WHITING, PACIFIC
+  description: All fish landed as Pacific hake or Pacific whiting.
+  categories:
+  - Fish, Marine and Anadromous
+- title: YELLOWTAIL
+  description: All fish landed as yellowtail (a member of the jack family).
+  categories:
+  - Fish, Marine and Anadromous
+- title: BLACKFISH, SACRAMENTO
+  description: Freshwater fish Included with hardhead until 1969, also called greaser
+    Orthodon microlepidotus (Fish Bulletin 74, p47.).
+  categories:
+  - Fish, Freshwater
+- title: CARP
+  description: All carp landed until 1971, some large quantities remove from Clear
+    Lake 1931-36, Cyprinus carpio.
+  categories:
+  - Fish, Freshwater
+- title: CATFISH
+  description: All freshwater catfish landed, includes Forktail or channel catfish
+    (Ictalurus catus) and and square-tail,Sacramento catfish or bullhead (Ameiurus
+    nebulosus)
+  categories:
+  - Fish, Freshwater
+- title: HARDHEAD
+  description: All freshwater fish landed as hard head Mylopharodon conocephalus,
+    includes blackfish in most years.
+  categories:
+  - Fish, Freshwater
+- title: PIKEMINNOW, SACRAMENTO
+  description: All freshwater fish landed as pike Ptychocheilus grandis (not true
+    pike) (1928-1951)
+  categories:
+  - Fish, Freshwater
+- title: SPLIT-TAIL
+  description: All freshwater fish landed as split-tail, Pogonichtys macrolepidotus
+    1928-67)
+  categories:
+  - Fish, Freshwater
+- title: CRAB, DUNGENESS
+  description: All crabs landed as market crab or Dungeness crab, includes some rock
+    crabs from Santa Barbara south.
+  categories:
+  - Crustatcean
+- title: CRAB, ROCK
+  description: All crabs landed in any of the rock crab categories (not differentiated
+    until 1995).
+  categories:
+  - Crustatcean
+- title: LOBSTER, CALIFORNIA SPINY
+  description: All lobster called either California spiny or Pacific spiny lobster.
+  categories:
+  - Crustatcean
+- title: PRAWN
+  description: All types of prawns landed
+  categories:
+  - Crustatcean
+- title: SHRIMP, BAY
+  description: Almost all shrimp before 1952 were bay shrimp from SF Bay, separate
+    category after 1951
+  categories:
+  - Crustatcean
+- title: SHRIMP, PACIFIC OCEAN
+  description: Fishery on Pacific Ocean shrimp began in 1952.
+  categories:
+  - Crustatcean
+- title: CUCUMBER, SEA
+  description: California and warty sea cucumbers. Sea cucumber fishery  began 1978.
+  categories:
+  - Echinoderm
+- title: URCHIN
+  description: All types of sea urchins but primarioy red sea urchin.
+  categories:
+  - Echinoderm
+- title: ABALONE
+  description: All types of abalone. Just red abalone until 1943, but all were groped
+    together until 1972. See California Living Marine Resources, p91.
+  categories:
+  - Mollusk
+- title: CLAMS
+  description: All types of clams, included pismo clams until 1947, also cockles or
+    littlencks (Chione sps.)., gaper, razor, washington, jackknife, and softshell.
+  categories:
+  - Mollusk
+- title: OCTOPUS
+  description: All types of octopus.
+  categories:
+  - Mollusk
+- title: SQUID, MARKET
+  description: All market squid (Loligo opalescens)
+  categories:
+  - Mollusk
