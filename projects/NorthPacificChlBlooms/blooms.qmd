@@ -1,0 +1,158 @@
+---
+title: "North Pacific Chlorophyll Blooms"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+{{< include _setup.qmd >}}
+
+## Previous Blooms
+
+Monthly images of chlorophyll between 20° to 35°N, 160° to 130°W for July, August, Sepember and October of the selected year (July & Aug images not available for 1997).
+
+```{r}
+#| echo: false
+#| results: 'asis'
+
+lastdate <- get_dataset_max_date(satdata$dset[length(satdata$dset)])
+currentinfo <- gettimes(lastdate,months,satdata)
+
+thisyear <- currentinfo$thisyear
+yrmin <- min(satdata$yrmin)
+years <- seq(from = yrmin, to = thisyear, by = 1)
+ojs_define(thisyear = thisyear)
+ojs_define(years = years)
+```
+
+
+```{ojs}
+//| echo: false
+
+viewof selectedYr = Inputs.select(years, {
+  value: thisyear-1,
+  label: "Year:",
+  format: x => x.toString(),
+  width:100
+})
+
+
+```
+
+
+```{ojs}
+//| echo: false
+
+// Data Definitions
+satdata = [
+  { id: "0", name: "SeaWiFS", dset: "erdSW2018chlamday", varname: "chlorophyll", yrmin: 1997, yrmax: 2002, hasalt: false },
+  { id: "1", name: "MODIS", dset: "erdMH1chlamday", varname: "chlorophyll", yrmin: 2003, yrmax: 2011, hasalt: false },
+  { id: "2", name: "NOAA VIIRS", dset: "nesdisVHNSQchlaMonthly", varname: "chlor_a", yrmin: 2012, yrmax: 2050, hasalt: true }
+]
+
+satwkdata = ({
+  id: "0",
+  name: "NOAA VIIRS Near Real-Time Weekly Chlorophyll",
+  dset: "nesdisVHNchlaWeekly",
+  varname: "chlor_a",
+  yrmin: 2018,
+  yrmax: 2050,
+  hasalt: true
+})
+
+months = [
+  { id: "07", name: "Jul" },
+  { id: "08", name: "Aug" },
+  { id: "09", name: "Sep" },
+  { id: "10", name: "Oct" }
+]
+
+// Function 1: getsaturl
+function getsaturl(yr, mon, fmt, lgnd, satdata) {
+  if (satdata && satdata.length > 0) {
+    let satid = null;
+    
+    // Find matching satellite data index
+    for (let i = 0; i < satdata.length; i++) {
+      if (yr <= satdata[i].yrmax && yr >= satdata[i].yrmin) {
+        satid = i;
+      }
+    }
+    
+    if (satid === null) {
+      console.warn("No satellite dataset found matching the given year.");
+      return null;
+    }
+    
+    const erddata = satdata[satid];
+    const start_url = "https://coastwatch.pfeg.noaa.gov/erddap/griddap/";
+    
+    // Format month to 2 digits with leading zero
+    const mon_str = String(parseInt(mon, 10)).padStart(2, '0');
+    const time_str = `[(${yr}-${mon_str}-01T12:00:00Z)]`;
+    
+    const alt_str = erddata.hasalt ? "[(0.0)]" : "";
+    const loc_str = "[(35):(20)][(-160):(-130)]&.draw=surface&.vars=longitude%7Clatitude%7C";
+    const end_str = "&.colorBar=%7C%7CLinear%7C0%7C0.2%7C&.bgColor=0xffccccff&.trim=0";
+    
+    let url = `${start_url}${erddata.dset}.${fmt}?${erddata.varname}${time_str}${alt_str}${loc_str}${erddata.varname}${end_str}`;
+    
+    if (lgnd !== 1) {
+      url += "&.legend=Off";
+    }
+    return url;
+  }
+}
+
+// Function 2: getweeklyurl
+function getweeklyurl(fmt, lgnd, satwkdata) {
+  const erddata = satwkdata;
+  
+  if (erddata && erddata.dset) {
+    const start_url = "https://coastwatch.pfeg.noaa.gov/erddap/griddap/";
+    const time_str = "[(last)]";
+    const alt_str = erddata.hasalt ? "[(0.0)]" : "";
+    const loc_str = "[(35):(20)][(-160):(-130)]&.draw=surface&.vars=longitude%7Clatitude%7C";
+    const end_str = "&.colorBar=%7C%7CLinear%7C0%7C0.2%7C&.bgColor=0xffccccff&.trim=0";
+    
+    let url = `${start_url}${erddata.dset}.${fmt}?${erddata.varname}${time_str}${alt_str}${loc_str}${erddata.varname}${end_str}`;
+    
+    if (lgnd !== 1) {
+      url += "&.legend=Off";
+    }
+    
+    return url;
+  }
+}
+
+```
+
+```{ojs}
+//| echo: false
+
+curmonths = (selectedYr == 1997) 
+  ? months.filter(mon => parseInt(mon.id) >= 9) 
+  : months
+
+html`<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+${curmonths.map(mon => {
+  const url = getsaturl(selectedYr, mon.id, "png", 1, satdata);
+  const dataurl = getsaturl(selectedYr, mon.id, "graph", 1, satdata);
+  const label = mon.name ? mon.name : `Month ${mon.id}`; // Uses mon.name or falls back to ID
+  
+  return html`
+    <divstyle="flex: 1 1 200px; max-width: 300px; text-align: center;">
+      <h3>${label} ${selectedYr}</h3>
+      <img src="${url}" /><br>
+      <span><a href="${dataurl}" target="_blank">ERDDAP&#8482; download</a></span>
+    </div>
+  `;
+})}
+</div>
+`
+
+```  
+

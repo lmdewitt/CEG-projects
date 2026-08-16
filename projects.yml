@@ -30,7 +30,7 @@
   categories: [ESD]
 - title: Loggerhead Turtle Conservation
   description: Reduce loggerhead bycatch in Southern California
-  path: http://coastwatch.pfeg.noaa.gov/elnino/turtle_tool_3panel.html
+  path: https://coastwatch-wcn.github.io/projects/turtlewatch/turtlewatch.html
   image: images/itemurls/turtlewatch.png
   categories: [ESD]
 - title: EcoCast
@@ -45,7 +45,7 @@
   categories: [ESD]
 - title: North Pacific Chlorophyll Blooms
   description: Chlorophyll blooms consistently develop in the oligotrophic North Pacific Subtropical Gyre (NPSG) in late summer. Both the timing and location of these blooms are enigmatic.
-  path: https://oceanview.pfeg.noaa.gov/projects/NorthPacificChlBlooms/about
+  path: projects/NorthPacificChlBlooms/about.html
   image: images/itemurls/chlbloom.png
   categories: [ESD]
 - title: FNMOC-Derived Products

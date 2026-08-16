@@ -128,6 +128,14 @@ website:
         contents:
           - text: "About"
             href: products/front_edges/intro.qmd
+      - section: "NorthPacificChlBlooms"
+        contents:
+          - text: "About"
+            href: projects/NorthPacificChlBlooms/about.qmd
+          - text: "Missions"
+            href: projects/NorthPacificChlBlooms/missions.qmd
+          - text: "Previous Blooms"
+            href: projects/NorthPacificChlBlooms/blooms.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"

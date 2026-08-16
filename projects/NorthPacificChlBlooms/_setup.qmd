@@ -1,0 +1,203 @@
+
+```{r setup}
+#| echo: false
+#| message: false
+#| eval: true
+
+library(tidyverse)
+library(jsonlite)
+
+  satdata = data.frame(
+      id = c("0", "1", "2"),
+      name = c("SeaWiFS", "MODIS", "NOAA VIIRS"),
+      dset = c("erdSW2018chlamday", "erdMH1chlamday", "nesdisVHNSQchlaMonthly"),
+      varname = c("chlorophyll", "chlorophyll", "chlor_a"),
+      yrmin = c(1997, 2003, 2012),
+      yrmax = c(2002, 2011, 2050),
+      hasalt = c(FALSE, FALSE, TRUE),
+      stringsAsFactors = FALSE # Standard practice for R text data
+    )
+
+  satwkdata = data.frame(
+      id = "0",
+      name = "NOAA VIIRS Near Real-Time Weekly Chlorophyll",
+      dset = "nesdisVHNchlaWeekly",
+      varname = "chlor_a",
+      yrmin = 2018,
+      yrmax = 2050,
+      hasalt = TRUE,
+      stringsAsFactors = FALSE
+    )
+  months = data.frame(
+      id = c("07","08","09","10"),
+      name = c("Jul","Aug","Sep","Oct")
+      )
+
+
+#-------- get_dataset_max_date(dset) --------------
+# Get max date of an ERDDAP dataset dset
+
+get_dataset_max_date <- function(dset = "nesdisVHNSQchlaMonthly") {
+  url <- paste0("https://coastwatch.pfeg.noaa.gov/erddap/tabledap/allDatasets.json?maxTime&datasetID=%22", dset, "%22")
+  json_data <- fromJSON(url)
+  
+  time_str <- json_data$table$rows[1, 1]
+  maxdate <- substr(time_str, 1, 10)
+  
+  return(maxdate)
+}
+
+# Function 1: getsaturl
+getsaturl <- function(yr, mon, fmt, lgnd, satdata) {
+  if (!is.null(satdata) && length(satdata) > 0) {
+    satid <- NULL
+    
+    # Loop to find matching satellite data index
+    for (i in seq_along(satdata$yrmax)) {
+      if (yr <= satdata$yrmax[i] && yr >= satdata$yrmin[i]) {
+        satid <- i
+      }
+    }
+    
+    if (is.null(satid)) {
+      warning("No satellite dataset found matching the given year.")
+      return(NULL)
+    }
+    
+    erddata <- satdata[satid,]
+    start_url <- "https://coastwatch.pfeg.noaa.gov/erddap/griddap/"
+    
+    # Format month to ensure leading zeros if passed as a single digit (e.g., "05" instead of "5")
+    mon_str <- sprintf("%02d", as.numeric(mon))
+    
+    time_str <- paste0("[(" , yr, "-", mon_str, "-01T12:00:00Z)]")
+    
+    alt_str <- ""
+    if (isTRUE(erddata$hasalt)) {
+      alt_str <- "[(0.0)]"
+    }
+    
+    loc_str <- "[(35):(20)][(-160):(-130)]&.draw=surface&.vars=longitude%7Clatitude%7C"
+    end_str <- "&.colorBar=%7C%7CLinear%7C0%7C0.2%7C&.bgColor=0xffccccff&.trim=0"
+    
+    url <- paste0(
+      start_url, erddata$dset, ".", fmt, "?", 
+      erddata$varname, time_str, alt_str, loc_str, erddata$varname, end_str
+    )
+    
+    if (lgnd != 1) {
+      url <- paste0(url, "&.legend=Off")
+    }
+    
+    return(url)
+  }
+}
+
+# Function 2: getweeklyurl
+getweeklyurl <- function(fmt, lgnd, satwkdata) {
+  erddata <- satwkdata
+  
+  if (!is.null(erddata$dset)) {
+    start_url <- "https://coastwatch.pfeg.noaa.gov/erddap/griddap/"
+    time_str <- "[(last)]"
+    
+    alt_str <- ""
+    if (isTRUE(erddata$hasalt)) {
+      alt_str <- "[(0.0)]"
+    }
+    
+    loc_str <- "[(35):(20)][(-160):(-130)]&.draw=surface&.vars=longitude%7Clatitude%7C"
+    end_str <- "&.colorBar=%7C%7CLinear%7C0%7C0.2%7C&.bgColor=0xffccccff&.trim=0"
+    
+    url <- paste0(
+      start_url, erddata$dset, ".", fmt, "?", 
+      erddata$varname, time_str, alt_str, loc_str, erddata$varname, end_str
+    )
+    
+    if (lgnd != 1) {
+      url <- paste0(url, "&.legend=Off")
+    }
+    
+    return(url)
+  }
+}
+
+gettimes <- function(lastdate, months, satdata) {
+  
+  lastyear <- substr(lastdate, 1, 4)
+  lastmon  <- as.numeric(substr(lastdate, 6, 7)) # 1-based index
+  
+  lastsaturl <- getsaturl(lastyear, lastmon, 'graph', 1, satdata)
+  
+  
+  # Today's date calculations
+  today <- Sys.Date()
+  thisyear <- as.numeric(format(today, "%Y"))
+  thismon  <- as.numeric(format(today, "%m")) # 1-based index
+  
+  # For Previous Blooms page
+  nummon <- if (thismon > lastmon) lastmon else thismon
+  
+  defmonths <- list(
+    list(id = "07", name = "Jul"),
+    list(id = "08", name = "Aug"),
+    list(id = "09", name = "Sep"),
+    list(id = "10", name = "Oct")
+  )
+  
+  newmons <- list()
+  if (!is.null(months)) {
+    for (i in seq_along(months$id)) {
+      if (nummon >= as.numeric(months$id[i])) {
+        newmons[[length(newmons) + 1]] <- defmonths[[i]]
+      }
+    }
+  }
+  thisyearmonths <- newmons
+  
+  # For About page
+  imgtime <- "Most recent monthly composite of chlorophyll in the bloom region"
+  curyr   <- thisyear
+  
+  if (thismon < 7) {
+    curyr <- thisyear - 1
+  }
+  
+  if (thismon < 7 || thismon == 12) {
+    currentmonths <- defmonths
+    imgtime <- paste0("Monthly composites of chlorophyll in the bloom region from the ", curyr, " bloom season")
+  }
+  
+  if (thismon >= 7) {
+    if (lastmon == 6) {
+      currentmonths <- list(list(id = "06", name = "Jun"))
+    } else if (lastmon < 6) {
+      curyr <- thisyear - 1
+      currentmonths <- defmonths
+      imgtime <- paste0("Monthly composites of chlorophyll in the bloom region from the ", curyr, " bloom season")
+    } else if (lastmon > 6) {
+      curyr <- thisyear
+      
+      # Build slice of default months up to (lastmon - 6)
+      max_idx <- min(lastmon - 6, length(defmonths))
+      currentmonths <- if (max_idx >= 1) defmonths[1:max_idx] else list()
+      
+      imgtime <- paste0("Monthly composites of chlorophyll in the bloom region from the ", curyr, " bloom season")
+    }
+  }
+  
+  # Return all mutated state properties in a list
+  return(list(
+    lastsaturl     = lastsaturl,
+    thisyear       = thisyear,
+    thismon        = thismon,
+    defmonths      = defmonths,
+    thisyearmonths = thisyearmonths,
+    imgtime        = imgtime,
+    curyr          = curyr,
+    currentmonths  = currentmonths
+  ))
+}
+```
+
+
