@@ -45,7 +45,7 @@ The blooms develop in a very specific locality. The most intense and the most fr
 
 Phytoplankton blooms in the ocean usually occur in spring or fall when there is temporal overlap between nutrient injection into the surface mixed layer from mixing, sufficient light levels for photosynthesis, and decreased grazing to allow net biomass accumulation. The chlorophyll blooms that occur in the open NE Pacific are unusual in that they develop in late summer, July-Oct during the seasonal stratification maximum. The NE Pacific in unique in having late summer blooms consistently occur almost every year in the same general area (@wilson08a).
 
-![Number of months during July-Oct from 1997-2017 where chl &gt; 0.1 mg/m3, using OC-CCI chlorophyll data.  Modified from @wilson08a](images/IntegratedBloom1.png)
+![Number of months during July-Oct from 1997-2017 where chl &gt; 0.1 mg/m3, using OC-CCI chlorophyll data.  Modified from @wilson08a](images/IntegratedBloom1.png){.lightbox}
 
 ## Bloom Forcing
 

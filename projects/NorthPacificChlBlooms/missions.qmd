@@ -17,7 +17,7 @@ format:
 
 ::: {}
 
-In 2008 and 2009 cruises on the R/V *Kilo Moana* investigated silicon cycling in the Pacific, with Mark Brzezinski as the PI. The objective of these cruises was to sample satellite ocean color features for phytoplankton biomass and species composition, and daily satellite ocean color imagery was used to determine the station sampling. The KM08 cruise took place on 1– 22 July 2008. A chlorophyll bloom was developing as the ship left port and was sampled during the cruise. near 31&deg;N, 140&deg;W.  The KM09 cruise took place on 29 July to 14 August 2009.  During this cruise, a transect was conducted along 26&deg;N near 145&deg;W, which was the region of a large chlorophyll bloom that had collapsed a week prior to occupation. A small chlorophyll bloom developed during the cruise further south near Hawaii at 155&deg; W, and two stations were occupied in this active bloom during its peak. In both years, DDAs (diatom-diazotroph associations) of *Hemiaulus*-*Richelia* and *Rhizosolenia*-*Richelia* increased 102–103 over background concentrations within the satellite-defined bloom features (@villareal12).  The larger blooms sampled in 2008 and 2009 were both located near the subtropical front, which is characteristic of these blooms (@wilson13).
+In 2008 and 2009 cruises on the R/V *Kilo Moana* investigated silicon cycling in the Pacific, with Mark Brzezinski as the PI. The objective of these cruises was to sample satellite ocean color features for phytoplankton biomass and species composition, and daily satellite ocean color imagery was used to determine the station sampling. The KM08 cruise took place on 1– 22 July, 2008. A chlorophyll bloom was developing as the ship left port and was sampled during the cruise. near 31&deg;N, 140&deg;W.  The KM09 cruise took place on 29 July to 14 August 2009.  During this cruise, a transect was conducted along 26&deg;N near 145&deg;W, which was the region of a large chlorophyll bloom that had collapsed a week prior to occupation. A small chlorophyll bloom developed during the cruise further south near Hawaii at 155&deg; W, and two stations were occupied in this active bloom during its peak. In both years, DDAs (diatom-diazotroph associations) of *Hemiaulus-Richelia* and *Rhizosolenia-Richelia* increased 102–103 over background concentrations within the satellite-defined bloom features (@villareal12).  The larger blooms sampled in 2008 and 2009 were both located near the subtropical front, which is characteristic of these blooms (@wilson13).
 
 :::
 
@@ -25,7 +25,7 @@ In 2008 and 2009 cruises on the R/V *Kilo Moana* investigated silicon cycling in
 
 :::::
 
-![Cruise tracks for the 2008 and 2009 R/V *Kilo Moana* cruises. Surface salinity data from the ship’s underway sampling system is color coded along the shiptrack. The climatological mean position of the subtropical front is shaded in light grey. From @villareal12](images/km_cruise_tracks.png)
+![Cruise tracks for the 2008 and 2009 R/V *Kilo Moana* cruises. Surface salinity data from the ship’s underway sampling system is color coded along the shiptrack. The climatological mean position of the subtropical front is shaded in light grey. From @villareal12](images/km_cruise_tracks.png){.lightbox}
 
 ## Wave glider chlorophyll bloom observations
 
