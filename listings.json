@@ -52,14 +52,14 @@
     ]
   },
   {
+    "listing": "/products/mktcatch/intro.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/products/hci/hci.html"
     ]
-  },
-  {
-    "listing": "/products/mktcatch/intro.html",
-    "items": []
   },
   {
     "listing": "/projects/mhw/prev.html",
