@@ -10,16 +10,22 @@ website:
     center:
       - text: "Website Owner"
         href: https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center
+        target: _blank
       - text: "Contact"
         href: https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center
+        target: _blank
       - text: "NOAA"
         href: https://www.noaa.gov/
+        target: _blank
       - text: "Privacy Policy"
         href: https://www.noaa.gov/privacy.html
+        target: _blank
       - text: "Information Quality"
         href: https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality
+        target: _blank
       - text: "Disclaimer"
         href: https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers
+        target: _blank
     right:
       - text: "<img src='/images/logos/doc_logo_black.gif' style='height: 50px; width: auto;'/>"
         href: https://www.commerce.gov/
@@ -146,6 +152,7 @@ format:
     code-copy: true
     code-overflow: wrap
     link-external-newwindow: true
+    link-external-icon: true
     toc: true
 
 filters:
