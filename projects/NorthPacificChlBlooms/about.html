@@ -677,9 +677,9 @@ div.csl-indent {
 
 <section id="recent-conditions" class="level2">
 <h2 class="anchored" data-anchor-id="recent-conditions">Recent conditions</h2>
-<p><strong>Jun2026</strong></p>
-<p><img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.png?chlor_a%5B(2026-06-01T12:00:00Z)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0&amp;.legend=Off" class="img-fluid"></p>
-<p>Most recent monthly composite of chlorophyll in the bloom region: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.graph?chlor_a%5B(2026-06-01T12:00:00Z)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0">ERDDAP™ download</a></p>
+<p><strong>Jul2026</strong></p>
+<p><img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.png?chlor_a%5B(2026-07-01T12:00:00Z)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0&amp;.legend=Off" class="img-fluid"></p>
+<p>Monthly composites of chlorophyll in the bloom region from the 2026 bloom season: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.graph?chlor_a%5B(2026-07-01T12:00:00Z)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0">ERDDAP™ download</a></p>
 <p><strong>2026-07-03</strong></p>
 <p><img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNchlaWeekly.png?chlor_a%5B(last)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0&amp;.legend=Off" class="img-fluid"></p>
 <p>NOAA VIIRS Near Real-Time Weekly Chlorophyll: <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNchlaWeekly.graph?chlor_a%5B(last)%5D%5B(0.0)%5D%5B(35):(20)%5D%5B(-160):(-130)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Cchlor_a&amp;.colorBar=%7C%7CLinear%7C0%7C0.2%7C&amp;.bgColor=0xffccccff&amp;.trim=0">ERDDAP™ download</a></p>
@@ -847,6 +847,8 @@ Wilson, C., T. A. Villareal, N. Maximenko, S. J. Bograd, J. P. Montoya, and C. A
             if (link.getAttribute("rel") === null) {
               link.setAttribute("rel", "noopener");
             }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1181,32 +1183,32 @@ Wilson, C., T. A. Villareal, N. Maximenko, S. J. Bograd, J. P. Montoya, and C. A
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/about/southwest-fisheries-science-center" target="_blank">
 <p>Website Owner</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/contact/southwest-fisheries-science-center" target="_blank">
 <p>Contact</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.noaa.gov/">
+    <a class="nav-link" href="https://www.noaa.gov/" target="_blank">
 <p>NOAA</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.noaa.gov/privacy.html">
+    <a class="nav-link" href="https://www.noaa.gov/privacy.html" target="_blank">
 <p>Privacy Policy</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality">
+    <a class="nav-link" href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality" target="_blank">
 <p>Information Quality</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers">
+    <a class="nav-link" href="https://www.fisheries.noaa.gov/national/about-us/website-policies-and-disclaimers" target="_blank">
 <p>Disclaimer</p>
 </a>
   </li>  
