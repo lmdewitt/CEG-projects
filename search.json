@@ -615,6 +615,102 @@
     ]
   },
   {
+    "objectID": "projects/salmon_thiamine/intro.html",
+    "href": "projects/salmon_thiamine/intro.html",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Jump to:\n\nAbout\nOcean Fishery\nCentral Valley Hatchery Stocks\nCoastal Hatchery Stocks",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/intro.html#background",
+    "href": "projects/salmon_thiamine/intro.html#background",
+    "title": "Thiamine Deficiency in California",
+    "section": "Background",
+    "text": "Background\n\n\n\nThiamine deficiency complex (TDC) was first observed in juvenile California Chinook salmon in early 2020, coinciding with changes in oceanic conditions that disrupted the marine food web. As female salmon returned to freshwater spawning grounds with low levels of this essential vitamin, they provided insufficient thiamine to their eggs, inhibiting proper development. This led to increased mortality rates among juveniles in hatcheries, with surviving fish exhibiting symptoms of TDC, such as erratic swimming and lethargy. In response, a collaborative effort involving multiple agencies began to investigate the prevalence and impacts of thiamine deficiency in California salmonids.",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/intro.html#surveillance-and-assessment",
+    "href": "projects/salmon_thiamine/intro.html#surveillance-and-assessment",
+    "title": "Thiamine Deficiency in California",
+    "section": "Surveillance and Assessment",
+    "text": "Surveillance and Assessment\n\n\n\nTo assess thiamine deficiency and its effects over time, egg thiamine levels have been systematically measured at various hatcheries in central and northern California. Unfertilized eggs from mature Chinook salmon (Oncorhynchus tshawytscha), Steelhead trout (Oncorhynchus mykiss), and coho salmon (Oncorhynchus kisutch) were collected across California to measure thiamine concentrations. This ongoing surveillance has shown a rising incidence of TDC in nearly all populations in California’s Central Valley and coastal hatcheries. Additionally, laboratory studies have investigated the relationship between egg thiamine concentration and offspring survival, helping to understand population-level impacts of thiamine-dependent mortalities.",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/intro.html#more-information",
+    "href": "projects/salmon_thiamine/intro.html#more-information",
+    "title": "Thiamine Deficiency in California",
+    "section": "More Information",
+    "text": "More Information\nSee SWFSC Monitoring Thiamine Deficiency in California Salmon for more information",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_coastal.html",
+    "href": "projects/salmon_thiamine/hatchery_coastal.html",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Jump to:\n\nAbout\nOcean Fishery\nCentral Valley Hatchery Stocks\nCoastal Hatchery Stocks\n\n\n\n\nModel Description for Chinook salmon and Coho:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.7 nmol/g; corresponding to &lt; EC50 values\nImpacted: 2.7-5.9 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 5.9-7.7 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.7 nmol/g; corresponding to EC95 values\n\n\n\n\n\nModel Description for Steelhead\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Steelhead were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments, raising individuals with known thiamine levels and monitoring for survival and mortality impacts using data from populations out of the Great Lakes. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 5.3 nmol/g; corresponding to &lt; EC50 values\nImpacted: 5.3-7.1 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 7.1-7.9 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.9 nmol/g; corresponding to EC95 values\n\n\n\n\nDownload all Chinook Coastal data as a text file\nDownload all Steelhead Coastal data as a text file\nDownload data for all Coastal Hatchery Stocks data as a text file\nCustomize your download in ERDDAP™",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Coastal Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_coastal.html#chinook-coastal",
+    "href": "projects/salmon_thiamine/hatchery_coastal.html#chinook-coastal",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Model Description for Chinook salmon and Coho:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.7 nmol/g; corresponding to &lt; EC50 values\nImpacted: 2.7-5.9 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 5.9-7.7 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.7 nmol/g; corresponding to EC95 values",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Coastal Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_coastal.html#steelhead-coastal",
+    "href": "projects/salmon_thiamine/hatchery_coastal.html#steelhead-coastal",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Model Description for Steelhead\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Steelhead were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments, raising individuals with known thiamine levels and monitoring for survival and mortality impacts using data from populations out of the Great Lakes. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 5.3 nmol/g; corresponding to &lt; EC50 values\nImpacted: 5.3-7.1 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 7.1-7.9 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.9 nmol/g; corresponding to EC95 values",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Coastal Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_coastal.html#downloads",
+    "href": "projects/salmon_thiamine/hatchery_coastal.html#downloads",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Download all Chinook Coastal data as a text file\nDownload all Steelhead Coastal data as a text file\nDownload data for all Coastal Hatchery Stocks data as a text file\nCustomize your download in ERDDAP™",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Coastal Hatchery Stocks"
+    ]
+  },
+  {
     "objectID": "projects/NorthPacificChlBlooms/missions.html",
     "href": "projects/NorthPacificChlBlooms/missions.html",
     "title": "North Pacific Chlorophyll Blooms",
@@ -919,7 +1015,7 @@
     "href": "products/mktcatch/intro.html#references",
     "title": "California Commercial Landings",
     "section": "References",
-    "text": "References\n\n\nLeet, William S. 2001. California’s Living Marine Resources : A Status Report. https://repository.library.noaa.gov/view/noaa/38672.\n\n\nMason, J. E. 2004. “Historical Patterns from 74 Years of Commercial Landings from California Waters.” In CalCOFI Reports 45:180-190. https://www.calcofi.org/publications/calcofireports/v45/CalCOFI_Rpt_Vol_45_2004.pdf.\n\n\n\nProjects and Products\nClimate & Ecosystems Group\nDowload\nHabitat Compression Index\nHome\nMarine Heat Wave\nLatest Conditions\nAbout\nPrevious Updates\nVideos\nRegional EEZ MHW\nReferences\nWest Coast National Marine Sanctuaries Marine Heatwave Tracker\nOverview\nOlympic Coast\nGreater Farallones\nCordell Bank\nMonterey Bay - Mainland\nMonterey Bay - Davidson Seamount\nChannel Islands\nMHW Calculations\nUpwelling Index\nAbout\nBakun Index\nCUTI and BEUTI\nIndex Comparison\nWhich index should I use?\nDownloads\nFNMOC Products\nAbout\nModel Data\nModel-Derived Products\nHabitat Compression Index\nCalifornia Commercial Landings\nAbout\nDowload\nExtratropical-based Northern Oscillation Index\nAbout\nDowload\nSea Floor Gradient\nAbout\nDowload\nFrontal Edges\nAbout\nNorthPacificChlBlooms\nAbout\nMissions\nPrevious Blooms\nHome\n/index.html\nAbout\n/about.html\nPeople\n/people.html\nhttps://github.com/lmdewitt\nCalifornia Commercial Landings\nAbout\n\nWebsite Owner\n\n\nContact\n\n\nNOAA\n\n\nPrivacy Policy\n\n\nInformation Quality\n\n\nDisclaimer",
+    "text": "References\n\n\nLeet, William S. 2001. California’s Living Marine Resources : A Status Report. https://repository.library.noaa.gov/view/noaa/38672.\n\n\nMason, J. E. 2004. “Historical Patterns from 74 Years of Commercial Landings from California Waters.” In CalCOFI Reports 45:180-190. https://www.calcofi.org/publications/calcofireports/v45/CalCOFI_Rpt_Vol_45_2004.pdf.\n\n\n\nProjects and Products\nClimate & Ecosystems Group\nDowload\nHabitat Compression Index\nHome\nMarine Heat Wave\nLatest Conditions\nAbout\nPrevious Updates\nVideos\nRegional EEZ MHW\nReferences\nWest Coast National Marine Sanctuaries Marine Heatwave Tracker\nOverview\nOlympic Coast\nGreater Farallones\nCordell Bank\nMonterey Bay - Mainland\nMonterey Bay - Davidson Seamount\nChannel Islands\nMHW Calculations\nUpwelling Index\nAbout\nBakun Index\nCUTI and BEUTI\nIndex Comparison\nWhich index should I use?\nDownloads\nFNMOC Products\nAbout\nModel Data\nModel-Derived Products\nHabitat Compression Index\nCalifornia Commercial Landings\nAbout\nDowload\nExtratropical-based Northern Oscillation Index\nAbout\nDowload\nSea Floor Gradient\nAbout\nDowload\nFrontal Edges\nAbout\nNorthPacificChlBlooms\nAbout\nMissions\nPrevious Blooms\nThiamine Deficiency in California\nAbout\nOcean Fishery\nCentral Valley Hatchery Stocks\nCoastal Hatchery Stocks\nHome\n/index.html\nAbout\n/about.html\nPeople\n/people.html\nhttps://github.com/lmdewitt\nCalifornia Commercial Landings\nAbout\n\nWebsite Owner\n\n\nContact\n\n\nNOAA\n\n\nPrivacy Policy\n\n\nInformation Quality\n\n\nDisclaimer",
     "crumbs": [
       "Home",
       "California Commercial Landings",
@@ -1273,6 +1369,102 @@
       "Home",
       "NorthPacificChlBlooms",
       "Previous Blooms"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_ccv.html",
+    "href": "projects/salmon_thiamine/hatchery_ccv.html",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Jump to:\n\nAbout\nOcean Fishery\nCentral Valley Hatchery Stocks\nCoastal Hatchery Stocks\n\n\n\n\nModel Description for Chinook salmon and Coho:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.7 nmol/g; corresponding to &lt; EC50 values\nImpacted: 2.7-5.9 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 5.9-7.7 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.7 nmol/g; corresponding to EC95 values\n\n\n\n\n\nModel Description for Steelhead:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Steelhead were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments, raising individuals with known thiamine levels and monitoring for survival and mortality impacts using data from populations out of the Great Lakes. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 5.3 nmol/g; corresponding to &lt; EC50 values\nImpacted: 5.3-7.1 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 7.1-7.9 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.9 nmol/g; corresponding to EC95 values\n\n\n\n\nDownload all Chinook Central Valley data as a text file\nDownload all Steelhead Central Valley data as a text file\nDownload data for all Central Valley Hatchery Stocks data as a text file\nCustomize your download in ERDDAP™",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Central Valley Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_ccv.html#chinook-central-valley",
+    "href": "projects/salmon_thiamine/hatchery_ccv.html#chinook-central-valley",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Model Description for Chinook salmon and Coho:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.7 nmol/g; corresponding to &lt; EC50 values\nImpacted: 2.7-5.9 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 5.9-7.7 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.7 nmol/g; corresponding to EC95 values",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Central Valley Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_ccv.html#steelhead-central-valley",
+    "href": "projects/salmon_thiamine/hatchery_ccv.html#steelhead-central-valley",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Model Description for Steelhead:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Steelhead were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments, raising individuals with known thiamine levels and monitoring for survival and mortality impacts using data from populations out of the Great Lakes. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 5.3 nmol/g; corresponding to &lt; EC50 values\nImpacted: 5.3-7.1 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 7.1-7.9 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.9 nmol/g; corresponding to EC95 values",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Central Valley Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/hatchery_ccv.html#downloads",
+    "href": "projects/salmon_thiamine/hatchery_ccv.html#downloads",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Download all Chinook Central Valley data as a text file\nDownload all Steelhead Central Valley data as a text file\nDownload data for all Central Valley Hatchery Stocks data as a text file\nCustomize your download in ERDDAP™",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Central Valley Hatchery Stocks"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/ocean_fishery.html",
+    "href": "projects/salmon_thiamine/ocean_fishery.html",
+    "title": "Thiamine Deficiency in California",
+    "section": "",
+    "text": "Jump to:\n\nAbout\nOcean Fishery\nCentral Valley Hatchery Stocks\nCoastal Hatchery Stocks",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Ocean Fishery"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/ocean_fishery.html#ocean-fishery",
+    "href": "projects/salmon_thiamine/ocean_fishery.html#ocean-fishery",
+    "title": "Thiamine Deficiency in California",
+    "section": "Ocean Fishery",
+    "text": "Ocean Fishery\n\n\n\nOur team works with anglers and fishing industry partners to monitor the nutritional status of Chinook salmon caught in the Central California coastal fishery. Anglers are given a card with unique fish number so that they can track the thiamine levels in the fish they catch for this study. This page enable anglers to look up the thiamine levels in the fish they catch.\nDownload Wanted Poster",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Ocean Fishery"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/ocean_fishery.html#ocean-fishery-thiamine-status---aggregated-and-by-boat",
+    "href": "projects/salmon_thiamine/ocean_fishery.html#ocean-fishery-thiamine-status---aggregated-and-by-boat",
+    "title": "Thiamine Deficiency in California",
+    "section": "Ocean Fishery Thiamine Status - aggregated and by boat",
+    "text": "Ocean Fishery Thiamine Status - aggregated and by boat\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.9\nImpacted: 3 - 5\nLikely impacted: 5 - 8\nUnlikely impacted: &gt; 8",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Ocean Fishery"
+    ]
+  },
+  {
+    "objectID": "projects/salmon_thiamine/ocean_fishery.html#downloads",
+    "href": "projects/salmon_thiamine/ocean_fishery.html#downloads",
+    "title": "Thiamine Deficiency in California",
+    "section": "Downloads",
+    "text": "Downloads\nDownload all Ocean Fishery data as a text file\nCustomize your download in ERDDAP™",
+    "crumbs": [
+      "Home",
+      "Thiamine Deficiency in California",
+      "Ocean Fishery"
     ]
   },
   {
