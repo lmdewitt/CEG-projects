@@ -142,6 +142,16 @@ website:
             href: projects/NorthPacificChlBlooms/missions.qmd
           - text: "Previous Blooms"
             href: projects/NorthPacificChlBlooms/blooms.qmd
+      - section: "Thiamine Deficiency in California"
+        contents:
+          - text: "About"
+            href: projects/salmon_thiamine/intro.qmd
+          - text: "Ocean Fishery"
+            href: projects/salmon_thiamine/ocean_fishery.qmd
+          - text: "Central Valley Hatchery Stocks"
+            href: projects/salmon_thiamine/hatchery_ccv.qmd
+          - text: "Coastal Hatchery Stocks"
+            href: projects/salmon_thiamine/hatchery_coastal.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"

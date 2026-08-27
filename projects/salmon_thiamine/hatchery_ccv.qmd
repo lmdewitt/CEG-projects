@@ -1,0 +1,79 @@
+---
+title: "Thiamine Deficiency in California"
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    grid:
+      body-width: 1200px
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+source("read_thiamine_data.R")
+```
+
+# Central Valley Hatchery Stocks
+
+::::{style="padding-left: 15px;"}
+
+*Jump to:*
+
+* [About](about.qmd)
+* [Ocean Fishery](ocean_fishery.qmd)
+* Central Valley Hatchery Stocks
+* [Coastal Hatchery Stocks](hatchery_coastal.qmd)
+
+::::
+
+## Chinook Central Valley
+
+*Model Description for Chinook salmon and Coho:*\
+Hatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).
+
+```{r}
+#| echo: false
+#| fig-height: 18  # Matches large plot heights (18 inches ~ 1700px)
+#| out-width: "100%"
+#| # Corresponds to bardata[1] (div = 2, height = 1700)
+plot_thiamine_bar(thiamine_data, div_idx = 2)
+```
+
+::: {style="background-color:lightgray; padding:10px;"}
+**Thiamine Levels (nmol/g)**\
+[**Severely impacted:**]{style="color: `r status_colors['severely impacted']`"} < 2.7 nmol/g; corresponding to < EC50 values\
+[**Impacted:**]{style="color: `r status_colors['impacted']`"} 2.7-5.9 nmol/g; corresponding to EC50 - < EC90 values\
+[**Likely impacted:**]{style="color: `r status_colors['likely impacted']`"} 5.9-7.7 nmol/g; corresponding to EC90 - < EC95 values\
+[**Unlikely impacted:**]{style="color: `r status_colors['unlikely impacted']`"} > 7.7 nmol/g; corresponding to EC95 values\
+:::
+
+## Steelhead Central Valley
+
+*Model Description for Steelhead:*\
+Hatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Steelhead were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments, raising individuals with known thiamine levels and monitoring for survival and mortality impacts using data from populations out of the Great Lakes. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).
+
+```{r}
+#| fig-height: 12  # Matches large plot heights (18 inches ~ 1700px)
+#| out-width: "100%"
+#| echo: false
+#| # Corresponds to bardata[1] (div = 2, height = 1700)
+plot_thiamine_bar(thiamine_data, div_idx = 3)
+```
+
+::: {style="background-color:lightgray; padding:10px;"}
+**Thiamine Levels (nmol/g)**\
+[**Severely impacted:**]{style="color: `r status_colors['severely impacted']`"} < 5.3 nmol/g; corresponding to < EC50 values\
+[**Impacted:**]{style="color: `r status_colors['impacted']`"} 5.3-7.1 nmol/g; corresponding to EC50 - < EC90 values\
+[**Likely impacted:**]{style="color: `r status_colors['likely impacted']`"} 7.1-7.9 nmol/g; corresponding to EC90 - < EC95 values\
+[**Unlikely impacted:**]{style="color: `r status_colors['unlikely impacted']`"} > 7.9 nmol/g; corresponding to EC95 values
+:::
+
+## Downloads
+
+[Download all Chinook Central Valley data as a text file](https://oceanview.pfeg.noaa.gov/erddap/tabledap/Salmon_thiamine.csv?&collection_type=%22hatchery%22&stock=%22ccv%22&treatment_status=~%22(NA|saline)%22&avg_total_egg_thi>0&species=~%22(chinook|coho)%22)\
+[Download all Steelhead Central Valley data as a text file](https://oceanview.pfeg.noaa.gov/erddap/tabledap/Salmon_thiamine.csv?&collection_type=%22hatchery%22&stock=%22ccv%22&treatment_status=~%22(NA|saline)%22&avg_total_egg_thi>0&species=~%22(steelhead)%22)\
+[Download data for all Central Valley Hatchery Stocks data as a text file](https://oceanview.pfeg.noaa.gov/erddap/tabledap/Salmon_thiamine.csv?&collection_type=%22hatchery%22&stock=%22ccv%22&treatment_status=~%22(NA|saline)%22&avg_total_egg_thi>0)\
+[Customize your download in ERDDAP™](https://oceanview.pfeg.noaa.gov/erddap/tabledap/Salmon_thiamine.html)
+
