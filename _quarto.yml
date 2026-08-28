@@ -56,6 +56,32 @@ website:
     contents:
       - text: "Home"
         href: index.qmd
+      - section: "California Commercial Landings"
+        contents:
+          - text: "About"
+            href: products/mktcatch/intro.qmd
+          - text: "Dowload"
+            href: products/mktcatch/download.qmd
+      - section: "Extratropical-based Northern Oscillation Index"
+        contents:
+          - text: "About"
+            href: products/noix/intro.qmd
+          - text: "Dowload"
+            href: products/noix/download.qmd
+      - section: "FNMOC Products"
+        contents:
+          - text: "About"
+            href: products/fnmoc/intro.qmd
+          - text: "Model Data"
+            href: products/fnmoc/model.qmd
+          - text: "Model-Derived Products"
+            href: products/fnmoc/prods.qmd
+      - section: "Frontal Edges"
+        contents:
+          - text: "About"
+            href: products/front_edges/intro.qmd
+      - text: "Habitat Compression Index"
+        href: products/hci/hci.qmd
       - section: "Marine Heat Wave"
         contents:
           - text: "Latest Conditions"
@@ -70,6 +96,44 @@ website:
             href: projects/mhw/regional_eez.qmd
           - text: "References"
             href: projects/mhw/refs.qmd
+      - section: "NorthPacificChlBlooms"
+        contents:
+          - text: "About"
+            href: projects/NorthPacificChlBlooms/about.qmd
+          - text: "Missions"
+            href: projects/NorthPacificChlBlooms/missions.qmd
+          - text: "Previous Blooms"
+            href: projects/NorthPacificChlBlooms/blooms.qmd
+      - section: "Sea Floor Gradient"
+        contents:
+          - text: "About"
+            href: products/seafloor_gradient/intro.qmd
+          - text: "Dowload"
+            href: products/seafloor_gradient/download.qmd
+      - section: "Thiamine Deficiency in California"
+        contents:
+          - text: "About"
+            href: projects/salmon_thiamine/intro.qmd
+          - text: "Ocean Fishery"
+            href: projects/salmon_thiamine/ocean_fishery.qmd
+          - text: "Central Valley Hatchery Stocks"
+            href: projects/salmon_thiamine/hatchery_ccv.qmd
+          - text: "Coastal Hatchery Stocks"
+            href: projects/salmon_thiamine/hatchery_coastal.qmd
+      - section: "Upwelling Index"
+        contents:
+          - text: "About"
+            href: projects/upwelling/intro.qmd
+          - text: "Bakun Index"
+            href:  projects/upwelling/bakun.qmd
+          - text: "CUTI and BEUTI"
+            href: projects/upwelling/cutibeuti.qmd
+          - text: "Index Comparison"
+            href: projects/upwelling/diff.qmd
+          - text: "Which index should I use?"
+            href: projects/upwelling/which.qmd
+          - text: "Downloads"
+            href: projects/upwelling/dnld.qmd
       - section: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
         contents:
           - text: "Overview"
@@ -88,70 +152,6 @@ website:
             href: projects/sanctuary_mhw/CINMS.qmd
           - text: "MHW Calculations"
             href: projects/sanctuary_mhw/calc.qmd
-      - section: "Upwelling Index"
-        contents:
-          - text: "About"
-            href: projects/upwelling/intro.qmd
-          - text: "Bakun Index"
-            href:  projects/upwelling/bakun.qmd
-          - text: "CUTI and BEUTI"
-            href: projects/upwelling/cutibeuti.qmd
-          - text: "Index Comparison"
-            href: projects/upwelling/diff.qmd
-          - text: "Which index should I use?"
-            href: projects/upwelling/which.qmd
-          - text: "Downloads"
-            href: projects/upwelling/dnld.qmd
-      - section: "FNMOC Products"
-        contents:
-          - text: "About"
-            href: products/fnmoc/intro.qmd
-          - text: "Model Data"
-            href: products/fnmoc/model.qmd
-          - text: "Model-Derived Products"
-            href: products/fnmoc/prods.qmd
-      - text: "Habitat Compression Index"
-        href: products/hci/hci.qmd
-      - section: "California Commercial Landings"
-        contents:
-          - text: "About"
-            href: products/mktcatch/intro.qmd
-          - text: "Dowload"
-            href: products/mktcatch/download.qmd
-      - section: "Extratropical-based Northern Oscillation Index"
-        contents:
-          - text: "About"
-            href: products/noix/intro.qmd
-          - text: "Dowload"
-            href: products/noix/download.qmd
-      - section: "Sea Floor Gradient"
-        contents:
-          - text: "About"
-            href: products/seafloor_gradient/intro.qmd
-          - text: "Dowload"
-            href: products/seafloor_gradient/download.qmd
-      - section: "Frontal Edges"
-        contents:
-          - text: "About"
-            href: products/front_edges/intro.qmd
-      - section: "NorthPacificChlBlooms"
-        contents:
-          - text: "About"
-            href: projects/NorthPacificChlBlooms/about.qmd
-          - text: "Missions"
-            href: projects/NorthPacificChlBlooms/missions.qmd
-          - text: "Previous Blooms"
-            href: projects/NorthPacificChlBlooms/blooms.qmd
-      - section: "Thiamine Deficiency in California"
-        contents:
-          - text: "About"
-            href: projects/salmon_thiamine/intro.qmd
-          - text: "Ocean Fishery"
-            href: projects/salmon_thiamine/ocean_fishery.qmd
-          - text: "Central Valley Hatchery Stocks"
-            href: projects/salmon_thiamine/hatchery_ccv.qmd
-          - text: "Coastal Hatchery Stocks"
-            href: projects/salmon_thiamine/hatchery_coastal.qmd
 format:
   html:
     backgroundcolor: "#fdfdfd"
