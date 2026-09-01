@@ -52,7 +52,11 @@
     ]
   },
   {
-    "listing": "/products/mktcatch/intro.html",
+    "listing": "/projects/mhw/videos.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/mhw/prev.html",
     "items": []
   },
   {
@@ -62,11 +66,7 @@
     ]
   },
   {
-    "listing": "/projects/mhw/prev.html",
-    "items": []
-  },
-  {
-    "listing": "/projects/mhw/videos.html",
+    "listing": "/products/mktcatch/intro.html",
     "items": []
   },
   {

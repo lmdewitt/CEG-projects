@@ -2,178 +2,174 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/people.html</loc>
-    <lastmod>2026-08-28T00:02:53.139Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.051Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/diff.html</loc>
-    <lastmod>2026-08-28T00:02:54.116Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.081Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/bakun.html</loc>
-    <lastmod>2026-08-28T00:02:54.115Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.080Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/cutibeuti.html</loc>
-    <lastmod>2026-08-28T00:02:54.116Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.081Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/GFNMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/CBNMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.241Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.157Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/content.ejs.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/overview.html</loc>
-    <lastmod>2026-08-28T00:02:54.115Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.080Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/calc.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/latest.html</loc>
-    <lastmod>2026-08-28T00:02:53.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/index.html</loc>
-    <lastmod>2026-08-28T00:02:53.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/about.html</loc>
-    <lastmod>2026-08-28T00:02:53.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/hatchery_coastal.html</loc>
-    <lastmod>2026-08-28T00:02:53.204Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/missions.html</loc>
-    <lastmod>2026-08-28T00:02:53.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/about.html</loc>
-    <lastmod>2026-08-28T00:02:53.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/front_edges/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/model.html</loc>
-    <lastmod>2026-08-28T00:02:53.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/mktcatch/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.141Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/seafloor_gradient/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/noix/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/hci/hci.html</loc>
-    <lastmod>2026-08-28T00:02:53.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/about.html</loc>
-    <lastmod>2026-08-28T00:02:52.997Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/noix/download.html</loc>
-    <lastmod>2026-08-28T00:02:53.141Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/seafloor_gradient/download.html</loc>
-    <lastmod>2026-08-28T00:02:53.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/mktcatch/download.html</loc>
-    <lastmod>2026-08-28T00:02:53.141Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/prods.html</loc>
-    <lastmod>2026-08-28T00:02:53.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/intro.html</loc>
-    <lastmod>2026-08-28T00:02:53.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/index.html</loc>
-    <lastmod>2026-08-28T00:02:53.139Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/blooms.html</loc>
-    <lastmod>2026-08-28T00:02:53.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/hatchery_ccv.html</loc>
-    <lastmod>2026-08-28T00:02:53.203Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/ocean_fishery.html</loc>
-    <lastmod>2026-08-28T00:02:53.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/prev.html</loc>
-    <lastmod>2026-08-28T00:02:53.201Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.113Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/videos.html</loc>
-    <lastmod>2026-08-28T00:02:53.201Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.114Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/prev.html</loc>
+    <lastmod>2026-09-01T22:01:54.114Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/ocean_fishery.html</loc>
+    <lastmod>2026-09-01T22:01:54.157Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/hatchery_ccv.html</loc>
+    <lastmod>2026-09-01T22:01:54.116Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/blooms.html</loc>
+    <lastmod>2026-09-01T22:01:54.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/index.html</loc>
+    <lastmod>2026-09-01T22:01:54.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/prods.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/mktcatch/download.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/seafloor_gradient/download.html</loc>
+    <lastmod>2026-09-01T22:01:54.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/noix/download.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/about.html</loc>
+    <lastmod>2026-09-01T22:01:53.900Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/hci/hci.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/noix/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/seafloor_gradient/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/mktcatch/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/fnmoc/model.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/products/front_edges/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/about.html</loc>
+    <lastmod>2026-09-01T22:01:54.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/NorthPacificChlBlooms/missions.html</loc>
+    <lastmod>2026-09-01T22:01:54.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/hatchery_coastal.html</loc>
+    <lastmod>2026-09-01T22:01:54.116Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/salmon_thiamine/intro.html</loc>
+    <lastmod>2026-09-01T22:01:54.157Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/about.html</loc>
+    <lastmod>2026-09-01T22:01:54.061Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/regional_eez.html</loc>
-    <lastmod>2026-08-28T00:02:53.201Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.114Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/mhw/refs.html</loc>
-    <lastmod>2026-08-28T00:02:53.201Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.114Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/DSNMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/menu.ejs.html</loc>
-    <lastmod>2026-08-28T00:02:54.115Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.079Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/MBNMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/OCNMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/sanctuary_mhw/CINMS.html</loc>
-    <lastmod>2026-08-28T00:02:53.242Z</lastmod>
+    <lastmod>2026-09-01T22:01:54.158Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/dnld.html</loc>
-    <lastmod>2026-08-28T00:02:54.116Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.081Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/intro.html</loc>
-    <lastmod>2026-08-28T00:02:54.140Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.107Z</lastmod>
   </url>
   <url>
     <loc>https://lmdewitt.github.io/CEG-projects/projects/upwelling/which.html</loc>
-    <lastmod>2026-08-28T00:02:54.140Z</lastmod>
+    <lastmod>2026-09-01T22:01:55.107Z</lastmod>
   </url>
 </urlset>
