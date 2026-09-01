@@ -1,5 +1,8 @@
 ---
 title: "Seafloor Gradient"
+aliases: 
+  - /products/seafloor_gradient/
+  - /products/seafloor_gradient/index.html
 format:
   html:
     toc: true

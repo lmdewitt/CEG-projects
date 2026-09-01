@@ -1,5 +1,8 @@
 ---
 title: "Frontal Edges"
+aliases: 
+  - /products/front_edges/
+  - /products/front_edges/index.html
 format:
   html:
     toc: true

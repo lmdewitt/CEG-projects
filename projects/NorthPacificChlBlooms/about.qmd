@@ -1,5 +1,8 @@
 ---
 title: "North Pacific Chlorophyll Blooms"
+aliases: 
+  - /projects/NorthPacificChlBlooms/
+  - /projects/NorthPacificChlBlooms/index.html
 format:
   html:
     toc: true

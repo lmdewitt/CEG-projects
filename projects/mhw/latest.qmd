@@ -1,5 +1,8 @@
 ---
 title: "California Current Marine Heatwave Tracker"
+aliases: 
+  - /projects/mhw/
+  - /projects/mhw/index.html
 subtitle: "An experimental tool for tracking marine heatwaves"
 format: html
 ---

@@ -1,5 +1,8 @@
 ---
 title: "Upwelling Indices"
+aliases: 
+  - /projects/upwelling/
+  - /projects/upwelling/index.html
 subtitle: "About"
 format:
   html:

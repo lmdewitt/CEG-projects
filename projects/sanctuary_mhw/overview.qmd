@@ -1,5 +1,8 @@
 ---
 title: "West Coast National Marine Sanctuaries Marine Heatwave Tracker"
+aliases: 
+  - /projects/sanctuary_mhw/
+  - /projects/sanctuary_mhw/index.html
 format:
   html:
     grid:

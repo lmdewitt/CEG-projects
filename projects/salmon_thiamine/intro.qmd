@@ -1,5 +1,8 @@
 ---
 title: "Thiamine Deficiency in California"
+aliases: 
+  - /projects/salmon_thiamine/
+  - /projects/salmon_thiamine/index.html
 format:
   html:
     toc: true

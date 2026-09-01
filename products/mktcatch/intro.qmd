@@ -1,6 +1,9 @@
 ---
 title: "California Commercial Landings"
 subtitle: "About"
+aliases: 
+  - /products/mktcatch/
+  - /products/mktcatch/index.html
 format:
   html:
     toc: true

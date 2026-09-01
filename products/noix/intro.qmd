@@ -1,5 +1,8 @@
 ---
 title: "Extratropical-based Northern Oscillation Index"
+aliases: 
+  - /products/noix/
+  - /products/noix/index.html
 format:
   html:
     toc: true

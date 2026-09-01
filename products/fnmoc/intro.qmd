@@ -1,5 +1,8 @@
 ---
 title: "FNMOC Products"
+aliases: 
+  - /products/fnmoc/
+  - /products/fnmoc/index.html
 subtitle: "About"
 format:
   html:

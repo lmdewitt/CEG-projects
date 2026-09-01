@@ -1,5 +1,8 @@
 ---
 title: "Habitat Compression Index (HCI)"
+aliases: 
+  - /products/hci/
+  - /products/hci/index.html
 format:
   html:
     toc: true

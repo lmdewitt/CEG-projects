@@ -105,7 +105,7 @@
   categories: [ESD, FED]
 - title: Thiamine Deficiency in California Salmon
   description:  Researche on what is causing thiamine deficiency in salmon, and what might help remedy or mitigate its effects.
-  path: https://oceanview.pfeg.noaa.gov/products/salmon_thiamine
+  path: products/salmon_thiamine/intro.html
   image: images/itemurls/salmon_thiamine.png
   categories: [ESD, FED]
 - title: Top Predator Watch
