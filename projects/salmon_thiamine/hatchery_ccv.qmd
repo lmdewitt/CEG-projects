@@ -59,7 +59,7 @@ Hatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in Californiaâ
 #| out-width: "100%"
 #| echo: false
 #| # Corresponds to bardata[1] (div = 2, height = 1700)
-plot_thiamine_bar(thiamine_data, div_idx = 3)
+plot_thiamine_bar(thiamine_data, div_idx = 4)
 ```
 
 ::: {style="background-color:lightgray; padding:10px;"}
