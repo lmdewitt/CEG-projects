@@ -1449,8 +1449,8 @@
     ]
   },
   {
-    "objectID": "projects/salmon_thiamine/hatchery_coastal.html#chinook-coastal",
-    "href": "projects/salmon_thiamine/hatchery_coastal.html#chinook-coastal",
+    "objectID": "projects/salmon_thiamine/hatchery_coastal.html#coastal-chinook-and-coho",
+    "href": "projects/salmon_thiamine/hatchery_coastal.html#coastal-chinook-and-coho",
     "title": "Thiamine Deficiency in California",
     "section": "",
     "text": "Model Description for Chinook salmon and Coho:\nHatchery level impacts of Thiamine-Dependent Fry Mortality (TDFM) in California’s Chinook salmon were estimated using a dose-response model (under-review) linking egg thiamine concentration to fry survival, where the curve spans survival from 0% to 100%, with survival increasing as thiamine concentration increases. This was done through laboratory experiments of all 4 runs of California Chinook salmon, raising individuals with known thiamine levels and monitoring for survival and mortality impacts. From this model we defined the following four-tiered set of impact categories that relates egg thiamine concentration to effective concentrations (EC) and then corresponding survival probability as EC50, EC90, and EC95 (corresponding with 50%, 90% and 95% probability of survival). Empirical estimates of thiamine egg concentration for a given hatchery and year were then binned according to these categories. Due to similarity of TDC impacts based on data coming out of the Great Lakes, the same impact levels have been applied to Coho salmon as well. A full model description will be updated here when data has been published. For any questions, please contact Miles Daniels (miles.daniels@noaa.gov).\n\n\n\n\n\n\n\nThiamine Levels (nmol/g)\nSeverely impacted: &lt; 2.7 nmol/g; corresponding to &lt; EC50 values\nImpacted: 2.7-5.9 nmol/g; corresponding to EC50 - &lt; EC90 values\nLikely impacted: 5.9-7.7 nmol/g; corresponding to EC90 - &lt; EC95 values\nUnlikely impacted: &gt; 7.7 nmol/g; corresponding to EC95 values",
