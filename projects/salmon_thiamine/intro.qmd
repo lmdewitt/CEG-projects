@@ -16,9 +16,9 @@ format:
 *Jump to:*
 
 * About
-* [Ocean Fishery](ocean_fishery.qmd)
 * [Central Valley Hatchery Stocks](hatchery_ccv.qmd)
 * [Coastal Hatchery Stocks](hatchery_coastal.qmd)
+* [Ocean Fishery](ocean_fishery.qmd)
 
 ::::
 

@@ -38,7 +38,7 @@ website:
     align: center
     tools: 
       - icon: github
-        href: https://github.com/lmdewitt
+        href: https://github.com/lmdewitt/CEG-projects
 
     style: "docked"
     search: true
@@ -114,12 +114,12 @@ website:
         contents:
           - text: "About"
             href: projects/salmon_thiamine/intro.qmd
-          - text: "Ocean Fishery"
-            href: projects/salmon_thiamine/ocean_fishery.qmd
           - text: "Central Valley Hatchery Stocks"
             href: projects/salmon_thiamine/hatchery_ccv.qmd
           - text: "Coastal Hatchery Stocks"
             href: projects/salmon_thiamine/hatchery_coastal.qmd
+          - text: "Ocean Fishery"
+            href: projects/salmon_thiamine/ocean_fishery.qmd
       - section: "Upwelling Index"
         contents:
           - text: "About"

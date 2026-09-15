@@ -22,9 +22,9 @@ source("read_thiamine_data.R")
 *Jump to:*
 
 * [About](about.qmd)
-* [Ocean Fishery](ocean_fishery.qmd)
 * [Central Valley Hatchery Stocks](hatchery_ccv.qmd)
 * Coastal Hatchery Stocks
+* [Ocean Fishery](ocean_fishery.qmd)
 
 ::::
 
