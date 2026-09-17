@@ -1,11 +1,11 @@
 - title: ERDDAP&#8482;
   description: Easier access to scientific data
-  path: http://coastwatch.pfeg.noaa.gov/erddap
+  path: https://coastwatch.pfeg.noaa.gov/erddap
   image: images/itemurls/erddap.png
   categories: [ESD]
 - title: WhaleWatch
   description: Help reduce human impacts on whales
-  path: http://www.westcoast.fisheries.noaa.gov/whalewatch/
+  path: https://www.westcoast.fisheries.noaa.gov/whalewatch/
   image: images/itemurls/whalewatch.png
   categories: [ESD]
 - title: Upwelling Index 
@@ -15,7 +15,7 @@
   categories: [ESD, ITDS]
 - title: CoastWatch West Coast Regional Node
   description: Providing near real-time satellite data for the coastal ocean
-  path: http://coastwatch.pfeg.noaa.gov
+  path: https://coastwatch-wcn.github.io/
   image: images/itemurls/coastwatch.png
   categories: [ESD]
 - title: California Current Integrated Ecosystem Assessment
@@ -25,17 +25,17 @@
   categories: [ESD, NWFSC]
 - title: Xtractomatic Tools
   description: R and Matlab data extraction using ERDDAP&#8482;
-  path: http://coastwatch.pfeg.noaa.gov/xtracto/index.html
+  path: https://coastwatch.pfeg.noaa.gov/xtracto/index.html
   image: images/itemurls/xtracto.png
   categories: [ESD]
 - title: Loggerhead Turtle Conservation
-  description: Reduce loggerhead bycatch in Southern California
+  description: Temperature Observations To Avoid Loggerheads (TOTAL) - Reduce loggerhead bycatch in Southern California
   path: https://coastwatch-wcn.github.io/projects/turtlewatch/turtlewatch.html
   image: images/itemurls/turtlewatch.png
   categories: [ESD]
 - title: EcoCast
   description:  Assess trade-offs of bycatch and target catch in real-time
-  path: http://coastwatch.pfeg.noaa.gov/ecocast/
+  path: https://coastwatch-wcn.github.io/projects/ecocast/ecocast.html
   image: images/itemurls/EcoCast_ecocastrisk_latest_mean.png
   categories: [ESD]
 - title: NOAA Satellite Course
@@ -122,4 +122,9 @@
   description: Index of upwelling habitat
   path: products/hci/hci.qmd
   image: images/itemurls/hci.png
+  categories: [ESD]
+- title: ESD Data Inventory
+  description: All about the data
+  path: https://lmdewitt.io/projects/ESD-data
+  image: images/itemurls/data.jpeg
   categories: [ESD]

@@ -51,6 +51,7 @@ website:
         href: people.qmd
   sidebar:
     title: "Projects and Products"
+    id: main-docs
     style: "docked"
     collapse-level: 1
     contents:
