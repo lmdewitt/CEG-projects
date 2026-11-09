@@ -55,7 +55,7 @@ The timing and length of marine heatwave events in west coast sanctuaries is sho
 
 ::: {.callout-note title="How was this information calculated?" collapse="true"}
 
-**Heatwave occurrence vs day of year** = on each day of the year for a particular year, if one or more grid cells within a sanctuary area was in heatwave status, then a red square is added to the graph for that sanctuary area on that day. The total number of heatwave days (red squares) in that year is noted in the far right column. For the current year, this graph is updated weekly, the total days is cumulative up to the most recent day, and the most recent day is shown by a black dot. This indicator provides information on when a sanctuary area was influenced by heatwaves recently, and is a way to compare this across sanctuary areas.
+**Heatwave occurrence vs day of year** On each day of the year for a particular year, if one or more grid cells within a sanctuary area was in heatwave status, then a red square is added to the graph for that sanctuary area on that day. The total number of heatwave days (red squares) in that year is noted in the far right column. For the current year, this graph is updated weekly, the total days is cumulative up to the most recent day, and the most recent day is shown by a black dot. This indicator provides information on when a sanctuary area was influenced by heatwaves recently, and is a way to compare this across sanctuary areas.
 
 see the MHW Calculations page for more information
 :::
